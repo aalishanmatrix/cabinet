@@ -24,6 +24,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        getListView().setSelector(R.drawable.selectable_background_cabinet);
         java.io.File[] contents = mPath.listFiles();
         Arrays.sort(contents, new File.Comparator());
         getAdapter().clear();
