@@ -26,7 +26,7 @@ public class MainActivity extends SilkDrawerActivity {
 
     @Override
     public DrawerLayout getDrawerLayout() {
-        return (DrawerLayout) findViewById(R.id.left_drawer);
+        return (DrawerLayout) findViewById(R.id.drawer_layout);
     }
 
     @Override
