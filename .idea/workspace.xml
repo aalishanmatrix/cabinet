@@ -24,24 +24,16 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="SilkImageManager" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageView.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/DrawableManager.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_item_file.xml" afterPath="$PROJECT_DIR$/res/layout/list_item_file.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageView.java" afterPath="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375226378690" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375228490500" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375227497732" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375205697754" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375206567913" ignored="false" />
@@ -125,7 +117,7 @@
       <file leaf-file-name="FileAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="25" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.7011686">
+            <state line="30" column="38" selection-start="800" selection-end="800" vertical-scroll-proportion="0.32554257">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,8 +157,8 @@
         <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/ImageManager.java" />
         <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageManager.java" />
         <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
-        <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageView.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
+        <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageView.java" />
       </list>
     </option>
   </component>
@@ -487,7 +479,11 @@
       <created>1375226384329</created>
       <updated>1375226384329</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added SilkImageView to Silk.">
+      <created>1375228494136</created>
+      <updated>1375228494136</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -564,7 +560,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates, added DrawableManager to Silk." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SilkImageView to Silk." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -580,6 +576,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Updates." />
     <MESSAGE value="Updates, added DrawableManager to Silk." />
+    <MESSAGE value="Added SilkImageView to Silk." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -703,7 +700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="847" selection-end="847" vertical-scroll-proportion="0.47412354">
+        <state line="24" column="43" selection-start="604" selection-end="604" vertical-scroll-proportion="0.5509182">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -712,7 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="25" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.7011686">
+        <state line="30" column="38" selection-start="800" selection-end="800" vertical-scroll-proportion="0.32554257">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
