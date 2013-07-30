@@ -4,6 +4,7 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Menu;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.silk.activities.SilkDrawerActivity;
 
@@ -45,5 +46,11 @@ public class MainActivity extends SilkDrawerActivity {
         trans.replace(R.id.content_frame, new DirectoryFragment(directory));
         trans.addToBackStack(null);
         trans.commit();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

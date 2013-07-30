@@ -7,4 +7,7 @@
     <string name="directory">Directory</string>
     <string name="shortcuts">Shortcuts</string>
 
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+
 </resources>
