@@ -43,7 +43,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onItemTapped(int index, File item, View view) {
         if (item.isDirectory()) {
-            ((MainActivity) getActivity()).navigate(item);
+            ((MainActivity) getActivity()).navigate(item, true);
         } else {
             Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item), item.getMimeType());
             startActivity(Intent.createChooser(intent, getString(R.string.open_with)));

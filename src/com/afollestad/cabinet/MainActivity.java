@@ -1,5 +1,6 @@
 package com.afollestad.cabinet;
 
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.os.Environment;
@@ -38,13 +39,14 @@ public class MainActivity extends SilkDrawerActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        navigate(new File(Environment.getExternalStorageDirectory().getAbsolutePath()));
+        navigate(new File(Environment.getExternalStorageDirectory().getAbsolutePath()), false);
     }
 
-    public void navigate(File directory) {
+    public void navigate(File directory, boolean backStack) {
         FragmentTransaction trans = getFragmentManager().beginTransaction();
         trans.replace(R.id.content_frame, new DirectoryFragment(directory));
-        trans.addToBackStack(null);
+        if (backStack) trans.addToBackStack(null);
+        else getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         trans.commit();
     }
 
