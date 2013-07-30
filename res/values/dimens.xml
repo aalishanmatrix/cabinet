@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="file_thumbnail">60dp</dimen>
+    <dimen name="file_thumbnail">50dp</dimen>
     <dimen name="file_title">18sp</dimen>
     <dimen name="file_details">17sp</dimen>
 
     <dimen name="file_item_vert_padding">10dp</dimen>
-    <dimen name="file_item_hor_padding">10dp</dimen>
+    <dimen name="file_item_hor_padding">15dp</dimen>
 
     <dimen name="nav_drawer">240dp</dimen>
 
