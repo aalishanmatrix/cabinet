@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="file_thumbnail">50dp</dimen>
+    <dimen name="file_thumbnail">60dp</dimen>
     <dimen name="file_title">18sp</dimen>
     <dimen name="file_details">17sp</dimen>
 
