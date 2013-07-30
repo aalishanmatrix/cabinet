@@ -26,6 +26,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         super.onViewCreated(view, savedInstanceState);
         java.io.File[] contents = mPath.listFiles();
         Arrays.sort(contents, new File.Comparator());
+        getAdapter().clear();
         for (java.io.File fi : contents)
             getAdapter().add(new File(fi));
     }
