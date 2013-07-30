@@ -13,7 +13,7 @@
                android:layout_width="@dimen/file_thumbnail"
                android:layout_height="@dimen/file_thumbnail"
                android:scaleType="fitXY"
-               android:src="@drawable/ic_launcher"/>
+               android:src="@drawable/ic_folder"/>
 
     <LinearLayout android:orientation="vertical"
                   android:layout_width="match_parent"
