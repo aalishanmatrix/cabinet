@@ -5,7 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import com.afollestad.cabinet.File;
-import com.afollestad.cabinet.MainActivity;
+import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.silk.adapters.SilkAdapter;

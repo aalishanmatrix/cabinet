@@ -9,11 +9,10 @@
               android:paddingLeft="@dimen/file_item_hor_padding"
               android:paddingRight="@dimen/file_item_hor_padding">
 
-    <ImageView android:id="@+id/image"
-               android:layout_width="@dimen/file_thumbnail"
-               android:layout_height="@dimen/file_thumbnail"
-               android:scaleType="fitXY"
-               android:src="@drawable/ic_folder"/>
+    <com.afollestad.silk.images.SilkImageView android:id="@+id/image"
+                                              android:layout_width="@dimen/file_thumbnail"
+                                              android:layout_height="@dimen/file_thumbnail"
+                                              android:scaleType="fitXY"/>
 
     <LinearLayout android:orientation="vertical"
                   android:layout_width="match_parent"
