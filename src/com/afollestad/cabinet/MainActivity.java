@@ -1,17 +1,42 @@
 package com.afollestad.cabinet;
 
-import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.widget.DrawerLayout;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
+import com.afollestad.silk.activities.SilkDrawerActivity;
 
-public class MainActivity extends Activity {
+public class MainActivity extends SilkDrawerActivity {
+
+    @Override
+    public int getDrawerIndicatorRes() {
+        return R.drawable.ic_navigation_drawer;
+    }
+
+    @Override
+    public int getDrawerShadowRes() {
+        return R.drawable.drawer_shadow;
+    }
+
+    @Override
+    public int getLayout() {
+        return R.layout.main;
+    }
+
+    @Override
+    public DrawerLayout getDrawerLayout() {
+        return (DrawerLayout) findViewById(R.id.left_drawer);
+    }
+
+    @Override
+    public int getOpenedTextRes() {
+        return R.string.shortcuts;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
         navigate(new File(Environment.getExternalStorageDirectory().getAbsolutePath()));
     }
 
