@@ -2,6 +2,7 @@ package com.afollestad.cabinet.utils;
 
 import android.util.Log;
 import com.afollestad.cabinet.File;
+import com.afollestad.cabinet.fragments.DirectoryFragment;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -62,12 +63,13 @@ public class Clipboard {
         mClipboardType = Type.NONE;
     }
 
-    public void performPaste(File dest) {
+    public void performPaste(DirectoryFragment fragment) {
         for (File fi : mClipboard) {
             if (mClipboardType == Clipboard.Type.COPY)
-                copy(fi, new File(dest, fi.getName()));
+                copy(fi, new File(fragment.getPath(), fi.getName()));
             else if (mClipboardType == Clipboard.Type.CUT)
-                fi.renameTo(new File(dest, fi.getName()));
+                fi.renameTo(new File(fragment.getPath(), fi.getName()));
+            fragment.getAdapter().add(fi);
         }
     }
 

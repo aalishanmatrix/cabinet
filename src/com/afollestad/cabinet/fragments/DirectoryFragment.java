@@ -174,7 +174,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         Activity context = fragment.getActivity();
         final Clipboard cb = App.get(context).getClipboard();
         String paths = "";
-        for (File fi : cb.get()) paths += fi.getAbsolutePath() + "\n";
+        for (File fi : cb.get()) paths += fi.getName() + "\n";
         String message;
         int action;
         if (cb.getType() == Clipboard.Type.COPY) {
@@ -192,7 +192,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        cb.performPaste(fragment.getPath());
+                        cb.performPaste(fragment);
                     }
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
