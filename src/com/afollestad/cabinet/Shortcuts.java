@@ -25,7 +25,6 @@ public class Shortcuts {
     }
 
     public static void add(Context context, File dir) {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         List<File> files = getAll(context);
         files.add(dir);
         save(context, files);
@@ -44,5 +43,11 @@ public class Shortcuts {
             files.add(new File(item));
         }
         return files;
+    }
+
+    public static void remove(Context context, int index) {
+        List<File> files = getAll(context);
+        files.remove(index);
+        save(context, files);
     }
 }
