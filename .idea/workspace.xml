@@ -28,12 +28,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/Shortcuts.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/Shortcuts.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375247065959" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375247106221" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375244419183" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375242257532" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375246343366" ignored="false" />
@@ -63,7 +63,7 @@
     <file path="/selectable_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243717137" ignored="false" />
     <file path="/contextual_ab_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375245130780" ignored="false" />
     <file path="/activatable_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243646501" ignored="false" />
-    <file path="/Bookmarks.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375246196173" ignored="false" />
+    <file path="/Bookmarks.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375247166795" ignored="false" />
     <file path="/Shortcuts.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375246176604" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,12 +145,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrawerAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DrawerAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="26" selection-start="964" selection-end="964" vertical-scroll-proportion="0.6076795">
+            <state line="29" column="26" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shortcuts.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/Shortcuts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="77" selection-start="682" selection-end="682" vertical-scroll-proportion="0.29883137">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1109#1115#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,10 +207,10 @@
         <option value="$PROJECT_DIR$/res/values/strings_arrays.xml" />
         <option value="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/Bookmarks.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/Shortcuts.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/Shortcuts.java" />
       </list>
     </option>
   </component>
@@ -717,7 +729,11 @@
       <created>1375247068977</created>
       <updated>1375247068977</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Fixes">
+      <created>1375247107372</created>
+      <updated>1375247107372</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -918,16 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/Shortcuts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="335" selection-end="335" vertical-scroll-proportion="0.14858097">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1082#1088#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/src/com/afollestad/silk/adapters/SilkAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="166" column="0" selection-start="5076" selection-end="5076" vertical-scroll-proportion="0.0">
@@ -946,9 +952,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="964" selection-end="964" vertical-scroll-proportion="0.6076795">
+        <state line="29" column="26" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/Shortcuts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="77" selection-start="682" selection-end="682" vertical-scroll-proportion="0.29883137">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1109#1115#0" expanded="true" />
           </folding>
         </state>
       </provider>

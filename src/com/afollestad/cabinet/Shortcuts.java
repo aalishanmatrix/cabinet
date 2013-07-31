@@ -19,7 +19,7 @@ public class Shortcuts {
         String toSet = "";
         for (int i = 0; i < files.size(); i++) {
             if (i > 0) toSet += ",";
-            toSet += files.get(i).getAbsolutePath();
+            toSet += files.get(i).getAbsolutePath().replace(",", COMMA_ENTITY);
         }
         prefs.edit().putString("shortcuts", toSet).commit();
     }
