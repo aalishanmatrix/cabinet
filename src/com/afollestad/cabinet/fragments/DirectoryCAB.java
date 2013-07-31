@@ -32,11 +32,13 @@ public class DirectoryCAB {
                 App.get(fragment.getActivity()).getClipboard().clear();
                 for (File fi : selectedFiles) App.get(fragment.getActivity()).getClipboard().add(fi);
                 App.get(fragment.getActivity()).getClipboard().setType(Clipboard.Type.COPY);
+                fragment.getActivity().invalidateOptionsMenu();
                 break;
             case R.id.cut:
                 App.get(fragment.getActivity()).getClipboard().clear();
                 App.get(fragment.getActivity()).getClipboard().setType(Clipboard.Type.CUT);
                 for (File fi : selectedFiles) App.get(fragment.getActivity()).getClipboard().add(fi);
+                fragment.getActivity().invalidateOptionsMenu();
                 break;
             case R.id.delete:
                 int count = 0;
