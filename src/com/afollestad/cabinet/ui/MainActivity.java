@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
+import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.silk.activities.SilkDrawerActivity;
 
@@ -42,6 +46,7 @@ public class MainActivity extends SilkDrawerActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         navigate(new File(Environment.getExternalStorageDirectory().getAbsolutePath()), false);
+        populateDrawer();
     }
 
     public void navigate(File directory, boolean backStack) {
@@ -50,6 +55,41 @@ public class MainActivity extends SilkDrawerActivity {
         if (backStack) trans.addToBackStack(null);
         else getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         trans.commit();
+    }
+
+    private void populateDrawer() {
+        ListView drawerList = (ListView) findViewById(R.id.left_drawer);
+        DrawerAdapter mAdapter = new DrawerAdapter(this);
+        drawerList.setAdapter(mAdapter);
+        String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
+        for (int i = 0; i < defaultItems.length; i++) {
+            if (i > 1) {
+                File dir = new File(Environment.getExternalStorageDirectory(), defaultItems[i]);
+                if (!dir.exists()) continue;
+            }
+            mAdapter.add(new DrawerAdapter.DrawerItem(defaultItems[i]));
+        }
+
+        drawerList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                selectItem(position);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+    }
+
+    private void selectItem(int position) {
+        if (position == 0) {
+            navigate(new File(Environment.getExternalStorageDirectory()), false);
+            return;
+        }
+        String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
+        File fi = new File(Environment.getExternalStorageDirectory(), defaultItems[position]);
+        navigate(fi, true);
     }
 
     @Override
