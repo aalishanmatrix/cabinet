@@ -15,8 +15,8 @@
 
     <string name="add_shortcut">Add Shortcut</string>
     <string name="copy">Copy</string>
-    <string name="move">Move</string>
-    <string name="move_here">Move Here</string>
+    <string name="cut">Cut</string>
+    <string name="paste">Paste</string>
     <string name="share">Share</string>
     <string name="delete">Delete</string>
 
