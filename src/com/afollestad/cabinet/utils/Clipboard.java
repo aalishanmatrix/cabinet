@@ -9,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -71,6 +72,9 @@ public class Clipboard {
                 cut(fi, new File(fragment.getPath(), fi.getName()));
             fragment.getAdapter().add(fi);
         }
+        List<File> items = fragment.getAdapter().getItems();
+        Collections.sort(items, new File.Comparator());
+        fragment.getAdapter().set(items);
         clear();
     }
 
