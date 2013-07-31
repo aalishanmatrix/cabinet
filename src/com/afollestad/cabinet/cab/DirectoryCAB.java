@@ -1,4 +1,4 @@
-package com.afollestad.cabinet.fragments;
+package com.afollestad.cabinet.cab;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
+import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
 
@@ -60,8 +61,8 @@ public class DirectoryCAB {
     private static Intent getShareIntent(Activity context, List<File> files) {
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+        shareIntent.setType(files.get(0).getMimeType()); //TODO multiple mime types?
         if (files.size() == 1) {
-            shareIntent.setType(files.get(0).getMimeType());
             shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(files.get(0)));
         } else {
             ArrayList<Uri> attachments = new ArrayList<Uri>();

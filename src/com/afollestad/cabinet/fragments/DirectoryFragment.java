@@ -16,6 +16,7 @@ import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
+import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.silk.adapters.SilkAdapter;
