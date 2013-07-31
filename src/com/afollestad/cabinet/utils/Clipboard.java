@@ -74,7 +74,7 @@ public class Clipboard {
         }
         List<File> items = fragment.getAdapter().getItems();
         Collections.sort(items, new File.Comparator());
-        fragment.getAdapter().set(items);
+        fragment.getAdapter().notifyDataSetChanged();
         clear();
     }
 

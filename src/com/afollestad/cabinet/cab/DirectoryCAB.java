@@ -1,6 +1,8 @@
 package com.afollestad.cabinet.cab;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.ActionMode;
@@ -42,14 +44,7 @@ public class DirectoryCAB {
                 fragment.getActivity().invalidateOptionsMenu();
                 break;
             case R.id.delete:
-                int count = 0;
-                for (File fi : selectedFiles) {
-                    if (fi.delete()) {
-                        count++;
-                        fragment.getAdapter().remove(fi);
-                    }
-                }
-                Toast.makeText(fragment.getActivity(), fragment.getActivity().getString(R.string.x_files_deleted).replace("{X}", count + ""), Toast.LENGTH_SHORT).show();
+                performDelete(fragment, selectedFiles);
                 break;
             default:
                 return false;
@@ -70,5 +65,29 @@ public class DirectoryCAB {
             shareIntent.putExtra(Intent.EXTRA_STREAM, attachments);
         }
         return Intent.createChooser(shareIntent, context.getString(R.string.send_using));
+    }
+
+    private static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles) {
+        String paths = "";
+        for (File fi : selectedFiles) paths += fi.getName() + "\n";
+        AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
+        builder.setTitle(R.string.delete)
+                .setMessage(fragment.getActivity().getString(R.string.confirm_delete).replace("{paths}", paths))
+                .setPositiveButton(R.string.delete, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        for (File fi : selectedFiles) {
+                            if (fi.delete()) fragment.getAdapter().remove(fi);
+                        }
+                    }
+                })
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        builder.create().show();
     }
 }
