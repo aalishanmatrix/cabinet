@@ -33,6 +33,10 @@
     <string name="confirm_copy_paste">Copy these files:\n\n{paths}\nto {dest}</string>
     <string name="confirm_cut_paste">Move these files:\n\n{paths}\nto {dest}</string>
 
+    <string name="remove_shortcut">Remove Shortcut</string>
+    <string name="confirm_remove_shortcut">Are you sure you want to remove this shortcut?</string>
+    <string name="yes">Yes</string>
+
     <string name="app_name_and_version" translatable="false"><![CDATA[
         <b>Cabinet</b>&nbsp;<font color="#888888">v%1$s</font>
     ]]></string>

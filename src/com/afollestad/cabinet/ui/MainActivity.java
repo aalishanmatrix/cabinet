@@ -1,7 +1,9 @@
 package com.afollestad.cabinet.ui;
 
+import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Environment;
@@ -16,9 +18,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
-import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
+import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.silk.activities.SilkDrawerActivity;
 
 import java.util.List;
@@ -96,9 +98,7 @@ public class MainActivity extends SilkDrawerActivity {
         drawerList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                DrawerAdapter.DrawerItem shortcut = mDrawerAdapter.getItem(position);
-                Shortcuts.remove(MainActivity.this, position);
-                mDrawerAdapter.remove(shortcut);
+                removeShortcut(position);
                 return true;
             }
         });
@@ -123,6 +123,27 @@ public class MainActivity extends SilkDrawerActivity {
     public void addShortcut(File path) {
         mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, path));
         Shortcuts.add(this, path);
+    }
+
+    private void removeShortcut(final int position) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.remove_shortcut).setMessage(R.string.confirm_remove_shortcut)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        DrawerAdapter.DrawerItem shortcut = mDrawerAdapter.getItem(position);
+                        Shortcuts.remove(MainActivity.this, position);
+                        mDrawerAdapter.remove(shortcut);
+                    }
+                })
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        builder.create().show();
     }
 
     @Override
