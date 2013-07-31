@@ -107,6 +107,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     @Override
     public void onVisibilityChange(boolean visible) {
+        // Makes sure title gets updated when you go back in the fragment back stack
         if (mPath.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
             getActivity().setTitle(R.string.app_name);
         else getActivity().setTitle(mPath.getName());

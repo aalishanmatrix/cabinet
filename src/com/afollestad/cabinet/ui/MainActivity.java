@@ -50,6 +50,10 @@ public class MainActivity extends SilkDrawerActivity {
     }
 
     public void navigate(File directory, boolean backStack) {
+        if (directory.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+            setTitle(R.string.app_name);
+        else setTitle(directory.getName());
+
         FragmentTransaction trans = getFragmentManager().beginTransaction();
         trans.replace(R.id.content_frame, new DirectoryFragment(directory));
         if (backStack) trans.addToBackStack(null);
@@ -69,7 +73,6 @@ public class MainActivity extends SilkDrawerActivity {
             }
             mAdapter.add(new DrawerAdapter.DrawerItem(defaultItems[i]));
         }
-
         drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -81,14 +84,12 @@ public class MainActivity extends SilkDrawerActivity {
     private void selectItem(int position) {
         if (position == 0) {
             navigate(new File(Environment.getExternalStorageDirectory()), false);
-            super.mTitle = getString(R.string.app_name);
             getDrawerLayout().closeDrawers();
             return;
         }
         String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
         File fi = new File(Environment.getExternalStorageDirectory(), defaultItems[position]);
         navigate(fi, true);
-        super.mTitle = fi.getName();
         getDrawerLayout().closeDrawers();
     }
 
