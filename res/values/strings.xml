@@ -30,6 +30,8 @@
     <string name="close">Close</string>
     <string name="settings">Settings</string>
 
+    <string name="please_wait">Please wait…</string>
+
     <string name="confirm_copy_paste"><![CDATA[
         Copy these files:<br/><br/>{paths}<br/>to <b>{dest}</b>
     ]]></string>

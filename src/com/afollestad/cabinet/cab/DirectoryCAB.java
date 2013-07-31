@@ -2,6 +2,7 @@ package com.afollestad.cabinet.cab;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -15,6 +16,7 @@ import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
+import com.afollestad.cabinet.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -72,7 +74,7 @@ public class DirectoryCAB {
     private static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles) {
         String paths = "";
         for (File fi : selectedFiles) paths += "<i>" + fi.getName() + "</i><br/>";
-        Spanned message = Html.fromHtml(fragment.getActivity().getString(R.string.confirm_delete).replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath()));
+        Spanned message = Html.fromHtml(fragment.getString(R.string.confirm_delete).replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath()));
 
         AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
         builder.setTitle(R.string.delete).setMessage(message)
@@ -80,9 +82,28 @@ public class DirectoryCAB {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        for (File fi : selectedFiles) {
-                            if (fi.delete()) fragment.getAdapter().remove(fi);
-                        }
+                        final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), selectedFiles.size());
+                        new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                for (int i = 0; i < selectedFiles.size(); i++) {
+                                    selectedFiles.get(i).delete();
+                                    final int fi = i;
+                                    fragment.runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            progress.setProgress(fi);
+                                        }
+                                    });
+                                }
+                                fragment.runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        progress.dismiss();
+                                    }
+                                });
+                            }
+                        }).start();
                     }
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {

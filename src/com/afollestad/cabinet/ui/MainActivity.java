@@ -77,6 +77,7 @@ public class MainActivity extends SilkDrawerActivity {
     private void checkFirstTime() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (!prefs.getBoolean("first_time", true)) return;
+        // Add default shortcuts
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory()));
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Download"));
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Music"));

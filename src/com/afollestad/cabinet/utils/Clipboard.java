@@ -1,5 +1,6 @@
 package com.afollestad.cabinet.utils;
 
+import android.app.ProgressDialog;
 import android.util.Log;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
@@ -64,18 +65,41 @@ public class Clipboard {
         mClipboardType = Type.NONE;
     }
 
-    public void performPaste(DirectoryFragment fragment) {
-        for (File fi : mClipboard) {
-            if (mClipboardType == Clipboard.Type.COPY)
-                copy(fi, new File(fragment.getPath(), fi.getName()));
-            else if (mClipboardType == Clipboard.Type.CUT)
-                cut(fi, new File(fragment.getPath(), fi.getName()));
-            fragment.getAdapter().add(fi);
-        }
-        List<File> items = fragment.getAdapter().getItems();
-        Collections.sort(items, new File.Comparator());
-        fragment.getAdapter().notifyDataSetChanged();
-        clear();
+    public void performPaste(final DirectoryFragment fragment, final ProgressDialog dialog) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < mClipboard.size(); i++) {
+                    final File fi = mClipboard.get(i);
+                    final int index = i;
+                    if (mClipboardType == Clipboard.Type.COPY)
+                        copy(fi, new File(fragment.getPath(), fi.getName()));
+                    else if (mClipboardType == Clipboard.Type.CUT)
+                        cut(fi, new File(fragment.getPath(), fi.getName()));
+                    fragment.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            fragment.getAdapter().add(fi);
+                            dialog.setProgress(index);
+                        }
+                    });
+                }
+
+                fragment.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Re-sort the Fragment's list
+                        List<File> items = fragment.getAdapter().getItems();
+                        Collections.sort(items, new File.Comparator());
+                        fragment.getAdapter().notifyDataSetChanged();
+                        // Clear the clipboard
+                        clear();
+                        // Close the dialog
+                        dialog.dismiss();
+                    }
+                });
+            }
+        }).start();
     }
 
     private static void copy(File src, File dst) {

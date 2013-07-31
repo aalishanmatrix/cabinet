@@ -2,6 +2,7 @@ package com.afollestad.cabinet.fragments;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -20,6 +21,7 @@ import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
+import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
 
@@ -154,7 +156,10 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.fragment_directory, menu);
-        menu.findItem(R.id.paste).setVisible(App.get(getActivity()).getClipboard().canPaste(mPath));
+        menu.findItem(R.id.paste).setVisible(
+                App.get(getActivity()).getClipboard().canPaste(mPath));
+        menu.findItem(R.id.add_shortcut).setVisible(
+                !((MainActivity) getActivity()).isDrawerOpen());
         super.onCreateOptionsMenu(menu, inflater);
     }
 
@@ -194,7 +199,8 @@ public class DirectoryFragment extends SilkListFragment<File> {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        cb.performPaste(fragment);
+                        ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), cb.get().size());
+                        cb.performPaste(fragment, progress);
                     }
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
