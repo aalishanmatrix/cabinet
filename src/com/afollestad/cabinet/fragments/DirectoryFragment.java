@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.SparseBooleanArray;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
@@ -17,7 +19,9 @@ import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class DirectoryFragment extends SilkListFragment<File> {
 
@@ -42,6 +46,17 @@ public class DirectoryFragment extends SilkListFragment<File> {
     private void setupCab(ListView listView) {
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
         listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
+
+            private List<File> getSelectedFiles() {
+                List<File> files = new ArrayList<File>();
+                int len = getListView().getCount();
+                SparseBooleanArray checked = getListView().getCheckedItemPositions();
+                for (int i = 0; i < len; i++) {
+                    if (checked.get(i)) files.add(getAdapter().getItem(i));
+                }
+                return files;
+            }
+
             @Override
             public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
                 int count = getListView().getCheckedItemCount();
@@ -53,6 +68,12 @@ public class DirectoryFragment extends SilkListFragment<File> {
             @Override
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 switch (item.getItemId()) {
+                    case R.id.add_shortcut:
+                        for (File fi : getSelectedFiles())
+                            ((MainActivity) getActivity()).addShortcut(fi);
+                        mode.finish();
+                        Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
+                        return true;
                     default:
                         return false;
                 }
