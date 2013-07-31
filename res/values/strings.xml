@@ -41,7 +41,7 @@
     <string name="confirm_remove_shortcut">Are you sure you want to remove this shortcut to {path}?</string>
     <string name="yes">Yes</string>
     <string name="confirm_delete"><![CDATA[
-        Are you sure you want to delete these files?<br/><br/>{paths}<br/>from <b>{dest}</b>
+        Are you sure you want to delete these files/folders?<br/><br/>{paths}<br/>from <b>{dest}</b>
     ]]></string>
 
     <string name="app_name_and_version" translatable="false"><![CDATA[
