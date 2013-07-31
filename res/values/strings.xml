@@ -34,7 +34,7 @@
     <string name="confirm_cut_paste">Move these files:\n\n{paths}\nto {dest}</string>
 
     <string name="remove_shortcut">Remove Shortcut</string>
-    <string name="confirm_remove_shortcut">Are you sure you want to remove this shortcut?</string>
+    <string name="confirm_remove_shortcut">Are you sure you want to remove this shortcut to {path}?</string>
     <string name="yes">Yes</string>
 
     <string name="app_name_and_version" translatable="false"><![CDATA[

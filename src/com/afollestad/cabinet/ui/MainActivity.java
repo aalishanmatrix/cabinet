@@ -126,13 +126,14 @@ public class MainActivity extends SilkDrawerActivity {
     }
 
     private void removeShortcut(final int position) {
+        final DrawerAdapter.DrawerItem shortcut = mDrawerAdapter.getItem(position);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.remove_shortcut).setMessage(R.string.confirm_remove_shortcut)
+        builder.setTitle(R.string.remove_shortcut)
+                .setMessage(getString(R.string.confirm_remove_shortcut).replace("{path}", shortcut.getFile().getAbsolutePath()))
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        DrawerAdapter.DrawerItem shortcut = mDrawerAdapter.getItem(position);
                         Shortcuts.remove(MainActivity.this, position);
                         mDrawerAdapter.remove(shortcut);
                     }
