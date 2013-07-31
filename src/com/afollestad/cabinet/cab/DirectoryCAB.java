@@ -5,6 +5,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.ActionMode;
 import android.widget.Toast;
 import com.afollestad.cabinet.App;
@@ -69,10 +71,11 @@ public class DirectoryCAB {
 
     private static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles) {
         String paths = "";
-        for (File fi : selectedFiles) paths += fi.getName() + "\n";
+        for (File fi : selectedFiles) paths += "<b>" + fi.getName() + "</b><br/>";
+        Spanned message = Html.fromHtml(fragment.getActivity().getString(R.string.confirm_delete).replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath()));
+
         AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
-        builder.setTitle(R.string.delete)
-                .setMessage(fragment.getActivity().getString(R.string.confirm_delete).replace("{paths}", paths))
+        builder.setTitle(R.string.delete).setMessage(message)
                 .setPositiveButton(R.string.delete, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

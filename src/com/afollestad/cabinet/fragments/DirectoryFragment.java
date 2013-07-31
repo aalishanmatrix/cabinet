@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.Html;
 import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
@@ -175,7 +176,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         Activity context = fragment.getActivity();
         final Clipboard cb = App.get(context).getClipboard();
         String paths = "";
-        for (File fi : cb.get()) paths += fi.getName() + "\n";
+        for (File fi : cb.get()) paths += "<b>" + fi.getName() + "</b><br/>";
         String message;
         int action;
         if (cb.getType() == Clipboard.Type.COPY) {
@@ -188,7 +189,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         message = message.replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
-        builder.setTitle(R.string.paste).setMessage(message)
+        builder.setTitle(R.string.paste).setMessage(Html.fromHtml(message))
                 .setPositiveButton(action, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
