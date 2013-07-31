@@ -57,6 +57,20 @@ public class DirectoryFragment extends SilkListFragment<File> {
                 return files;
             }
 
+            private Intent getShareIntent(List<File> files) {
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                if (files.size() == 1) {
+                    shareIntent.setType(files.get(0).getMimeType());
+                    shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(files.get(0)));
+                } else {
+                    ArrayList<Uri> attachments = new ArrayList<Uri>();
+                    for (File fi : files) attachments.add(Uri.fromFile(fi));
+                    shareIntent.putExtra(Intent.EXTRA_STREAM, attachments);
+                }
+                return Intent.createChooser(shareIntent, getString(R.string.send_using));
+            }
+
             @Override
             public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
                 int count = getListView().getCheckedItemCount();
@@ -73,6 +87,9 @@ public class DirectoryFragment extends SilkListFragment<File> {
                         for (File fi : selectedFiles) ((MainActivity) getActivity()).addShortcut(fi);
                         mode.finish();
                         Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
+                        return true;
+                    case R.id.share:
+                        startActivity(getShareIntent(selectedFiles));
                         return true;
                     case R.id.delete:
                         int count = 0;

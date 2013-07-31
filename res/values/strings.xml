@@ -4,6 +4,7 @@
     <string name="app_name">Cabinet</string>
     <string name="no_files">No files</string>
     <string name="open_with">Open with…</string>
+    <string name="send_using">Send using…</string>
     <string name="directory">Directory</string>
     <string name="shortcuts">Shortcuts</string>
     <string name="manual_mime">{extension} file</string>
