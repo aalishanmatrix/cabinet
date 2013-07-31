@@ -67,7 +67,7 @@ public class FileAdapter extends SilkAdapter<File> {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "TODO", Toast.LENGTH_SHORT).show();
+                v.setSelected(!v.isSelected());
             }
         });
 

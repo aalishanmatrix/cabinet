@@ -4,7 +4,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.ActionMode;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AbsListView;
+import android.widget.ListView;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
@@ -26,11 +31,52 @@ public class DirectoryFragment extends SilkListFragment<File> {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getListView().setSelector(R.drawable.selectable_background_cabinet);
+        setupCab(getListView());
         java.io.File[] contents = mPath.listFiles();
         Arrays.sort(contents, new File.Comparator());
         getAdapter().clear();
         for (java.io.File fi : contents)
             getAdapter().add(new File(fi));
+    }
+
+    private void setupCab(ListView listView) {
+        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
+        listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
+            @Override
+            public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
+                int count = getListView().getCheckedItemCount();
+                if (count == 1)
+                    mode.setTitle(getString(R.string.one_file_selected));
+                else mode.setTitle(getString(R.string.x_files_selected).replace("{X}", count + ""));
+            }
+
+            @Override
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                switch (item.getItemId()) {
+                    default:
+                        return false;
+                }
+            }
+
+            @Override
+            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                mode.getMenuInflater().inflate(R.menu.contextual_ab_file, menu);
+                return true;
+            }
+
+            @Override
+            public void onDestroyActionMode(ActionMode mode) {
+                // Here you can make any necessary updates to the activity when
+                // the CAB is removed. By default, selected items are deselected/unchecked.
+            }
+
+            @Override
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                // Here you can perform updates to the CAB due to
+                // an invalidate() request
+                return false;
+            }
+        });
     }
 
     @Override
@@ -55,7 +101,8 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     @Override
     public boolean onItemLongTapped(int index, File item, View view) {
-        return false;
+        getListView().setItemChecked(index, !getListView().isItemChecked(index));
+        return true;
     }
 
     @Override
