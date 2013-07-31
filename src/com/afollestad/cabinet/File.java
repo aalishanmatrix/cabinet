@@ -54,12 +54,14 @@ public class File extends java.io.File implements SilkComparable<File> {
     }
 
     public String getExtension() {
-        return MimeTypeMap.getFileExtensionFromUrl(getAbsolutePath().toLowerCase(Locale.getDefault()));
+        String name = getName().toLowerCase();
+        if (!name.contains(".")) return null;
+        return name.substring(name.indexOf(".") + 1);
     }
 
     public String getMimeType() {
         String type = null;
-        String extension = MimeTypeMap.getFileExtensionFromUrl(getAbsolutePath().toLowerCase(Locale.getDefault()));
+        String extension = getExtension();
         if (extension != null) {
             MimeTypeMap mime = MimeTypeMap.getSingleton();
             type = mime.getMimeTypeFromExtension(extension);
