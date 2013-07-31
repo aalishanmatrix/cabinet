@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
-import com.afollestad.cabinet.Shortcuts;
+import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.silk.activities.SilkDrawerActivity;

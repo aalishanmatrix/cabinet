@@ -16,7 +16,7 @@
               android:layout_width="@dimen/nav_drawer"
               android:layout_height="match_parent"
               android:layout_gravity="start"
-              android:choiceMode="singleChoice"
+              android:listSelector="@drawable/selectable_background_cabinet"
               android:background="@color/drawer_background"/>
 
 </android.support.v4.widget.DrawerLayout>

@@ -9,10 +9,12 @@ import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.Toast;
+import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.ui.MainActivity;
+import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
 
@@ -95,6 +97,18 @@ public class DirectoryFragment extends SilkListFragment<File> {
                     case R.id.share:
                         startActivity(getShareIntent(selectedFiles));
                         return true;
+                    case R.id.copy:
+                        App.get(getActivity()).getClipboard().clear();
+                        for (File fi : selectedFiles) App.get(getActivity()).getClipboard().add(fi);
+                        App.get(getActivity()).getClipboard().setType(Clipboard.Type.COPY);
+                        mode.finish();
+                        return true;
+                    case R.id.cut:
+                        App.get(getActivity()).getClipboard().clear();
+                        for (File fi : selectedFiles) App.get(getActivity()).getClipboard().add(fi);
+                        App.get(getActivity()).getClipboard().setType(Clipboard.Type.CUT);
+                        mode.finish();
+                        return true;
                     case R.id.delete:
                         int count = 0;
                         for (File fi : selectedFiles) {
@@ -119,6 +133,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
             @Override
             public void onDestroyActionMode(ActionMode mode) {
+                App.get(getActivity()).getClipboard().setType(Clipboard.Type.NONE);
             }
 
             @Override
@@ -180,6 +195,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.fragment_directory, menu);
+        menu.findItem(R.id.paste).setVisible(App.get(getActivity()).getClipboard().canPaste(mPath));
         super.onCreateOptionsMenu(menu, inflater);
     }
 

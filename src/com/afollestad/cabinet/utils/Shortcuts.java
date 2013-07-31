@@ -1,8 +1,9 @@
-package com.afollestad.cabinet;
+package com.afollestad.cabinet.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import com.afollestad.cabinet.File;
 
 import java.util.ArrayList;
 import java.util.List;
