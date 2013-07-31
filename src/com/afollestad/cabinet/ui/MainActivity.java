@@ -81,6 +81,8 @@ public class MainActivity extends SilkDrawerActivity {
     private void selectItem(int position) {
         if (position == 0) {
             navigate(new File(Environment.getExternalStorageDirectory()), false);
+            super.mTitle = getString(R.string.app_name);
+            getDrawerLayout().closeDrawers();
             return;
         }
         String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
