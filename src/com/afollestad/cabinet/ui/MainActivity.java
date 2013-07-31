@@ -45,8 +45,8 @@ public class MainActivity extends SilkDrawerActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        navigate(new File(Environment.getExternalStorageDirectory().getAbsolutePath()), false);
         populateDrawer();
+        selectItem(0);
     }
 
     public void navigate(File directory, boolean backStack) {
@@ -70,14 +70,10 @@ public class MainActivity extends SilkDrawerActivity {
             mAdapter.add(new DrawerAdapter.DrawerItem(defaultItems[i]));
         }
 
-        drawerList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 selectItem(position);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
             }
         });
     }
