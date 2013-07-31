@@ -68,7 +68,7 @@ public class Clipboard {
             if (mClipboardType == Clipboard.Type.COPY)
                 copy(fi, new File(fragment.getPath(), fi.getName()));
             else if (mClipboardType == Clipboard.Type.CUT)
-                fi.renameTo(new File(fragment.getPath(), fi.getName()));
+                cut(fi, new File(fragment.getPath(), fi.getName()));
             fragment.getAdapter().add(fi);
         }
     }
@@ -86,5 +86,22 @@ public class Clipboard {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private static void cut(File src, File dst) {
+        try {
+            InputStream in = new FileInputStream(src);
+            OutputStream out = new FileOutputStream(dst);
+            byte[] buf = new byte[1024];
+            int len;
+            while ((len = in.read(buf)) > 0)
+                out.write(buf, 0, len);
+            in.close();
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        }
+        src.delete();
     }
 }
