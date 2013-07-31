@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.silk.adapters.SilkAdapter;
@@ -37,10 +38,12 @@ public class FileAdapter extends SilkAdapter<File> {
 
         title.setText(item.getName());
         String detailsStr = item.getSizeString(getContext());
-        if (mime != null) {
-            detailsStr += " — " + mime;
-        } else if (!item.isDirectory()) {
-            detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
+        if (!item.isDirectory()) {
+            if (mime != null) {
+                detailsStr += " — " + mime;
+            } else {
+                detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
+            }
         }
         details.setText(detailsStr);
 
@@ -60,6 +63,14 @@ public class FileAdapter extends SilkAdapter<File> {
             new ThumbnailTask(getContext(), index, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
         else
             image.setImageResource(R.drawable.ic_file);
+
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "TODO", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         return recycled;
     }
 
