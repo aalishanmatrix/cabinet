@@ -12,9 +12,17 @@ import com.afollestad.silk.adapters.SilkAdapter;
 
 public class FileAdapter extends SilkAdapter<File> {
 
+    public static class FileViewHolder {
+        public ImageView thumbnail;
+        public int position;
+    }
+
     public FileAdapter(Context context) {
         super(context);
+        thumbnailDimen = context.getResources().getDimensionPixelSize(R.dimen.file_thumbnail);
     }
+
+    private final int thumbnailDimen;
 
     @Override
     public void add(File toAdd) {
@@ -29,7 +37,6 @@ public class FileAdapter extends SilkAdapter<File> {
 
     @Override
     public View onViewCreated(int index, View recycled, File item) {
-        ImageView image = (ImageView) recycled.findViewById(R.id.image);
         TextView title = (TextView) recycled.findViewById(R.id.title);
         TextView details = (TextView) recycled.findViewById(R.id.details);
         String mime = item.getMimeType();
@@ -39,13 +46,23 @@ public class FileAdapter extends SilkAdapter<File> {
         if (mime != null) detailsStr += " — " + mime;
         details.setText(detailsStr);
 
+        FileViewHolder holder;
+        if(recycled.getTag() != null) {
+            holder = (FileViewHolder)recycled.getTag();
+        } else {
+            holder = new FileViewHolder();
+            holder.thumbnail = (ImageView) recycled.findViewById(R.id.image);
+            recycled.setTag(holder);
+        }
+
+        holder.position = index;
         if (item.isDirectory()) {
-            image.setImageResource(R.drawable.ic_folder);
+            holder.thumbnail.setImageResource(R.drawable.ic_folder);
         } else if (mime != null && mime.startsWith("image/")) {
-            BitmapWorkerTask task = new BitmapWorkerTask(getContext(), R.dimen.file_thumbnail, image);
+            BitmapWorkerTask task = new BitmapWorkerTask(thumbnailDimen, index, holder);
             task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
         } else {
-            image.setImageResource(R.drawable.ic_file);
+            holder.thumbnail.setImageResource(R.drawable.ic_file);
         }
 
         return recycled;

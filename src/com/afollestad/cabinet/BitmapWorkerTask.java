@@ -1,24 +1,24 @@
 package com.afollestad.cabinet;
 
-import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
-import android.widget.ImageView;
-
-import java.lang.ref.WeakReference;
+import android.util.Log;
+import com.afollestad.cabinet.adapters.FileAdapter;
 
 /**
  * @author Aidan Follestad (afollestad)
  */
 public class BitmapWorkerTask extends AsyncTask<File, Void, Bitmap> {
 
-    private final WeakReference<ImageView> imageViewReference;
+    private final int mPosition;
+    private final FileAdapter.FileViewHolder mHolder;
     private final int mDimen;
 
-    public BitmapWorkerTask(Context context, int dimen, ImageView imageView) {
-        imageViewReference = new WeakReference<ImageView>(imageView);
-        mDimen = context.getResources().getDimensionPixelSize(dimen);
+    public BitmapWorkerTask(int thumbnailDimen, int position, FileAdapter.FileViewHolder holder) {
+        mPosition = position;
+        mHolder = holder;
+        mDimen = thumbnailDimen;
     }
 
     @Override
@@ -28,9 +28,11 @@ public class BitmapWorkerTask extends AsyncTask<File, Void, Bitmap> {
 
     @Override
     protected void onPostExecute(Bitmap bitmap) {
-        if (imageViewReference != null && bitmap != null) {
-            final ImageView imageView = imageViewReference.get();
-            if (imageView != null) imageView.setImageBitmap(bitmap);
+        if (mHolder.position == mPosition) {
+            Log.d("BitmapWorkerTask", "Position unchanged, setting!");
+            mHolder.thumbnail.setImageBitmap(bitmap);
+        } else {
+            Log.d("BitmapWorkerTask", "Position changed, cancelling...");
         }
     }
 

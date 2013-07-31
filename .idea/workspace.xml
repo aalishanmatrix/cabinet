@@ -28,22 +28,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/BitmapWorkerTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/BitmapWorkerTask.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/BitmapWorkerTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_item_file.xml" afterPath="$PROJECT_DIR$/res/layout/list_item_file.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375229427827" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375230286836" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375227497732" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375230212232" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375206567913" ignored="false" />
-    <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375229938888" ignored="false" />
-    <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375228419733" ignored="false" />
+    <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375230747930" ignored="false" />
+    <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375230283109" ignored="false" />
     <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375206337936" ignored="false" />
     <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375224426499" ignored="false" />
     <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375206596700" ignored="false" />
@@ -59,7 +55,7 @@
     <file path="/App.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375226563407" ignored="false" />
     <file path="/ImageManager.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375227988614" ignored="false" />
     <file path="/SilkImageView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375228473676" ignored="false" />
-    <file path="/BitmapWorkerTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375229915558" ignored="false" />
+    <file path="/BitmapWorkerTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375230603719" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,7 @@
       <file leaf-file-name="FileAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="23" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+            <state line="57" column="7" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,14 +127,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
+      <file leaf-file-name="BitmapWorkerTask.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/BitmapWorkerTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="112" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.47412354">
+            <state line="34" column="70" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.6994992">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_item_file.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/list_item_file.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="44" selection-start="778" selection-end="778" vertical-scroll-proportion="-4.2">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -171,11 +179,11 @@
         <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageView.java" />
         <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/images/SilkImageManager.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
+        <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/BitmapWorkerTask.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
       </list>
     </option>
   </component>
@@ -486,7 +494,15 @@
       <created>1375229429401</created>
       <updated>1375229429401</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixes.">
+      <created>1375230220963</created>
+      <updated>1375230220963</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixes.">
+      <created>1375230288183</created>
+      <updated>1375230288183</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -563,7 +579,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed image stuff from Silk, not needed right now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -581,6 +597,7 @@
     <MESSAGE value="Added SilkImageView to Silk." />
     <MESSAGE value="Updates." />
     <MESSAGE value="Removed image stuff from Silk, not needed right now" />
+    <MESSAGE value="Fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -669,15 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/BitmapWorkerTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="291" selection-end="291" vertical-scroll-proportion="0.19866444">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="26" selection-start="337" selection-end="337" vertical-scroll-proportion="0.25041735">
@@ -692,9 +700,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="112" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.47412354">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/list_item_file.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="579" selection-end="579" vertical-scroll-proportion="0.143898">
+        <state line="14" column="44" selection-start="778" selection-end="778" vertical-scroll-proportion="-4.2">
           <folding />
         </state>
       </provider>
@@ -704,16 +721,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+        <state line="57" column="7" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/BitmapWorkerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="112" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.47412354">
+        <state line="34" column="70" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.6994992">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
