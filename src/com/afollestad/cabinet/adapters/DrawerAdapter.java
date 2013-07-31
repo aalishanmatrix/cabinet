@@ -27,7 +27,7 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
         private final File mPath;
 
         public String getTitle() {
-            return mPath.getName();
+            return mTitle;
         }
 
         public File getFile() {
