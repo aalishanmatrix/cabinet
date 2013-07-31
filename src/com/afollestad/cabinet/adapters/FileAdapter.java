@@ -1,13 +1,14 @@
 package com.afollestad.cabinet.adapters;
 
 import android.content.Context;
+import android.os.AsyncTask;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
-import com.afollestad.cabinet.App;
+import com.afollestad.cabinet.BitmapWorkerTask;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.silk.adapters.SilkAdapter;
-import com.afollestad.silk.images.SilkImageView;
 
 public class FileAdapter extends SilkAdapter<File> {
 
@@ -28,7 +29,7 @@ public class FileAdapter extends SilkAdapter<File> {
 
     @Override
     public View onViewCreated(int index, View recycled, File item) {
-        SilkImageView image = (SilkImageView) recycled.findViewById(R.id.image);
+        ImageView image = (ImageView) recycled.findViewById(R.id.image);
         TextView title = (TextView) recycled.findViewById(R.id.title);
         TextView details = (TextView) recycled.findViewById(R.id.details);
         String mime = item.getMimeType();
@@ -41,9 +42,8 @@ public class FileAdapter extends SilkAdapter<File> {
         if (item.isDirectory()) {
             image.setImageResource(R.drawable.ic_folder);
         } else if (mime != null && mime.startsWith("image/")) {
-            image.setImageManager(App.get(getContext()).getDrawableManager());
-            image.setImageURL(item.getAbsolutePath());
-            image.load();
+            BitmapWorkerTask task = new BitmapWorkerTask(getContext(), R.dimen.file_thumbnail, image);
+            task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
         } else {
             image.setImageResource(R.drawable.ic_file);
         }
