@@ -124,9 +124,7 @@ public class DirectoryCAB {
 
     private static void selectAll(DirectoryFragment fragment) {
         int len = fragment.getListView().getCount();
-        SparseBooleanArray checked = fragment.getListView().getCheckedItemPositions();
-        for (int i = 0; i < len; i++) {
-            if (!checked.get(i)) fragment.getListView().setItemChecked(i, true);
-        }
+        for(int i = 0; i < len; i++)
+            fragment.getListView().setItemChecked(i, true);
     }
 }
