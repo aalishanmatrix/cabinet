@@ -3,5 +3,7 @@
 
     <item android:id="@+id/add_shortcut" android:title="@string/add_shortcut"
           android:icon="@drawable/ic_pin" android:showAsAction="ifRoom"/>
+    <item android:id="@+id/paste" android:title="@string/paste"
+          android:icon="@drawable/ic_paste" android:showAsAction="ifRoom"/>
 
 </menu>
