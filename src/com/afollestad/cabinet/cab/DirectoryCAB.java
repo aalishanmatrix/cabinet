@@ -99,7 +99,10 @@ public class DirectoryCAB {
                                 fragment.runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
+                                        // Close the dialog
                                         progress.dismiss();
+                                        // Remove the deleted files from the adapter
+                                        fragment.getAdapter().remove(selectedFiles.toArray(new File[selectedFiles.size()]));
                                     }
                                 });
                             }
