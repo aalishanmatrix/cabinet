@@ -2,8 +2,10 @@ package com.afollestad.cabinet.ui;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.View;
@@ -12,11 +14,16 @@ import android.widget.ListView;
 import android.widget.Toast;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
+import com.afollestad.cabinet.Shortcuts;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.silk.activities.SilkDrawerActivity;
 
+import java.util.List;
+
 public class MainActivity extends SilkDrawerActivity {
+
+    private DrawerAdapter mDrawerAdapter;
 
     @Override
     public int getDrawerIndicatorRes() {
@@ -46,6 +53,7 @@ public class MainActivity extends SilkDrawerActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        checkFirstTime();
         populateDrawer();
         selectItem(0);
     }
@@ -62,37 +70,43 @@ public class MainActivity extends SilkDrawerActivity {
         trans.commit();
     }
 
+    private void checkFirstTime() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (!prefs.getBoolean("first_time", true)) return;
+
+        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory()));
+        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Download"));
+        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Music"));
+        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Pictures"));
+    }
+
     private void populateDrawer() {
         ListView drawerList = (ListView) findViewById(R.id.left_drawer);
-        DrawerAdapter mAdapter = new DrawerAdapter(this);
-        drawerList.setAdapter(mAdapter);
-        String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
-        for (int i = 0; i < defaultItems.length; i++) {
-            if (i > 1) {
-                File dir = new File(Environment.getExternalStorageDirectory(), defaultItems[i]);
-                if (!dir.exists()) continue;
-            }
-            mAdapter.add(new DrawerAdapter.DrawerItem(defaultItems[i]));
-        }
+        mDrawerAdapter = new DrawerAdapter(this);
+        drawerList.setAdapter(mDrawerAdapter);
         drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 selectItem(position);
             }
         });
+
+        List<File> shortcuts = Shortcuts.getAll(this);
+        for (File fi : shortcuts) {
+            mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi));
+        }
     }
 
     private void selectItem(int position) {
-        if (position == 0) {
-            navigate(new File(Environment.getExternalStorageDirectory()), false);
-            getDrawerLayout().closeDrawers();
-            return;
-        }
-        String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
-        File fi = new File(Environment.getExternalStorageDirectory(), defaultItems[position]);
-        if (fi.exists()) navigate(fi, true);
+        DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
+        if (item.getFile().exists()) navigate(item.getFile(), true);
         else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
         getDrawerLayout().closeDrawers();
+    }
+
+    public void addShortcut(File path) {
+        mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, path));
+        Shortcuts.add(this, path);
     }
 
     @Override

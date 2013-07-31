@@ -1,8 +1,10 @@
 package com.afollestad.cabinet.adapters;
 
 import android.content.Context;
+import android.os.Environment;
 import android.view.View;
 import android.widget.TextView;
+import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.cache.SilkComparable;
@@ -14,24 +16,32 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
 
     public static class DrawerItem implements SilkComparable<DrawerItem> {
 
-        public DrawerItem(String title) {
-            mTitle = title;
+        public DrawerItem(Context context, File dir) {
+            mPath = dir;
+            if (dir.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+                mTitle = context.getString(R.string.home);
+            else mTitle = mPath.getName();
         }
 
-        private String mTitle;
+        private final String mTitle;
+        private final File mPath;
 
         public String getTitle() {
-            return mTitle;
+            return mPath.getName();
+        }
+
+        public File getFile() {
+            return mPath;
         }
 
         @Override
         public boolean isSameAs(DrawerItem another) {
-            return mTitle.equals(another.mTitle);
+            return getTitle().equals(another.getTitle());
         }
 
         @Override
         public boolean shouldIgnore() {
-            return mTitle.trim().isEmpty();
+            return false;
         }
     }
 
