@@ -67,12 +67,19 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
             @Override
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                final List<File> selectedFiles = getSelectedFiles();
                 switch (item.getItemId()) {
                     case R.id.add_shortcut:
-                        for (File fi : getSelectedFiles())
-                            ((MainActivity) getActivity()).addShortcut(fi);
+                        for (File fi : selectedFiles) ((MainActivity) getActivity()).addShortcut(fi);
                         mode.finish();
                         Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
+                        return true;
+                    case R.id.delete:
+                        for (File fi : selectedFiles) {
+                            if (fi.delete()) getAdapter().remove(fi);
+                        }
+                        mode.finish();
+                        Toast.makeText(getActivity(), R.string.files_deleted, Toast.LENGTH_SHORT).show();
                         return true;
                     default:
                         return false;

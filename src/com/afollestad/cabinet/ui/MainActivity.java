@@ -102,8 +102,12 @@ public class MainActivity extends SilkDrawerActivity {
 
     private void selectItem(int position) {
         DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
-        if (item.getFile().exists()) navigate(item.getFile(), true);
-        else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
+        if (item.getFile().exists()) {
+            boolean backStack = true;
+            if (item.getFile().getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+                backStack = false;
+            navigate(item.getFile(), backStack);
+        } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
         getDrawerLayout().closeDrawers();
     }
 
