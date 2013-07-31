@@ -1,5 +1,8 @@
 package com.afollestad.cabinet.fragments;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,6 +17,7 @@ import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.ui.MainActivity;
+import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
 
@@ -159,7 +163,44 @@ public class DirectoryFragment extends SilkListFragment<File> {
                 ((MainActivity) getActivity()).addShortcut(mPath);
                 Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.paste:
+                startPaste(this);
+                break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private static void startPaste(final DirectoryFragment fragment) {
+        Activity context = fragment.getActivity();
+        final Clipboard cb = App.get(context).getClipboard();
+        String paths = "";
+        for (File fi : cb.get()) paths += fi.getAbsolutePath() + "\n";
+        String message;
+        int action;
+        if (cb.getType() == Clipboard.Type.COPY) {
+            message = context.getString(R.string.confirm_copy_paste);
+            action = R.string.copy;
+        } else {
+            message = context.getString(R.string.confirm_cut_paste);
+            action = R.string.move;
+        }
+        message = message.replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath());
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
+        builder.setTitle(R.string.paste).setMessage(message)
+                .setPositiveButton(action, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        cb.performPaste(fragment.getPath());
+                    }
+                })
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+        builder.create().show();
     }
 }

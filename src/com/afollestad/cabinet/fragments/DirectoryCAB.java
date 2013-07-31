@@ -1,8 +1,6 @@
 package com.afollestad.cabinet.fragments;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.ActionMode;
@@ -40,9 +38,6 @@ public class DirectoryCAB {
                 App.get(fragment.getActivity()).getClipboard().setType(Clipboard.Type.CUT);
                 for (File fi : selectedFiles) App.get(fragment.getActivity()).getClipboard().add(fi);
                 break;
-            case R.id.paste:
-                startPaste(fragment);
-                break;
             case R.id.delete:
                 int count = 0;
                 for (File fi : selectedFiles) {
@@ -58,40 +53,6 @@ public class DirectoryCAB {
         }
         mode.finish();
         return true;
-    }
-
-    private static void startPaste(final DirectoryFragment fragment) {
-        Activity context = fragment.getActivity();
-        final Clipboard cb = App.get(context).getClipboard();
-        String paths = "";
-        for (File fi : cb.get()) paths += fi.getAbsolutePath() + "\n";
-        String message;
-        int action;
-        if (cb.getType() == Clipboard.Type.COPY) {
-            message = context.getString(R.string.confirm_copy_paste);
-            action = R.string.copy;
-        } else {
-            message = context.getString(R.string.confirm_cut_paste);
-            action = R.string.move;
-        }
-        message = message.replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath());
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
-        builder.setTitle(R.string.paste).setMessage(message)
-                .setPositiveButton(action, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                        cb.performPaste(fragment.getPath());
-                    }
-                })
-                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-        builder.create().show();
     }
 
     private static Intent getShareIntent(Activity context, List<File> files) {
