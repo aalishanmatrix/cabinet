@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.text.Html;
 import android.text.Spanned;
+import android.util.SparseBooleanArray;
 import android.view.ActionMode;
 import android.widget.Toast;
 import com.afollestad.cabinet.App;
@@ -46,6 +47,9 @@ public class DirectoryCAB {
                 App.get(fragment.getActivity()).getClipboard().setType(Clipboard.Type.CUT);
                 for (File fi : selectedFiles) App.get(fragment.getActivity()).getClipboard().add(fi);
                 fragment.getActivity().invalidateOptionsMenu();
+                break;
+            case R.id.select_all:
+                selectAll(fragment);
                 break;
             case R.id.delete:
                 performDelete(fragment, selectedFiles);
@@ -116,5 +120,13 @@ public class DirectoryCAB {
                     }
                 });
         builder.create().show();
+    }
+
+    private static void selectAll(DirectoryFragment fragment) {
+        int len = fragment.getListView().getCount();
+        SparseBooleanArray checked = fragment.getListView().getCheckedItemPositions();
+        for (int i = 0; i < len; i++) {
+            if (!checked.get(i)) fragment.getListView().setItemChecked(i, true);
+        }
     }
 }

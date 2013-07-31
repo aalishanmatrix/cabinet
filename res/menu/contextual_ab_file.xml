@@ -11,5 +11,7 @@
           android:icon="@drawable/ic_cut" android:showAsAction="ifRoom"/>
     <item android:id="@+id/share" android:title="@string/share"
           android:icon="@drawable/ic_share" android:showAsAction="ifRoom"/>
+    <item android:id="@+id/select_all" android:title="@string/select_all"
+          android:icon="@drawable/ic_select_all" android:showAsAction="ifRoom"/>
 
 </menu>
