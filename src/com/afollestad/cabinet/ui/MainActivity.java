@@ -55,6 +55,10 @@ public class MainActivity extends SilkDrawerActivity {
         if (backStack) trans.addToBackStack(null);
         else getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         trans.commit();
+
+        if (directory.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+            getActionBar().setTitle(R.string.app_name);
+        else getActionBar().setTitle(directory.getName());
     }
 
     private void populateDrawer() {
@@ -90,6 +94,7 @@ public class MainActivity extends SilkDrawerActivity {
         String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
         File fi = new File(Environment.getExternalStorageDirectory(), defaultItems[position]);
         navigate(fi, true);
+        getDrawerLayout().closeDrawers();
     }
 
     @Override
