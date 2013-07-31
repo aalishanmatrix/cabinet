@@ -73,6 +73,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
             @Override
             public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
+                mode.invalidate();
                 int count = getListView().getCheckedItemCount();
                 if (count == 1)
                     mode.setTitle(getString(R.string.one_file_selected));
@@ -81,7 +82,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
             @Override
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                final List<File> selectedFiles = getSelectedFiles();
+                List<File> selectedFiles = getSelectedFiles();
                 switch (item.getItemId()) {
                     case R.id.add_shortcut:
                         for (File fi : selectedFiles) ((MainActivity) getActivity()).addShortcut(fi);
@@ -115,15 +116,21 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
             @Override
             public void onDestroyActionMode(ActionMode mode) {
-                // Here you can make any necessary updates to the activity when
-                // the CAB is removed. By default, selected items are deselected/unchecked.
             }
 
             @Override
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                // Here you can perform updates to the CAB due to
-                // an invalidate() request
-                return false;
+                List<File> selectedFiles = getSelectedFiles();
+                boolean hasFolders = false;
+                boolean hasFiles = false;
+                for (File fi : selectedFiles) {
+                    if (fi.isDirectory()) hasFolders = true;
+                    else hasFiles = true;
+                    if (hasFiles && hasFolders) break;
+                }
+                menu.findItem(R.id.add_shortcut).setVisible(!hasFiles);
+                menu.findItem(R.id.share).setVisible(!hasFolders);
+                return true;
             }
         });
     }
