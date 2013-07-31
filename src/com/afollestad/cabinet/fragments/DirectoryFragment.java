@@ -75,11 +75,15 @@ public class DirectoryFragment extends SilkListFragment<File> {
                         Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.delete:
+                        int count = 0;
                         for (File fi : selectedFiles) {
-                            if (fi.delete()) getAdapter().remove(fi);
+                            if (fi.delete()) {
+                                count++;
+                                getAdapter().remove(fi);
+                            }
                         }
                         mode.finish();
-                        Toast.makeText(getActivity(), R.string.files_deleted, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), getString(R.string.x_files_deleted).replace("{X}", count + ""), Toast.LENGTH_SHORT).show();
                         return true;
                     default:
                         return false;
