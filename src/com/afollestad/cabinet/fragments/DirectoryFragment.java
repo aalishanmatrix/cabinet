@@ -142,7 +142,12 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     @Override
     protected SilkAdapter<File> initializeAdapter() {
-        return new FileAdapter(getActivity());
+        return new FileAdapter(getActivity(), new FileAdapter.ThumbnailClickListener() {
+            @Override
+            public void onThumbnailClicked(int index) {
+                getListView().setItemChecked(index, !getListView().isItemChecked(index));
+            }
+        });
     }
 
     @Override

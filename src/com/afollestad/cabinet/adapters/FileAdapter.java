@@ -7,16 +7,22 @@ import android.os.AsyncTask;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.silk.adapters.SilkAdapter;
 
 public class FileAdapter extends SilkAdapter<File> {
 
-    public FileAdapter(Context context) {
+    public FileAdapter(Context context, ThumbnailClickListener thumbnailListener) {
         super(context);
+        mThumbnailListener = thumbnailListener;
     }
+
+    public static interface ThumbnailClickListener {
+        public void onThumbnailClicked(int index);
+    }
+
+    private ThumbnailClickListener mThumbnailListener;
 
     @Override
     public void add(File toAdd) {
@@ -30,7 +36,7 @@ public class FileAdapter extends SilkAdapter<File> {
     }
 
     @Override
-    public View onViewCreated(int index, View recycled, File item) {
+    public View onViewCreated(final int index, View recycled, File item) {
         ImageView image = (ImageView) recycled.findViewById(R.id.image);
         TextView title = (TextView) recycled.findViewById(R.id.title);
         TextView details = (TextView) recycled.findViewById(R.id.details);
@@ -67,7 +73,7 @@ public class FileAdapter extends SilkAdapter<File> {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setSelected(!v.isSelected());
+                mThumbnailListener.onThumbnailClicked(index);
             }
         });
 
