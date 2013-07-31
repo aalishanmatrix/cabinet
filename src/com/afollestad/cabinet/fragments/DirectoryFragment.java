@@ -5,9 +5,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import com.afollestad.cabinet.File;
-import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
+import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
 
@@ -24,11 +24,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         getListView().setSelector(R.drawable.selectable_background_cabinet);
-        getListView().setDivider(null);
-        getListView().setDividerHeight(0);
-
         java.io.File[] contents = mPath.listFiles();
         Arrays.sort(contents, new File.Comparator());
         getAdapter().clear();

@@ -20,11 +20,11 @@
                   android:layout_marginLeft="10dp"
                   android:gravity="center_vertical">
 
-        <com.afollestad.silk.views.text.SilkCondensedTextView android:id="@+id/title"
-                                                              android:layout_width="wrap_content"
-                                                              android:layout_height="wrap_content"
-                                                              android:textSize="@dimen/file_title"
-                                                              android:singleLine="true"/>
+        <TextView android:id="@+id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/file_title"
+                  android:singleLine="true"/>
 
         <com.afollestad.silk.views.text.SilkTextView android:id="@+id/details"
                                                      android:layout_width="wrap_content"
