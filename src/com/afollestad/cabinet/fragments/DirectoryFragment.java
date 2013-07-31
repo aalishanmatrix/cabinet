@@ -176,7 +176,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         Activity context = fragment.getActivity();
         final Clipboard cb = App.get(context).getClipboard();
         String paths = "";
-        for (File fi : cb.get()) paths += "<b>" + fi.getName() + "</b><br/>";
+        for (File fi : cb.get()) paths += "<i>" + fi.getName() + "</i><br/>";
         String message;
         int action;
         if (cb.getType() == Clipboard.Type.COPY) {
