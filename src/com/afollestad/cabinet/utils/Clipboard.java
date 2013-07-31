@@ -3,6 +3,10 @@ package com.afollestad.cabinet.utils;
 import android.util.Log;
 import com.afollestad.cabinet.File;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,5 +60,29 @@ public class Clipboard {
         log("Clipboard cleared");
         mClipboard.clear();
         mClipboardType = Type.NONE;
+    }
+
+    public void performPaste(File dest) {
+        for (File fi : mClipboard) {
+            if (mClipboardType == Clipboard.Type.COPY)
+                copy(fi, new File(dest, fi.getName()));
+            else if (mClipboardType == Clipboard.Type.CUT)
+                fi.renameTo(new File(dest, fi.getName()));
+        }
+    }
+
+    private static void copy(File src, File dst) {
+        try {
+            InputStream in = new FileInputStream(src);
+            OutputStream out = new FileOutputStream(dst);
+            byte[] buf = new byte[1024];
+            int len;
+            while ((len = in.read(buf)) > 0)
+                out.write(buf, 0, len);
+            in.close();
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

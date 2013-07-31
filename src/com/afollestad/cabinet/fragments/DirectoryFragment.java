@@ -14,7 +14,6 @@ import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.ui.MainActivity;
-import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
 
@@ -29,6 +28,10 @@ public class DirectoryFragment extends SilkListFragment<File> {
     }
 
     private final File mPath;
+
+    public File getPath() {
+        return mPath;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,20 +65,6 @@ public class DirectoryFragment extends SilkListFragment<File> {
                 return files;
             }
 
-            private Intent getShareIntent(List<File> files) {
-                Intent shareIntent = new Intent(Intent.ACTION_SEND);
-                shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-                if (files.size() == 1) {
-                    shareIntent.setType(files.get(0).getMimeType());
-                    shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(files.get(0)));
-                } else {
-                    ArrayList<Uri> attachments = new ArrayList<Uri>();
-                    for (File fi : files) attachments.add(Uri.fromFile(fi));
-                    shareIntent.putExtra(Intent.EXTRA_STREAM, attachments);
-                }
-                return Intent.createChooser(shareIntent, getString(R.string.send_using));
-            }
-
             @Override
             public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
                 mode.invalidate();
@@ -87,42 +76,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
             @Override
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-                List<File> selectedFiles = getSelectedFiles();
-                switch (item.getItemId()) {
-                    case R.id.add_shortcut:
-                        for (File fi : selectedFiles) ((MainActivity) getActivity()).addShortcut(fi);
-                        mode.finish();
-                        Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.share:
-                        startActivity(getShareIntent(selectedFiles));
-                        return true;
-                    case R.id.copy:
-                        App.get(getActivity()).getClipboard().clear();
-                        for (File fi : selectedFiles) App.get(getActivity()).getClipboard().add(fi);
-                        App.get(getActivity()).getClipboard().setType(Clipboard.Type.COPY);
-                        mode.finish();
-                        return true;
-                    case R.id.cut:
-                        App.get(getActivity()).getClipboard().clear();
-                        for (File fi : selectedFiles) App.get(getActivity()).getClipboard().add(fi);
-                        App.get(getActivity()).getClipboard().setType(Clipboard.Type.CUT);
-                        mode.finish();
-                        return true;
-                    case R.id.delete:
-                        int count = 0;
-                        for (File fi : selectedFiles) {
-                            if (fi.delete()) {
-                                count++;
-                                getAdapter().remove(fi);
-                            }
-                        }
-                        mode.finish();
-                        Toast.makeText(getActivity(), getString(R.string.x_files_deleted).replace("{X}", count + ""), Toast.LENGTH_SHORT).show();
-                        return true;
-                    default:
-                        return false;
-                }
+                return DirectoryCAB.handleAction(DirectoryFragment.this, item.getItemId(), getSelectedFiles(), mode);
             }
 
             @Override
@@ -189,7 +143,6 @@ public class DirectoryFragment extends SilkListFragment<File> {
         if (mPath.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
             getActivity().setTitle(R.string.app_name);
         else getActivity().setTitle(mPath.getName());
-        getActivity().invalidateOptionsMenu();
     }
 
     @Override

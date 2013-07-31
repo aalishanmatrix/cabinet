@@ -20,13 +20,18 @@
     <string name="copy">Copy</string>
     <string name="cut">Cut</string>
     <string name="paste">Paste</string>
+    <string name="move">Move</string>
     <string name="share">Share</string>
     <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
 
     <string name="home">Home</string>
     <string name="about">About</string>
     <string name="close">Close</string>
     <string name="settings">Settings</string>
+
+    <string name="confirm_copy_paste">Copy these files:\n\n{paths}\nto {dest}</string>
+    <string name="confirm_cut_paste">Move these files:\n\n{paths}\nto {dest}</string>
 
     <string name="app_name_and_version" translatable="false"><![CDATA[
         <b>Cabinet</b>&nbsp;<font color="#888888">v%1$s</font>
