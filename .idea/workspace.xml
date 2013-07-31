@@ -29,13 +29,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" afterPath="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375305727411" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375306936968" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375304812495" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375242257532" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375306076349" ignored="false" />
@@ -71,7 +69,7 @@
     <file path="/dialog_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375248454873" ignored="false" />
     <file path="/fragment_directory.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375288604908" ignored="false" />
     <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375305307972" ignored="false" />
-    <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375306160400" ignored="false" />
+    <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375306990820" ignored="false" />
     <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375304792447" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,19 +134,19 @@
       <file leaf-file-name="DirectoryCAB.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="36" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.71843004">
+            <state line="52" column="28" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.38566554">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3801#5513#0" expanded="true" />
-                <element signature="e#4153#5463#0" expanded="true" />
-                <element signature="e#4517#4793#0" expanded="true" />
-                <element signature="e#4754#4755#0" expanded="true" />
-                <element signature="e#4885#5405#0" expanded="true" />
-                <element signature="e#5370#5371#0" expanded="true" />
-                <element signature="e#5436#5437#0" expanded="true" />
-                <element signature="e#5494#5495#0" expanded="true" />
-                <element signature="e#5567#5795#0" expanded="true" />
-                <element signature="e#5776#5777#0" expanded="true" />
+                <element signature="e#3807#5519#0" expanded="true" />
+                <element signature="e#4159#5469#0" expanded="true" />
+                <element signature="e#4523#4799#0" expanded="true" />
+                <element signature="e#4760#4761#0" expanded="true" />
+                <element signature="e#4891#5411#0" expanded="true" />
+                <element signature="e#5376#5377#0" expanded="true" />
+                <element signature="e#5442#5443#0" expanded="true" />
+                <element signature="e#5500#5501#0" expanded="true" />
+                <element signature="e#5573#5801#0" expanded="true" />
+                <element signature="e#5782#5783#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -870,7 +868,15 @@
       <created>1375305729687</created>
       <updated>1375305729687</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Added select all option">
+      <created>1375306179420</created>
+      <updated>1375306179420</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Added select all option">
+      <created>1375306939387</created>
+      <updated>1375306939387</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -947,7 +953,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added progress dialogs for deletion and pasting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added select all option" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -974,6 +980,7 @@
     <MESSAGE value="Updates." />
     <MESSAGE value="Added delete confirmation dialog" />
     <MESSAGE value="Added progress dialogs for deletion and pasting" />
+    <MESSAGE value="Added select all option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1102,19 +1109,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="36" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.71843004">
+        <state line="52" column="28" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.38566554">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3801#5513#0" expanded="true" />
-            <element signature="e#4153#5463#0" expanded="true" />
-            <element signature="e#4517#4793#0" expanded="true" />
-            <element signature="e#4754#4755#0" expanded="true" />
-            <element signature="e#4885#5405#0" expanded="true" />
-            <element signature="e#5370#5371#0" expanded="true" />
-            <element signature="e#5436#5437#0" expanded="true" />
-            <element signature="e#5494#5495#0" expanded="true" />
-            <element signature="e#5567#5795#0" expanded="true" />
-            <element signature="e#5776#5777#0" expanded="true" />
+            <element signature="e#3807#5519#0" expanded="true" />
+            <element signature="e#4159#5469#0" expanded="true" />
+            <element signature="e#4523#4799#0" expanded="true" />
+            <element signature="e#4760#4761#0" expanded="true" />
+            <element signature="e#4891#5411#0" expanded="true" />
+            <element signature="e#5376#5377#0" expanded="true" />
+            <element signature="e#5442#5443#0" expanded="true" />
+            <element signature="e#5500#5501#0" expanded="true" />
+            <element signature="e#5573#5801#0" expanded="true" />
+            <element signature="e#5782#5783#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -50,7 +50,7 @@ public class DirectoryCAB {
                 break;
             case R.id.select_all:
                 selectAll(fragment);
-                break;
+                return true;
             case R.id.delete:
                 performDelete(fragment, selectedFiles);
                 break;
