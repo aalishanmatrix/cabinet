@@ -3,7 +3,6 @@
 
     <string-array name="drawer_items_default">
         <item>Home</item>
-        <item>DCIM</item>
         <item>Download</item>
         <item>Music</item>
         <item>Pictures</item>

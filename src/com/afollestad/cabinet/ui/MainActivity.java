@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
@@ -89,7 +90,8 @@ public class MainActivity extends SilkDrawerActivity {
         }
         String[] defaultItems = getResources().getStringArray(R.array.drawer_items_default);
         File fi = new File(Environment.getExternalStorageDirectory(), defaultItems[position]);
-        navigate(fi, true);
+        if (fi.exists()) navigate(fi, true);
+        else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
         getDrawerLayout().closeDrawers();
     }
 
