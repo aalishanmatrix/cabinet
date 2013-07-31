@@ -5,7 +5,6 @@ import android.webkit.MimeTypeMap;
 import com.afollestad.silk.cache.SilkComparable;
 
 import java.net.URI;
-import java.util.Locale;
 
 public class File extends java.io.File implements SilkComparable<File> {
 
@@ -56,7 +55,7 @@ public class File extends java.io.File implements SilkComparable<File> {
     public String getExtension() {
         String name = getName().toLowerCase();
         if (!name.contains(".")) return null;
-        return name.substring(name.indexOf(".") + 1);
+        return name.substring(name.lastIndexOf('.') + 1);
     }
 
     public String getMimeType() {
