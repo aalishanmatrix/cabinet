@@ -133,7 +133,6 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
             @Override
             public void onDestroyActionMode(ActionMode mode) {
-                App.get(getActivity()).getClipboard().setType(Clipboard.Type.NONE);
             }
 
             @Override
@@ -190,6 +189,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         if (mPath.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
             getActivity().setTitle(R.string.app_name);
         else getActivity().setTitle(mPath.getName());
+        getActivity().invalidateOptionsMenu();
     }
 
     @Override

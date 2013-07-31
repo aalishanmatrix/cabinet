@@ -49,7 +49,7 @@ public class Clipboard {
     public boolean canPaste(File dest) {
         if (mClipboard.size() == 0) return false;
         String parent = mClipboard.get(0).getParentFile().getAbsolutePath();
-        return dest.getAbsolutePath().equals(parent);
+        return !dest.getAbsolutePath().equals(parent);
     }
 
     public void clear() {
