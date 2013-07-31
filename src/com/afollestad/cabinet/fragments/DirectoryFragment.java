@@ -5,10 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.SparseBooleanArray;
-import android.view.ActionMode;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
+import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -30,6 +27,12 @@ public class DirectoryFragment extends SilkListFragment<File> {
     }
 
     private final File mPath;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
@@ -172,5 +175,22 @@ public class DirectoryFragment extends SilkListFragment<File> {
         if (mPath.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
             getActivity().setTitle(R.string.app_name);
         else getActivity().setTitle(mPath.getName());
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.fragment_directory, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.add_shortcut:
+                ((MainActivity) getActivity()).addShortcut(mPath);
+                Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

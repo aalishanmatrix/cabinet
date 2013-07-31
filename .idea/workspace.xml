@@ -28,13 +28,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" afterPath="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375251573142" ignored="false" />
-    <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375251524815" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375253758413" ignored="false" />
+    <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375253904080" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375242257532" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375250664255" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375251517668" ignored="false" />
@@ -127,24 +128,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="189" column="66" selection-start="7514" selection-end="7514" vertical-scroll-proportion="1.1534246">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1703#1709#0" expanded="true" />
-                <element signature="e#5813#6047#0" expanded="true" />
-                <element signature="e#6036#6037#0" expanded="true" />
+                <element signature="e#1764#1770#0" expanded="true" />
+                <element signature="e#5874#6108#0" expanded="true" />
+                <element signature="e#6097#6098#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contextual_ab_file.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contextual_ab_file.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/menu/contextual_ab_file.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="76" selection-start="400" selection-end="400" vertical-scroll-proportion="0.15679443">
+            <state line="3" column="4" selection-start="110" selection-end="257" vertical-scroll-proportion="-1.8">
               <folding />
             </state>
           </provider>
@@ -168,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/drawable/activatable_background_cabinet.xml" />
         <option value="$PROJECT_DIR$/res/drawable/selectable_background_cabinet.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
         <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/activities/SilkDrawerActivity.java" />
@@ -182,8 +182,9 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
+        <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       </list>
     </option>
   </component>
@@ -670,7 +671,11 @@
       <created>1375251576755</created>
       <updated>1375251576755</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Clicking thumbnail images now starts the CAB like Gmail">
+      <created>1375253760146</created>
+      <updated>1375253760146</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -693,8 +698,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6608" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3551089" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -776,13 +781,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/android-sdk-linux/sources/android-17/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4513" column="19" selection-start="190245" selection-end="190245" vertical-scroll-proportion="0.33222038">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/src/com/afollestad/silk/activities/SilkDrawerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="35" selection-start="765" selection-end="765" vertical-scroll-proportion="0.30716723">
@@ -893,22 +891,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+    <entry file="file://$PROJECT_DIR$/res/menu/contextual_ab_file.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1703#1709#0" expanded="true" />
-            <element signature="e#5813#6047#0" expanded="true" />
-            <element signature="e#6036#6037#0" expanded="true" />
-          </folding>
+        <state line="3" column="4" selection-start="110" selection-end="257" vertical-scroll-proportion="-1.8">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/contextual_ab_file.xml">
+    <entry file="file://$PROJECT_DIR$/res/menu/fragment_directory.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="76" selection-start="400" selection-end="400" vertical-scroll-proportion="0.15679443">
+        <state line="4" column="73" selection-start="257" selection-end="257" vertical-scroll-proportion="0.10452962">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="66" selection-start="7514" selection-end="7514" vertical-scroll-proportion="1.1534246">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1764#1770#0" expanded="true" />
+            <element signature="e#5874#6108#0" expanded="true" />
+            <element signature="e#6097#6098#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
