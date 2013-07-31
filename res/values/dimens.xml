@@ -14,6 +14,6 @@
     <dimen name="drawer_item_hor_padding">25dp</dimen>
 
     <!-- Dimensions -->
-    <dimen name="nav_drawer">240dp</dimen>
+    <dimen name="nav_drawer">320dp</dimen>
 
 </resources>

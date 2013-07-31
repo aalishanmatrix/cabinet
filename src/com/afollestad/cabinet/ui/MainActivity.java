@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -73,12 +74,11 @@ public class MainActivity extends SilkDrawerActivity {
     private void checkFirstTime() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (!prefs.getBoolean("first_time", true)) return;
-
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory()));
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Download"));
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Music"));
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Pictures"));
-
+        getDrawerLayout().openDrawer(Gravity.START);
         prefs.edit().putBoolean("first_time", false).commit();
     }
 
