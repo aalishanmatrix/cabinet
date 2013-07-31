@@ -53,6 +53,10 @@ public class File extends java.io.File implements SilkComparable<File> {
         return String.format("%.1f %sB", bytes / Math.pow(unit, exp), pre);
     }
 
+    public String getExtension() {
+        return MimeTypeMap.getFileExtensionFromUrl(getAbsolutePath().toLowerCase(Locale.getDefault()));
+    }
+
     public String getMimeType() {
         String type = null;
         String extension = MimeTypeMap.getFileExtensionFromUrl(getAbsolutePath().toLowerCase(Locale.getDefault()));

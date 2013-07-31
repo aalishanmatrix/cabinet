@@ -37,7 +37,11 @@ public class FileAdapter extends SilkAdapter<File> {
 
         title.setText(item.getName());
         String detailsStr = item.getSizeString(getContext());
-        if (mime != null) detailsStr += " — " + mime;
+        if (mime != null) {
+            detailsStr += " — " + mime;
+        } else {
+            detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
+        }
         details.setText(detailsStr);
 
         ViewHolder holder;

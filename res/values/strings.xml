@@ -6,6 +6,7 @@
     <string name="open_with">Open with…</string>
     <string name="directory">Directory</string>
     <string name="shortcuts">Shortcuts</string>
+    <string name="manual_mime">{extension} file</string>
 
     <string name="about">About</string>
     <string name="settings">Settings</string>
