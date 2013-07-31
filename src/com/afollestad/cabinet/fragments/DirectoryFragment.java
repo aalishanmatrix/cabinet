@@ -182,7 +182,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
             action = R.string.copy;
         } else {
             message = context.getString(R.string.confirm_cut_paste);
-            action = R.string.move;
+            action = R.string.cut;
         }
         message = message.replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath());
 
