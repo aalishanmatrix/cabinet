@@ -93,6 +93,15 @@ public class MainActivity extends SilkDrawerActivity {
                 selectItem(position);
             }
         });
+        drawerList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                DrawerAdapter.DrawerItem shortcut = mDrawerAdapter.getItem(position);
+                Shortcuts.remove(MainActivity.this, position);
+                mDrawerAdapter.remove(shortcut);
+                return true;
+            }
+        });
 
         List<File> shortcuts = Shortcuts.getAll(this);
         for (File fi : shortcuts) {
