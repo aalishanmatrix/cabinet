@@ -78,6 +78,8 @@ public class MainActivity extends SilkDrawerActivity {
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Download"));
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Music"));
         Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Pictures"));
+
+        prefs.edit().putBoolean("first_time", false).commit();
     }
 
     private void populateDrawer() {
