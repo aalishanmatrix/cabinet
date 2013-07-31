@@ -71,6 +71,7 @@ public class Clipboard {
                 cut(fi, new File(fragment.getPath(), fi.getName()));
             fragment.getAdapter().add(fi);
         }
+        clear();
     }
 
     private static void copy(File src, File dst) {
