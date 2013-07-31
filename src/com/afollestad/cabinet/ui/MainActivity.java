@@ -87,6 +87,8 @@ public class MainActivity extends SilkDrawerActivity {
         File fi = new File(Environment.getExternalStorageDirectory(), defaultItems[position]);
         navigate(fi, true);
         getDrawerLayout().closeDrawers();
+        // This doesn't always get updated before the drawer closes and sets the closed state title
+        getActionBar().setTitle(fi.getName());
     }
 
     @Override
