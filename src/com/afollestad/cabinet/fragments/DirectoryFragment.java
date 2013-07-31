@@ -3,6 +3,7 @@ package com.afollestad.cabinet.fragments;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -59,5 +60,8 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     @Override
     public void onVisibilityChange(boolean visible) {
+        if (mPath.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+            getActivity().setTitle(R.string.app_name);
+        else getActivity().setTitle(mPath.getName());
     }
 }

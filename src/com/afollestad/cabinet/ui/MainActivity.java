@@ -55,10 +55,6 @@ public class MainActivity extends SilkDrawerActivity {
         if (backStack) trans.addToBackStack(null);
         else getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         trans.commit();
-
-        if (directory.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
-            getActionBar().setTitle(R.string.app_name);
-        else getActionBar().setTitle(directory.getName());
     }
 
     private void populateDrawer() {
