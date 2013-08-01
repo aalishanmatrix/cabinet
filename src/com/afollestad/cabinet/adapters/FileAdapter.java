@@ -48,7 +48,7 @@ public class FileAdapter extends SilkAdapter<File> {
         if (!item.isDirectory()) {
             if (mime != null) {
                 detailsStr += " — " + mime;
-            } else {
+            } else if (item.getExtension() != null && !item.getExtension().trim().isEmpty()) {
                 detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
             }
         }

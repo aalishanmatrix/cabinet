@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import com.afollestad.cabinet.R;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * @author Aidan Follestad (afollestad)
@@ -20,9 +21,14 @@ public class Utils {
     }
 
     public static boolean deleteRecursively(File fileOrDirectory) {
-        if (fileOrDirectory.isDirectory())
-            for (File child : fileOrDirectory.listFiles())
-                deleteRecursively(child);
-        return fileOrDirectory.delete();
+        String deleteCmd = "rm -r " + fileOrDirectory.getAbsolutePath();
+        Runtime runtime = Runtime.getRuntime();
+        try {
+            runtime.exec(deleteCmd);
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }
