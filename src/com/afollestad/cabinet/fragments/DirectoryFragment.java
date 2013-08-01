@@ -34,7 +34,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         mPath = dir;
     }
 
-    private final File mPath;
+    private File mPath;
 
     public File getPath() {
         return mPath;
@@ -44,6 +44,19 @@ public class DirectoryFragment extends SilkListFragment<File> {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putString("path", mPath.getAbsolutePath());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null)
+            mPath = new File(savedInstanceState.getString("path"));
     }
 
     @Override
