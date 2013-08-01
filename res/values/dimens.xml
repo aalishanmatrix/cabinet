@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Text size -->
-    <dimen name="file_thumbnail">55dp</dimen>
+    <dimen name="file_thumbnail">50dp</dimen>
     <dimen name="file_title">18sp</dimen>
     <dimen name="file_details">17sp</dimen>
     <dimen name="drawer_item">21sp</dimen>
