@@ -52,7 +52,7 @@ public class DirectoryCAB {
                 selectAll(fragment);
                 return true;
             case R.id.delete:
-                performDelete(fragment, selectedFiles);
+                performDelete(fragment, selectedFiles, true);
                 break;
             default:
                 return false;
@@ -75,10 +75,11 @@ public class DirectoryCAB {
         return Intent.createChooser(shareIntent, context.getString(R.string.send_using));
     }
 
-    public static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles) {
+    public static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles, boolean inParent) {
         String paths = "";
         for (File fi : selectedFiles) paths += "<i>" + fi.getName() + "</i><br/>";
-        Spanned message = Html.fromHtml(fragment.getString(R.string.confirm_delete).replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath()));
+        Spanned message = Html.fromHtml(fragment.getString(R.string.confirm_delete).replace("{paths}", paths)
+                .replace("{dest}", (inParent ? fragment.getPath() : fragment.getPath().getParentFile()).getAbsolutePath()));
 
         AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
         builder.setTitle(R.string.delete).setMessage(message)

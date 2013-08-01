@@ -203,7 +203,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
             case R.id.delete:
                 ArrayList<File> temp = new ArrayList<File>();
                 temp.add(mPath);
-                DirectoryCAB.performDelete(this, temp);
+                DirectoryCAB.performDelete(this, temp, false);
                 return true;
         }
         return super.onOptionsItemSelected(item);
