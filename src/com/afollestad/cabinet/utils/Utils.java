@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
-import android.util.Log;
 import android.view.View;
 import com.afollestad.cabinet.R;
 import com.afollestad.silk.views.text.SilkEditText;
@@ -54,12 +53,12 @@ public class Utils {
     }
 
     public static boolean deleteRecursively(File file) {
-        Log.d("deleteRecursively", "Deleting '" + file.getAbsolutePath() + "'");
         boolean retVal = true;
         if (file.isDirectory()) {
             for (File f : file.listFiles()) {
                 retVal = retVal && deleteRecursively(f);
             }
+            retVal = retVal && file.delete();
         } else retVal = file.delete();
         return retVal;
     }
