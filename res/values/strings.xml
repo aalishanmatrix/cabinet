@@ -23,6 +23,7 @@
     <string name="share">Share</string>
     <string name="select_all">Select All</string>
     <string name="delete">Delete</string>
+    <string name="delete_folder">Delete Folder</string>
     <string name="cancel">Cancel</string>
 
     <string name="home">Home</string>

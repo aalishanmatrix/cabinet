@@ -173,6 +173,11 @@ public class DirectoryFragment extends SilkListFragment<File> {
             case R.id.paste:
                 startPaste(this);
                 break;
+            case R.id.delete:
+                ArrayList<File> temp = new ArrayList<File>();
+                temp.add(mPath);
+                DirectoryCAB.performDelete(this, temp);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
