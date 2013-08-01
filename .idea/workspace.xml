@@ -29,21 +29,22 @@
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375373709352" ignored="false" />
-    <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375373717485" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375385211219" ignored="false" />
+    <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375391763059" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375338252828" ignored="false" />
-    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375335154679" ignored="false" />
+    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384823918" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375334532478" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243722732" ignored="false" />
-    <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375335171535" ignored="false" />
+    <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375381068694" ignored="false" />
     <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375224426499" ignored="false" />
-    <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375335400366" ignored="false" />
-    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375337292459" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375331593472" ignored="false" />
+    <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375385072511" ignored="false" />
+    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382422320" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382820632" ignored="false" />
     <file path="/SilkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375328613796" ignored="false" />
     <file path="/SilkDrawerActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375303869630" ignored="false" />
     <file path="/styles_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375224003662" ignored="false" />
@@ -64,8 +65,8 @@
     <file path="/contextual_ab_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375306068156" ignored="false" />
     <file path="/activatable_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243646501" ignored="false" />
     <file path="/Bookmarks.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375247373834" ignored="false" />
-    <file path="/Shortcuts.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375247370158" ignored="false" />
-    <file path="/fragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375248380212" ignored="false" />
+    <file path="/Shortcuts.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375391698740" ignored="false" />
+    <file path="/fragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384575909" ignored="false" />
     <file path="/dialog_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375248454873" ignored="false" />
     <file path="/fragment_directory.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375332808635" ignored="false" />
     <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375335782273" ignored="false" />
@@ -75,6 +76,39 @@
     <file path="/SilkListView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375329254321" ignored="false" />
     <file path="/fragment_list.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375328847209" ignored="false" />
     <file path="/input_edit_text.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375337408912" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout-large/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375385206624" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout-large/activity_login.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="/activity_login.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382632261" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375381068694" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout/activity_login.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384823918" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/drawable/shadow_inverse.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375381545701" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/menu/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382410712" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/enginetester/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382423274" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/enginetester/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382774213" ignored="false" />
+    <file path="/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382773298" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/gen/com/recoup/apos/Manifest.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384348209" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/LoginTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/gen/com/recoup/apos/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/ApiLogin.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/scanner/IntentResult.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/views/SavvyButton.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/CheckoutTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384333760" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/App.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/adapters/ReceiptEntry.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/adapters/ReceiptAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384837116" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/ui/ReceiptActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/scanner/IntentIntegrator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/adapters/ScannedAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/Item.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/Items.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/AccountUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/gen/com/recoup/apos/R.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384347411" ignored="false" />
+    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout/list_item_item.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384535323" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,12 +180,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="32" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.15025042">
+            <state line="181" column="87" selection-start="6365" selection-end="6365" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#6991#6997#0" expanded="true" />
+                <element signature="e#7250#7256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shortcuts.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="35" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.84974957">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/res/drawable/selectable_background_cabinet.xml" />
         <option value="$PROJECT_DIR$/../Silk/res/layout/fragment_pager.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
@@ -190,6 +234,7 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       </list>
     </option>
@@ -259,6 +304,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -930,7 +997,15 @@
       <created>1375373711357</created>
       <updated>1375373711357</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Fixes">
+      <created>1375373725111</created>
+      <updated>1375373725111</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Fixes.">
+      <created>1375373847916</created>
+      <updated>1375373847916</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -954,9 +1029,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6304" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1007,7 +1082,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1036,24 +1111,14 @@
     <MESSAGE value="Added delete option for currently viewed directory." />
     <MESSAGE value="Fixes and theme update." />
     <MESSAGE value="Updates." />
-    <MESSAGE value="Fixes." />
     <MESSAGE value="Updates" />
     <MESSAGE value="Fixes" />
+    <MESSAGE value="Fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Silk/res/layout/fragment_pager.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.13661203">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="44" selection-start="630" selection-end="630" vertical-scroll-proportion="0.3728223">
@@ -1167,9 +1232,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="32" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.15025042">
+        <state line="181" column="87" selection-start="6365" selection-end="6365" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#6991#6997#0" expanded="true" />
+            <element signature="e#7250#7256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="35" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.84974957">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

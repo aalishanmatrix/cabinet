@@ -46,6 +46,14 @@ public class Shortcuts {
         return files;
     }
 
+    public static boolean contains(Context context, File dir) {
+        List<File> shortcuts = getAll(context);
+        for (File fi : shortcuts) {
+            if (fi.getAbsolutePath().equals(dir.getAbsolutePath())) return true;
+        }
+        return false;
+    }
+
     public static void remove(Context context, int index) {
         List<File> files = getAll(context);
         files.remove(index);

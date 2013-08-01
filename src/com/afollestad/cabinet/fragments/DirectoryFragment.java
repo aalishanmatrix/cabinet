@@ -19,6 +19,7 @@ import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
+import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
@@ -178,6 +179,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.fragment_directory, menu);
+        menu.findItem(R.id.add_shortcut).setVisible(!Shortcuts.contains(getActivity(), mPath));
         menu.findItem(R.id.paste).setVisible(
                 App.get(getActivity()).getClipboard().canPaste(mPath));
         menu.findItem(R.id.delete).setVisible(!mPath.isStorageDirectory());
