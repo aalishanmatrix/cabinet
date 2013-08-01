@@ -59,7 +59,7 @@ public class MainActivity extends SilkDrawerActivity {
         super.onCreate(savedInstanceState);
         checkFirstTime();
         populateDrawer();
-        selectItem(0);
+        navigate(new File(Environment.getExternalStorageDirectory()), false);
     }
 
     public void navigate(File directory, boolean backStack) {
@@ -88,6 +88,7 @@ public class MainActivity extends SilkDrawerActivity {
 
     private void populateDrawer() {
         ListView drawerList = (ListView) findViewById(R.id.left_drawer);
+        drawerList.setEmptyView(findViewById(R.id.drawer_empty));
         mDrawerAdapter = new DrawerAdapter(this);
         drawerList.setAdapter(mDrawerAdapter);
         drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {

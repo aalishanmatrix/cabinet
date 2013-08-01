@@ -13,6 +13,7 @@
 
     <string name="one_file_selected">1 File Selected</string>
     <string name="x_files_selected">{X} Files Selected</string>
+    <string name="no_shortcuts">No shortcuts</string>
 
     <string name="add_shortcut">Add Shortcut</string>
     <string name="copy">Copy</string>

@@ -12,12 +12,25 @@
             android:layout_height="match_parent"/>
 
     <!-- The navigation drawer -->
-    <ListView android:id="@+id/left_drawer"
-              android:layout_width="@dimen/nav_drawer"
-              android:layout_height="match_parent"
-              android:layout_gravity="start"
-              android:listSelector="@drawable/selectable_background_cabinet"
-              android:background="@color/drawer_background"/>
+    <LinearLayout android:layout_width="@dimen/nav_drawer"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="start"
+                  android:gravity="center"
+                  android:background="@color/drawer_background">
+
+        <ListView android:id="@+id/left_drawer"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:listSelector="@drawable/selectable_background_cabinet"/>
+
+        <com.afollestad.silk.views.text.SilkTextView android:id="@+id/drawer_empty"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="@string/no_shortcuts"
+                                                     android:textSize="@dimen/drawer_empty"/>
+
+    </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>
 
