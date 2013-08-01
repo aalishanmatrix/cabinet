@@ -78,7 +78,7 @@ public class DirectoryCAB {
     public static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles) {
         String paths = "";
         for (File fi : selectedFiles) paths += "<i>" + fi.getName() + "</i><br/>";
-        Spanned message = Html.fromHtml(fragment.getString(R.string.confirm_delete).replace("{paths}", paths).replace("{dest}", fragment.getPath().getParentFile().getAbsolutePath()));
+        Spanned message = Html.fromHtml(fragment.getString(R.string.confirm_delete).replace("{paths}", paths).replace("{dest}", fragment.getPath().getAbsolutePath()));
 
         AlertDialog.Builder builder = new AlertDialog.Builder(fragment.getActivity());
         builder.setTitle(R.string.delete).setMessage(message)

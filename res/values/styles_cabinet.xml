@@ -29,9 +29,12 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_cabinet</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_cabinet</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cabinet</item>
-        
-                <!-- Light.DarkActionBar specific -->
+
+        <!-- Light.DarkActionBar specific -->
         <item name="android:actionBarWidgetTheme">@style/Theme.Cabinet.Widget</item>
+
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
 
     </style>
 
@@ -48,7 +51,7 @@
     </style>
 
     <style name="PopupMenu.Cabinet" parent="@android:style/Widget.Holo.ListPopupWindow">
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_cabinet</item>	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_cabinet</item>
     </style>
 
     <style name="DropDownListView.Cabinet" parent="@android:style/Widget.Holo.ListView.DropDown">
@@ -64,11 +67,11 @@
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_cabinet</item>
         <item name="android:dropDownSelector">@drawable/selectable_background_cabinet</item>
     </style>
-    
+
     <style name="ProgressBar.Cabinet" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_cabinet</item>
     </style>
-    
+
     <style name="ActionButton.CloseMode.Cabinet" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
         <item name="android:background">@drawable/btn_cab_done_cabinet</item>
     </style>
