@@ -23,7 +23,7 @@ public class FileAdapter extends SilkAdapter<File> {
         public void onThumbnailClicked(int index);
     }
 
-    private ThumbnailClickListener mThumbnailListener;
+    private final ThumbnailClickListener mThumbnailListener;
 
     @Override
     public void add(File toAdd) {

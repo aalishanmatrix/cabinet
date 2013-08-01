@@ -22,7 +22,7 @@ public class Clipboard {
         mClipboard = new ArrayList<File>();
     }
 
-    private List<File> mClipboard;
+    private final List<File> mClipboard;
     private Type mClipboardType = Type.NONE;
 
     private void log(String message) {

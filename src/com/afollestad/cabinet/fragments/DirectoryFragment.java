@@ -25,6 +25,7 @@ import com.afollestad.silk.fragments.SilkListFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class DirectoryFragment extends SilkListFragment<File> {
@@ -172,17 +173,36 @@ public class DirectoryFragment extends SilkListFragment<File> {
                 return true;
             case R.id.paste:
                 startPaste(this);
-                break;
+                return true;
+            case R.id.new_folder:
+                newFolder();
+                return true;
             case R.id.delete:
                 ArrayList<File> temp = new ArrayList<File>();
                 temp.add(mPath);
                 DirectoryCAB.performDelete(this, temp);
-                break;
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    private static void startPaste(final DirectoryFragment fragment) {
+    private void newFolder() {
+        Utils.showInputDialog(getActivity(), R.string.new_folder, null, new Utils.InputCallback() {
+            @Override
+            public void onSubmit(String name) {
+                if (name.isEmpty()) name = getActivity().getString(R.string.untitled);
+                File newFile = new File(mPath, name);
+                if (newFile.mkdir()) {
+                    getAdapter().add(newFile);
+                    List<File> items = getAdapter().getItems();
+                    Collections.sort(items, new File.Comparator());
+                    getAdapter().notifyDataSetChanged();
+                }
+            }
+        });
+    }
+
+    private void startPaste(final DirectoryFragment fragment) {
         Activity context = fragment.getActivity();
         final Clipboard cb = App.get(context).getClipboard();
         String paths = "";

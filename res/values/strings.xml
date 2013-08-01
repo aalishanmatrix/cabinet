@@ -13,7 +13,6 @@
 
     <string name="one_file_selected">1 File Selected</string>
     <string name="x_files_selected">{X} Files Selected</string>
-    <string name="x_files_deleted">{X} file(s) deleted</string>
 
     <string name="add_shortcut">Add Shortcut</string>
     <string name="copy">Copy</string>
@@ -25,11 +24,13 @@
     <string name="delete">Delete</string>
     <string name="delete_folder">Delete Folder</string>
     <string name="cancel">Cancel</string>
+    <string name="new_folder">New Folder</string>
+    <string name="ok">OK</string>
+    <string name="untitled">Untitled</string>
 
     <string name="home">Home</string>
     <string name="about">About</string>
     <string name="close">Close</string>
-    <string name="settings">Settings</string>
 
     <string name="please_wait">Please wait…</string>
 
