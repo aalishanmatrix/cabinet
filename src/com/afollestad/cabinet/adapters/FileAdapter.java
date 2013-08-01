@@ -51,8 +51,6 @@ public class FileAdapter extends SilkAdapter<File> {
             } else if (item.getExtension() != null && !item.getExtension().trim().isEmpty()) {
                 detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
             }
-        } else {
-            detailsStr += " — " + item.getFileCount();
         }
         details.setText(detailsStr);
 

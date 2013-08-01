@@ -30,8 +30,6 @@ public class File extends java.io.File implements SilkComparable<File> {
         super(file.getAbsolutePath());
     }
 
-    private int mFileCount;
-
     @Override
     public boolean isSameAs(File another) {
         return getAbsolutePath().equals(another.getAbsolutePath());
@@ -70,15 +68,6 @@ public class File extends java.io.File implements SilkComparable<File> {
             type = mime.getMimeTypeFromExtension(extension);
         }
         return type;
-    }
-
-    /**
-     * If the file represents a directory, gets the number of files/folders it contains.
-     */
-    public int getFileCount() {
-        if (mFileCount > 0) return mFileCount;
-        mFileCount = list().length;
-        return mFileCount;
     }
 
     /**
