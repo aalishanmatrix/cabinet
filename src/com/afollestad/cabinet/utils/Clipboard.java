@@ -72,14 +72,13 @@ public class Clipboard {
                 for (int i = 0; i < mClipboard.size(); i++) {
                     final File fi = mClipboard.get(i);
                     final int index = i;
-                    if (mClipboardType == Clipboard.Type.COPY)
-                        copy(fi, new File(fragment.getPath(), fi.getName()));
-                    else if (mClipboardType == Clipboard.Type.CUT)
-                        cut(fi, new File(fragment.getPath(), fi.getName()));
+                    final boolean success = mClipboardType == Clipboard.Type.COPY ?
+                            copy(fi, new File(fragment.getPath(), fi.getName())) :
+                            cut(fi, new File(fragment.getPath(), fi.getName()));
                     fragment.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            fragment.getAdapter().add(fi);
+                            if (success) fragment.getAdapter().add(fi);
                             dialog.setProgress(index);
                         }
                     });
@@ -102,7 +101,7 @@ public class Clipboard {
         }).start();
     }
 
-    private static void copy(File src, File dst) {
+    private static boolean copy(File src, File dst) {
         try {
             InputStream in = new FileInputStream(src);
             OutputStream out = new FileOutputStream(dst);
@@ -112,12 +111,14 @@ public class Clipboard {
                 out.write(buf, 0, len);
             in.close();
             out.close();
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
     }
 
-    private static void cut(File src, File dst) {
+    private static boolean cut(File src, File dst) {
         try {
             InputStream in = new FileInputStream(src);
             OutputStream out = new FileOutputStream(dst);
@@ -129,8 +130,8 @@ public class Clipboard {
             out.close();
         } catch (Exception e) {
             e.printStackTrace();
-            return;
+            return false;
         }
-        src.delete();
+        return src.delete();
     }
 }
