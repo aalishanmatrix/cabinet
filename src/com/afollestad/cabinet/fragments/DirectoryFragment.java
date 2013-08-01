@@ -30,6 +30,9 @@ import java.util.List;
 
 public class DirectoryFragment extends SilkListFragment<File> {
 
+    public DirectoryFragment() {
+    }
+
     public DirectoryFragment(File dir) {
         mPath = dir;
     }
