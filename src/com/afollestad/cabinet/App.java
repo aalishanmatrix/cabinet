@@ -2,6 +2,7 @@ package com.afollestad.cabinet;
 
 import android.app.Application;
 import android.content.Context;
+import android.os.Environment;
 import com.afollestad.cabinet.utils.Clipboard;
 
 /**
@@ -16,8 +17,14 @@ public class App extends Application {
     }
 
     public Clipboard getClipboard() {
-        if(mClipboard == null)
+        if (mClipboard == null)
             mClipboard = new Clipboard();
         return mClipboard;
+    }
+
+    public static File getStorageDirectory() {
+        File sdTest = new File("/sdcard");
+        if (!sdTest.exists()) sdTest = new File(Environment.getExternalStorageDirectory());
+        return sdTest;
     }
 }

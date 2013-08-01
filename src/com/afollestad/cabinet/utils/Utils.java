@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.view.View;
 import com.afollestad.cabinet.R;
 import com.afollestad.silk.views.text.SilkEditText;
@@ -54,7 +55,8 @@ public class Utils {
     }
 
     public static boolean deleteRecursively(File fileOrDirectory) {
-        String deleteCmd = "rm -r " + fileOrDirectory.getAbsolutePath();
+        String deleteCmd = "rm -rf \"" + fileOrDirectory.getAbsolutePath() + "\"";
+        Log.v("deleteRecursively", deleteCmd);
         Runtime runtime = Runtime.getRuntime();
         try {
             runtime.exec(deleteCmd);

@@ -6,7 +6,6 @@ import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
@@ -16,6 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
@@ -59,7 +59,7 @@ public class MainActivity extends SilkDrawerActivity {
         super.onCreate(savedInstanceState);
         checkFirstTime();
         populateDrawer();
-        navigate(new File(Environment.getExternalStorageDirectory()), false);
+        navigate(App.getStorageDirectory(), false);
     }
 
     public void navigate(File directory, boolean backStack) {
@@ -78,10 +78,11 @@ public class MainActivity extends SilkDrawerActivity {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (!prefs.getBoolean("first_time", true)) return;
         // Add default shortcuts
-        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory()));
-        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Download"));
-        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Music"));
-        Shortcuts.add(this, new File(Environment.getExternalStorageDirectory(), "Pictures"));
+        File storage = App.getStorageDirectory();
+        Shortcuts.add(this, storage);
+        Shortcuts.add(this, new File(storage, "Download"));
+        Shortcuts.add(this, new File(storage, "Music"));
+        Shortcuts.add(this, new File(storage, "Pictures"));
         getDrawerLayout().openDrawer(Gravity.START);
         prefs.edit().putBoolean("first_time", false).commit();
     }

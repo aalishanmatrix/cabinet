@@ -86,7 +86,7 @@ public class File extends java.io.File implements SilkComparable<File> {
      * @return
      */
     public boolean isStorageDirectory() {
-        return getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath());
+        return getAbsolutePath().equals(App.getStorageDirectory().getAbsolutePath());
     }
 
     public static class Comparator implements java.util.Comparator<java.io.File> {
