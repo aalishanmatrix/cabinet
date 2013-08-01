@@ -58,8 +58,19 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        if (savedInstanceState != null)
+        if (savedInstanceState != null) {
             mPath = new File(savedInstanceState.getString("path"));
+            load();
+        }
+    }
+
+    private void load() {
+        if (mPath == null) return;
+        java.io.File[] contents = mPath.listFiles();
+        Arrays.sort(contents, new File.Comparator());
+        getAdapter().clear();
+        for (java.io.File fi : contents)
+            getAdapter().add(new File(fi));
     }
 
     @Override
@@ -67,11 +78,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         super.onViewCreated(view, savedInstanceState);
         getListView().setSelector(R.drawable.selectable_background_cabinet);
         setupCab(getListView());
-        java.io.File[] contents = mPath.listFiles();
-        Arrays.sort(contents, new File.Comparator());
-        getAdapter().clear();
-        for (java.io.File fi : contents)
-            getAdapter().add(new File(fi));
+        load();
     }
 
     private void setupCab(ListView listView) {
