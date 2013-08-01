@@ -1,8 +1,6 @@
 package com.afollestad.cabinet;
 
 import android.content.Context;
-import android.os.Environment;
-import android.util.Log;
 import android.webkit.MimeTypeMap;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.cache.SilkComparable;
@@ -77,6 +75,10 @@ public class File extends java.io.File implements SilkComparable<File> {
     @Override
     public boolean delete() {
         return Utils.deleteRecursively(this);
+    }
+
+    public boolean deleteNonRecursive() {
+        return super.delete();
     }
 
     /**
