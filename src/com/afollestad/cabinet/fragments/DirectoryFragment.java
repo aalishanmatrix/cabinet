@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.text.Html;
 import android.util.SparseBooleanArray;
 import android.view.*;
@@ -147,7 +146,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onVisibilityChange(boolean visible) {
         // Makes sure title gets updated when you go back in the fragment back stack
-        if (mPath.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+        if (mPath.isStorageDirectory())
             getActivity().setTitle(R.string.app_name);
         else getActivity().setTitle(mPath.getName());
     }
@@ -159,6 +158,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
                 App.get(getActivity()).getClipboard().canPaste(mPath));
         menu.findItem(R.id.add_shortcut).setVisible(
                 !((MainActivity) getActivity()).isDrawerOpen());
+        menu.findItem(R.id.delete).setVisible(!mPath.isStorageDirectory());
         super.onCreateOptionsMenu(menu, inflater);
     }
 

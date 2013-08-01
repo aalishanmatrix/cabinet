@@ -1,7 +1,6 @@
 package com.afollestad.cabinet.adapters;
 
 import android.content.Context;
-import android.os.Environment;
 import android.view.View;
 import android.widget.TextView;
 import com.afollestad.cabinet.File;
@@ -18,7 +17,7 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
 
         public DrawerItem(Context context, File dir) {
             mPath = dir;
-            if (dir.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+            if (dir.isStorageDirectory())
                 mTitle = context.getString(R.string.home);
             else mTitle = mPath.getName();
         }

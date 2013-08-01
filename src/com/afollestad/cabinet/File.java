@@ -1,7 +1,9 @@
 package com.afollestad.cabinet;
 
 import android.content.Context;
+import android.os.Environment;
 import android.webkit.MimeTypeMap;
+import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.cache.SilkComparable;
 
 import java.net.URI;
@@ -66,6 +68,29 @@ public class File extends java.io.File implements SilkComparable<File> {
             type = mime.getMimeTypeFromExtension(extension);
         }
         return type;
+    }
+
+    /**
+     * Overridden to recursively delete directories
+     *
+     * @return
+     */
+    @Override
+    public boolean delete() {
+        if (isDirectory()) {
+            Utils.deleteDirectory(this);
+            return true;
+        }
+        return super.delete();
+    }
+
+    /**
+     * Checks whether or not this file represents the SD card directory
+     *
+     * @return
+     */
+    public boolean isStorageDirectory() {
+        return getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath());
     }
 
     public static class Comparator implements java.util.Comparator<java.io.File> {

@@ -63,7 +63,7 @@ public class MainActivity extends SilkDrawerActivity {
     }
 
     public void navigate(File directory, boolean backStack) {
-        if (directory.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+        if (directory.isStorageDirectory())
             setTitle(R.string.app_name);
         else setTitle(directory.getName());
 
@@ -114,7 +114,7 @@ public class MainActivity extends SilkDrawerActivity {
         DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
         if (item.getFile().exists()) {
             boolean backStack = true;
-            if (item.getFile().getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath()))
+            if (item.getFile().isStorageDirectory())
                 backStack = false;
             navigate(item.getFile(), backStack);
         } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();

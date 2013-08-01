@@ -105,8 +105,13 @@ public class DirectoryCAB {
                                     public void run() {
                                         // Close the dialog
                                         progress.dismiss();
-                                        // Remove the deleted files from the adapter
-                                        fragment.getAdapter().remove(selectedFiles.toArray(new File[selectedFiles.size()]));
+                                        if (selectedFiles.size() == 1 && selectedFiles.get(0).getAbsolutePath().equals(fragment.getPath().getAbsolutePath())) {
+                                            // From the Fragment's menu, pop the fragment back stack
+                                            fragment.getActivity().getFragmentManager().popBackStack();
+                                        } else {
+                                            // From the CAB, remove the deleted files from the adapter
+                                            fragment.getAdapter().remove(selectedFiles.toArray(new File[selectedFiles.size()]));
+                                        }
                                     }
                                 });
                             }
