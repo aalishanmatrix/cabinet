@@ -10,7 +10,6 @@ import com.afollestad.cabinet.R;
 import com.afollestad.silk.views.text.SilkEditText;
 
 import java.io.File;
-import java.io.IOException;
 
 /**
  * @author Aidan Follestad (afollestad)
@@ -54,16 +53,14 @@ public class Utils {
         return dialog;
     }
 
-    public static boolean deleteRecursively(File fileOrDirectory) {
-        String deleteCmd = "rm -rf \"" + fileOrDirectory.getAbsolutePath() + "\"";
-        Log.v("deleteRecursively", deleteCmd);
-        Runtime runtime = Runtime.getRuntime();
-        try {
-            runtime.exec(deleteCmd);
-            return true;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        }
+    public static boolean deleteRecursively(File file) {
+        Log.d("deleteRecursively", "Deleting '" + file.getAbsolutePath() + "'");
+        boolean retVal = true;
+        if (file.isDirectory()) {
+            for (File f : file.listFiles()) {
+                retVal = retVal && deleteRecursively(f);
+            }
+        } else retVal = file.delete();
+        return retVal;
     }
 }
