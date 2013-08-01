@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.text.Html;
 import android.text.Spanned;
-import android.util.SparseBooleanArray;
 import android.view.ActionMode;
 import android.widget.Toast;
 import com.afollestad.cabinet.App;
@@ -124,7 +123,7 @@ public class DirectoryCAB {
 
     private static void selectAll(DirectoryFragment fragment) {
         int len = fragment.getListView().getCount();
-        for(int i = 0; i < len; i++)
+        for (int i = 0; i < len; i++)
             fragment.getListView().setItemChecked(i, true);
     }
 }
