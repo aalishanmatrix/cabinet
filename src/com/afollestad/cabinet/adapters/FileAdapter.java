@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.afollestad.cabinet.File;
@@ -63,12 +64,14 @@ public class FileAdapter extends SilkAdapter<File> {
         }
 
         holder.position = index;
-        if (item.isDirectory())
-            image.setImageResource(R.drawable.ic_folder);
-        else if (mime != null && mime.startsWith("image/"))
-            new ThumbnailTask(getContext(), index, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
-        else
-            image.setImageResource(R.drawable.ic_file);
+        if (getScrollState() == AbsListView.OnScrollListener.SCROLL_STATE_IDLE) {
+            if (item.isDirectory())
+                image.setImageResource(R.drawable.ic_folder);
+            else if (mime != null && mime.startsWith("image/"))
+                new ThumbnailTask(getContext(), index, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
+            else
+                image.setImageResource(R.drawable.ic_file);
+        }
 
         image.setOnClickListener(new View.OnClickListener() {
             @Override
