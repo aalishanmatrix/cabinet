@@ -54,9 +54,8 @@ public class Utils {
     public static boolean deleteRecursively(File file) {
         boolean retVal = true;
         if (file.isDirectory()) {
-            for (java.io.File f : file.listFiles()) {
+            for (java.io.File f : file.listFiles())
                 retVal = retVal && deleteRecursively(new File(f));
-            }
             retVal = retVal && file.deleteNonRecursive();
         } else retVal = file.deleteNonRecursive();
         return retVal;
