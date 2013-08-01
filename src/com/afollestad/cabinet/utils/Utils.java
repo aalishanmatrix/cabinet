@@ -19,20 +19,10 @@ public class Utils {
         return progress;
     }
 
-    public static void deleteDirectory(File directory) {
-        File[] files = directory.listFiles();
-        if (files != null && files.length > 0) {
-            for (File fi : files) {
-                if (fi.isDirectory()) {
-                    // Recursively delete a directory inside the current directory
-                    deleteDirectory(fi);
-                } else {
-                    // Delete a file inside the current directory
-                    fi.delete();
-                }
-            }
-        }
-        // Finally, delete the original directory after deleting its files and directories
-        directory.delete();
+    public static boolean deleteRecursively(File fileOrDirectory) {
+        if (fileOrDirectory.isDirectory())
+            for (File child : fileOrDirectory.listFiles())
+                deleteRecursively(child);
+        return fileOrDirectory.delete();
     }
 }

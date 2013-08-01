@@ -28,20 +28,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ab_bottom_solid_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ab_bottom_solid_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ab_bottom_solid_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ab_bottom_solid_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ab_bottom_solid_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ab_bottom_solid_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ab_solid_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ab_solid_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ab_solid_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ab_solid_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ab_solid_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ab_solid_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ab_texture_tile_cabinet.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ab_texture_tile_cabinet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ab_texture_tile_cabinet.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ab_texture_tile_cabinet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ab_texture_tile_cabinet.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ab_texture_tile_cabinet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ab_transparent_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ab_transparent_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ab_transparent_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ab_transparent_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ab_transparent_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ab_transparent_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/btn_cab_done_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/btn_cab_done_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/btn_cab_done_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/btn_cab_done_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/btn_cab_done_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/btn_cab_done_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/btn_cab_done_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/btn_cab_done_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/btn_cab_done_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/btn_cab_done_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/btn_cab_done_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/btn_cab_done_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/list_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/list_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/list_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/list_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/list_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/list_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/progress_primary_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/progress_primary_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/progress_primary_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/progress_primary_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/progress_primary_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/progress_primary_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/progress_secondary_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/progress_secondary_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/progress_secondary_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/progress_secondary_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/progress_secondary_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/progress_secondary_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/spinner_ab_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/spinner_ab_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/spinner_ab_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/spinner_ab_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/spinner_ab_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/spinner_ab_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/spinner_ab_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/spinner_ab_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/spinner_ab_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/spinner_ab_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/spinner_ab_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/spinner_ab_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/tab_selected_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/tab_selected_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/tab_selected_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/tab_selected_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/tab_selected_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/tab_selected_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/tab_selected_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/tab_selected_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/tab_selected_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/tab_selected_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/tab_selected_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/tab_selected_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/tab_unselected_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/tab_unselected_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/tab_unselected_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/tab_unselected_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/tab_unselected_focused_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/tab_unselected_focused_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/tab_unselected_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/tab_unselected_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/tab_unselected_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/tab_unselected_pressed_cabinet.9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/tab_unselected_pressed_cabinet.9.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/tab_unselected_pressed_cabinet.9.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/fragment_directory.xml" afterPath="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/selectable_background_cabinet.xml" afterPath="$PROJECT_DIR$/res/drawable/selectable_background_cabinet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375329668081" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375330379938" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375329871268" ignored="false" />
-    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375330366377" ignored="false" />
+    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375331072079" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375329565701" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375329093008" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243722732" ignored="false" />
@@ -76,7 +118,7 @@
     <file path="/fragment_directory.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375329786285" ignored="false" />
     <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375305307972" ignored="false" />
     <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375330292356" ignored="false" />
-    <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375330268147" ignored="false" />
+    <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375331078216" ignored="false" />
     <file path="/Root.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375319659816" ignored="false" />
     <file path="/SilkListView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375329254321" ignored="false" />
     <file path="/fragment_list.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375328847209" ignored="false" />
@@ -140,10 +182,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="80" selection-start="4311" selection-end="4311" vertical-scroll-proportion="0.51194537">
+            <state line="92" column="80" selection-start="4311" selection-end="4311" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#3776#5966#0" expanded="true" />
                 <element signature="e#4128#5916#0" expanded="true" />
@@ -154,6 +196,15 @@
                 <element signature="e#6020#6248#0" expanded="true" />
                 <element signature="e#6229#6230#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.17529215">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,9 +260,9 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       </list>
     </option>
   </component>
@@ -901,7 +952,11 @@
       <created>1375329670946</created>
       <updated>1375329670946</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Updates.">
+      <created>1375330384116</created>
+      <updated>1375330384117</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -925,7 +980,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -978,7 +1033,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added delete option for currently viewed directory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1004,23 +1059,16 @@
     <MESSAGE value="Added delete confirmation dialog" />
     <MESSAGE value="Added progress dialogs for deletion and pasting" />
     <MESSAGE value="Added select all option" />
-    <MESSAGE value="Updates." />
     <MESSAGE value="Drawer is opened when you add shortcuts." />
     <MESSAGE value="Updates" />
     <MESSAGE value="Added docs to the SilkListView." />
     <MESSAGE value="Added delete option for currently viewed directory." />
+    <MESSAGE value="Updates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="41" selection-start="3102" selection-end="3102" vertical-scroll-proportion="0.025041737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/android-sdk-linux/sources/android-17/android/widget/AbsListView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="695" column="26" selection-start="19711" selection-end="19711" vertical-scroll-proportion="0.33222038">
@@ -1112,25 +1160,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="607" selection-end="607" vertical-scroll-proportion="0.5509182">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="80" selection-start="4311" selection-end="4311" vertical-scroll-proportion="0.51194537">
+        <state line="92" column="80" selection-start="4311" selection-end="4311" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#3776#5966#0" expanded="true" />
             <element signature="e#4128#5916#0" expanded="true" />
@@ -1141,6 +1173,29 @@
             <element signature="e#6020#6248#0" expanded="true" />
             <element signature="e#6229#6230#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="559" selection-end="559" vertical-scroll-proportion="0.52587646">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="27" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.4006678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.17529215">
+          <folding />
         </state>
       </provider>
     </entry>

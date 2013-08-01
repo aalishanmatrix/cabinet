@@ -77,11 +77,7 @@ public class File extends java.io.File implements SilkComparable<File> {
      */
     @Override
     public boolean delete() {
-        if (isDirectory()) {
-            Utils.deleteDirectory(this);
-            return true;
-        }
-        return super.delete();
+        return Utils.deleteRecursively(this);
     }
 
     /**
