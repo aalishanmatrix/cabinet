@@ -24,6 +24,7 @@ public class Utils {
     public static ProgressDialog showProgressDialog(Activity activity, int max) {
         ProgressDialog progress = new ProgressDialog(activity);
         progress.setMax(max);
+        progress.setCancelable(false);
         progress.setMessage(activity.getString(R.string.please_wait));
         progress.show();
         return progress;

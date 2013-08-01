@@ -157,8 +157,6 @@ public class DirectoryFragment extends SilkListFragment<File> {
         inflater.inflate(R.menu.fragment_directory, menu);
         menu.findItem(R.id.paste).setVisible(
                 App.get(getActivity()).getClipboard().canPaste(mPath));
-        menu.findItem(R.id.add_shortcut).setVisible(
-                !((MainActivity) getActivity()).isDrawerOpen());
         menu.findItem(R.id.delete).setVisible(!mPath.isStorageDirectory());
         super.onCreateOptionsMenu(menu, inflater);
     }
