@@ -9,7 +9,7 @@ import android.net.Uri;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.ActionMode;
-import android.widget.Toast;
+import android.view.Gravity;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -29,8 +29,9 @@ public class DirectoryCAB {
     public static boolean handleAction(DirectoryFragment fragment, int actionId, List<File> selectedFiles, ActionMode mode) {
         switch (actionId) {
             case R.id.add_shortcut:
-                for (File fi : selectedFiles) ((MainActivity) fragment.getActivity()).addShortcut(fi);
-                Toast.makeText(fragment.getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
+                MainActivity activity = (MainActivity) fragment.getActivity();
+                for (File fi : selectedFiles) activity.addShortcut(fi);
+                activity.getDrawerLayout().openDrawer(Gravity.START);
                 break;
             case R.id.share:
                 fragment.getActivity().startActivity(getShareIntent(fragment.getActivity(), selectedFiles));

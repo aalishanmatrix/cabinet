@@ -13,7 +13,6 @@ import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
-import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -167,8 +166,9 @@ public class DirectoryFragment extends SilkListFragment<File> {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.add_shortcut:
-                ((MainActivity) getActivity()).addShortcut(mPath);
-                Toast.makeText(getActivity(), R.string.shorts_updated, Toast.LENGTH_SHORT).show();
+                MainActivity activity = (MainActivity) getActivity();
+                activity.addShortcut(mPath);
+                activity.getDrawerLayout().openDrawer(Gravity.START);
                 return true;
             case R.id.paste:
                 startPaste(this);
