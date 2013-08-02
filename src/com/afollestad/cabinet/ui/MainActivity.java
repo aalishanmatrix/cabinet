@@ -148,13 +148,13 @@ public class MainActivity extends SilkDrawerActivity {
 
     private void selectItem(int position) {
         DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
+        getDrawerLayout().closeDrawers();
         if (item.getFile().exists()) {
             boolean backStack = true;
             if (item.getFile().isStorageDirectory())
                 backStack = false;
             navigate(item.getFile(), backStack);
         } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
-        getDrawerLayout().closeDrawers();
     }
 
     public void addShortcut(File path) {
