@@ -12,7 +12,6 @@ import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
-import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -76,7 +75,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
             for (java.io.File fi : contents)
                 getAdapter().add(new File(fi));
         } catch (Exception e) {
-            Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+            setEmptyText(e.getMessage());
         }
     }
 
@@ -179,6 +178,8 @@ public class DirectoryFragment extends SilkListFragment<File> {
         // Makes sure title gets updated when you go back in the fragment back stack
         if (mPath.isStorageDirectory())
             getActivity().setTitle(R.string.app_name);
+        else if(mPath.isRootDirectory())
+            getActivity().setTitle(R.string.root);
         else getActivity().setTitle(mPath.getName());
     }
 
