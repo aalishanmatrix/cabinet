@@ -28,11 +28,11 @@ public class Utils {
         return progress;
     }
 
-    public static AlertDialog showInputDialog(Activity activity, int title, String prefillInput, final InputCallback callback) {
+    public static void showInputDialog(Activity activity, int title, String prefillInput, final InputCallback callback) {
         View view = activity.getLayoutInflater().inflate(R.layout.input_edit_text, null);
         final SilkEditText input = (SilkEditText) view.findViewById(R.id.input);
         if (prefillInput != null) input.setText(prefillInput);
-        AlertDialog.Builder builder = new AlertDialog.Builder(activity)
+        new AlertDialog.Builder(activity)
                 .setTitle(title)
                 .setView(view)
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
@@ -45,10 +45,7 @@ public class Utils {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         dialog.dismiss();
                     }
-                });
-        AlertDialog dialog = builder.create();
-        dialog.show();
-        return dialog;
+                }).show();
     }
 
     public static boolean deleteRecursively(File file) {
