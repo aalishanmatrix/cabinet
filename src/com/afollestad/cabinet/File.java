@@ -92,10 +92,36 @@ public class File extends java.io.File implements SilkComparable<File> {
      */
     @Override
     public boolean delete() {
+        if (requiresRootAccess()) {
+            if (!RootCommands.rootAccessGiven()) return false;
+            try {
+                Shell shell = Shell.startRootShell();
+                SimpleCommand lsApp = new SimpleCommand("rm -r \"" + getAbsolutePath() + "\"");
+                shell.add(lsApp).waitForFinish();
+                shell.close();
+                return lsApp.getExitCode() == 0;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
+        }
         return Utils.deleteRecursively(this);
     }
 
     public boolean deleteNonRecursive() {
+        if (requiresRootAccess()) {
+            if (!RootCommands.rootAccessGiven()) return false;
+            try {
+                Shell shell = Shell.startRootShell();
+                SimpleCommand lsApp = new SimpleCommand("rm \"" + getAbsolutePath() + "\"");
+                shell.add(lsApp).waitForFinish();
+                shell.close();
+                return lsApp.getExitCode() == 0;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
+        }
         return super.delete();
     }
 
