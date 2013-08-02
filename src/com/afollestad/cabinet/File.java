@@ -4,8 +4,13 @@ import android.content.Context;
 import android.webkit.MimeTypeMap;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.cache.SilkComparable;
+import org.sufficientlysecure.rootcommands.RootCommands;
+import org.sufficientlysecure.rootcommands.Shell;
+import org.sufficientlysecure.rootcommands.command.SimpleCommand;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 
 public class File extends java.io.File implements SilkComparable<File> {
 
@@ -59,6 +64,14 @@ public class File extends java.io.File implements SilkComparable<File> {
         return name.substring(name.lastIndexOf('.') + 1);
     }
 
+    @Override
+    public File[] listFiles() {
+        java.io.File[] files = super.listFiles();
+        List<File> cabinets = new ArrayList<File>();
+        for (java.io.File fi : files) cabinets.add(new File(fi));
+        return cabinets.toArray(new File[cabinets.size()]);
+    }
+
     public String getMimeType() {
         String type = null;
         String extension = getExtension();
@@ -86,6 +99,32 @@ public class File extends java.io.File implements SilkComparable<File> {
      */
     public boolean isStorageDirectory() {
         return getAbsolutePath().equals(App.getStorageDirectory().getAbsolutePath());
+    }
+
+    public boolean isRootDirectory() {
+        return getAbsolutePath().equals("/");
+    }
+
+    public boolean requiresRootAccess() {
+        return !getAbsolutePath().startsWith(App.getStorageDirectory().getAbsolutePath());
+    }
+
+    public File[] listFilesAsRoot() throws Exception {
+        if (!RootCommands.rootAccessGiven()) throw new Exception("Root access denied");
+        List<File> files = new ArrayList<File>();
+        Shell shell = Shell.startRootShell();
+        SimpleCommand lsApp = new SimpleCommand("ls \"" + getAbsolutePath() + "\"");
+        shell.add(lsApp).waitForFinish();
+
+        if (lsApp.getExitCode() == 0) {
+            String[] splitLines = lsApp.getOutput().split("\n");
+            for (String line : splitLines) files.add(new File(this, line));
+        } else {
+            throw new Exception("Root access command returned " + lsApp.getExitCode());
+        }
+
+        shell.close();
+        return files.toArray(new File[files.size()]);
     }
 
     public static class Comparator implements java.util.Comparator<java.io.File> {

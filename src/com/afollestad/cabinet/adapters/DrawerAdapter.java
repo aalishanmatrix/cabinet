@@ -15,15 +15,19 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
 
     public static class DrawerItem implements SilkComparable<DrawerItem> {
 
-        public DrawerItem(Context context, File dir) {
+        public DrawerItem(Context context, File dir, boolean removeable) {
             mPath = dir;
             if (dir.isStorageDirectory())
                 mTitle = context.getString(R.string.home);
+            else if (dir.isRootDirectory())
+                mTitle = context.getString(R.string.root);
             else mTitle = mPath.getName();
+            mRemoveable = removeable;
         }
 
         private final String mTitle;
         private final File mPath;
+        private final boolean mRemoveable;
 
         public String getTitle() {
             return mTitle;
@@ -31,6 +35,10 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
 
         public File getFile() {
             return mPath;
+        }
+
+        public boolean isRemoveable() {
+            return mRemoveable;
         }
 
         @Override

@@ -30,6 +30,7 @@
     <string name="untitled">Untitled</string>
 
     <string name="home">Home</string>
+    <string name="root">Root</string>
     <string name="about">About</string>
     <string name="close">Close</string>
 
@@ -42,9 +43,11 @@
         Move these files:<br/><br/>{paths}<br/>to <b>{dest}</b>
     ]]></string>
 
+    <string name="shortcut_not_removeable">This shortcut cannot be removed</string>
     <string name="remove_shortcut">Remove Shortcut</string>
     <string name="confirm_remove_shortcut">Are you sure you want to remove this shortcut to {path}?</string>
     <string name="yes">Yes</string>
+    <string name="no">No</string>
     <string name="confirm_delete"><![CDATA[
         Are you sure you want to delete these files/folders?<br/><br/>{paths}<br/>from <b>{dest}</b>
     ]]></string>
@@ -59,5 +62,10 @@
         <a href="http://gplus.to/afollestad">Google+</a><br><br>
         <b>Powered by <a href="https://github.com/afollestad/Silk">Silk</a></b>
     ]]></string>
+
+    <string name="enable_root_title">Enable Root</string>
+    <string name="enable_root_prompt">Do you want to enable root access? You can only do so if your phone is rooted.
+        This can be disabled later from the app\'s settings.
+    </string>
 
 </resources>

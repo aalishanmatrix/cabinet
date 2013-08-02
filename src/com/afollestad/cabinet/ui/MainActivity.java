@@ -22,6 +22,7 @@ import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.silk.activities.SilkDrawerActivity;
+import org.sufficientlysecure.rootcommands.RootCommands;
 
 import java.util.List;
 
@@ -57,8 +58,10 @@ public class MainActivity extends SilkDrawerActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        checkFirstTime();
-        populateDrawer();
+        if (!checkFirstTime()) {
+            // If it's not the first time, populate the drawer now, otherwise wait for root prompt
+            populateDrawer();
+        }
         navigate(App.getStorageDirectory(), false);
     }
 
@@ -74,17 +77,39 @@ public class MainActivity extends SilkDrawerActivity {
         trans.commit();
     }
 
-    private void checkFirstTime() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean("first_time", true)) return;
+    private boolean checkFirstTime() {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (!prefs.getBoolean("first_time", true)) return false;
         // Add default shortcuts
         File storage = App.getStorageDirectory();
         Shortcuts.add(this, storage);
         Shortcuts.add(this, new File(storage, "Download"));
         Shortcuts.add(this, new File(storage, "Music"));
         Shortcuts.add(this, new File(storage, "Pictures"));
-        getDrawerLayout().openDrawer(Gravity.START);
         prefs.edit().putBoolean("first_time", false).commit();
+
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.enable_root_title)
+                .setMessage(R.string.enable_root_prompt)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        prefs.edit().putBoolean("root_enabled", true).commit();
+                        populateDrawer();
+                        getDrawerLayout().openDrawer(Gravity.START);
+                    }
+                })
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        prefs.edit().putBoolean("root_enabled", false).commit();
+                        populateDrawer();
+                        getDrawerLayout().openDrawer(Gravity.START);
+                    }
+                }).show();
+        return true;
     }
 
     private void populateDrawer() {
@@ -106,9 +131,14 @@ public class MainActivity extends SilkDrawerActivity {
             }
         });
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs.getBoolean("root_enabled", false)) {
+            if (RootCommands.rootAccessGiven())
+                mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new File("/"), false));
+        }
         List<File> shortcuts = Shortcuts.getAll(this);
         for (File fi : shortcuts) {
-            mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi));
+            mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi, true));
         }
     }
 
@@ -124,12 +154,17 @@ public class MainActivity extends SilkDrawerActivity {
     }
 
     public void addShortcut(File path) {
-        mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, path));
+        mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, path, true));
         Shortcuts.add(this, path);
     }
 
     private void removeShortcut(final int position) {
         final DrawerAdapter.DrawerItem shortcut = mDrawerAdapter.getItem(position);
+        if (!shortcut.isRemoveable()) {
+            Toast.makeText(this, R.string.shortcut_not_removeable, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.remove_shortcut)
                 .setMessage(getString(R.string.confirm_remove_shortcut).replace("{path}", shortcut.getFile().getAbsolutePath()))

@@ -17,6 +17,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Silk" />
     <orderEntry type="library" name="android-support" level="project" />
+    <orderEntry type="module" module-name="RootCommands" />
   </component>
 </module>
 

@@ -12,6 +12,7 @@ import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -67,11 +68,16 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     private void load() {
         if (mPath == null) return;
-        java.io.File[] contents = mPath.listFiles();
-        Arrays.sort(contents, new File.Comparator());
-        getAdapter().clear();
-        for (java.io.File fi : contents)
-            getAdapter().add(new File(fi));
+        try {
+            File[] contents = mPath.requiresRootAccess() ?
+                    mPath.listFilesAsRoot() : mPath.listFiles();
+            Arrays.sort(contents, new File.Comparator());
+            getAdapter().clear();
+            for (java.io.File fi : contents)
+                getAdapter().add(new File(fi));
+        } catch (Exception e) {
+            Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
