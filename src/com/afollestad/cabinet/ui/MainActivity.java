@@ -93,6 +93,7 @@ public class MainActivity extends SilkDrawerActivity {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.enable_root_title)
                 .setMessage(R.string.enable_root_prompt)
+                .setCancelable(false)
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
