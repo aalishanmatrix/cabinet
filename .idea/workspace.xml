@@ -29,21 +29,23 @@
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/fragments/SilkListFragment.java" afterPath="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/fragments/SilkListFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375406889684" ignored="false" />
-    <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407495038" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407657799" ignored="false" />
+    <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407584231" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375403986192" ignored="false" />
-    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375404054088" ignored="false" />
+    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407590648" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375334532478" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243722732" ignored="false" />
     <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375393968592" ignored="false" />
     <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375224426499" ignored="false" />
     <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375404062380" ignored="false" />
-    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375406882948" ignored="false" />
+    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407794617" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382820632" ignored="false" />
     <file path="/SilkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375328613796" ignored="false" />
     <file path="/SilkDrawerActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375303869630" ignored="false" />
@@ -58,7 +60,7 @@
     <file path="/BitmapWorkerTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375230603719" ignored="false" />
     <file path="/FileThumbnailLoader.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375231874681" ignored="false" />
     <file path="/fragment_async_list.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375231975151" ignored="false" />
-    <file path="/DrawerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375402752497" ignored="false" />
+    <file path="/DrawerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407601956" ignored="false" />
     <file path="/list_item_drawer.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243566253" ignored="false" />
     <file path="/strings_arrays.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375237227644" ignored="false" />
     <file path="/selectable_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375334232582" ignored="false" />
@@ -126,6 +128,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -162,7 +165,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -172,25 +174,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+      <file leaf-file-name="DrawerAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="48" selection-start="4017" selection-end="4017" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4017#4437#0" expanded="true" />
-                <element signature="e#4418#4419#0" expanded="true" />
-              </folding>
+            <state line="20" column="58" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="48" selection-start="6346" selection-end="6346" vertical-scroll-proportion="0.32387313">
+            <state line="145" column="94" selection-start="5737" selection-end="5737" vertical-scroll-proportion="0.65776294">
               <folding>
-                <element signature="e#7527#7533#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,13 +221,13 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/menu/main.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/../Silk/src/com/afollestad/silk/fragments/SilkListFragment.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -265,7 +263,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -321,12 +318,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,8 +389,8 @@
     <property name="AndroidTargetDevices" value="0146828701004011" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -390,6 +432,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -416,19 +471,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1025,7 +1067,11 @@
       <created>1375406892404</created>
       <updated>1375406892404</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Fixes">
+      <created>1375407502252</created>
+      <updated>1375407502252</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1054,8 +1100,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1102,7 +1148,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1131,9 +1177,9 @@
     <MESSAGE value="Added delete option for currently viewed directory." />
     <MESSAGE value="Fixes and theme update." />
     <MESSAGE value="Updates." />
-    <MESSAGE value="Fixes" />
     <MESSAGE value="Fixes." />
     <MESSAGE value="Updates" />
+    <MESSAGE value="Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1153,9 +1199,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../root-commands/RootCommands-Library/src/org/sufficientlysecure/rootcommands/command/SimpleCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="11" selection-start="801" selection-end="801" vertical-scroll-proportion="0.17529215">
-          <folding />
-        </state>
+        <state line="21" column="11" selection-start="801" selection-end="801" vertical-scroll-proportion="0.17529215" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/android-sdk-linux/sources/android-17/java/io/File.java">
@@ -1172,11 +1216,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="1" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.94991654">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="61" column="1" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.94991654" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
@@ -1191,13 +1231,6 @@
         <state line="3" column="43" selection-start="72" selection-end="72" vertical-scroll-proportion="0.07512521" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="736" selection-end="736" vertical-scroll-proportion="0.17529215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="13" selection-start="432" selection-end="432" vertical-scroll-proportion="0.025041737">
@@ -1205,18 +1238,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="133" selection-end="133" vertical-scroll-proportion="0.10452962">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="207" selection-end="207" vertical-scroll-proportion="0.10452962">
-          <folding />
-        </state>
+        <state line="4" column="35" selection-start="207" selection-end="207" vertical-scroll-proportion="0.10452962" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
@@ -1231,27 +1255,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/src/com/afollestad/silk/fragments/SilkListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="27" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.6911263">
+        <state line="68" column="27" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.6911263" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.3205575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="47" selection-start="6249" selection-end="6249" vertical-scroll-proportion="0.27378964">
+          <folding>
+            <element signature="e#7526#7532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="58" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="48" selection-start="4017" selection-end="4017" vertical-scroll-proportion="0.0">
+        <state line="145" column="94" selection-start="5737" selection-end="5737" vertical-scroll-proportion="0.65776294">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4017#4437#0" expanded="true" />
-            <element signature="e#4418#4419#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="48" selection-start="6346" selection-end="6346" vertical-scroll-proportion="0.32387313">
-          <folding>
-            <element signature="e#7527#7533#0" expanded="true" />
           </folding>
         </state>
       </provider>

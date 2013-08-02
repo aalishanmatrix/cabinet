@@ -177,8 +177,8 @@ public class DirectoryFragment extends SilkListFragment<File> {
     public void onVisibilityChange(boolean visible) {
         // Makes sure title gets updated when you go back in the fragment back stack
         if (mPath.isStorageDirectory())
-            getActivity().setTitle(R.string.app_name);
-        else if(mPath.isRootDirectory())
+            getActivity().setTitle(R.string.sdcard);
+        else if (mPath.isRootDirectory())
             getActivity().setTitle(R.string.root);
         else getActivity().setTitle(mPath.getName());
     }

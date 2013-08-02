@@ -18,7 +18,7 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
         public DrawerItem(Context context, File dir, boolean removeable) {
             mPath = dir;
             if (dir.isStorageDirectory())
-                mTitle = context.getString(R.string.home);
+                mTitle = context.getString(R.string.sdcard);
             else if (dir.isRootDirectory())
                 mTitle = context.getString(R.string.root);
             else mTitle = mPath.getName();

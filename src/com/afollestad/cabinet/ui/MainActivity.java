@@ -143,7 +143,7 @@ public class MainActivity extends SilkDrawerActivity {
             mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new File("/"), false));
         List<File> shortcuts = Shortcuts.getAll(this);
         for (File fi : shortcuts) {
-            mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi, true));
+            mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi, !fi.isStorageDirectory()));
         }
     }
 
