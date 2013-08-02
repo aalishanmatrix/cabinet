@@ -12,6 +12,9 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A wrapper around Java's File class, with convenience methods and root access methods.
+ */
 public class File extends java.io.File implements SilkComparable<File> {
 
     public File(java.io.File dir, String name) {

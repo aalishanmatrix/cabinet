@@ -27,15 +27,15 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="CabinetFile" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
+    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="`">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375403663019" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375403968653" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375401948226" ignored="false" />
-    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375403821536" ignored="false" />
+    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375403986192" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375403286781" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375334532478" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243722732" ignored="false" />
@@ -185,10 +185,10 @@
       <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="63" selection-start="3831" selection-end="3831" vertical-scroll-proportion="0.94991654">
+            <state line="15" column="88" selection-start="531" selection-end="531" vertical-scroll-proportion="0.12520868">
               <folding>
-                <element signature="e#2000#2006#0" expanded="true" />
-                <element signature="e#4501#4507#0" expanded="true" />
+                <element signature="e#2097#2103#0" expanded="true" />
+                <element signature="e#4598#4604#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1003,7 +1003,11 @@
       <created>1375403667486</created>
       <updated>1375403667486</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Fixes">
+      <created>1375403861073</created>
+      <updated>1375403861074</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1220,10 +1224,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="63" selection-start="3831" selection-end="3831" vertical-scroll-proportion="0.94991654">
+        <state line="15" column="88" selection-start="531" selection-end="531" vertical-scroll-proportion="0.12520868">
           <folding>
-            <element signature="e#2000#2006#0" expanded="true" />
-            <element signature="e#4501#4507#0" expanded="true" />
+            <element signature="e#2097#2103#0" expanded="true" />
+            <element signature="e#4598#4604#0" expanded="true" />
           </folding>
         </state>
       </provider>
