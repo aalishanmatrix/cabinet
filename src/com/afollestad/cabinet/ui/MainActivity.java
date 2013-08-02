@@ -68,6 +68,8 @@ public class MainActivity extends SilkDrawerActivity {
     public void navigate(File directory, boolean backStack) {
         if (directory.isStorageDirectory())
             setTitle(R.string.app_name);
+        else if (directory.isRootDirectory())
+            setTitle(R.string.root);
         else setTitle(directory.getName());
 
         FragmentTransaction trans = getFragmentManager().beginTransaction();
@@ -95,7 +97,11 @@ public class MainActivity extends SilkDrawerActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        prefs.edit().putBoolean("root_enabled", true).commit();
+                        if (RootCommands.rootAccessGiven()) {
+                            prefs.edit().putBoolean("root_enabled", true).commit();
+                        } else {
+                            Toast.makeText(MainActivity.this, R.string.root_disabled, Toast.LENGTH_LONG).show();
+                        }
                         populateDrawer();
                         getDrawerLayout().openDrawer(Gravity.START);
                     }
@@ -132,10 +138,8 @@ public class MainActivity extends SilkDrawerActivity {
         });
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (prefs.getBoolean("root_enabled", false)) {
-            if (RootCommands.rootAccessGiven())
-                mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new File("/"), false));
-        }
+        if (prefs.getBoolean("root_enabled", false))
+            mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new File("/"), false));
         List<File> shortcuts = Shortcuts.getAll(this);
         for (File fi : shortcuts) {
             mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi, true));

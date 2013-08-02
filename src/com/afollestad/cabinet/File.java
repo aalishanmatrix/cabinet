@@ -72,6 +72,11 @@ public class File extends java.io.File implements SilkComparable<File> {
         return cabinets.toArray(new File[cabinets.size()]);
     }
 
+    @Override
+    public File getParentFile() {
+        return new File(super.getParentFile());
+    }
+
     public String getMimeType() {
         String type = null;
         String extension = getExtension();
@@ -102,7 +107,7 @@ public class File extends java.io.File implements SilkComparable<File> {
     }
 
     public boolean isRootDirectory() {
-        return getAbsolutePath().equals("/");
+        return getAbsolutePath().isEmpty() || getAbsolutePath().equals("/");
     }
 
     public boolean requiresRootAccess() {

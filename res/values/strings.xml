@@ -68,4 +68,6 @@
         This can be disabled later from the app\'s settings.
     </string>
 
+    <string name="root_disabled">Root is disabled, it can enabled again in the app\'s settings.</string>
+
 </resources>
