@@ -14,10 +14,10 @@
     <string name="silk_desc">Powered by Silk, tap to view on GitHub.</string>
 
     <string name="enable_root">Enable Root</string>
-    <string name="enable_root_on">Enabling root will reveal the root folder shortcut in the nav drawer and give you
+    <string name="enable_root_off">Enabling root will reveal the root folder shortcut in the nav drawer and give you
         access to the root of your device.
     </string>
-    <string name="enable_root_off">Disabling root will hide the root folder shortcut in the nav drawer and prevent you
+    <string name="enable_root_on">Disabling root will hide the root folder shortcut in the nav drawer and prevent you
         from accessing the root of your device.
     </string>
 
