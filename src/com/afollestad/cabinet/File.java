@@ -102,6 +102,7 @@ public class File extends java.io.File implements SilkComparable<File> {
                 Shell shell = Shell.startRootShell();
                 String cmd = "rm";
                 if (isDirectory()) cmd += " -rf";
+                else cmd += " -f";
                 Log.d("File", cmd + " \"" + getAbsolutePath() + "\"");
                 SimpleCommand lsApp = new SimpleCommand(cmd + " \"" + getAbsolutePath() + "\"");
                 shell.add(lsApp).waitForFinish();
@@ -120,7 +121,7 @@ public class File extends java.io.File implements SilkComparable<File> {
             if (!RootCommands.rootAccessGiven()) return false;
             try {
                 Shell shell = Shell.startRootShell();
-                Log.d("File", "rm \"" + getAbsolutePath() + "\"");
+                Log.d("File", "rm -f \"" + getAbsolutePath() + "\"");
                 SimpleCommand lsApp = new SimpleCommand("rm \"" + getAbsolutePath() + "\"");
                 shell.add(lsApp).waitForFinish();
                 shell.close();
