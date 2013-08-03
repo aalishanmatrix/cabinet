@@ -20,7 +20,7 @@ public class AboutFragment extends PreferenceFragment {
 
         try {
             PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
-            findPreference("app_version").setSummary(pInfo.versionName + " (build " + pInfo.versionCode + ")");
+            findPreference("app_version").setSummary(pInfo.versionName + " (Build " + pInfo.versionCode + ")");
         } catch (Exception e) {
             e.printStackTrace();
         }

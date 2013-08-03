@@ -36,7 +36,7 @@
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569796029" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569887861" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407584231" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375493083658" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569212165" ignored="false" />
@@ -216,7 +216,7 @@
       <file leaf-file-name="AboutFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="127" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.7011686">
+            <state line="22" column="77" selection-start="768" selection-end="768" vertical-scroll-proportion="0.5509182">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1133,7 +1133,11 @@
       <created>1375569799259</created>
       <updated>1375569799259</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Added settings screen">
+      <created>1375569889745</created>
+      <updated>1375569889745</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1384,7 +1388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="127" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.7011686">
+        <state line="22" column="77" selection-start="768" selection-end="768" vertical-scroll-proportion="0.5509182">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
