@@ -30,6 +30,7 @@ import java.util.List;
 public class MainActivity extends SilkDrawerActivity {
 
     private DrawerAdapter mDrawerAdapter;
+    private boolean rootEnabled;
 
     @Override
     public int getDrawerIndicatorRes() {
@@ -64,6 +65,13 @@ public class MainActivity extends SilkDrawerActivity {
             populateDrawer();
         }
         navigate(App.getStorageDirectory(), false);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (rootEnabled != prefs.getBoolean("root_enabled", false)) recreate();
     }
 
     public void navigate(File directory, boolean backStack) {
@@ -140,8 +148,8 @@ public class MainActivity extends SilkDrawerActivity {
         });
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (prefs.getBoolean("root_enabled", false))
-            mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new File("/"), false));
+        rootEnabled = prefs.getBoolean("root_enabled", false);
+        if (rootEnabled) mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new File("/"), false));
         List<File> shortcuts = Shortcuts.getAll(this);
         for (File fi : shortcuts) {
             mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi, !fi.isStorageDirectory()));
