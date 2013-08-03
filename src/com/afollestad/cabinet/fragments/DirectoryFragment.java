@@ -51,6 +51,20 @@ public class DirectoryFragment extends SilkListFragment<File> {
     }
 
     @Override
+    public void onVisibilityChange(boolean visible) {
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mPath.isStorageDirectory())
+            getActivity().setTitle(R.string.sdcard);
+        else if (mPath.isRootDirectory())
+            getActivity().setTitle(R.string.root);
+        else getActivity().setTitle(mPath.getName());
+    }
+
+    @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putString("path", mPath.getAbsolutePath());
         super.onSaveInstanceState(outState);
@@ -172,16 +186,6 @@ public class DirectoryFragment extends SilkListFragment<File> {
     public boolean onItemLongTapped(int index, File item, View view) {
         getListView().setItemChecked(index, !getListView().isItemChecked(index));
         return true;
-    }
-
-    @Override
-    public void onVisibilityChange(boolean visible) {
-        // Makes sure title gets updated when you go back in the fragment back stack
-        if (mPath.isStorageDirectory())
-            getActivity().setTitle(R.string.sdcard);
-        else if (mPath.isRootDirectory())
-            getActivity().setTitle(R.string.root);
-        else getActivity().setTitle(mPath.getName());
     }
 
     @Override
