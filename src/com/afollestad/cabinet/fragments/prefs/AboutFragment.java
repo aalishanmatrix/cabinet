@@ -28,7 +28,7 @@ public class AboutFragment extends PreferenceFragment {
         findPreference("app_dev").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://gplus.to/afollestad"));
+                Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://plus.google.com/114873740045565907081"));
                 startActivity(Intent.createChooser(intent, getString(R.string.open_with)));
                 return true;
             }
