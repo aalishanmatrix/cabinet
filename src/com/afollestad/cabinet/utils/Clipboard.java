@@ -78,7 +78,7 @@ public class Clipboard {
                     fragment.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            if (success) fragment.getAdapter().add(fi);
+                            if (success) fragment.getAdapter().update(fi);
                             dialog.setProgress(index);
                         }
                     });
