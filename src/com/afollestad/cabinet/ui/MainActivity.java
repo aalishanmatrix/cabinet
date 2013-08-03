@@ -177,7 +177,7 @@ public class MainActivity extends SilkDrawerActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        Shortcuts.remove(MainActivity.this, position);
+                        Shortcuts.remove(MainActivity.this, position - 2);
                         mDrawerAdapter.remove(shortcut);
                     }
                 })
