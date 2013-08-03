@@ -36,7 +36,7 @@
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375493288317" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375493607454" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407584231" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375493083658" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407590648" ignored="false" />
@@ -190,10 +190,10 @@
       <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="63" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.65776294">
+            <state line="103" column="34" selection-start="3041" selection-end="3041" vertical-scroll-proportion="0.20701168">
               <folding>
-                <element signature="e#2122#2128#0" expanded="true" />
-                <element signature="e#4888#4894#0" expanded="true" />
+                <element signature="e#2097#2103#0" expanded="true" />
+                <element signature="e#4722#4728#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1098,7 +1098,11 @@
       <created>1375493291572</created>
       <updated>1375493291572</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="Fixes">
+      <created>1375493609310</created>
+      <updated>1375493609311</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1327,10 +1331,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="63" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.65776294">
+        <state line="103" column="34" selection-start="3041" selection-end="3041" vertical-scroll-proportion="0.20701168">
           <folding>
-            <element signature="e#2122#2128#0" expanded="true" />
-            <element signature="e#4888#4894#0" expanded="true" />
+            <element signature="e#2097#2103#0" expanded="true" />
+            <element signature="e#4722#4728#0" expanded="true" />
           </folding>
         </state>
       </provider>
