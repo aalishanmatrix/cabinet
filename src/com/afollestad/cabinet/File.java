@@ -1,6 +1,7 @@
 package com.afollestad.cabinet;
 
 import android.content.Context;
+import android.util.Log;
 import android.webkit.MimeTypeMap;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.cache.SilkComparable;
@@ -103,6 +104,7 @@ public class File extends java.io.File implements SilkComparable<File> {
                 if (isDirectory()) cmd += " -rf";
                 else cmd += " -f";
                 SimpleCommand lsApp = new SimpleCommand(cmd + " \"" + getAbsolutePath() + "\"");
+                Log.d("File.delete", cmd + " \"" + getAbsolutePath() + "\"");
                 shell.add(lsApp).waitForFinish();
                 shell.close();
                 return lsApp.getExitCode() == 0;
@@ -120,6 +122,7 @@ public class File extends java.io.File implements SilkComparable<File> {
             try {
                 Shell shell = Shell.startRootShell();
                 SimpleCommand lsApp = new SimpleCommand("rm -f \"" + getAbsolutePath() + "\"");
+                Log.d("File.delete", "rm -f \"" + getAbsolutePath() + "\"");
                 shell.add(lsApp).waitForFinish();
                 shell.close();
                 return lsApp.getExitCode() == 0;
