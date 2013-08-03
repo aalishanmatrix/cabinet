@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference android:key="app_version" android:title="@string/version"/>
+
+    <Preference android:key="app_dev" android:title="@string/developer"
+                android:summary="@string/developer_desc"/>
+
+    <Preference android:key="app_silk" android:title="@string/silk"
+                android:summary="@string/silk_desc"/>
+
+</PreferenceScreen>

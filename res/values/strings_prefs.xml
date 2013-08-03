@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings">Settings</string>
+
+    <string name="about">About</string>
+    <string name="about_header_desc">View information about the app and its developer.</string>
+    <string name="root_header_desc">Settings that deal with root access support.</string>
+
+    <string name="version">Version</string>
+    <string name="developer">Developer</string>
+    <string name="developer_desc">Coded and designed by Aidan Follestad. Tap for his Google+ page.</string>
+    <string name="silk">Silk</string>
+    <string name="silk_desc">Powered by Silk, tap to view on GitHub.</string>
+
+    <string name="enable_root">Enable Root</string>
+    <string name="enable_root_on">Enabling root will reveal the root folder shortcut in the nav drawer and give you
+        access to the root of your device.
+    </string>
+    <string name="enable_root_off">Disabling root will hide the root folder shortcut in the nav drawer and prevent you
+        from accessing the root of your device.
+    </string>
+
+</resources>

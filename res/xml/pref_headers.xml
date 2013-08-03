@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:title="@string/about"
+            android:summary="@string/about_header_desc"
+            android:fragment="com.afollestad.cabinet.fragments.prefs.AboutFragment"/>
+
+    <header android:title="@string/root"
+            android:summary="@string/root_header_desc"
+            android:fragment="com.afollestad.cabinet.fragments.prefs.RootFragment"/>
+
+</preference-headers>

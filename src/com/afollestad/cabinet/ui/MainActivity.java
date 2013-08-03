@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -91,7 +92,7 @@ public class MainActivity extends SilkDrawerActivity {
         prefs.edit().putBoolean("first_time", false).commit();
 
         new AlertDialog.Builder(this)
-                .setTitle(R.string.enable_root_title)
+                .setTitle(R.string.enable_root)
                 .setMessage(R.string.enable_root_prompt)
                 .setCancelable(false)
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
@@ -199,11 +200,8 @@ public class MainActivity extends SilkDrawerActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.about:
-                About.showDialog(this);
-                return true;
             case R.id.settings:
-                Toast.makeText(this, "Coming soon", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, SettingsActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);
