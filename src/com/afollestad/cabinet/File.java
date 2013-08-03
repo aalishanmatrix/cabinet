@@ -157,7 +157,10 @@ public class File extends java.io.File implements SilkComparable<File> {
 
         if (lsApp.getExitCode() == 0) {
             String[] splitLines = lsApp.getOutput().split("\n");
-            for (String line : splitLines) files.add(new File(this, line));
+            for (String line : splitLines) {
+                if (line == null || line.trim().isEmpty()) continue;
+                files.add(new File(this, line));
+            }
         } else {
             throw new Exception("Root access command returned " + lsApp.getExitCode());
         }

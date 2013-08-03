@@ -36,9 +36,9 @@
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375491783676" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375492762213" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407584231" ignored="false" />
-    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375492707650" ignored="false" />
+    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375492808871" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407590648" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375491529595" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243722732" ignored="false" />
@@ -191,7 +191,7 @@
       <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="41" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.3572621">
+            <state line="160" column="68" selection-start="5249" selection-end="5249" vertical-scroll-proportion="0.5075125">
               <folding>
                 <element signature="e#2122#2128#0" expanded="true" />
                 <element signature="e#4847#4853#0" expanded="true" />
@@ -1061,7 +1061,11 @@
       <created>1375491785581</created>
       <updated>1375491785582</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Fixes">
+      <created>1375492771052</created>
+      <updated>1375492771052</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1138,7 +1142,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1169,8 +1173,8 @@
     <MESSAGE value="Updates." />
     <MESSAGE value="Fixes." />
     <MESSAGE value="Updates" />
-    <MESSAGE value="Fixes" />
     <MESSAGE value="FIxes" />
+    <MESSAGE value="Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1290,7 +1294,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="41" selection-start="4565" selection-end="4565" vertical-scroll-proportion="0.3572621">
+        <state line="160" column="68" selection-start="5249" selection-end="5249" vertical-scroll-proportion="0.5075125">
           <folding>
             <element signature="e#2122#2128#0" expanded="true" />
             <element signature="e#4847#4853#0" expanded="true" />
