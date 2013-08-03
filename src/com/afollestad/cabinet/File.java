@@ -122,7 +122,7 @@ public class File extends java.io.File implements SilkComparable<File> {
             try {
                 Shell shell = Shell.startRootShell();
                 Log.d("File", "rm -f \"" + getAbsolutePath() + "\"");
-                SimpleCommand lsApp = new SimpleCommand("rm \"" + getAbsolutePath() + "\"");
+                SimpleCommand lsApp = new SimpleCommand("rm -f \"" + getAbsolutePath() + "\"");
                 shell.add(lsApp).waitForFinish();
                 shell.close();
                 return lsApp.getExitCode() == 0;
