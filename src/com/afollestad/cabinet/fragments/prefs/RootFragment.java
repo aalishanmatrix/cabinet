@@ -3,7 +3,6 @@ package com.afollestad.cabinet.fragments.prefs;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
-import android.widget.Toast;
 import com.afollestad.cabinet.R;
 import org.sufficientlysecure.rootcommands.RootCommands;
 
@@ -21,10 +20,8 @@ public class RootFragment extends PreferenceFragment {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 Boolean value = (Boolean) newValue;
-                if (value && !RootCommands.rootAccessGiven()) {
-                    Toast.makeText(getActivity(), R.string.root_denied, Toast.LENGTH_SHORT).show();
+                if (value && !RootCommands.rootAccessGiven())
                     return false;
-                }
                 return true;
             }
         });

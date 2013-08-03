@@ -31,15 +31,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings_prefs.xml" afterPath="$PROJECT_DIR$/res/values/strings_prefs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569950948" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375570222321" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375407584231" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375493083658" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375570163911" ignored="false" />
@@ -184,80 +182,7 @@
     <favorites_list name="Cabinet" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="24" selection-start="3548" selection-end="3585" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="46" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RootFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="46" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#619#1095#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prefs_root.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/xml/prefs_root.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="63" selection-start="268" selection-end="268" vertical-scroll-proportion="-2.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings_prefs.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/values/strings_prefs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="34" selection-start="903" selection-end="903" vertical-scroll-proportion="0.5153707">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pref_headers.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/xml/pref_headers.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="73" selection-start="291" selection-end="291" vertical-scroll-proportion="-3.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AboutFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="77" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -293,9 +218,9 @@
         <option value="$PROJECT_DIR$/res/xml/prefs_about.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings_prefs.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java" />
-        <option value="$PROJECT_DIR$/res/values/strings_prefs.xml" />
       </list>
     </option>
   </component>
@@ -1200,7 +1125,11 @@
       <created>1375569952672</created>
       <updated>1375569952673</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Updates.">
+      <created>1375570224355</created>
+      <updated>1375570224355</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1225,7 +1154,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1243,7 +1172,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6304" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6304" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1297,7 +1226,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added settings screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1325,13 +1254,13 @@
     <MESSAGE value="Added docs to the SilkListView." />
     <MESSAGE value="Added delete option for currently viewed directory." />
     <MESSAGE value="Fixes and theme update." />
-    <MESSAGE value="Updates." />
     <MESSAGE value="Fixes." />
     <MESSAGE value="FIxes" />
     <MESSAGE value="Fixes" />
     <MESSAGE value="Theming updates" />
     <MESSAGE value="Updates" />
     <MESSAGE value="Added settings screen" />
+    <MESSAGE value="Updates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1389,13 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/pref_headers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="73" selection-start="291" selection-end="291" vertical-scroll-proportion="-3.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="40" selection-start="225" selection-end="225" vertical-scroll-proportion="0.10016695">
@@ -1403,9 +1325,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings_prefs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="77" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
+        <state line="10" column="69" selection-start="417" selection-end="417" vertical-scroll-proportion="0.27124774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/prefs_root.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="63" selection-start="268" selection-end="268" vertical-scroll-proportion="0.10452962">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="46" selection-start="594" selection-end="594" vertical-scroll-proportion="0.5759599">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1414,16 +1350,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="24" selection-start="3548" selection-end="3585" vertical-scroll-proportion="0.0">
+        <state line="101" column="24" selection-start="3548" selection-end="3585" vertical-scroll-proportion="0.46076795">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/xml/pref_headers.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="46" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+        <state line="5" column="73" selection-start="291" selection-end="291" vertical-scroll-proportion="0.13066202">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="11" selection-start="585" selection-end="585" vertical-scroll-proportion="0.52587646">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1432,31 +1375,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.6583851">
+        <state line="57" column="0" selection-start="2321" selection-end="2321" vertical-scroll-proportion="0.78222996">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#619#1095#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/prefs_root.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="63" selection-start="268" selection-end="268" vertical-scroll-proportion="-2.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings_prefs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="34" selection-start="903" selection-end="903" vertical-scroll-proportion="0.5153707">
+        <state line="23" column="33" selection-start="893" selection-end="893" vertical-scroll-proportion="0.42570952">
           <folding />
         </state>
       </provider>
