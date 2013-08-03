@@ -91,6 +91,7 @@ public class Clipboard {
                         List<File> items = fragment.getAdapter().getItems();
                         Collections.sort(items, new File.Comparator());
                         fragment.getAdapter().notifyDataSetChanged();
+                        fragment.getActivity().invalidateOptionsMenu();
                         // Clear the clipboard
                         clear();
                         // Close the dialog

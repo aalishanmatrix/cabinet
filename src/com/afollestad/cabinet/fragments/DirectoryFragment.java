@@ -83,6 +83,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getListView().setSelector(R.drawable.selectable_background_cabinet);
+        getListView().setFastScrollEnabled(true);
         setupCab(getListView());
         load();
     }
