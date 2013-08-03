@@ -64,15 +64,14 @@ public class FileAdapter extends SilkAdapter<File> {
         }
 
         holder.position = index;
-        if (getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
-            if (item.isDirectory())
-                image.setImageResource(R.drawable.ic_folder);
-            else if (mime != null && mime.startsWith("image/"))
+        if (item.isDirectory()) {
+            image.setImageResource(R.drawable.ic_folder);
+        } else if (mime != null && mime.startsWith("image/")) {
+            if (getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING)
                 new ThumbnailTask(getContext(), index, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
-            else
-                image.setImageResource(R.drawable.ic_file);
+            else image.setImageBitmap(null);
         } else {
-            image.setImageBitmap(null);
+            image.setImageResource(R.drawable.ic_file);
         }
 
         image.setOnClickListener(new View.OnClickListener() {
