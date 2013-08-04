@@ -31,14 +31,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645261790" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645429260" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645210888" ignored="false" />
-    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645231456" ignored="false" />
+    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645638099" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375570529993" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375644863253" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375494655515" ignored="false" />
@@ -189,9 +189,10 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="46" selection-start="2654" selection-end="2654" vertical-scroll-proportion="0.0">
+            <state line="98" column="54" selection-start="2931" selection-end="2931" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2638#3840#0" expanded="true" />
                 <element signature="e#2989#3306#0" expanded="true" />
                 <element signature="e#3283#3284#0" expanded="true" />
                 <element signature="e#3389#3589#0" expanded="true" />
@@ -214,10 +215,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilesFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="193" column="67" selection-start="6512" selection-end="6512" vertical-scroll-proportion="0.48247078">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilesFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="72" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.6260434">
+            <state line="27" column="31" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#535#1233#0" expanded="true" />
                 <element signature="e#1222#1223#0" expanded="true" />
@@ -270,10 +280,10 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/res/values/strings_prefs.xml" />
         <option value="$PROJECT_DIR$/res/xml/prefs_files.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
       </list>
     </option>
   </component>
@@ -1282,7 +1292,11 @@
       <created>1375645266009</created>
       <updated>1375645266010</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Added sort setting">
+      <created>1375645430888</created>
+      <updated>1375645430889</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1504,13 +1518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="87" selection-start="6881" selection-end="6881" vertical-scroll-proportion="0.7245409">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="89" selection-start="2869" selection-end="2869" vertical-scroll-proportion="0.51919866">
@@ -1518,11 +1525,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/prefs_files.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="45" selection-start="450" selection-end="462" vertical-scroll-proportion="-4.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#535#1233#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="46" selection-start="2654" selection-end="2654" vertical-scroll-proportion="0.0">
+        <state line="98" column="54" selection-start="2931" selection-end="2931" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2638#3840#0" expanded="true" />
             <element signature="e#2989#3306#0" expanded="true" />
             <element signature="e#3283#3284#0" expanded="true" />
             <element signature="e#3389#3589#0" expanded="true" />
@@ -1544,20 +1569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/prefs_files.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="45" selection-start="450" selection-end="462" vertical-scroll-proportion="-4.8">
+        <state line="193" column="67" selection-start="6512" selection-end="6512" vertical-scroll-proportion="0.48247078">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="72" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.6260434">
-          <folding>
-            <element signature="e#535#1233#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
