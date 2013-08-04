@@ -9,4 +9,8 @@
             android:summary="@string/root_header_desc"
             android:fragment="com.afollestad.cabinet.fragments.prefs.RootFragment"/>
 
+    <header android:title="@string/files"
+            android:summary="@string/files_header_desc"
+            android:fragment="com.afollestad.cabinet.fragments.prefs.FilesFragment"/>
+
 </preference-headers>

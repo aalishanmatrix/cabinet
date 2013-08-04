@@ -6,6 +6,8 @@
     <string name="about">About</string>
     <string name="about_header_desc">View information about the app and its developer.</string>
     <string name="root_header_desc">Settings that deal with root access support.</string>
+    <string name="files">Files</string>
+    <string name="files_header_desc">Settings that are applied while viewing directories and files.</string>
 
     <string name="version">Version</string>
     <string name="developer">Developer</string>
@@ -20,5 +22,9 @@
     <string name="enable_root_on">Disabling root will hide the root folder shortcut in the nav drawer and prevent you
         from accessing the root of your device.
     </string>
+
+    <string name="show_hidden_files">Show Hidden Files</string>
+    <string name="show_hidden_files_on">Disabling will hide files and folders marked as hidden from you.</string>
+    <string name="show_hidden_files_off">Enabling will make files and folders marked as hidden visible to you.</string>
 
 </resources>

@@ -1,9 +1,11 @@
 package com.afollestad.cabinet.adapters;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ImageView;
@@ -17,6 +19,8 @@ public class FileAdapter extends SilkAdapter<File> {
     public FileAdapter(Context context, ThumbnailClickListener thumbnailListener) {
         super(context);
         mThumbnailListener = thumbnailListener;
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        showHidden = prefs.getBoolean("show_hidden_files", false);
     }
 
     public static interface ThumbnailClickListener {
@@ -25,9 +29,11 @@ public class FileAdapter extends SilkAdapter<File> {
 
     private final ThumbnailClickListener mThumbnailListener;
 
+    private final boolean showHidden;
+
     @Override
     public void add(File toAdd) {
-        if (toAdd.isHidden()) return;
+        if (!showHidden && toAdd.isHidden()) return;
         super.add(toAdd);
     }
 
