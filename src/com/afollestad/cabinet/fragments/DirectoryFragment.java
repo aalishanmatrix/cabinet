@@ -88,6 +88,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     private void load() {
         if (mPath == null) return;
+        setLoading(true);
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -111,6 +112,12 @@ public class DirectoryFragment extends SilkListFragment<File> {
                         }
                     });
                 }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        setLoadComplete(false);
+                    }
+                });
             }
         }
 
