@@ -1,8 +1,10 @@
 package com.afollestad.cabinet.fragments.prefs;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
 import com.afollestad.cabinet.R;
 
 /**
@@ -10,25 +12,29 @@ import com.afollestad.cabinet.R;
  */
 public class FilesFragment extends PreferenceFragment {
 
+    private int getSortingSummary(String value) {
+        switch (Integer.parseInt(value)) {
+            default:
+                return R.string.sorting_folderfile;
+            case 1:
+                return R.string.sorting_alphabetical;
+            case 2:
+                return R.string.sorting_extension;
+        }
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.prefs_files);
 
-        findPreference("file_sorting").setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        Preference sorting = findPreference("file_sorting");
+        sorting.setSummary(getSortingSummary(prefs.getString(sorting.getKey(), "0")));
+        sorting.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
-                switch (Integer.parseInt(newValue.toString())) {
-                    default:
-                        preference.setSummary(R.string.sorting_folderfile);
-                        break;
-                    case 1:
-                        preference.setSummary(R.string.sorting_alphabetical);
-                        break;
-                    case 2:
-                        preference.setSummary(R.string.sorting_extension);
-                        break;
-                }
+                preference.setSummary(getSortingSummary(newValue.toString()));
                 return true;
             }
         });
