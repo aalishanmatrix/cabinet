@@ -51,6 +51,20 @@ public class FileAdapter extends SilkAdapter<File> {
         return R.layout.list_item_file;
     }
 
+    private int getMimeIcon(File file, String mime) {
+        if (file.isDirectory()) {
+            return R.drawable.ic_folder;
+        } else if (mime.startsWith("image/")) {
+            return R.drawable.ic_picture;
+        } else if (mime.startsWith("video/")) {
+            return R.drawable.ic_video;
+        } else if (mime.startsWith("audio/")) {
+            return R.drawable.ic_audio;
+        } else {
+            return R.drawable.ic_file;
+        }
+    }
+
     @Override
     public View onViewCreated(final int index, View recycled, File item) {
         ImageView image = (ImageView) recycled.findViewById(R.id.image);
@@ -79,16 +93,12 @@ public class FileAdapter extends SilkAdapter<File> {
         }
 
         holder.position = index;
-        if (item.isDirectory()) {
-            image.setImageResource(R.drawable.ic_folder);
-        } else if (mime != null && mime.startsWith("image/")) {
-            if (getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING)
-                new ThumbnailTask(getContext(), index, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
-            else image.setImageBitmap(null);
+        int mimeIcon = getMimeIcon(item, mime);
+        if (mime != null && mime.startsWith("image/") && getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
+            new ThumbnailTask(getContext(), index, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
         } else {
-            image.setImageResource(R.drawable.ic_file);
+            image.setImageResource(mimeIcon);
         }
-
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
