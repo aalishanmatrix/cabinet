@@ -16,5 +16,6 @@
 
     <!-- Dimensions -->
     <dimen name="nav_drawer">280dp</dimen>
+    <dimen name="grid_column_width">90dp</dimen>
 
 </resources>

@@ -21,6 +21,7 @@ import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.utils.Utils;
+import com.afollestad.silk.Silk;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.SilkListFragment;
 
@@ -42,6 +43,13 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     public File getPath() {
         return mPath;
+    }
+
+    @Override
+    public int getLayout() {
+        if (Silk.isTablet(getActivity()))
+            return R.layout.fragment_grid;
+        return super.getLayout();
     }
 
     @Override
@@ -136,7 +144,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
         load();
     }
 
-    private void setupCab(ListView listView) {
+    private void setupCab(AbsListView listView) {
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
         listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
 
