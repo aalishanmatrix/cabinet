@@ -59,7 +59,6 @@ public class Shortcuts {
 
     public static void remove(Context context, int index) {
         List<File> files = getAll(context);
-        Log.d("Shortcuts", "Removed shortcut " + files.get(index).getAbsolutePath());
         files.remove(index);
         save(context, files);
     }
