@@ -88,16 +88,35 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     private void load() {
         if (mPath == null) return;
-        try {
-            File[] contents = mPath.requiresRootAccess() ?
-                    mPath.listFilesAsRoot() : mPath.listFiles();
-            Arrays.sort(contents, new File.Comparator());
-            getAdapter().clear();
-            for (java.io.File fi : contents)
-                getAdapter().add(new File(fi));
-        } catch (Exception e) {
-            setEmptyText(e.getMessage());
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    final File[] contents = mPath.requiresRootAccess() ?
+                            mPath.listFilesAsRoot() : mPath.listFiles();
+                    Arrays.sort(contents, new File.Comparator());
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            getAdapter().clear();
+                            for (java.io.File fi : contents)
+                                getAdapter().add(new File(fi));
+                        }
+                    });
+                } catch (final Exception e) {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            setEmptyText(e.getMessage());
+                        }
+                    });
+                }
+            }
         }
+
+        );
+        t.setPriority(Thread.MAX_PRIORITY);
+        t.start();
     }
 
     @Override

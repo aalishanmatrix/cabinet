@@ -31,8 +31,6 @@ public class MainActivity extends SilkDrawerActivity {
 
     private DrawerAdapter mDrawerAdapter;
     private boolean rootEnabled;
-    private File navigateTo;
-    private boolean navigateBackStack;
 
     @Override
     public int getDrawerIndicatorRes() {
@@ -158,28 +156,15 @@ public class MainActivity extends SilkDrawerActivity {
         }
     }
 
-    @Override
-    public void onDrawerClosed() {
-        super.onDrawerClosed();
-        if (navigateTo != null) {
-            navigate(navigateTo, navigateBackStack);
-            navigateTo = null;
-        }
-    }
-
     private void selectItem(int position) {
         DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
-        navigateTo = null;
-
-        if (item.getFile().exists()) {
-            navigateBackStack = true;
-            if (item.getFile().isStorageDirectory())
-                navigateBackStack = false;
-            navigateTo = item.getFile();
-        } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
-
-        // Once is the drawer is fully closed, the app will navigate to the new directory, if any
         getDrawerLayout().closeDrawers();
+        if (item.getFile().exists()) {
+            boolean backStack = true;
+            if (item.getFile().isStorageDirectory())
+                backStack = false;
+            navigate(item.getFile(), backStack);
+        } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
     }
 
     public void addShortcut(File path) {
