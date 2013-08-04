@@ -3,6 +3,7 @@ package com.afollestad.cabinet.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import com.afollestad.cabinet.File;
 
 import java.util.ArrayList;
@@ -58,6 +59,7 @@ public class Shortcuts {
 
     public static void remove(Context context, int index) {
         List<File> files = getAll(context);
+        Log.d("Shortcuts", "Removed shortcut " + files.get(index).getAbsolutePath());
         files.remove(index);
         save(context, files);
     }
