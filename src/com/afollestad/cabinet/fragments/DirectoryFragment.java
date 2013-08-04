@@ -22,14 +22,14 @@ import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.adapters.SilkAdapter;
-import com.afollestad.silk.fragments.SilkFeedFragment;
+import com.afollestad.silk.fragments.SilkListFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class DirectoryFragment extends SilkFeedFragment<File> {
+public class DirectoryFragment extends SilkListFragment<File> {
 
     public DirectoryFragment() {
     }
@@ -66,8 +66,8 @@ public class DirectoryFragment extends SilkFeedFragment<File> {
         else getActivity().setTitle(mPath.getName());
 
         if (((FileAdapter) getAdapter()).invalidateShowHidden()) {
-            // Reload the list if the user has changed the 'Show Hidden Files' setting
-            performRefresh(false);
+            // Reload the list of the user has changed the 'Show Hidden Files' setting
+            load();
         }
     }
 
@@ -82,8 +82,41 @@ public class DirectoryFragment extends SilkFeedFragment<File> {
         super.onActivityCreated(savedInstanceState);
         if (savedInstanceState != null) {
             mPath = new File(savedInstanceState.getString("path"));
-            performRefresh(false);
+            load();
         }
+    }
+
+    private void load() {
+        if (mPath == null) return;
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    final File[] contents = mPath.requiresRootAccess() ?
+                            mPath.listFilesAsRoot() : mPath.listFiles();
+                    Arrays.sort(contents, new File.Comparator());
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            getAdapter().clear();
+                            for (java.io.File fi : contents)
+                                getAdapter().add(new File(fi));
+                        }
+                    });
+                } catch (final Exception e) {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            setEmptyText(e.getMessage());
+                        }
+                    });
+                }
+            }
+        }
+
+        );
+        t.setPriority(Thread.MAX_PRIORITY);
+        t.start();
     }
 
     @Override
@@ -92,22 +125,7 @@ public class DirectoryFragment extends SilkFeedFragment<File> {
         getListView().setSelector(R.drawable.selectable_background_cabinet);
         getListView().setFastScrollEnabled(true);
         setupCab(getListView());
-        performRefresh(false);
-    }
-
-    @Override
-    protected File[] refresh() throws Exception {
-        if (mPath == null) return null;
-        final File[] contents = mPath.requiresRootAccess() ?
-                mPath.listFilesAsRoot() : mPath.listFiles();
-        Arrays.sort(contents, new File.Comparator());
-        return contents;
-    }
-
-    @Override
-    public void onError(String message) {
-        getAdapter().clear();
-        setEmptyText(message);
+        load();
     }
 
     private void setupCab(ListView listView) {
