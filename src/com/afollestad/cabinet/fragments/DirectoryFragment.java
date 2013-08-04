@@ -48,6 +48,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        setRetainInstance(true);
     }
 
     @Override
