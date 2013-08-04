@@ -64,7 +64,7 @@ public class FileAdapter extends SilkAdapter<File> {
             return R.drawable.ic_picture;
         } else if (mime.startsWith("video/")) {
             return R.drawable.ic_video;
-        } else if (mime.startsWith("audio/")) {
+        } else if (mime.startsWith("audio/") || mime.equals("application/ogg")) {
             return R.drawable.ic_audio;
         } else {
             return R.drawable.ic_file;
