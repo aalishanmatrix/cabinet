@@ -31,16 +31,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375654648874" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375655261652" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645210888" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645638099" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375570529993" ignored="false" />
-    <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375654591233" ignored="false" />
+    <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375656266869" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375494655515" ignored="false" />
     <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375393968592" ignored="false" />
     <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375224426499" ignored="false" />
@@ -186,13 +186,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+      <file leaf-file-name="FileAdapter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.025041737">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="103" column="73" selection-start="3807" selection-end="3807" vertical-scroll-proportion="0.94880545">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -234,8 +232,8 @@
         <option value="$PROJECT_DIR$/res/xml/prefs_files.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
       </list>
     </option>
   </component>
@@ -1264,7 +1262,11 @@
       <created>1375654651484</created>
       <updated>1375654651484</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="Bug fixes">
+      <created>1375655264669</created>
+      <updated>1375655264669</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1528,19 +1530,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="76" selection-start="2262" selection-end="2262" vertical-scroll-proportion="0.48634812">
-          <folding />
+        <state line="43" column="40" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.3505843">
+          <folding>
+            <element signature="method#getDrawerIndicatorRes#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getDrawerShadowRes#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getLayout#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getDrawerLayout#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getOpenedTextRes#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#navigate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#checkFirstTime#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#populateDrawer#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#selectItem#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#addShortcut#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#removeShortcut#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.025041737">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="103" column="73" selection-start="3807" selection-end="3807" vertical-scroll-proportion="0.94880545">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -101,7 +101,7 @@ public class FileAdapter extends SilkAdapter<File> {
         holder.position = index;
         int mimeIcon = getMimeIcon(item, mime);
         if (mime != null && mime.startsWith("image/") && getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
-            new ThumbnailTask(getContext(), index, holder).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, item);
+            new ThumbnailTask(getContext(), index, holder).execute(item);
         } else {
             image.setImageResource(mimeIcon);
         }
