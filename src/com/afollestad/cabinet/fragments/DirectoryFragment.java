@@ -66,8 +66,8 @@ public class DirectoryFragment extends SilkListFragment<File> {
             getActivity().setTitle(R.string.root);
         else getActivity().setTitle(mPath.getName());
 
-        if (((FileAdapter) getAdapter()).invalidateShowHidden()) {
-            // Reload the list of the user has changed the 'Show Hidden Files' setting
+        if (((FileAdapter) getAdapter()).invalidate()) {
+            // Reload the list if the user has changed settings
             load();
         }
     }
@@ -96,7 +96,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
                 try {
                     final File[] contents = mPath.requiresRootAccess() ?
                             mPath.listFilesAsRoot() : mPath.listFiles();
-                    Arrays.sort(contents, new File.Comparator());
+                    Arrays.sort(contents, File.getComparator(getActivity()));
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -264,7 +264,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
                 if (newFile.mkdir()) {
                     getAdapter().add(newFile);
                     List<File> items = getAdapter().getItems();
-                    Collections.sort(items, new File.Comparator());
+                    Collections.sort(items, File.getComparator(getActivity()));
                     getAdapter().notifyDataSetChanged();
                 }
             }

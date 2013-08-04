@@ -27,4 +27,21 @@
     <string name="show_hidden_files_on">Disabling will hide files and folders marked as hidden from you.</string>
     <string name="show_hidden_files_off">Enabling will make files and folders marked as hidden visible to you.</string>
 
+    <string name="sorting">Sorting</string>
+    <string name="sorting_folderfile">Files are currently alphabetically by name, with folders at the top.
+    </string>
+    <string name="sorting_alphabetical">Files are currently sorted alphabetically by name.</string>
+    <string name="sorting_extension">Files are currently sorted by extension, folders come first.</string>
+
+    <string-array name="sorting_entries">
+        <item>By name, folders at the top</item>
+        <item>By name</item>
+        <item>By extension</item>
+    </string-array>
+    <string-array name="sorting_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

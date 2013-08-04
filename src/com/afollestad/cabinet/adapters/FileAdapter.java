@@ -32,13 +32,15 @@ public class FileAdapter extends SilkAdapter<File> {
     private final ThumbnailClickListener mThumbnailListener;
 
     private boolean showHidden;
+    private int sortSetting;
 
-    public boolean invalidateShowHidden() {
+    public boolean invalidate() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
         boolean show = prefs.getBoolean("show_hidden_files", false);
-        boolean different = show != showHidden;
-        if (!different) return false;
+        int sort = Integer.parseInt(prefs.getString("file_sorting", "0"));
+        boolean different = sort != sortSetting || show != showHidden;
         showHidden = show;
+        sortSetting = sort;
         return different;
     }
 
@@ -56,7 +58,7 @@ public class FileAdapter extends SilkAdapter<File> {
     private int getMimeIcon(File file, String mime) {
         if (file.isDirectory()) {
             return R.drawable.ic_folder;
-        } else if(mime == null) {
+        } else if (mime == null) {
             return R.drawable.ic_file;
         } else if (mime.startsWith("image/")) {
             return R.drawable.ic_picture;

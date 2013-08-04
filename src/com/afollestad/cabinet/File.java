@@ -1,6 +1,8 @@
 package com.afollestad.cabinet;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.webkit.MimeTypeMap;
 import com.afollestad.cabinet.utils.Utils;
@@ -11,6 +13,7 @@ import org.sufficientlysecure.rootcommands.command.SimpleCommand;
 
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -64,7 +67,7 @@ public class File extends java.io.File implements SilkComparable<File> {
 
     public String getExtension() {
         String name = getName().toLowerCase();
-        if (!name.contains(".")) return null;
+        if (!name.contains(".")) return "";
         return name.substring(name.lastIndexOf('.') + 1);
     }
 
@@ -170,10 +173,45 @@ public class File extends java.io.File implements SilkComparable<File> {
         return files.toArray(new File[files.size()]);
     }
 
-    public static class Comparator implements java.util.Comparator<java.io.File> {
+    public static class AlphabeticalComparator implements java.util.Comparator<File> {
         @Override
-        public int compare(java.io.File lhs, java.io.File rhs) {
+        public int compare(File lhs, File rhs) {
             return lhs.getName().compareTo(rhs.getName());
+        }
+    }
+
+    public static class ExtensionComparator implements java.util.Comparator<File> {
+        @Override
+        public int compare(File lhs, File rhs) {
+            return lhs.getExtension().compareTo(rhs.getExtension());
+        }
+    }
+
+    public static class FoldersFirstComparator implements java.util.Comparator<File> {
+        @Override
+        public int compare(File lhs, File rhs) {
+            // First, folders always come before files
+            if (lhs.isDirectory() && !rhs.isDirectory()) {
+                return -1;
+            } else if (lhs.isDirectory() && rhs.isDirectory()) {
+                // Once folders and files are separate, sort alphabetically
+                return lhs.getName().compareTo(rhs.getName());
+            } else {
+                return 1;
+            }
+        }
+    }
+
+    public static Comparator<File> getComparator(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        int sortSetting = Integer.parseInt(prefs.getString("file_sorting", "0"));
+        switch (sortSetting) {
+            default:
+                return new File.FoldersFirstComparator();
+            case 1:
+                return new File.AlphabeticalComparator();
+            case 2:
+                return new File.ExtensionComparator();
         }
     }
 }

@@ -89,7 +89,7 @@ public class Clipboard {
                     public void run() {
                         // Re-sort the Fragment's list
                         List<File> items = fragment.getAdapter().getItems();
-                        Collections.sort(items, new File.Comparator());
+                        Collections.sort(items, File.getComparator(fragment.getActivity()));
                         fragment.getAdapter().notifyDataSetChanged();
                         fragment.getActivity().invalidateOptionsMenu();
                         // Clear the clipboard
