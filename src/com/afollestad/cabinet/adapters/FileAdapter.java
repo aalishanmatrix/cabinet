@@ -14,6 +14,8 @@ import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.silk.adapters.SilkAdapter;
 
+import java.util.Locale;
+
 public class FileAdapter extends SilkAdapter<File> {
 
     public FileAdapter(Context context, ThumbnailClickListener thumbnailListener) {
@@ -78,7 +80,7 @@ public class FileAdapter extends SilkAdapter<File> {
             if (mime != null) {
                 detailsStr += " — " + mime;
             } else if (item.getExtension() != null && !item.getExtension().trim().isEmpty()) {
-                detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
+                detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension().toUpperCase(Locale.getDefault()));
             }
         }
         details.setText(detailsStr);
