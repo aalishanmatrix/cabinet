@@ -47,6 +47,8 @@ public class Shortcuts {
     }
 
     public static boolean contains(Context context, File dir) {
+        if (dir.isStorageDirectory() || dir.isRootDirectory())
+            return true;
         List<File> shortcuts = getAll(context);
         for (File fi : shortcuts) {
             if (fi.getAbsolutePath().equals(dir.getAbsolutePath())) return true;
