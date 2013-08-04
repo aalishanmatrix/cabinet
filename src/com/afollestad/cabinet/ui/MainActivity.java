@@ -179,8 +179,8 @@ public class MainActivity extends SilkDrawerActivity {
             return;
         }
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.remove_shortcut)
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.remove_shortcut)
                 .setMessage(getString(R.string.confirm_remove_shortcut).replace("{path}", shortcut.getFile().getAbsolutePath()))
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
@@ -195,8 +195,7 @@ public class MainActivity extends SilkDrawerActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                     }
-                });
-        builder.create().show();
+                }).show();
     }
 
     @Override
