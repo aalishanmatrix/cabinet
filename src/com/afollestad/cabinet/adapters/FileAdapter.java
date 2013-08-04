@@ -54,9 +54,10 @@ public class FileAdapter extends SilkAdapter<File> {
     }
 
     private int getMimeIcon(File file, String mime) {
-        if (mime == null) return R.drawable.ic_file;
         if (file.isDirectory()) {
             return R.drawable.ic_folder;
+        } else if(mime == null) {
+            return R.drawable.ic_file;
         } else if (mime.startsWith("image/")) {
             return R.drawable.ic_picture;
         } else if (mime.startsWith("video/")) {
