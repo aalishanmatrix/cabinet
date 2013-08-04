@@ -29,7 +29,16 @@ public class FileAdapter extends SilkAdapter<File> {
 
     private final ThumbnailClickListener mThumbnailListener;
 
-    private final boolean showHidden;
+    private boolean showHidden;
+
+    public boolean invalidateShowHidden() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean show = prefs.getBoolean("show_hidden_files", false);
+        boolean different = show != showHidden;
+        if (!different) return false;
+        showHidden = show;
+        return different;
+    }
 
     @Override
     public void add(File toAdd) {

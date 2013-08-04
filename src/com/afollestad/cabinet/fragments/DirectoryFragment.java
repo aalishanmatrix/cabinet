@@ -57,11 +57,18 @@ public class DirectoryFragment extends SilkListFragment<File> {
     @Override
     public void onResume() {
         super.onResume();
+
+        // Update the activity title with the directory name
         if (mPath.isStorageDirectory())
             getActivity().setTitle(R.string.sdcard);
         else if (mPath.isRootDirectory())
             getActivity().setTitle(R.string.root);
         else getActivity().setTitle(mPath.getName());
+
+        if (((FileAdapter) getAdapter()).invalidateShowHidden()) {
+            // Reload the list of the user has changed the 'Show Hidden Files' setting
+            load();
+        }
     }
 
     @Override
