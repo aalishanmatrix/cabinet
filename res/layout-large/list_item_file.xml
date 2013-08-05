@@ -4,6 +4,10 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:gravity="center"
+              android:paddingTop="@dimen/file_item_vert_padding"
+              android:paddingBottom="@dimen/file_item_vert_padding"
+              android:paddingLeft="@dimen/file_item_hor_padding"
+              android:paddingRight="@dimen/file_item_hor_padding"
               android:background="@drawable/selectable_background_cabinet">
 
     <ImageView android:id="@+id/image"

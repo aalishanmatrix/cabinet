@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
+import com.afollestad.silk.Silk;
 import com.afollestad.silk.adapters.SilkAdapter;
 
 import java.util.Locale;
@@ -23,6 +24,7 @@ public class FileAdapter extends SilkAdapter<File> {
         mThumbnailListener = thumbnailListener;
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         showHidden = prefs.getBoolean("show_hidden_files", false);
+        isTablet = Silk.isTablet(context);
     }
 
     public static interface ThumbnailClickListener {
@@ -33,6 +35,7 @@ public class FileAdapter extends SilkAdapter<File> {
 
     private boolean showHidden;
     private int sortSetting;
+    private final boolean isTablet;
 
     public boolean invalidate() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
@@ -105,12 +108,15 @@ public class FileAdapter extends SilkAdapter<File> {
         } else {
             image.setImageResource(mimeIcon);
         }
-        image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mThumbnailListener.onThumbnailClicked(index);
-            }
-        });
+
+        if (!isTablet) {
+            image.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mThumbnailListener.onThumbnailClicked(index);
+                }
+            });
+        }
 
         return recycled;
     }

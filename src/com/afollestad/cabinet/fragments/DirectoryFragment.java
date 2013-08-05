@@ -311,7 +311,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
 
     @Override
     public void onThumbnailClicked(int index) {
-        if (!Silk.isTablet(getActivity()))
-            getListView().setItemChecked(index, !getListView().isItemChecked(index));
+        getListView().setItemChecked(index, !getListView().isItemChecked(index));
     }
 }
