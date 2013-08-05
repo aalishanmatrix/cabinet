@@ -27,7 +27,6 @@ import com.afollestad.silk.fragments.SilkListFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class DirectoryFragment extends SilkListFragment<File> implements FileAdapter.ThumbnailClickListener {
@@ -198,7 +197,19 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 }
                 menu.findItem(R.id.add_shortcut).setVisible(!hasFiles);
                 menu.findItem(R.id.share).setVisible(!hasFolders);
+                menu.findItem(R.id.unzip).setVisible(shouldShowUnzip(selectedFiles));
                 return true;
+            }
+
+            private boolean shouldShowUnzip(List<File> selectedFiles) {
+                boolean show = true;
+                for (File fi : selectedFiles) {
+                    if (fi.getExtension() != null && !fi.getExtension().equals("zip")) {
+                        show = false;
+                        break;
+                    }
+                }
+                return show;
             }
         });
     }
@@ -270,16 +281,14 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     }
 
     private void newFolder() {
-        Utils.showInputDialog(getActivity(), R.string.new_folder, null, new Utils.InputCallback() {
+        Utils.showInputDialog(getActivity(), R.string.new_folder, 0, null, new Utils.InputCallback() {
             @Override
             public void onSubmit(String name) {
                 if (name.isEmpty()) name = getActivity().getString(R.string.untitled);
                 File newFile = new File(mPath, name);
                 if (newFile.mkdir()) {
                     getAdapter().add(newFile);
-                    List<File> items = getAdapter().getItems();
-                    Collections.sort(items, File.getComparator(getActivity()));
-                    getAdapter().notifyDataSetChanged();
+                    DirectoryCAB.resortFragmentList(DirectoryFragment.this);
                 }
             }
         });

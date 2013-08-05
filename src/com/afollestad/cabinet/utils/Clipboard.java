@@ -3,6 +3,7 @@ package com.afollestad.cabinet.utils;
 import android.app.ProgressDialog;
 import android.util.Log;
 import com.afollestad.cabinet.File;
+import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 
 import java.io.FileInputStream;
@@ -10,7 +11,6 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -88,9 +88,8 @@ public class Clipboard {
                     @Override
                     public void run() {
                         // Re-sort the Fragment's list
-                        List<File> items = fragment.getAdapter().getItems();
-                        Collections.sort(items, File.getComparator(fragment.getActivity()));
-                        fragment.getAdapter().notifyDataSetChanged();
+                        DirectoryCAB.resortFragmentList(fragment);
+                        // Remove paste option from action bar
                         fragment.getActivity().invalidateOptionsMenu();
                         // Clear the clipboard
                         clear();

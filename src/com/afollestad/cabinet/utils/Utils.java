@@ -21,17 +21,18 @@ public class Utils {
 
     public static ProgressDialog showProgressDialog(Activity activity, int max) {
         ProgressDialog progress = new ProgressDialog(activity);
-        if (max == -1) progress.setIndeterminate(true);
-        else progress.setMax(max);
+        progress.setIndeterminate(max == -1);
+        if (max > 0) progress.setMax(max);
         progress.setCancelable(false);
         progress.setMessage(activity.getString(R.string.please_wait));
         progress.show();
         return progress;
     }
 
-    public static void showInputDialog(Activity activity, int title, String prefillInput, final InputCallback callback) {
+    public static void showInputDialog(Activity activity, int title, int hint, String prefillInput, final InputCallback callback) {
         View view = activity.getLayoutInflater().inflate(R.layout.input_edit_text, null);
         final SilkEditText input = (SilkEditText) view.findViewById(R.id.input);
+        if (hint > 0) input.setHint(hint);
         if (prefillInput != null) input.setText(prefillInput);
         new AlertDialog.Builder(activity)
                 .setTitle(title)

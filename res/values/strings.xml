@@ -23,6 +23,8 @@
     <string name="move">Move</string>
     <string name="share">Share</string>
     <string name="select_all">Select All</string>
+    <string name="zip">Zip</string>
+    <string name="unzip">Unzip</string>
     <string name="delete">Delete</string>
     <string name="delete_folder">Delete Folder</string>
     <string name="cancel">Cancel</string>
@@ -57,5 +59,6 @@
 
     <string name="root_denied">Root access was denied</string>
     <string name="root_disabled">Root is disabled, it can enabled again in the app\'s settings.</string>
+    <string name="zip_hint">Untitled.zip</string>
 
 </resources>

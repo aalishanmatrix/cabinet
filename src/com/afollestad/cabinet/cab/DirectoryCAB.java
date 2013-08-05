@@ -10,6 +10,7 @@ import android.text.Html;
 import android.text.Spanned;
 import android.view.ActionMode;
 import android.view.Gravity;
+import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -17,8 +18,11 @@ import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.cabinet.utils.Utils;
+import com.afollestad.cabinet.utils.ZipUtils;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -51,6 +55,12 @@ public class DirectoryCAB {
                 return true;
             case R.id.delete:
                 performDelete(fragment, selectedFiles, true);
+                break;
+            case R.id.zip:
+                performZip(fragment, selectedFiles);
+                break;
+            case R.id.unzip:
+                performUnzip(fragment, selectedFiles);
                 break;
             default:
                 return false;
@@ -131,5 +141,101 @@ public class DirectoryCAB {
         int len = fragment.getListView().getCount();
         for (int i = 0; i < len; i++)
             fragment.getListView().setItemChecked(i, true);
+    }
+
+    public static void resortFragmentList(DirectoryFragment fragment) {
+        List<File> items = fragment.getAdapter().getItems();
+        Collections.sort(items, File.getComparator(fragment.getActivity()));
+        fragment.getAdapter().notifyDataSetChanged();
+    }
+
+    private static void performZip(final DirectoryFragment fragment, final List<File> selectedFiles) {
+        Utils.showInputDialog(fragment.getActivity(), R.string.zip, R.string.zip_hint, null, new Utils.InputCallback() {
+            @Override
+            public void onSubmit(String input) {
+                if (!input.trim().endsWith(".zip"))
+                    input = input.trim() + ".zip";
+                final File zipFile = new File(fragment.getPath(), input);
+                final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), -1);
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            ZipUtils.zip(selectedFiles, zipFile);
+                            fragment.runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    fragment.getAdapter().update(zipFile);
+                                    DirectoryCAB.resortFragmentList(fragment);
+                                }
+                            });
+                        } catch (final IOException e) {
+                            e.printStackTrace();
+                            fragment.runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    progress.dismiss();
+                                    Toast.makeText(fragment.getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+                                }
+                            });
+                            return;
+                        }
+                        fragment.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                progress.dismiss();
+                            }
+                        });
+                    }
+                }).start();
+            }
+        });
+    }
+
+    private static void performUnzip(final DirectoryFragment fragment, final List<File> selectedFiles) {
+        final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), selectedFiles.size());
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 0; i < selectedFiles.size(); i++) {
+                    final int fi = i;
+                    fragment.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            progress.setProgress(fi);
+                        }
+                    });
+                    try {
+                        final List<File> added = ZipUtils.unzip(selectedFiles.get(i), fragment.getPath());
+                        fragment.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                for (File a : added) fragment.getAdapter().update(a);
+                                DirectoryCAB.resortFragmentList(fragment);
+                            }
+                        });
+                    } catch (final IOException e) {
+                        e.printStackTrace();
+                        fragment.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(fragment.getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+                            }
+                        });
+                    }
+                }
+                fragment.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        progress.dismiss();
+                    }
+                });
+            }
+        }
+
+        ).
+
+                start();
+
     }
 }

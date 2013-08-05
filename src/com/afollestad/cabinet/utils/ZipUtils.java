@@ -1,6 +1,10 @@
 package com.afollestad.cabinet.utils;
 
+import com.afollestad.cabinet.File;
+
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
@@ -10,18 +14,18 @@ import java.util.zip.ZipOutputStream;
  */
 public class ZipUtils {
 
-    private final static int BUFFER_SIZE = 1024;
+    private final static int BUFFER_SIZE = 2048;
 
-    public static void zip(File[] files, String zipFile) throws IOException {
+    public static void zip(List<File> files, File zipFile) throws IOException {
         BufferedInputStream origin;
         ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)));
         try {
             byte data[] = new byte[BUFFER_SIZE];
-            for (int i = 0; i < files.length; i++) {
-                FileInputStream fi = new FileInputStream(files[i]);
+            for (File file : files) {
+                FileInputStream fi = new FileInputStream(file);
                 origin = new BufferedInputStream(fi, BUFFER_SIZE);
                 try {
-                    ZipEntry entry = new ZipEntry(files[i].getName());
+                    ZipEntry entry = new ZipEntry(file.getName());
                     out.putNextEntry(entry);
                     int count;
                     while ((count = origin.read(data, 0, BUFFER_SIZE)) != -1)
@@ -35,19 +39,19 @@ public class ZipUtils {
         }
     }
 
-    public static void unzip(File zipFile, File location) throws IOException {
+    public static List<File> unzip(File zipFile, File location) throws IOException {
+        List<File> added = new ArrayList<File>();
         try {
             if (!location.isDirectory()) location.mkdirs();
             ZipInputStream zin = new ZipInputStream(new FileInputStream(zipFile));
             try {
                 ZipEntry ze;
                 while ((ze = zin.getNextEntry()) != null) {
-                    String path = new File(location, ze.getName()).getAbsolutePath();
+                    File file = new File(location, ze.getName());
                     if (ze.isDirectory()) {
-                        File unzipFile = new File(path);
-                        if (!unzipFile.isDirectory()) unzipFile.mkdirs();
+                        if (!file.isDirectory()) file.mkdirs();
                     } else {
-                        FileOutputStream fout = new FileOutputStream(path, false);
+                        FileOutputStream fout = new FileOutputStream(file, false);
                         try {
                             for (int c = zin.read(); c != -1; c = zin.read())
                                 fout.write(c);
@@ -55,6 +59,7 @@ public class ZipUtils {
                         } finally {
                             fout.close();
                         }
+                        added.add(file);
                     }
                 }
             } finally {
@@ -63,5 +68,6 @@ public class ZipUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return added;
     }
 }
