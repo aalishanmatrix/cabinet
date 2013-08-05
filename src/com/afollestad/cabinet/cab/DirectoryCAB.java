@@ -153,7 +153,9 @@ public class DirectoryCAB {
         Utils.showInputDialog(fragment.getActivity(), R.string.zip, R.string.zip_hint, null, new Utils.InputCallback() {
             @Override
             public void onSubmit(String input) {
-                if (!input.trim().endsWith(".zip"))
+                if (input == null || input.trim().isEmpty())
+                    input = fragment.getString(R.string.zip_hint);
+                else if (!input.trim().endsWith(".zip"))
                     input = input.trim() + ".zip";
                 final File zipFile = new File(fragment.getPath(), input);
                 final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), -1);
@@ -231,11 +233,6 @@ public class DirectoryCAB {
                     }
                 });
             }
-        }
-
-        ).
-
-                start();
-
+        }).start();
     }
 }

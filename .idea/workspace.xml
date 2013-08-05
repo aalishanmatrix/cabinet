@@ -34,24 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_select_all.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_share.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_select_all.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_share.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_select_all.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_share.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" afterPath="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375740855537" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375742972527" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375742641586" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375662197729" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375741198030" ignored="false" />
@@ -87,7 +75,7 @@
     <file path="/dialog_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375248454873" ignored="false" />
     <file path="/fragment_directory.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375332808635" ignored="false" />
     <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375742626451" ignored="false" />
-    <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375742955365" ignored="false" />
+    <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375743056983" ignored="false" />
     <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375742404699" ignored="false" />
     <file path="/Root.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375398968679" ignored="false" />
     <file path="/SilkListView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375657562479" ignored="false" />
@@ -243,29 +231,29 @@
       <file leaf-file-name="DirectoryCAB.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="25" selection-start="10375" selection-end="10375" vertical-scroll-proportion="0.51194537">
+            <state line="157" column="21" selection-start="7590" selection-end="7590" vertical-scroll-proportion="0.28156996">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7342#9214#0" expanded="true" />
-                <element signature="e#7747#9180#0" expanded="true" />
-                <element signature="e#7981#8309#0" expanded="true" />
-                <element signature="e#8278#8279#0" expanded="true" />
-                <element signature="e#8468#8816#0" expanded="true" />
-                <element signature="e#8785#8786#0" expanded="true" />
-                <element signature="e#8928#9138#0" expanded="true" />
-                <element signature="e#9111#9112#0" expanded="true" />
-                <element signature="e#9161#9162#0" expanded="true" />
-                <element signature="e#9203#9204#0" expanded="true" />
-                <element signature="e#9460#11072#0" expanded="true" />
-                <element signature="e#9677#9873#0" expanded="true" />
-                <element signature="e#9850#9851#0" expanded="true" />
-                <element signature="e#10056#10375#0" expanded="true" />
-                <element signature="e#10348#10349#0" expanded="true" />
-                <element signature="e#10522#10794#0" expanded="true" />
-                <element signature="e#10767#10768#0" expanded="true" />
-                <element signature="e#10876#11046#0" expanded="true" />
-                <element signature="e#11027#11028#0" expanded="true" />
-                <element signature="e#11061#11062#0" expanded="true" />
+                <element signature="e#7342#9347#0" expanded="true" />
+                <element signature="e#7880#9313#0" expanded="true" />
+                <element signature="e#8114#8442#0" expanded="true" />
+                <element signature="e#8411#8412#0" expanded="true" />
+                <element signature="e#8601#8949#0" expanded="true" />
+                <element signature="e#8918#8919#0" expanded="true" />
+                <element signature="e#9061#9271#0" expanded="true" />
+                <element signature="e#9244#9245#0" expanded="true" />
+                <element signature="e#9294#9295#0" expanded="true" />
+                <element signature="e#9336#9337#0" expanded="true" />
+                <element signature="e#9593#11205#0" expanded="true" />
+                <element signature="e#9810#10006#0" expanded="true" />
+                <element signature="e#9983#9984#0" expanded="true" />
+                <element signature="e#10189#10508#0" expanded="true" />
+                <element signature="e#10481#10482#0" expanded="true" />
+                <element signature="e#10655#10927#0" expanded="true" />
+                <element signature="e#10900#10901#0" expanded="true" />
+                <element signature="e#11009#11179#0" expanded="true" />
+                <element signature="e#11160#11161#0" expanded="true" />
+                <element signature="e#11194#11195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1451,7 +1439,11 @@
       <created>1375740859042</created>
       <updated>1375740859042</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="Added ZIP and UNZIP options.">
+      <created>1375742976522</created>
+      <updated>1375742976522</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1495,7 +1487,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.616" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1548,7 +1540,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ZipUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ZIP and UNZIP options." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1562,7 +1554,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Drawer is opened when you add shortcuts." />
     <MESSAGE value="Added docs to the SilkListView." />
     <MESSAGE value="Added delete option for currently viewed directory." />
     <MESSAGE value="Fixes and theme update." />
@@ -1587,6 +1578,7 @@
     <MESSAGE value="Added support for GET_CONTENT and PICK intents." />
     <MESSAGE value="Updates" />
     <MESSAGE value="Added ZipUtils" />
+    <MESSAGE value="Added ZIP and UNZIP options." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1723,29 +1715,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="25" selection-start="10375" selection-end="10375" vertical-scroll-proportion="0.51194537">
+        <state line="157" column="21" selection-start="7590" selection-end="7590" vertical-scroll-proportion="0.28156996">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7342#9214#0" expanded="true" />
-            <element signature="e#7747#9180#0" expanded="true" />
-            <element signature="e#7981#8309#0" expanded="true" />
-            <element signature="e#8278#8279#0" expanded="true" />
-            <element signature="e#8468#8816#0" expanded="true" />
-            <element signature="e#8785#8786#0" expanded="true" />
-            <element signature="e#8928#9138#0" expanded="true" />
-            <element signature="e#9111#9112#0" expanded="true" />
-            <element signature="e#9161#9162#0" expanded="true" />
-            <element signature="e#9203#9204#0" expanded="true" />
-            <element signature="e#9460#11072#0" expanded="true" />
-            <element signature="e#9677#9873#0" expanded="true" />
-            <element signature="e#9850#9851#0" expanded="true" />
-            <element signature="e#10056#10375#0" expanded="true" />
-            <element signature="e#10348#10349#0" expanded="true" />
-            <element signature="e#10522#10794#0" expanded="true" />
-            <element signature="e#10767#10768#0" expanded="true" />
-            <element signature="e#10876#11046#0" expanded="true" />
-            <element signature="e#11027#11028#0" expanded="true" />
-            <element signature="e#11061#11062#0" expanded="true" />
+            <element signature="e#7342#9347#0" expanded="true" />
+            <element signature="e#7880#9313#0" expanded="true" />
+            <element signature="e#8114#8442#0" expanded="true" />
+            <element signature="e#8411#8412#0" expanded="true" />
+            <element signature="e#8601#8949#0" expanded="true" />
+            <element signature="e#8918#8919#0" expanded="true" />
+            <element signature="e#9061#9271#0" expanded="true" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9294#9295#0" expanded="true" />
+            <element signature="e#9336#9337#0" expanded="true" />
+            <element signature="e#9593#11205#0" expanded="true" />
+            <element signature="e#9810#10006#0" expanded="true" />
+            <element signature="e#9983#9984#0" expanded="true" />
+            <element signature="e#10189#10508#0" expanded="true" />
+            <element signature="e#10481#10482#0" expanded="true" />
+            <element signature="e#10655#10927#0" expanded="true" />
+            <element signature="e#10900#10901#0" expanded="true" />
+            <element signature="e#11009#11179#0" expanded="true" />
+            <element signature="e#11160#11161#0" expanded="true" />
+            <element signature="e#11194#11195#0" expanded="true" />
           </folding>
         </state>
       </provider>
