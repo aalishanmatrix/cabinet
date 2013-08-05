@@ -52,7 +52,7 @@
         Are you sure you want to delete these files/folders?<br/><br/>{paths}<br/>from <b>{dest}</b>
     ]]></string>
 
-    <string name="enable_root_prompt">Do you want to enable root access? You can only do so if your phone is rooted.
+    <string name="enable_root_prompt">Do you want to enable root access? You can only do so if your device is rooted.
         This can be disabled later from the app\'s settings.
     </string>
 
