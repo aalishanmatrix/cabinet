@@ -67,7 +67,7 @@ public class File extends java.io.File implements SilkComparable<File> {
 
     public String getExtension() {
         String name = getName().toLowerCase();
-        if (!name.contains(".")) return "";
+        if (name.startsWith(".") || !name.substring(1).contains(".")) return "";
         return name.substring(name.lastIndexOf('.') + 1);
     }
 
