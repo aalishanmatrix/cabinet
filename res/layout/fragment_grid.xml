@@ -10,7 +10,8 @@
                                                  android:verticalSpacing="10dp"
                                                  android:horizontalSpacing="10dp"
                                                  android:stretchMode="columnWidth"
-                                                 android:gravity="center"/>
+                                                 android:gravity="center"
+                                                 android:padding="@dimen/grid_padding"/>
 
     <com.afollestad.silk.views.text.SilkTextView android:id="@+id/empty" android:layout_width="wrap_content"
                                                  android:layout_height="wrap_content"

@@ -12,7 +12,6 @@ import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
-import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -31,7 +30,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class DirectoryFragment extends SilkListFragment<File> {
+public class DirectoryFragment extends SilkListFragment<File> implements FileAdapter.ThumbnailClickListener {
 
     public DirectoryFragment() {
     }
@@ -207,12 +206,7 @@ public class DirectoryFragment extends SilkListFragment<File> {
 
     @Override
     protected SilkAdapter<File> initializeAdapter() {
-        return new FileAdapter(getActivity(), new FileAdapter.ThumbnailClickListener() {
-            @Override
-            public void onThumbnailClicked(int index) {
-                getListView().setItemChecked(index, !getListView().isItemChecked(index));
-            }
-        });
+        return new FileAdapter(getActivity(), this);
     }
 
     @Override
@@ -313,5 +307,11 @@ public class DirectoryFragment extends SilkListFragment<File> {
                     }
                 });
         builder.create().show();
+    }
+
+    @Override
+    public void onThumbnailClicked(int index) {
+        if (!Silk.isTablet(getActivity()))
+            getListView().setItemChecked(index, !getListView().isItemChecked(index));
     }
 }

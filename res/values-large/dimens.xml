@@ -2,5 +2,7 @@
 <resources>
 
     <dimen name="nav_drawer">400dp</dimen>
+    <dimen name="grid_column_width">120dp</dimen>
+    <dimen name="grid_padding">15dp</dimen>
 
 </resources>
