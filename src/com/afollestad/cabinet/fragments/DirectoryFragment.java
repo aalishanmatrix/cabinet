@@ -35,11 +35,13 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public DirectoryFragment() {
     }
 
-    public DirectoryFragment(File dir) {
+    public DirectoryFragment(File dir, boolean pickMode) {
         mPath = dir;
+        mPickMode = pickMode;
     }
 
     private File mPath;
+    private boolean mPickMode;
 
     public File getPath() {
         return mPath;
@@ -83,6 +85,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putString("path", mPath.getAbsolutePath());
+        outState.putBoolean("pick_mode", mPickMode);
         super.onSaveInstanceState(outState);
     }
 
@@ -91,6 +94,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         super.onActivityCreated(savedInstanceState);
         if (savedInstanceState != null) {
             mPath = new File(savedInstanceState.getString("path"));
+            mPickMode = savedInstanceState.getBoolean("pick_mode");
             load();
         }
     }
@@ -214,6 +218,11 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         if (item.isDirectory()) {
             ((MainActivity) getActivity()).navigate(item, true);
         } else {
+            if (mPickMode) {
+                getActivity().setResult(Activity.RESULT_OK, new Intent().setData(Uri.fromFile(item)));
+                getActivity().finish();
+                return;
+            }
             Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item), item.getMimeType());
             startActivity(Intent.createChooser(intent, getString(R.string.open_with)));
         }

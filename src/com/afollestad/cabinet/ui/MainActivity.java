@@ -31,6 +31,7 @@ public class MainActivity extends SilkDrawerActivity {
 
     private DrawerAdapter mDrawerAdapter;
     private boolean rootEnabled;
+    private boolean mPickMode;
 
     @Override
     public int getDrawerIndicatorRes() {
@@ -57,6 +58,12 @@ public class MainActivity extends SilkDrawerActivity {
         return R.string.shortcuts;
     }
 
+    private boolean processIntent() {
+        Intent i = getIntent();
+        if (i.getAction() == null) return false;
+        return i.getAction().equals(Intent.ACTION_GET_CONTENT) || i.getAction().equals(Intent.ACTION_PICK);
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +71,7 @@ public class MainActivity extends SilkDrawerActivity {
             // If it's not the first time, populate the drawer now, otherwise wait for root prompt
             populateDrawer();
         }
+        mPickMode = processIntent();
         navigate(App.getStorageDirectory(), false);
     }
 
@@ -82,7 +90,7 @@ public class MainActivity extends SilkDrawerActivity {
         else setTitle(directory.getName());
 
         FragmentTransaction trans = getFragmentManager().beginTransaction();
-        trans.replace(R.id.content_frame, new DirectoryFragment(directory));
+        trans.replace(R.id.content_frame, new DirectoryFragment(directory, mPickMode));
         if (backStack) trans.addToBackStack(null);
         else getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         trans.commit();
