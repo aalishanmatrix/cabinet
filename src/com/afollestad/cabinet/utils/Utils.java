@@ -21,7 +21,8 @@ public class Utils {
 
     public static ProgressDialog showProgressDialog(Activity activity, int max) {
         ProgressDialog progress = new ProgressDialog(activity);
-        progress.setMax(max);
+        if (max == -1) progress.setIndeterminate(true);
+        else progress.setMax(max);
         progress.setCancelable(false);
         progress.setMessage(activity.getString(R.string.please_wait));
         progress.show();

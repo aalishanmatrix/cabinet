@@ -173,14 +173,14 @@ public class File extends java.io.File implements SilkComparable<File> {
         return files.toArray(new File[files.size()]);
     }
 
-    public static class AlphabeticalComparator implements java.util.Comparator<File> {
+    private static class AlphabeticalComparator implements java.util.Comparator<File> {
         @Override
         public int compare(File lhs, File rhs) {
             return lhs.getName().compareTo(rhs.getName());
         }
     }
 
-    public static class ExtensionComparator implements java.util.Comparator<File> {
+    private static class ExtensionComparator implements java.util.Comparator<File> {
         @Override
         public int compare(File lhs, File rhs) {
             // First, folders always come before files
@@ -197,7 +197,7 @@ public class File extends java.io.File implements SilkComparable<File> {
         }
     }
 
-    public static class FoldersFirstComparator implements java.util.Comparator<File> {
+    private static class FoldersFirstComparator implements java.util.Comparator<File> {
         @Override
         public int compare(File lhs, File rhs) {
             // First, folders always come before files

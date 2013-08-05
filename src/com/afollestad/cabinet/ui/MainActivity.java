@@ -60,8 +60,7 @@ public class MainActivity extends SilkDrawerActivity {
 
     private boolean processIntent() {
         Intent i = getIntent();
-        if (i.getAction() == null) return false;
-        return i.getAction().equals(Intent.ACTION_GET_CONTENT) || i.getAction().equals(Intent.ACTION_PICK);
+        return i.getAction() != null && (i.getAction().equals(Intent.ACTION_GET_CONTENT) || i.getAction().equals(Intent.ACTION_PICK));
     }
 
     @Override
