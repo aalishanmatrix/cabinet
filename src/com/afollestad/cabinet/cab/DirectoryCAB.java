@@ -157,7 +157,7 @@ public class DirectoryCAB {
                     input = fragment.getString(R.string.zip_hint);
                 else if (!input.trim().endsWith(".zip"))
                     input = input.trim() + ".zip";
-                final File zipFile = new File(fragment.getPath(), input);
+                final File zipFile = new File(fragment.getPath(), input.trim());
                 final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), -1);
                 new Thread(new Runnable() {
                     @Override
