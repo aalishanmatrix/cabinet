@@ -129,6 +129,10 @@ public class Clipboard {
                 out.write(buf, 0, len);
             in.close();
             out.close();
+            if (cut) {
+                log("Deleting: " + src.getAbsolutePath());
+                src.delete();
+            }
             return true;
         } catch (Exception e) {
             e.printStackTrace();

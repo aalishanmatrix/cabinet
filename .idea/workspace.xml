@@ -39,7 +39,7 @@
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375816230971" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375820935348" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751066480" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751213488" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
@@ -74,7 +74,7 @@
     <file path="/fragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812294660" ignored="false" />
     <file path="/dialog_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375248454873" ignored="false" />
     <file path="/fragment_directory.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375332808635" ignored="false" />
-    <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375820921896" ignored="false" />
+    <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375821010478" ignored="false" />
     <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375807903309" ignored="false" />
     <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751163918" ignored="false" />
     <file path="/Root.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375398968679" ignored="false" />
@@ -290,7 +290,7 @@
       <file leaf-file-name="Clipboard.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="29" selection-start="3841" selection-end="3841" vertical-scroll-proportion="0.27378964">
+            <state line="115" column="24" selection-start="3836" selection-end="3836" vertical-scroll-proportion="0.32387313">
               <folding />
             </state>
           </provider>
@@ -1533,7 +1533,11 @@
       <created>1375816235773</created>
       <updated>1375816235773</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="Added copy/cut support for entire directories.">
+      <created>1375820939266</created>
+      <updated>1375820939266</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1630,7 +1634,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added credit to 'About' in settings for the icon." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added copy/cut support for entire directories." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1644,7 +1648,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Theming updates" />
     <MESSAGE value="Added settings screen" />
     <MESSAGE value="Updates." />
     <MESSAGE value="Added &quot;Show Hidden Files&quot; preference" />
@@ -1669,6 +1672,7 @@
     <MESSAGE value="Fixes" />
     <MESSAGE value="Added app icon thumbnails for APKs" />
     <MESSAGE value="Added credit to 'About' in settings for the icon." />
+    <MESSAGE value="Added copy/cut support for entire directories." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1702,13 +1706,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1474#1480#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="45" selection-start="4907" selection-end="4907" vertical-scroll-proportion="0.21869783">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1799,9 +1796,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="19" selection-start="2990" selection-end="2990" vertical-scroll-proportion="-0.006677796">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="29" selection-start="3841" selection-end="3841" vertical-scroll-proportion="0.27378964">
+        <state line="115" column="24" selection-start="3836" selection-end="3836" vertical-scroll-proportion="0.32387313">
           <folding />
         </state>
       </provider>
