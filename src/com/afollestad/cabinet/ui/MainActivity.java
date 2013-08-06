@@ -112,6 +112,7 @@ public class MainActivity extends SilkDrawerActivity {
             }
             return false;
         }
+
         // Add default shortcuts
         File storage = new File(Environment.getExternalStorageDirectory());
         Shortcuts.add(this, storage);

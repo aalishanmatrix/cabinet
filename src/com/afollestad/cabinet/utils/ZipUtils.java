@@ -55,8 +55,10 @@ public class ZipUtils {
                     } else {
                         FileOutputStream fout = new FileOutputStream(file, false);
                         try {
-                            for (int c = zin.read(); c != -1; c = zin.read())
-                                fout.write(c);
+                            byte data[] = new byte[BUFFER_SIZE];
+                            int count;
+                            while ((count = zin.read(data, 0, BUFFER_SIZE)) != -1)
+                                fout.write(data, 0, count);
                             zin.closeEntry();
                         } finally {
                             fout.close();
