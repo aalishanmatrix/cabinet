@@ -6,6 +6,9 @@
     <Preference android:key="app_dev" android:title="@string/developer"
                 android:summary="@string/developer_desc"/>
 
+    <Preference android:key="app_icon" android:title="@string/icon"
+                android:summary="@string/icon_desc"/>
+
     <Preference android:key="app_silk" android:title="@string/silk"
                 android:summary="@string/silk_desc"/>
 

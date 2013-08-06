@@ -34,12 +34,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/prefs_about.xml" afterPath="$PROJECT_DIR$/res/xml/prefs_about.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings_prefs.xml" afterPath="$PROJECT_DIR$/res/values/strings_prefs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375814734004" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815960775" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751066480" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751213488" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
@@ -116,11 +118,11 @@
     <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout/list_item_item.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384535323" ignored="false" />
     <file path="/README.md" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375408115090" ignored="false" />
     <file path="/SettingsActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375568985774" ignored="false" />
-    <file path="/prefs_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569222573" ignored="false" />
+    <file path="/prefs_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375816190467" ignored="false" />
     <file path="/AboutFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569695596" ignored="false" />
     <file path="/pref_headers.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375639282180" ignored="false" />
     <file path="/prefs_root.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569526665" ignored="false" />
-    <file path="/strings_prefs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645169312" ignored="false" />
+    <file path="/strings_prefs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375816180625" ignored="false" />
     <file path="/RootFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375570513364" ignored="false" />
     <file path="/Item.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375573287625" ignored="false" />
     <file path="/FilesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645918979" ignored="false" />
@@ -147,18 +149,18 @@
     <file path="$PROJECT_DIR$/../savvy-grape-android/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/SavvyButton.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/BorderlessEditText.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/EventAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812809855" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/ExperienceAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/EventAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815811310" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/ExperienceAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815873060" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/TastingsFragmentAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/AboutCardsAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/AttendanceSpinnerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/EventUserAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/EventUserAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815878099" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/MyWinesFragmentAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/WishlistItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/DrinkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/WishlistItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815883072" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/DrinkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815891971" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/dialogs/WishlistAddUpdateDialog.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/CellarItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/WineryAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/CellarItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815887587" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/WineryAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815899618" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/services/GcmBroadcastReceiver.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/MyWinesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/HomeFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
@@ -169,10 +171,10 @@
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/local/WineryViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/local/LocalFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/cellar/CellarItemViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812785929" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/cellar/CellarFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/cellar/CellarFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815867882" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/DrinkSearchFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/ExperienceViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812817658" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815860018" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/DrinkViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/InviteNotification.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812824381" ignored="false" />
@@ -180,10 +182,10 @@
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventGuestsViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/CalendarFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815851404" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/wishlist/WishlistItemViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812805573" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/wishlist/WishListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/favorites/FavoritesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/wishlist/WishListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815846000" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/favorites/FavoritesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815855566" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/BroadcastNotification.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/BroadcastNotification16.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
@@ -214,7 +216,7 @@
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/SearchActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/AboutActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/InvitesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/InvitesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815799277" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/services/BackgroundService.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812094968" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/DrinkViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
@@ -296,10 +298,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FileAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="85" selection-start="5680" selection-end="5680" vertical-scroll-proportion="1.2020034">
+            <state line="125" column="56" selection-start="4564" selection-end="4564" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings_prefs.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings_prefs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="92" selection-start="921" selection-end="921" vertical-scroll-proportion="-10.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="50" selection-start="554" selection-end="554" vertical-scroll-proportion="0.30050084">
               <folding />
             </state>
           </provider>
@@ -337,9 +357,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
@@ -353,6 +370,9 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
+        <option value="$PROJECT_DIR$/res/values/strings_prefs.xml" />
+        <option value="$PROJECT_DIR$/res/xml/prefs_about.xml" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
       </list>
     </option>
   </component>
@@ -442,7 +462,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adapters" />
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prefs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1485,7 +1531,11 @@
       <created>1375814747448</created>
       <updated>1375814747448</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="Added app icon thumbnails for APKs">
+      <created>1375815718661</created>
+      <updated>1375815718661</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1582,7 +1632,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added app icon thumbnails for APKs" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1596,7 +1646,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Fixes." />
     <MESSAGE value="FIxes" />
     <MESSAGE value="Theming updates" />
     <MESSAGE value="Added settings screen" />
@@ -1621,36 +1670,12 @@
     <MESSAGE value="Updated version info" />
     <MESSAGE value="Performance fixes for unzipping" />
     <MESSAGE value="Fixes" />
+    <MESSAGE value="Added app icon thumbnails for APKs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="344" selection-end="344" vertical-scroll-proportion="0.12520868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.25041735">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5040#5046#0" expanded="true" />
-            <element signature="e#9825#9831#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/contextual_ab_file.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="914" selection-end="914" vertical-scroll-proportion="-9.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="10" selection-start="475" selection-end="475" vertical-scroll-proportion="0.32554257">
@@ -1723,13 +1748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="148" column="23" selection-start="6958" selection-end="6958" vertical-scroll-proportion="0.3327645">
@@ -1744,9 +1762,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="13" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.33222038">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5040#5046#0" expanded="true" />
+            <element signature="e#9825#9831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="85" selection-start="5680" selection-end="5680" vertical-scroll-proportion="1.2020034">
+        <state line="125" column="56" selection-start="4564" selection-end="4564" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="53" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings_prefs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="92" selection-start="921" selection-end="921" vertical-scroll-proportion="-10.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/prefs_about.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="42" selection-start="592" selection-end="592" vertical-scroll-proportion="0.36585367">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="50" selection-start="554" selection-end="554" vertical-scroll-proportion="0.30050084">
           <folding />
         </state>
       </provider>

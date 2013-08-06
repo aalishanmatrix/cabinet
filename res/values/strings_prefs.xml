@@ -14,6 +14,8 @@
     <string name="developer_desc">Coded and designed by Aidan Follestad. Tap for his Google+ page.</string>
     <string name="silk">Silk</string>
     <string name="silk_desc">Powered by Silk, tap to view on GitHub.</string>
+    <string name="icon">Icon</string>
+    <string name="icon_desc">Icon designed by Nathanel Titane, tap to view his Google+ page.</string>
 
     <string name="enable_root">Enable Root</string>
     <string name="enable_root_off">Enabling root will reveal the root folder shortcut in the nav drawer and give you

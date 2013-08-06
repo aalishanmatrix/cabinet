@@ -33,6 +33,14 @@ public class AboutFragment extends PreferenceFragment {
                 return true;
             }
         });
+        findPreference("app_icon").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://plus.google.com/101462132469973311689"));
+                startActivity(Intent.createChooser(intent, getString(R.string.open_with)));
+                return true;
+            }
+        });
         findPreference("app_silk").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
