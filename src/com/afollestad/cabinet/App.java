@@ -23,10 +23,4 @@ public class App extends Application {
             mClipboard = new Clipboard();
         return mClipboard;
     }
-
-    public static File getStorageDirectory() {
-        File sdTest = new File("/sdcard");
-        if (!sdTest.exists()) sdTest = new File(Environment.getExternalStorageDirectory());
-        return sdTest;
-    }
 }

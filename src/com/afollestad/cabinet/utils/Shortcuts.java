@@ -17,7 +17,7 @@ public class Shortcuts {
 
     private final static String COMMA_ENTITY = "&#44;";
 
-    private static void save(Context context, List<File> files) {
+    public static void save(Context context, List<File> files) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String toSet = "";
         for (int i = 0; i < files.size(); i++) {

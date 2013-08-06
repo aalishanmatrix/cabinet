@@ -2,6 +2,7 @@ package com.afollestad.cabinet;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.webkit.MimeTypeMap;
@@ -143,7 +144,7 @@ public class File extends java.io.File implements SilkComparable<File> {
      * Checks whether or not this file represents the SD card directory
      */
     public boolean isStorageDirectory() {
-        return getAbsolutePath().equals(App.getStorageDirectory().getAbsolutePath());
+        return getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath());
     }
 
     public boolean isRootDirectory() {
@@ -151,7 +152,7 @@ public class File extends java.io.File implements SilkComparable<File> {
     }
 
     public boolean requiresRootAccess() {
-        return !getAbsolutePath().startsWith(App.getStorageDirectory().getAbsolutePath());
+        return !getAbsolutePath().startsWith(Environment.getExternalStorageDirectory().getAbsolutePath());
     }
 
     public File[] listFilesAsRoot() throws Exception {

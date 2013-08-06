@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
@@ -16,7 +17,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
@@ -71,7 +71,7 @@ public class MainActivity extends SilkDrawerActivity {
             populateDrawer();
         }
         mPickMode = processIntent();
-        navigate(App.getStorageDirectory(), false);
+        navigate(new File(Environment.getExternalStorageDirectory()), false);
     }
 
     @Override
@@ -97,9 +97,23 @@ public class MainActivity extends SilkDrawerActivity {
 
     private boolean checkFirstTime() {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean("first_time", true)) return false;
+        if (!prefs.getBoolean("first_time", true)) {
+
+            //TODO remove later
+            if (Shortcuts.contains(this, new File("/sdcard"))) {
+                List<File> shortcuts = Shortcuts.getAll(this);
+                if (shortcuts.get(0).getAbsolutePath().equals("/sdcard")) {
+                    shortcuts.set(0, new File(Environment.getExternalStorageDirectory()));
+                    Shortcuts.save(this, shortcuts);
+                } else if (shortcuts.get(1).getAbsolutePath().equals("/sdcard")) {
+                    shortcuts.set(1, new File(Environment.getExternalStorageDirectory()));
+                    Shortcuts.save(this, shortcuts);
+                }
+            }
+            return false;
+        }
         // Add default shortcuts
-        File storage = App.getStorageDirectory();
+        File storage = new File(Environment.getExternalStorageDirectory());
         Shortcuts.add(this, storage);
         Shortcuts.add(this, new File(storage, "Download"));
         Shortcuts.add(this, new File(storage, "Music"));
