@@ -16,7 +16,7 @@ import java.util.zip.ZipOutputStream;
  */
 public class ZipUtils {
 
-    private final static int BUFFER_SIZE = 2048;
+    private final static int BUFFER_SIZE = 1024;
 
     public static void zip(List<File> files, File zipFile) throws IOException {
         BufferedInputStream origin;
