@@ -121,19 +121,8 @@ public class Clipboard {
     }
 
     private static boolean cut(File src, File dst) {
-        try {
-            InputStream in = new FileInputStream(src);
-            OutputStream out = new FileOutputStream(dst);
-            byte[] buf = new byte[1024];
-            int len;
-            while ((len = in.read(buf)) > 0)
-                out.write(buf, 0, len);
-            in.close();
-            out.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
-        return src.delete();
+        if (copy(src, dst))
+            return src.delete();
+        else return false;
     }
 }
