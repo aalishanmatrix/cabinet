@@ -2,8 +2,11 @@ package com.afollestad.cabinet.adapters;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 import android.view.View;
@@ -106,7 +109,8 @@ public class FileAdapter extends SilkAdapter<File> {
 
         holder.position = index;
         int mimeIcon = getMimeIcon(item, mime);
-        if (mime != null && mime.startsWith("image/") && getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
+        if (mime != null && (mime.startsWith("image/") || mime.equals("application/vnd.android.package-archive")) &&
+                getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
             new ThumbnailTask(getContext(), index, holder).execute(item);
         } else {
             image.setImageResource(mimeIcon);
@@ -126,11 +130,13 @@ public class FileAdapter extends SilkAdapter<File> {
 
     private static class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
 
+        private final Context mContext;
         private final int mDimen;
         private final int mPosition;
         private final ViewHolder mHolder;
 
         public ThumbnailTask(Context context, int position, ViewHolder holder) {
+            mContext = context;
             mDimen = context.getResources().getDimensionPixelSize(R.dimen.file_thumbnail);
             mPosition = position;
             mHolder = holder;
@@ -138,6 +144,13 @@ public class FileAdapter extends SilkAdapter<File> {
 
         @Override
         protected Bitmap doInBackground(File... params) {
+            if (params[0].getMimeType().equals("application/vnd.android.package-archive")) {
+                PackageManager pm = mContext.getPackageManager();
+                PackageInfo pi = pm.getPackageArchiveInfo(params[0].getAbsolutePath(), 0);
+                pi.applicationInfo.sourceDir = params[0].getAbsolutePath();
+                pi.applicationInfo.publicSourceDir = params[0].getAbsolutePath();
+                return ((BitmapDrawable) pi.applicationInfo.loadIcon(pm)).getBitmap();
+            }
             return decodeFile(params[0], mDimen, mDimen);
         }
 
