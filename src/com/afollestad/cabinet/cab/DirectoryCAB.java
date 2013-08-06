@@ -73,7 +73,7 @@ public class DirectoryCAB {
     private static Intent getShareIntent(Activity context, List<File> files) {
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-        shareIntent.setType(files.get(0).getMimeType()); //TODO multiple mime types?
+        shareIntent.setType("*/*");
         if (files.size() == 1) {
             shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(files.get(0)));
         } else {
