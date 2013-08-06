@@ -98,7 +98,6 @@ public class MainActivity extends SilkDrawerActivity {
     private boolean checkFirstTime() {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (!prefs.getBoolean("first_time", true)) {
-
             //TODO remove later
             if (Shortcuts.contains(this, new File("/sdcard"))) {
                 List<File> shortcuts = Shortcuts.getAll(this);

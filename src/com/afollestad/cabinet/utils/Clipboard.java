@@ -72,13 +72,12 @@ public class Clipboard {
             @Override
             public void run() {
                 for (int i = 0; i < mClipboard.size(); i++) {
-                    final File fi = mClipboard.get(i);
                     final int index = i;
-                    final boolean success = copy(fi, fragment.getPath(), mClipboardType == Clipboard.Type.CUT);
+                    final File newFile = copy(mClipboard.get(i), fragment.getPath(), mClipboardType == Clipboard.Type.CUT);
                     fragment.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            if (success) fragment.getAdapter().update(fi);
+                            if (newFile != null) fragment.getAdapter().update(newFile);
                             dialog.setProgress(index);
                         }
                     });
@@ -101,20 +100,20 @@ public class Clipboard {
         }).start();
     }
 
-    private boolean copy(File src, File dst, boolean cut) {
+    private File copy(File src, File dst, boolean cut) {
         log("Copying '" + src.getAbsolutePath() + "' to '" + dst.getAbsolutePath() + "'...");
         if (src.isDirectory()) {
             File newDir = new File(dst, src.getName());
             log("Created: " + newDir.getAbsolutePath());
-            boolean success = newDir.mkdirs();
+            newDir.mkdirs();
             // Recursively copy the source directory into the new directory
             for (File fi : src.listFiles())
-                success = success && copy(fi, newDir, cut);
+                copy(fi, newDir, cut);
             if (cut) {
                 log("Deleting: " + src.getAbsolutePath());
                 src.delete();
             }
-            return success;
+            return newDir;
         }
 
         // Copy this file into the destination directory
@@ -132,10 +131,10 @@ public class Clipboard {
                 log("Deleting: " + src.getAbsolutePath());
                 src.delete();
             }
-            return true;
+            return dst;
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
+            return null;
         }
     }
 }
