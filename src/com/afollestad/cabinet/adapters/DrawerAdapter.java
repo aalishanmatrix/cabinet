@@ -9,6 +9,8 @@ import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.cache.SilkComparable;
 
 /**
+ * Used for the navigation drawer items.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {

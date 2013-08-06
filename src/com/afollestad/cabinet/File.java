@@ -18,6 +18,8 @@ import java.util.List;
 
 /**
  * A wrapper around Java's File class, with convenience methods and root access methods.
+ *
+ * @author Aidan Follestad (afollestad)
  */
 public class File extends java.io.File implements SilkComparable<File> {
 

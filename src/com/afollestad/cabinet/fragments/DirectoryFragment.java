@@ -29,6 +29,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Lists files in a directory.
+ *
+ * @author Aidan Follestad
+ */
 public class DirectoryFragment extends SilkListFragment<File> implements FileAdapter.ThumbnailClickListener {
 
     public DirectoryFragment() {

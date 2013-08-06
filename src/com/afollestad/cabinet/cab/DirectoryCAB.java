@@ -26,6 +26,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * Convenience methods for the contextual action bar that's displayed for files.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class DirectoryCAB {

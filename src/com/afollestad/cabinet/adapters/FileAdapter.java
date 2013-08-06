@@ -15,6 +15,11 @@ import com.afollestad.cabinet.R;
 import com.afollestad.silk.Silk;
 import com.afollestad.silk.adapters.SilkAdapter;
 
+/**
+ * The adapter for {@link File} objects, used by the {@link com.afollestad.cabinet.fragments.DirectoryFragment}.
+ *
+ * @author Aidan Follestad
+ */
 public class FileAdapter extends SilkAdapter<File> {
 
     public FileAdapter(Context context, ThumbnailClickListener thumbnailListener) {

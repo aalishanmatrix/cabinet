@@ -6,6 +6,8 @@ import android.os.Environment;
 import com.afollestad.cabinet.utils.Clipboard;
 
 /**
+ * Contains variables that are kept in memory throughout the life cycle of the application, even as activities open and close.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class App extends Application {

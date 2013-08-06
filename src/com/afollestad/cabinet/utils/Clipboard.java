@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Holds a list of files being copied or cut, and handles copying or moving them to another directory.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class Clipboard {

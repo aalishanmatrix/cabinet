@@ -3,13 +3,14 @@ package com.afollestad.cabinet.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import com.afollestad.cabinet.File;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Has convenience methods for managing your navigation drawer directory shortcuts.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class Shortcuts {

@@ -10,6 +10,8 @@ import com.afollestad.cabinet.R;
 import com.afollestad.silk.views.text.SilkEditText;
 
 /**
+ * Various convenience methods.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class Utils {
@@ -17,7 +19,6 @@ public class Utils {
     public static interface InputCallback {
         public void onSubmit(String input);
     }
-
 
     public static ProgressDialog showProgressDialog(Activity activity, int max) {
         ProgressDialog progress = new ProgressDialog(activity);

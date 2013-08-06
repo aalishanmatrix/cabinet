@@ -10,6 +10,8 @@ import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 /**
+ * Handles zipping and unzipping compressed ZIP archive files.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class ZipUtils {
