@@ -39,7 +39,7 @@
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375820935348" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375821021266" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751066480" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751213488" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
@@ -290,7 +290,7 @@
       <file leaf-file-name="Clipboard.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="24" selection-start="3836" selection-end="3836" vertical-scroll-proportion="0.32387313">
+            <state line="133" column="40" selection-start="4387" selection-end="4387" vertical-scroll-proportion="0.74958265">
               <folding />
             </state>
           </provider>
@@ -1537,7 +1537,11 @@
       <created>1375820939266</created>
       <updated>1375820939266</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="Added copy/cut support for entire directories.">
+      <created>1375821024520</created>
+      <updated>1375821024520</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1805,7 +1809,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="24" selection-start="3836" selection-end="3836" vertical-scroll-proportion="0.32387313">
+        <state line="133" column="40" selection-start="4387" selection-end="4387" vertical-scroll-proportion="0.74958265">
           <folding />
         </state>
       </provider>

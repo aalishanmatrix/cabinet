@@ -74,7 +74,6 @@ public class Clipboard {
                 for (int i = 0; i < mClipboard.size(); i++) {
                     final File fi = mClipboard.get(i);
                     final int index = i;
-                    log("Pasting: " + fi.getAbsolutePath());
                     final boolean success = copy(fi, fragment.getPath(), mClipboardType == Clipboard.Type.CUT);
                     fragment.runOnUiThread(new Runnable() {
                         @Override
