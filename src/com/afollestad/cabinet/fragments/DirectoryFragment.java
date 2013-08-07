@@ -53,8 +53,10 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
 
     @Override
     public int getLayout() {
-        if (Silk.isTablet(getActivity()))
+        if (Silk.isTablet(getActivity())) {
+            // If the device is a tablet, a GridView layout is used instead of a ListView
             return R.layout.fragment_grid;
+        }
         return super.getLayout();
     }
 
