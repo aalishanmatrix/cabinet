@@ -144,6 +144,7 @@ public class FileAdapter extends SilkAdapter<File> {
 
         @Override
         protected Bitmap doInBackground(File... params) {
+            if (params[0] == null) return null;
             if (params[0].getMimeType().equals("application/vnd.android.package-archive")) {
                 PackageManager pm = mContext.getPackageManager();
                 PackageInfo pi = pm.getPackageArchiveInfo(params[0].getAbsolutePath(), 0);
