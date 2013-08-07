@@ -34,14 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings_prefs.xml" afterPath="$PROJECT_DIR$/res/values/strings_prefs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375842067898" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854934854" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841434513" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375824902023" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
@@ -122,7 +120,7 @@
     <file path="/AboutFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569695596" ignored="false" />
     <file path="/pref_headers.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375639282180" ignored="false" />
     <file path="/prefs_root.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569526665" ignored="false" />
-    <file path="/strings_prefs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375816180625" ignored="false" />
+    <file path="/strings_prefs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375855380474" ignored="false" />
     <file path="/RootFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375570513364" ignored="false" />
     <file path="/Item.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375573287625" ignored="false" />
     <file path="/FilesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645918979" ignored="false" />
@@ -177,11 +175,11 @@
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815860018" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/DrinkViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/InviteNotification.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812824381" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854873235" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/InviteNotification16.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventGuestsViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/CalendarFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854762480" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815851404" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/wishlist/WishlistItemViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812805573" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/wishlist/WishListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815846000" ignored="false" />
@@ -192,9 +190,9 @@
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/favorites/FavoriteViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/FavoriteViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/AccountUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/R.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841744174" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/Manifest.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841744174" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841758558" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/R.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854616086" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/Manifest.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854616086" ignored="false" />
+    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854678580" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/DrinkPopupTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812094968" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/CellarAddUpdateActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812094968" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_review.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
@@ -231,6 +229,8 @@
     <file path="$PROJECT_DIR$/../savvy-grape-android/res/values/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812416498" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/afollestad/cabinet/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375825199305" ignored="false" />
     <file path="/HomeFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375838366800" ignored="false" />
+    <file path="/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854762479" ignored="false" />
+    <file path="/EventViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854872530" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,67 +291,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="30" selection-start="7552" selection-end="7552" vertical-scroll-proportion="1.0216049">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4145#6352#0" expanded="true" />
-                <element signature="e#4514#6302#0" expanded="true" />
-                <element signature="e#4878#5154#0" expanded="true" />
-                <element signature="e#5115#5116#0" expanded="true" />
-                <element signature="e#5246#6244#0" expanded="true" />
-                <element signature="e#6209#6210#0" expanded="true" />
-                <element signature="e#6275#6276#0" expanded="true" />
-                <element signature="e#6333#6334#0" expanded="true" />
-                <element signature="e#6406#6634#0" expanded="true" />
-                <element signature="e#6615#6616#0" expanded="true" />
-                <element signature="e#7659#10247#0" expanded="true" />
-                <element signature="e#8236#10213#0" expanded="true" />
-                <element signature="e#8418#8962#0" expanded="true" />
-                <element signature="e#8621#8896#0" expanded="true" />
-                <element signature="e#8857#8858#0" expanded="true" />
-                <element signature="e#8931#8932#0" expanded="true" />
-                <element signature="e#9016#9344#0" expanded="true" />
-                <element signature="e#9313#9314#0" expanded="true" />
-                <element signature="e#9501#9849#0" expanded="true" />
-                <element signature="e#9818#9819#0" expanded="true" />
-                <element signature="e#9961#10171#0" expanded="true" />
-                <element signature="e#10144#10145#0" expanded="true" />
-                <element signature="e#10194#10195#0" expanded="true" />
-                <element signature="e#10236#10237#0" expanded="true" />
-                <element signature="e#10509#12119#0" expanded="true" />
-                <element signature="e#10726#10922#0" expanded="true" />
-                <element signature="e#10899#10900#0" expanded="true" />
-                <element signature="e#11105#11424#0" expanded="true" />
-                <element signature="e#11397#11398#0" expanded="true" />
-                <element signature="e#11569#11841#0" expanded="true" />
-                <element signature="e#11814#11815#0" expanded="true" />
-                <element signature="e#11923#12093#0" expanded="true" />
-                <element signature="e#12074#12075#0" expanded="true" />
-                <element signature="e#12108#12109#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZipUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="24" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2547#2553#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileAdapter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FileAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="60" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
+            <state line="37" column="60" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-0.013355592">
               <folding />
             </state>
           </provider>
@@ -383,7 +326,6 @@
         <option value="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" />
-        <option value="$PROJECT_DIR$/res/values/strings_prefs.xml" />
         <option value="$PROJECT_DIR$/res/xml/prefs_about.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
@@ -396,6 +338,7 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
+        <option value="$PROJECT_DIR$/res/values/strings_prefs.xml" />
       </list>
     </option>
   </component>
@@ -459,11 +402,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,37 +416,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragments" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1595,7 +1508,11 @@
       <created>1375842072263</created>
       <updated>1375842072263</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="Dramatic improvements to ZIP file stuff, now supports sub folders.">
+      <created>1375851382581</created>
+      <updated>1375851382581</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1639,7 +1556,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.5808" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1692,7 +1609,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dramatic improvements to ZIP file stuff, now supports sub folders." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1706,7 +1623,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Added &quot;Show Hidden Files&quot; preference" />
     <MESSAGE value="Performance fixes" />
     <MESSAGE value="Added default icons for audio/picture/video files" />
     <MESSAGE value="Put version code up." />
@@ -1731,18 +1647,12 @@
     <MESSAGE value="Sort algorithm fixes" />
     <MESSAGE value="Incremented version." />
     <MESSAGE value="Fixes" />
+    <MESSAGE value="Dramatic improvements to ZIP file stuff, now supports sub folders." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="30" selection-start="242" selection-end="242" vertical-scroll-proportion="0.5509182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="27" selection-start="381" selection-end="381" vertical-scroll-proportion="0.22537562">
@@ -1767,13 +1677,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="24" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.47412354">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings_prefs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="92" selection-start="921" selection-end="921" vertical-scroll-proportion="0.44425088">
           <folding />
         </state>
       </provider>
@@ -1822,13 +1725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="60" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="27" selection-start="4113" selection-end="4113" vertical-scroll-proportion="0.3505843">
@@ -1854,19 +1750,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings_prefs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="24" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2547#2553#0" expanded="true" />
-          </folding>
+        <state line="32" column="65" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.4250871">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.8432056">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="30" selection-start="7552" selection-end="7552" vertical-scroll-proportion="1.0216049">
+        <state line="158" column="30" selection-start="7552" selection-end="7552" vertical-scroll-proportion="0.5648464">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4145#6352#0" expanded="true" />
@@ -1904,6 +1804,23 @@
             <element signature="e#12074#12075#0" expanded="true" />
             <element signature="e#12108#12109#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="24" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.14858097">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2547#2553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="60" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-0.013355592">
+          <folding />
         </state>
       </provider>
     </entry>
