@@ -20,7 +20,6 @@ import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.cabinet.utils.ZipUtils;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -152,7 +151,14 @@ public class DirectoryCAB {
     }
 
     private static void performZip(final DirectoryFragment fragment, final List<File> selectedFiles) {
-        Utils.showInputDialog(fragment.getActivity(), R.string.zip, R.string.zip_hint, null, new Utils.InputCallback() {
+        String prefill = null;
+        if (selectedFiles.size() == 1) {
+            prefill = selectedFiles.get(0).getName();
+            if (!selectedFiles.get(0).isDirectory())
+                prefill = prefill.substring(0, prefill.indexOf('.'));
+            prefill += ".zip";
+        }
+        Utils.showInputDialog(fragment.getActivity(), R.string.zip, R.string.zip_hint, prefill, new Utils.InputCallback() {
             @Override
             public void onSubmit(String input) {
                 if (input == null || input.trim().isEmpty())
@@ -167,8 +173,13 @@ public class DirectoryCAB {
                         try {
                             ZipUtils.zip(selectedFiles, zipFile, new ZipUtils.ProgressCallback() {
                                 @Override
-                                public void onUpdate(int i) {
-                                    progress.setProgress(i);
+                                public void onUpdate(final int i) {
+                                    fragment.runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            progress.setProgress(i);
+                                        }
+                                    });
                                 }
                             });
                             fragment.runOnUiThread(new Runnable() {
@@ -178,7 +189,7 @@ public class DirectoryCAB {
                                     DirectoryCAB.resortFragmentList(fragment);
                                 }
                             });
-                        } catch (final IOException e) {
+                        } catch (final Exception e) {
                             e.printStackTrace();
                             fragment.runOnUiThread(new Runnable() {
                                 @Override
@@ -223,7 +234,7 @@ public class DirectoryCAB {
                                 DirectoryCAB.resortFragmentList(fragment);
                             }
                         });
-                    } catch (final IOException e) {
+                    } catch (final Exception e) {
                         e.printStackTrace();
                         fragment.runOnUiThread(new Runnable() {
                             @Override

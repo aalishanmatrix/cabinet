@@ -29,17 +29,19 @@
       <entry key="file://$PROJECT_DIR$/res/layout-large/list_item_file.xml" value="Portrait" />
     </device-configurations>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="ZipUtils" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841742542" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375842067898" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841434513" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375824902023" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
@@ -75,8 +77,8 @@
     <file path="/dialog_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375248454873" ignored="false" />
     <file path="/fragment_directory.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375332808635" ignored="false" />
     <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375838772272" ignored="false" />
-    <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375840430807" ignored="false" />
-    <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375839628849" ignored="false" />
+    <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375851320364" ignored="false" />
+    <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375851306780" ignored="false" />
     <file path="/Root.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375398968679" ignored="false" />
     <file path="/SilkListView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375657562479" ignored="false" />
     <file path="/fragment_list.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375328847209" ignored="false" />
@@ -143,7 +145,7 @@
     <file path="/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375726838880" ignored="false" />
     <file path="/TextEditActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375738518550" ignored="false" />
     <file path="/activity_text_editor.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375734773375" ignored="false" />
-    <file path="/ZipUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841107770" ignored="false" />
+    <file path="/ZipUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375850942772" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/SavvyButton.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/BorderlessEditText.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
@@ -289,35 +291,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="39" selection-start="8127" selection-end="8127" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#8153#8415#0" expanded="true" />
-                <element signature="e#8384#8385#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZipUtils.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="33" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.7996661">
+            <state line="158" column="30" selection-start="7552" selection-end="7552" vertical-scroll-proportion="1.0216049">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1745#1751#0" expanded="true" />
+                <element signature="e#4145#6352#0" expanded="true" />
+                <element signature="e#4514#6302#0" expanded="true" />
+                <element signature="e#4878#5154#0" expanded="true" />
+                <element signature="e#5115#5116#0" expanded="true" />
+                <element signature="e#5246#6244#0" expanded="true" />
+                <element signature="e#6209#6210#0" expanded="true" />
+                <element signature="e#6275#6276#0" expanded="true" />
+                <element signature="e#6333#6334#0" expanded="true" />
+                <element signature="e#6406#6634#0" expanded="true" />
+                <element signature="e#6615#6616#0" expanded="true" />
+                <element signature="e#7659#10247#0" expanded="true" />
+                <element signature="e#8236#10213#0" expanded="true" />
+                <element signature="e#8418#8962#0" expanded="true" />
+                <element signature="e#8621#8896#0" expanded="true" />
+                <element signature="e#8857#8858#0" expanded="true" />
+                <element signature="e#8931#8932#0" expanded="true" />
+                <element signature="e#9016#9344#0" expanded="true" />
+                <element signature="e#9313#9314#0" expanded="true" />
+                <element signature="e#9501#9849#0" expanded="true" />
+                <element signature="e#9818#9819#0" expanded="true" />
+                <element signature="e#9961#10171#0" expanded="true" />
+                <element signature="e#10144#10145#0" expanded="true" />
+                <element signature="e#10194#10195#0" expanded="true" />
+                <element signature="e#10236#10237#0" expanded="true" />
+                <element signature="e#10509#12119#0" expanded="true" />
+                <element signature="e#10726#10922#0" expanded="true" />
+                <element signature="e#10899#10900#0" expanded="true" />
+                <element signature="e#11105#11424#0" expanded="true" />
+                <element signature="e#11397#11398#0" expanded="true" />
+                <element signature="e#11569#11841#0" expanded="true" />
+                <element signature="e#11814#11815#0" expanded="true" />
+                <element signature="e#11923#12093#0" expanded="true" />
+                <element signature="e#12074#12075#0" expanded="true" />
+                <element signature="e#12108#12109#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
+      <file leaf-file-name="ZipUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="35" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="66" column="24" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2547#2553#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -366,10 +392,10 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
       </list>
     </option>
   </component>
@@ -1565,7 +1591,11 @@
       <created>1375838825734</created>
       <updated>1375838825734</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="Fixes">
+      <created>1375842072263</created>
+      <updated>1375842072263</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1599,7 +1629,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22651514" sideWeight="0.4416" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1609,7 +1639,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.5808" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1768,16 +1798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="39" selection-start="8127" selection-end="8127" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#8153#8415#0" expanded="true" />
-            <element signature="e#8384#8385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="44" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.42906573">
@@ -1820,19 +1840,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/android-sdk-linux/sources/android-17/java/util/zip/ZipEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="11" selection-start="2341" selection-end="2341" vertical-scroll-proportion="-0.71953255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
+        <state line="40" column="47" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.43238732">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="33" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.7996661">
+        <state line="66" column="24" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1745#1751#0" expanded="true" />
+            <element signature="e#2547#2553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="30" selection-start="7552" selection-end="7552" vertical-scroll-proportion="1.0216049">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4145#6352#0" expanded="true" />
+            <element signature="e#4514#6302#0" expanded="true" />
+            <element signature="e#4878#5154#0" expanded="true" />
+            <element signature="e#5115#5116#0" expanded="true" />
+            <element signature="e#5246#6244#0" expanded="true" />
+            <element signature="e#6209#6210#0" expanded="true" />
+            <element signature="e#6275#6276#0" expanded="true" />
+            <element signature="e#6333#6334#0" expanded="true" />
+            <element signature="e#6406#6634#0" expanded="true" />
+            <element signature="e#6615#6616#0" expanded="true" />
+            <element signature="e#7659#10247#0" expanded="true" />
+            <element signature="e#8236#10213#0" expanded="true" />
+            <element signature="e#8418#8962#0" expanded="true" />
+            <element signature="e#8621#8896#0" expanded="true" />
+            <element signature="e#8857#8858#0" expanded="true" />
+            <element signature="e#8931#8932#0" expanded="true" />
+            <element signature="e#9016#9344#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#9501#9849#0" expanded="true" />
+            <element signature="e#9818#9819#0" expanded="true" />
+            <element signature="e#9961#10171#0" expanded="true" />
+            <element signature="e#10144#10145#0" expanded="true" />
+            <element signature="e#10194#10195#0" expanded="true" />
+            <element signature="e#10236#10237#0" expanded="true" />
+            <element signature="e#10509#12119#0" expanded="true" />
+            <element signature="e#10726#10922#0" expanded="true" />
+            <element signature="e#10899#10900#0" expanded="true" />
+            <element signature="e#11105#11424#0" expanded="true" />
+            <element signature="e#11397#11398#0" expanded="true" />
+            <element signature="e#11569#11841#0" expanded="true" />
+            <element signature="e#11814#11815#0" expanded="true" />
+            <element signature="e#11923#12093#0" expanded="true" />
+            <element signature="e#12074#12075#0" expanded="true" />
+            <element signature="e#12108#12109#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -38,7 +38,7 @@ public class Utils {
         View view = activity.getLayoutInflater().inflate(R.layout.input_edit_text, null);
         final SilkEditText input = (SilkEditText) view.findViewById(R.id.input);
         if (hint > 0) input.setHint(hint);
-        if (prefillInput != null) input.setText(prefillInput);
+        if (prefillInput != null) input.append(prefillInput);
         new AlertDialog.Builder(activity)
                 .setTitle(title)
                 .setView(view)
