@@ -239,7 +239,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         menu.findItem(R.id.add_shortcut).setVisible(!Shortcuts.contains(getActivity(), mPath));
         menu.findItem(R.id.paste).setVisible(
                 App.get(getActivity()).getClipboard().canPaste(mPath));
-        menu.findItem(R.id.delete).setVisible(!mPath.isStorageDirectory() && !mPath.isRootDirectory());
         super.onCreateOptionsMenu(menu, inflater);
     }
 
@@ -256,11 +255,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 return true;
             case R.id.new_folder:
                 newFolder();
-                return true;
-            case R.id.delete:
-                ArrayList<File> temp = new ArrayList<File>();
-                temp.add(mPath);
-                DirectoryCAB.performDelete(this, temp, false);
                 return true;
         }
         return super.onOptionsItemSelected(item);
