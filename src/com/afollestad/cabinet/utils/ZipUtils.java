@@ -18,23 +18,30 @@ public class ZipUtils {
 
     private final static int BUFFER_SIZE = 1024;
 
-    public static void zip(List<File> files, File zipFile) throws IOException {
+    public interface ProgressCallback {
+        public void onUpdate(int progress);
+    }
+
+    public static void zip(List<File> files, File zipFile, ProgressCallback callback) throws IOException {
         BufferedInputStream origin;
         ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)));
         try {
             byte data[] = new byte[BUFFER_SIZE];
-            for (File file : files) {
+            for (int i = 0; i < files.size(); i++) {
+                File file = new File(files.get(i));
+                ZipEntry entry = new ZipEntry(file.getName());
+                out.putNextEntry(entry);
                 FileInputStream fi = new FileInputStream(file);
                 origin = new BufferedInputStream(fi, BUFFER_SIZE);
                 try {
-                    ZipEntry entry = new ZipEntry(file.getName());
-                    out.putNextEntry(entry);
                     int count;
                     while ((count = origin.read(data, 0, BUFFER_SIZE)) != -1)
                         out.write(data, 0, count);
                 } finally {
                     origin.close();
                 }
+                out.closeEntry();
+                if (callback != null) callback.onUpdate(i);
             }
         } finally {
             out.close();

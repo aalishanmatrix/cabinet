@@ -86,23 +86,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         }
     }
 
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        outState.putString("path", mPath.getAbsolutePath());
-        outState.putBoolean("pick_mode", mPickMode);
-        super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        if (savedInstanceState != null) {
-            mPath = new File(savedInstanceState.getString("path"));
-            mPickMode = savedInstanceState.getBoolean("pick_mode");
-            load();
-        }
-    }
-
     private void load() {
         if (mPath == null) return;
         setLoading(true);
@@ -136,9 +119,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     }
                 });
             }
-        }
-
-        );
+        });
         t.setPriority(Thread.MAX_PRIORITY);
         t.start();
     }
@@ -149,7 +130,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         getListView().setSelector(R.drawable.selectable_background_cabinet);
         getListView().setFastScrollEnabled(true);
         setupCab(getListView());
-        load();
+        if (getAdapter().getCount() == 0) load();
     }
 
     private void setupCab(AbsListView listView) {
@@ -321,7 +302,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), cb.get().size());
+                        ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.paste, cb.get().size());
                         cb.performPaste(fragment, progress);
                     }
                 })

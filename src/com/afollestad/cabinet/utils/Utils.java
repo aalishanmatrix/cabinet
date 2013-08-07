@@ -20,8 +20,9 @@ public class Utils {
         public void onSubmit(String input);
     }
 
-    public static ProgressDialog showProgressDialog(Activity activity, int max) {
+    public static ProgressDialog showProgressDialog(Activity activity, int title, int max) {
         ProgressDialog progress = new ProgressDialog(activity);
+        if (title > 0) progress.setTitle(title);
         progress.setIndeterminate(max == -1);
         if (max > 0) {
             progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);

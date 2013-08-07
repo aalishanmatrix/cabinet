@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.text.Html;
 import android.text.Spanned;
-import android.util.Log;
 import android.view.ActionMode;
 import android.view.Gravity;
 import android.widget.Toast;
@@ -99,7 +98,7 @@ public class DirectoryCAB {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), selectedFiles.size());
+                        final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.delete, selectedFiles.size());
                         new Thread(new Runnable() {
                             @Override
                             public void run() {
@@ -161,12 +160,17 @@ public class DirectoryCAB {
                 else if (!input.trim().endsWith(".zip"))
                     input = input.trim() + ".zip";
                 final File zipFile = new File(fragment.getPath(), input.trim());
-                final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), -1);
+                final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.zip, selectedFiles.size());
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
                         try {
-                            ZipUtils.zip(selectedFiles, zipFile);
+                            ZipUtils.zip(selectedFiles, zipFile, new ZipUtils.ProgressCallback() {
+                                @Override
+                                public void onUpdate(int i) {
+                                    progress.setProgress(i);
+                                }
+                            });
                             fragment.runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -198,7 +202,7 @@ public class DirectoryCAB {
     }
 
     private static void performUnzip(final DirectoryFragment fragment, final List<File> selectedFiles) {
-        final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), selectedFiles.size());
+        final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.unzip, selectedFiles.size());
         new Thread(new Runnable() {
             @Override
             public void run() {
