@@ -57,7 +57,7 @@ public class ZipUtils {
             File f = files.get(i);
             if (f.isDirectory()) zipDir(f, zos, f.getParentFile());
             else zip(f, zos, f.getParentFile());
-            callback.onUpdate(i);
+            if (callback != null) callback.onUpdate(i);
         }
         zos.close();
     }
