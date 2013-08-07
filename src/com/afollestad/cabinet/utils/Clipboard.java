@@ -68,7 +68,7 @@ public class Clipboard {
     }
 
     public void performPaste(final DirectoryFragment fragment, final ProgressDialog dialog) {
-        new Thread(new Runnable() {
+        Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < mClipboard.size(); i++) {
@@ -97,7 +97,9 @@ public class Clipboard {
                     }
                 });
             }
-        }).start();
+        });
+        t.setPriority(Thread.MAX_PRIORITY);
+        t.start();
     }
 
     private File copy(File src, File dst, boolean cut) {

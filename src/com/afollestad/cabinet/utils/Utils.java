@@ -23,7 +23,10 @@ public class Utils {
     public static ProgressDialog showProgressDialog(Activity activity, int max) {
         ProgressDialog progress = new ProgressDialog(activity);
         progress.setIndeterminate(max == -1);
-        if (max > 0) progress.setMax(max);
+        if (max > 0) {
+            progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            progress.setMax(max);
+        }
         progress.setCancelable(false);
         progress.setMessage(activity.getString(R.string.please_wait));
         progress.show();
