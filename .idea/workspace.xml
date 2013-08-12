@@ -34,23 +34,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_pin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_pin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_cut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_paste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_pin.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/attrs.xml" afterPath="$PROJECT_DIR$/res/values/attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_light.xml" afterPath="$PROJECT_DIR$/res/values/styles_light.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376316905779" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325702298" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375891234303" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375824902023" ignored="false" />
-    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
+    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324492688" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376277873199" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278465090" ignored="false" />
-    <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375733937454" ignored="false" />
+    <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324080070" ignored="false" />
     <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278664294" ignored="false" />
     <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669962351" ignored="false" />
     <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376317036389" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375805383712" ignored="false" />
-    <file path="/SilkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375573455251" ignored="false" />
+    <file path="/SilkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325010738" ignored="false" />
     <file path="/SilkDrawerActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375640104054" ignored="false" />
     <file path="/styles_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375394076535" ignored="false" />
     <file path="/fragment_pager.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375224144377" ignored="false" />
@@ -137,7 +155,7 @@
     <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/CouponItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669273490" ignored="false" />
     <file path="/CouponItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375668997250" ignored="false" />
     <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/NonCouponItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669006441" ignored="false" />
-    <file path="/ItemFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375805141080" ignored="false" />
+    <file path="/ItemFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324468907" ignored="false" />
     <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/values-large/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669838909" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/savvygrape/fragments/base/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375726839982" ignored="false" />
     <file path="/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375726838880" ignored="false" />
@@ -235,9 +253,22 @@
     <file path="/prefs_lookandfeel.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376273460910" ignored="false" />
     <file path="/LookFeelFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278921854" ignored="false" />
     <file path="/styles_dark.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278770381" ignored="false" />
-    <file path="/attrs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278413669" ignored="false" />
-    <file path="/styles_light.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278500261" ignored="false" />
-    <file path="/styles_dark_lightab.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278119224" ignored="false" />
+    <file path="/attrs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323631880" ignored="false" />
+    <file path="/styles_light.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323707515" ignored="false" />
+    <file path="/styles_dark_lightab.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323730025" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/res/layout/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325081676" ignored="false" />
+    <file path="/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324144806" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325059896" ignored="false" />
+    <file path="/DiscountItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325022654" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/adapters/DiscountItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325040373" ignored="false" />
+    <file path="/DiscountItem.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324236918" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/DiscountItem.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324236918" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/ItemFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324516466" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324495974" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/DiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324508321" ignored="false" />
+    <file path="/DiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324507664" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/NotDiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324514685" ignored="false" />
+    <file path="/NotDiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324513690" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +283,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -289,6 +319,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -298,48 +329,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles_dark.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LookFeelFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/LookFeelFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="32" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="94" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.46875">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="34" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles_light.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles_light.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="8" selection-start="520" selection-end="643" vertical-scroll-proportion="0.0">
+            <state line="14" column="27" selection-start="703" selection-end="703" vertical-scroll-proportion="0.38043478">
               <folding />
             </state>
           </provider>
@@ -373,17 +366,17 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
         <option value="$PROJECT_DIR$/res/layout-large/list_item_file.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_item_drawer.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/LookFeelFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
       </list>
     </option>
   </component>
@@ -451,8 +444,18 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,15 +469,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1564,7 +1563,11 @@
       <created>1376316913370</created>
       <updated>1376316913370</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="Large theming updates">
+      <created>1376317043374</created>
+      <updated>1376317043374</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1588,8 +1591,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1600,22 +1603,22 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22651514" sideWeight="0.4416" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22685888" sideWeight="0.5631229" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.5631229" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43687707" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1689,9 +1692,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="664" selection-end="664" vertical-scroll-proportion="0.390625">
-          <folding />
-        </state>
+        <state line="21" column="20" selection-start="664" selection-end="664" vertical-scroll-proportion="0.390625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
@@ -1742,57 +1743,45 @@
         <state line="13" column="81" selection-start="876" selection-end="876" vertical-scroll-proportion="0.37072244" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="520" selection-end="643" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_dark_lightab.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="57" selection-start="659" selection-end="659" vertical-scroll-proportion="0.29945552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="414" selection-end="414" vertical-scroll-proportion="0.29945552" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="51" selection-start="155" selection-end="155" vertical-scroll-proportion="0.108892925" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="443" selection-end="669" vertical-scroll-proportion="0.35390198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_dark_lightab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="472" selection-end="765" vertical-scroll-proportion="0.2722323" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="57" selection-start="730" selection-end="730" vertical-scroll-proportion="0.38112524" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/LookFeelFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="32" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="34" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="56" column="32" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.7135417" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="94" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.46875">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="64" column="50" selection-start="2327" selection-end="2327" vertical-scroll-proportion="0.546875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="34" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.8072917" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="27" selection-start="703" selection-end="703" vertical-scroll-proportion="0.38043478">
+          <folding />
         </state>
       </provider>
     </entry>
