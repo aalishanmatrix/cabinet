@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Cabinet.iml" filepath="$PROJECT_DIR$/Cabinet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../root-commands/RootCommands-Library/RootCommands.iml" filepath="$PROJECT_DIR$/../root-commands/RootCommands-Library/RootCommands.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Silk/Silk.iml" filepath="$PROJECT_DIR$/../Silk/Silk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cabinet.iml" filepath="$PROJECT_DIR$/cabinet.iml" />
     </modules>
   </component>
 </project>
