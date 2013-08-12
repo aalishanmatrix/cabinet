@@ -10,6 +10,7 @@
     <com.afollestad.silk.views.text.SilkTextView android:id="@+id/title"
                                                  android:layout_width="wrap_content"
                                                  android:layout_height="wrap_content"
-                                                 android:textSize="@dimen/drawer_item"/>
+                                                 android:textSize="@dimen/drawer_item"
+                                                 android:textColor="?primary_text"/>
 
 </LinearLayout>

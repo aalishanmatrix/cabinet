@@ -9,6 +9,11 @@
     <string name="files">Files</string>
     <string name="files_header_desc">Settings that are applied while viewing directories and files.</string>
 
+    <string name="look_and_feel">Look and Feel</string>
+    <string name="lookandfeel_desc">Settings that modify how Cabinet\'s UI looks.</string>
+    <string name="base_theme">Base Theme</string>
+    <string name="color">Color</string>
+
     <string name="version">Version</string>
     <string name="developer">Developer</string>
     <string name="developer_desc">Coded and designed by Aidan Follestad. Tap for his Google+ page.</string>
@@ -44,6 +49,35 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <string-array name="basetheme_entries">
+        <item>Light, Dark Action Bar</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="basetheme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="color_entries">
+        <item>Theme Default</item>
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Red</item>
+    </string-array>
+    <string-array name="color_values">
+        <item>0</item>
+        <item>#000000</item>
+        <item>#0099CC</item>
+        <item>#9933CC</item>
+        <item>#669900</item>
+        <item>#FF8800</item>
+        <item>#CC0000</item>
     </string-array>
 
 </resources>

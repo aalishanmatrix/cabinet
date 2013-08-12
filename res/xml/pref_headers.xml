@@ -5,12 +5,16 @@
             android:summary="@string/about_header_desc"
             android:fragment="com.afollestad.cabinet.fragments.prefs.AboutFragment"/>
 
-    <header android:title="@string/root"
-            android:summary="@string/root_header_desc"
-            android:fragment="com.afollestad.cabinet.fragments.prefs.RootFragment"/>
-
     <header android:title="@string/files"
             android:summary="@string/files_header_desc"
             android:fragment="com.afollestad.cabinet.fragments.prefs.FilesFragment"/>
+
+    <header android:title="@string/look_and_feel"
+            android:summary="@string/lookandfeel_desc"
+            android:fragment="com.afollestad.cabinet.fragments.prefs.LookFeelFragment"/>
+
+    <header android:title="@string/root"
+            android:summary="@string/root_header_desc"
+            android:fragment="com.afollestad.cabinet.fragments.prefs.RootFragment"/>
 
 </preference-headers>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Cabinet" parent="@android:style/Theme.Holo">
+        <item name="ic_audio">@drawable/ic_audio_light</item>
+        <item name="ic_file">@drawable/ic_file_light</item>
+        <item name="ic_folder">@drawable/ic_folder_light</item>
+        <item name="ic_picture">@drawable/ic_picture_light</item>
+        <item name="ic_video">@drawable/ic_video_light</item>
+        <item name="drawer_background">@color/drawer_background_dark</item>
+        <item name="primary_text">@android:color/white</item>
+        <item name="secondary_text">@android:color/secondary_text_dark</item>
+    </style>
+
+</resources>

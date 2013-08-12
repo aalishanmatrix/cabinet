@@ -17,7 +17,7 @@
                   android:layout_height="match_parent"
                   android:layout_gravity="start"
                   android:gravity="center"
-                  android:background="@color/drawer_background">
+                  android:background="?drawer_background">
 
         <ListView android:id="@+id/left_drawer"
                   android:layout_width="match_parent"

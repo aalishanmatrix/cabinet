@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -65,19 +66,22 @@ public class FileAdapter extends SilkAdapter<File> {
     }
 
     private int getMimeIcon(File file, String mime) {
+        int attr;
         if (file.isDirectory()) {
-            return R.drawable.ic_folder;
+            attr = R.attr.ic_folder;
         } else if (mime == null) {
-            return R.drawable.ic_file;
+            attr = R.attr.ic_file;
         } else if (mime.startsWith("image/")) {
-            return R.drawable.ic_picture;
+            attr = R.attr.ic_picture;
         } else if (mime.startsWith("video/")) {
-            return R.drawable.ic_video;
+            attr = R.attr.ic_video;
         } else if (mime.startsWith("audio/") || mime.equals("application/ogg")) {
-            return R.drawable.ic_audio;
+            attr = R.attr.ic_audio;
         } else {
-            return R.drawable.ic_file;
+            attr = R.attr.ic_file;
         }
+        TypedArray a = getContext().getTheme().obtainStyledAttributes(new int[]{attr});
+        return a.getResourceId(0, 0);
     }
 
     @Override

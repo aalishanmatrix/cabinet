@@ -20,14 +20,14 @@
               android:layout_height="wrap_content"
               android:textSize="@dimen/file_title"
               android:singleLine="true"
-              android:textColor="@android:color/black"
+              android:textColor="?primary_text"
               android:layout_marginTop="7dp"/>
 
     <com.afollestad.silk.views.text.SilkTextView android:id="@+id/details"
                                                  android:layout_width="wrap_content"
                                                  android:layout_height="wrap_content"
                                                  android:textSize="@dimen/file_details"
-                                                 android:textColor="@color/secondary_text"
+                                                 android:textColor="?secondary_text"
                                                  android:layout_marginTop="3dp"
                                                  android:singleLine="true"/>
 
