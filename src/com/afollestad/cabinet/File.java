@@ -76,6 +76,13 @@ public class File extends java.io.File implements SilkComparable<File> {
 
     @Override
     public File[] listFiles() {
+        if (requiresRootAccess()) {
+            try {
+                return listFilesAsRoot();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
         java.io.File[] files = super.listFiles();
         List<File> cabinets = new ArrayList<File>();
         for (java.io.File fi : files) cabinets.add(new File(fi));
@@ -155,7 +162,7 @@ public class File extends java.io.File implements SilkComparable<File> {
         return !getAbsolutePath().startsWith(Environment.getExternalStorageDirectory().getAbsolutePath());
     }
 
-    public File[] listFilesAsRoot() throws Exception {
+    private File[] listFilesAsRoot() throws Exception {
         if (!RootCommands.rootAccessGiven()) throw new Exception("Root access denied");
         List<File> files = new ArrayList<File>();
         Shell shell = Shell.startRootShell();

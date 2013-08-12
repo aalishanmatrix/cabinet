@@ -95,8 +95,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             @Override
             public void run() {
                 try {
-                    final File[] contents = mPath.requiresRootAccess() ?
-                            mPath.listFilesAsRoot() : mPath.listFiles();
+                    final File[] contents = mPath.listFiles();
                     Arrays.sort(contents, File.getComparator(getActivity()));
                     runOnUiThread(new Runnable() {
                         @Override
@@ -106,7 +105,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                                 getAdapter().add(new File(fi));
                         }
                     });
-                } catch (final Exception e) {
+                } catch (final RuntimeException e) {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

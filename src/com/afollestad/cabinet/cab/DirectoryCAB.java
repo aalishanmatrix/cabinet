@@ -166,18 +166,19 @@ public class DirectoryCAB {
                 else if (!input.trim().endsWith(".zip"))
                     input = input.trim() + ".zip";
                 final File zipFile = new File(fragment.getPath(), input.trim());
-                final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.zip, selectedFiles.size());
+                final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.zip,
+                        ZipUtils.getTotalFileCount(selectedFiles));
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
                         try {
                             ZipUtils.zip(selectedFiles, zipFile, new ZipUtils.ProgressCallback() {
                                 @Override
-                                public void onUpdate(final int i) {
+                                public void onIncrement() {
                                     fragment.runOnUiThread(new Runnable() {
                                         @Override
                                         public void run() {
-                                            progress.setProgress(i);
+                                            progress.setProgress(progress.getProgress() + 1);
                                         }
                                     });
                                 }

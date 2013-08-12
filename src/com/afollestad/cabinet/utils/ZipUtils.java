@@ -21,14 +21,37 @@ public class ZipUtils {
     private final static int BUFFER_SIZE = 1024;
 
     public interface ProgressCallback {
-        public void onUpdate(int progress);
+        public void onIncrement();
     }
 
     private static void log(String message) {
         Log.d("ZipUtils", message);
     }
 
-    private static void zip(File file, ZipOutputStream zos, File parent) throws Exception {
+    private static File findTopLevel(File file, File location) {
+        if (file.getParentFile().getAbsolutePath().equals(location.getAbsolutePath()))
+            return file;
+        return findTopLevel(file.getParentFile(), location);
+    }
+
+    private static int getTotalFileCount(File dir) {
+        if (dir.isDirectory()) {
+            int count = 0;
+            for (File fi : dir.listFiles())
+                count += getTotalFileCount(fi);
+            return count;
+        }
+        return 1;
+    }
+
+    public static int getTotalFileCount(List<File> files) {
+        int count = 0;
+        for (File fi : files)
+            count += getTotalFileCount(fi);
+        return count;
+    }
+
+    private static void zip(File file, ZipOutputStream zos, File parent, ProgressCallback callback) throws Exception {
         log("Zipping file: " + file.getAbsolutePath());
         byte[] readBuffer = new byte[BUFFER_SIZE];
         int bytesIn;
@@ -38,16 +61,17 @@ public class ZipUtils {
         while ((bytesIn = fis.read(readBuffer)) != -1)
             zos.write(readBuffer, 0, bytesIn);
         fis.close();
+        if (callback != null) callback.onIncrement();
     }
 
-    private static void zipDir(File directory, ZipOutputStream zos, File parent) throws Exception {
+    private static void zipDir(File directory, ZipOutputStream zos, File parent, ProgressCallback callback) throws Exception {
         log("Zipping directory: " + directory.getAbsolutePath());
         for (File f : directory.listFiles()) {
             if (f.isDirectory()) {
-                zipDir(f, zos, parent);
+                zipDir(f, zos, parent, callback);
                 continue;
             }
-            zip(f, zos, parent);
+            zip(f, zos, parent, callback);
         }
     }
 
@@ -55,17 +79,10 @@ public class ZipUtils {
         ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(zipFile));
         for (int i = 0; i < files.size(); i++) {
             File f = files.get(i);
-            if (f.isDirectory()) zipDir(f, zos, f.getParentFile());
-            else zip(f, zos, f.getParentFile());
-            if (callback != null) callback.onUpdate(i);
+            if (f.isDirectory()) zipDir(f, zos, f.getParentFile(), callback);
+            else zip(f, zos, f.getParentFile(), callback);
         }
         zos.close();
-    }
-
-    private static File findTopLevel(File file, File location) {
-        if (file.getParentFile().getAbsolutePath().equals(location.getAbsolutePath()))
-            return file;
-        return findTopLevel(file.getParentFile(), location);
     }
 
     public static List<File> unzip(File zipFile, File location) throws Exception {
