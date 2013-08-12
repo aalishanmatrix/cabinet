@@ -59,7 +59,7 @@ public class MainActivity extends SilkDrawerActivity {
 
     @Override
     public int getDrawerIndicatorRes() {
-        if (mBaseTheme == R.style.Cabinet)
+        if (mBaseTheme == R.style.Cabinet || mBaseTheme == R.style.Cabinet_Light_DarkActionBar)
             return R.drawable.ic_navigation_drawer_light;
         return R.drawable.ic_navigation_drawer_dark;
     }
