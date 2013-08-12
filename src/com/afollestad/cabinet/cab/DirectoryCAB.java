@@ -79,6 +79,7 @@ public class DirectoryCAB {
         String extension = newFile.getExtension();
         if (extension != null && !extension.trim().isEmpty())
             newName = newFile.getName();
+        else extension = file.getExtension();
         newFile = new File(file.getParentFile(), newName + "-" + index + "." + extension);
         if (newFile.exists()) {
             return attemptRename(file, newName, index++);
