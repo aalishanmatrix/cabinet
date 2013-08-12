@@ -22,7 +22,7 @@ public class SettingsActivity extends PreferenceActivity {
         setTheme(mBaseTheme);
         mThemeColor = MainActivity.getCabinetThemeColor(this);
         super.onCreate(savedInstanceState);
-        if (mThemeColor > 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
+        if (mThemeColor != 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 

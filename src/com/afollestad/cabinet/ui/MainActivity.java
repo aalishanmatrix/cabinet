@@ -95,7 +95,7 @@ public class MainActivity extends SilkDrawerActivity {
         setTheme(mBaseTheme);
         mThemeColor = getCabinetThemeColor(this);
         super.onCreate(savedInstanceState);
-        if (mThemeColor > 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
+        if (mThemeColor != 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
 
         if (!checkFirstTime()) {
             // If it's not the first time, populate the drawer now, otherwise wait for root prompt
