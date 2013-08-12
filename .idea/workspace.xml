@@ -34,17 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376341404361" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376343515212" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376342933483" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376342943678" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338930098" ignored="false" />
@@ -148,7 +143,7 @@
     <file path="/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340600701" ignored="false" />
     <file path="/TextEditActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375738518550" ignored="false" />
     <file path="/activity_text_editor.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375734773375" ignored="false" />
-    <file path="/ZipUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376342812235" ignored="false" />
+    <file path="/ZipUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376344255229" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/SavvyButton.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
     <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/BorderlessEditText.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
@@ -361,7 +356,7 @@
       <file leaf-file-name="ZipUtils.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="38" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.2821369">
+            <state line="54" column="61" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.050083473">
               <folding />
             </state>
           </provider>
@@ -401,11 +396,11 @@
         <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
         <option value="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
         <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
       </list>
     </option>
   </component>
@@ -1617,7 +1612,11 @@
       <created>1376338309098</created>
       <updated>1376338309098</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="Updates to how progress is displayed for creating zip folders.">
+      <created>1376343520039</created>
+      <updated>1376343520039</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1714,7 +1713,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Themed action bar icons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to how progress is displayed for creating zip folders." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1729,6 +1728,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Themed action bar icons." />
+    <MESSAGE value="Updates to how progress is displayed for creating zip folders." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1843,7 +1843,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="38" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.2821369">
+        <state line="54" column="61" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.050083473">
           <folding />
         </state>
       </provider>
