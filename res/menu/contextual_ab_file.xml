@@ -9,6 +9,8 @@
           android:icon="?ic_copy" android:showAsAction="ifRoom"/>
     <item android:id="@+id/cut" android:title="@string/cut"
           android:icon="?ic_cut" android:showAsAction="ifRoom"/>
+    <item android:id="@+id/rename" android:title="@string/rename"
+          android:showAsAction="never"/>
     <item android:id="@+id/share" android:title="@string/share"
           android:showAsAction="never"/>
     <item android:id="@+id/select_all" android:title="@string/select_all"

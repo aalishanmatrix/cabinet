@@ -90,6 +90,24 @@ public class File extends java.io.File implements SilkComparable<File> {
     }
 
     @Override
+    public boolean renameTo(java.io.File newPath) {
+        if (requiresRootAccess()) {
+            if (!RootCommands.rootAccessGiven()) return false;
+            try {
+                Shell shell = Shell.startRootShell();
+                SimpleCommand lsApp = new SimpleCommand("mv \"" + getAbsolutePath() + "\" \"" + newPath.getAbsolutePath() + "\"");
+                shell.add(lsApp).waitForFinish();
+                shell.close();
+                return lsApp.getExitCode() == 0;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
+        }
+        return super.renameTo(newPath);
+    }
+
+    @Override
     public File getParentFile() {
         return new File(super.getParentFile());
     }
@@ -117,7 +135,6 @@ public class File extends java.io.File implements SilkComparable<File> {
                 if (isDirectory()) cmd += " -rf";
                 else cmd += " -f";
                 SimpleCommand lsApp = new SimpleCommand(cmd + " \"" + getAbsolutePath() + "\"");
-                Log.d("File.delete", cmd + " \"" + getAbsolutePath() + "\"");
                 shell.add(lsApp).waitForFinish();
                 shell.close();
                 return lsApp.getExitCode() == 0;

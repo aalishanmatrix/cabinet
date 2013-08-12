@@ -51,6 +51,9 @@ public class DirectoryCAB {
                 App.get(fragment.getActivity()).getClipboard().setType(Clipboard.Type.CUT);
                 for (File fi : selectedFiles) App.get(fragment.getActivity()).getClipboard().add(fi);
                 break;
+            case R.id.rename:
+                performRename(fragment, selectedFiles);
+                break;
             case R.id.select_all:
                 selectAll(fragment);
                 return true;
@@ -69,6 +72,44 @@ public class DirectoryCAB {
         mode.finish();
         fragment.getActivity().invalidateOptionsMenu();
         return true;
+    }
+
+    private static File attemptRename(File file, String newName, int index) {
+        File newFile = new File(file.getParentFile(), newName);
+        String extension = newFile.getExtension();
+        if (extension != null && !extension.trim().isEmpty())
+            newName = newFile.getName();
+        newFile = new File(file.getParentFile(), newName + "-" + index + "." + extension);
+        if (newFile.exists()) {
+            return attemptRename(file, newName, index++);
+        } else {
+            file.renameTo(newFile);
+            return newFile;
+        }
+    }
+
+    private static void performRename(final DirectoryFragment fragment, final List<File> selectedFiles) {
+        Utils.showInputDialog(fragment.getActivity(), R.string.rename, R.string.new_names, null, new Utils.InputCallback() {
+            @Override
+            public void onSubmit(String input) {
+                if (input == null || input.trim().isEmpty()) return;
+                input = input.trim();
+                if (selectedFiles.size() == 1) {
+                    File fi = selectedFiles.get(0);
+                    fragment.getAdapter().remove(fi);
+                    fi = attemptRename(fi, input, 0);
+                    fragment.getAdapter().update(fi);
+                    return;
+                }
+                for (int i = 0; i < selectedFiles.size(); i++) {
+                    File fi = selectedFiles.get(i);
+                    fragment.getAdapter().remove(fi);
+                    fi = attemptRename(fi, input, i);
+                    fragment.getAdapter().update(fi);
+                }
+                fragment.getAdapter().notifyDataSetChanged();
+            }
+        });
     }
 
     private static Intent getShareIntent(Activity context, List<File> files) {
