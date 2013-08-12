@@ -9,7 +9,7 @@
         <item name="ic_video">@drawable/ic_video_light</item>
         <item name="drawer_background">@color/drawer_background_dark</item>
         <item name="primary_text">@android:color/white</item>
-        <item name="secondary_text">@android:color/secondary_text_dark</item>
+        <item name="secondary_text">@android:color/white</item>
     </style>
 
 </resources>

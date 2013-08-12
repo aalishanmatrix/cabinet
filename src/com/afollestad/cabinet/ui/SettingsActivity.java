@@ -1,5 +1,6 @@
 package com.afollestad.cabinet.ui;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
@@ -12,12 +13,25 @@ import java.util.List;
  */
 public class SettingsActivity extends PreferenceActivity {
 
+    private int mBaseTheme;
+    private int mThemeColor;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        mBaseTheme = MainActivity.getCabinetBaseTheme(this);
+        setTheme(mBaseTheme);
+        mThemeColor = MainActivity.getCabinetThemeColor(this);
         super.onCreate(savedInstanceState);
+        if (mThemeColor > 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (mBaseTheme != MainActivity.getCabinetBaseTheme(this) || mThemeColor != MainActivity.getCabinetThemeColor(this))
+            recreate();
+    }
 
     @Override
     public void onBuildHeaders(List<Header> target) {

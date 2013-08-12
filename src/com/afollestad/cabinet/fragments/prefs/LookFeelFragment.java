@@ -44,6 +44,7 @@ public class LookFeelFragment extends PreferenceFragment {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 preference.setSummary(getBaseThemeSummary(newValue.toString()));
+                getActivity().recreate();
                 return true;
             }
         });
@@ -54,6 +55,7 @@ public class LookFeelFragment extends PreferenceFragment {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 preference.setSummary(getThemeColorSummary(newValue.toString()));
+                getActivity().recreate();
                 return true;
             }
         });

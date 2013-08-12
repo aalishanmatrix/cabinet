@@ -3,6 +3,7 @@ package com.afollestad.cabinet.ui;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -37,8 +38,8 @@ public class MainActivity extends SilkDrawerActivity {
     private int mBaseTheme;
     private int mThemeColor;
 
-    private int getCabinetBaseTheme() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+    public static int getCabinetBaseTheme(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         switch (Integer.parseInt(prefs.getString("base_theme", "0"))) {
             default:
                 return R.style.Cabinet_Light_DarkActionBar;
@@ -49,8 +50,8 @@ public class MainActivity extends SilkDrawerActivity {
         }
     }
 
-    private int getCabinetThemeColor() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+    public static int getCabinetThemeColor(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String color = prefs.getString("theme_color", "0");
         if (color.equals("0")) return 0;
         return Color.parseColor(color);
@@ -90,11 +91,11 @@ public class MainActivity extends SilkDrawerActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        mBaseTheme = getCabinetBaseTheme();
+        mBaseTheme = getCabinetBaseTheme(this);
         setTheme(mBaseTheme);
-        mThemeColor = getCabinetThemeColor();
-        if (mThemeColor > 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
+        mThemeColor = getCabinetThemeColor(this);
         super.onCreate(savedInstanceState);
+        if (mThemeColor > 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
 
         if (!checkFirstTime()) {
             // If it's not the first time, populate the drawer now, otherwise wait for root prompt
@@ -109,7 +110,7 @@ public class MainActivity extends SilkDrawerActivity {
         super.onResume();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (rootEnabled != prefs.getBoolean("root_enabled", false)) recreate();
-        else if (mBaseTheme != getCabinetBaseTheme() || mThemeColor != getCabinetThemeColor()) recreate();
+        else if (mBaseTheme != getCabinetBaseTheme(this) || mThemeColor != getCabinetThemeColor(this)) recreate();
     }
 
     public void navigate(File directory, boolean backStack) {
