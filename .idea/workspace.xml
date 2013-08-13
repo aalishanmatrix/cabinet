@@ -34,20 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/ThumbnailTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_list_root.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_grid.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_grid.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413213161" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376417274814" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376410563647" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376411434074" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376409946239" ignored="false" />
@@ -374,7 +366,7 @@
       <file leaf-file-name="Utils.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="52" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.5887372">
+            <state line="23" column="64" selection-start="617" selection-end="617" vertical-scroll-proportion="0.38395905">
               <folding />
             </state>
           </provider>
@@ -1656,7 +1648,11 @@
       <created>1376407877174</created>
       <updated>1376407877174</updated>
     </task>
-    <option name="localTasksCounter" value="239" />
+    <task id="LOCAL-00239" summary="Fixes">
+      <created>1376417279387</created>
+      <updated>1376417279387</updated>
+    </task>
+    <option name="localTasksCounter" value="240" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1753,7 +1749,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1774,6 +1770,7 @@
     <MESSAGE value="Renaming function appears to be fully functional" />
     <MESSAGE value="Fixes to handle duplicate or already existing files" />
     <MESSAGE value="Updates." />
+    <MESSAGE value="Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1897,7 +1894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="52" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.5887372">
+        <state line="23" column="64" selection-start="617" selection-end="617" vertical-scroll-proportion="0.38395905">
           <folding />
         </state>
       </provider>

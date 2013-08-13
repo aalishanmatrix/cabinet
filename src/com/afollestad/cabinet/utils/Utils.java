@@ -22,13 +22,10 @@ public class Utils {
     }
 
     public static File checkForExistence(File file, int index) {
-        Log.d("checkForExistence", file.getAbsolutePath());
         String newName = file.getNameNoExtension();
         String extension = file.getExtension();
         if (!extension.trim().isEmpty()) extension = "." + extension;
         if (index > 0) newName += " (" + index + ")";
-        Log.d("checkForExistence", "Name: " + newName);
-        Log.d("checkForExistence", "Extension: " + extension);
         File newFile = new File(file.getParentFile(), newName + extension);
         if (newFile.exists()) {
             return checkForExistence(file, ++index);
