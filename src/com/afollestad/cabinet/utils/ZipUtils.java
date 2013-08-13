@@ -75,7 +75,8 @@ public class ZipUtils {
         }
     }
 
-    public static void zip(List<File> files, File destination, ProgressCallback callback) throws Exception {
+    public static File zip(List<File> files, File destination, ProgressCallback callback) throws Exception {
+        destination = Utils.checkForExistence(destination, 0);
         ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(destination));
         for (int i = 0; i < files.size(); i++) {
             File f = files.get(i);
@@ -83,6 +84,7 @@ public class ZipUtils {
             else zip(f, zos, f.getParentFile(), callback);
         }
         zos.close();
+        return destination;
     }
 
     public static List<File> unzip(File zipFile, File destination) throws Exception {
@@ -93,7 +95,7 @@ public class ZipUtils {
         try {
             ZipEntry ze;
             while ((ze = zin.getNextEntry()) != null) {
-                File file = new File(destination.getAbsolutePath() + ze.getName());
+                File file = Utils.checkForExistence(new File(destination.getAbsolutePath() + ze.getName()), 0);
                 log("Writing: " + file.getAbsolutePath());
                 file.getParentFile().mkdirs();
                 File topLevel = findTopLevel(file, destination);

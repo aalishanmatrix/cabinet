@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.view.View;
 import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
@@ -18,6 +19,22 @@ public class Utils {
 
     public static interface InputCallback {
         public void onSubmit(String input);
+    }
+
+    public static File checkForExistence(File file, int index) {
+        Log.d("checkForExistence", file.getAbsolutePath());
+        String newName = file.getNameNoExtension();
+        String extension = file.getExtension();
+        if (!extension.trim().isEmpty()) extension = "." + extension;
+        if (index > 0) newName += " (" + index + ")";
+        Log.d("checkForExistence", "Name: " + newName);
+        Log.d("checkForExistence", "Extension: " + extension);
+        file = new File(file.getParentFile(), newName + extension);
+        if (file.exists()) {
+            return checkForExistence(file, ++index);
+        } else {
+            return file;
+        }
     }
 
     public static ProgressDialog showProgressDialog(Activity activity, int title, int max) {

@@ -55,10 +55,8 @@ public class Clipboard {
         return mClipboardType;
     }
 
-    public boolean canPaste(File dest) {
-        if (mClipboard.size() == 0) return false;
-        String parent = mClipboard.get(0).getParentFile().getAbsolutePath();
-        return !dest.getAbsolutePath().equals(parent);
+    public boolean canPaste() {
+        return mClipboard.size() > 0;
     }
 
     public void clear() {
@@ -105,7 +103,7 @@ public class Clipboard {
     private File copy(File src, File dst, boolean cut) {
         log("Copying '" + src.getAbsolutePath() + "' to '" + dst.getAbsolutePath() + "'...");
         if (src.isDirectory()) {
-            File newDir = new File(dst, src.getName());
+            File newDir = Utils.checkForExistence(new File(dst, src.getName()), 0);
             log("Created: " + newDir.getAbsolutePath());
             newDir.mkdirs();
             // Recursively copy the source directory into the new directory
@@ -120,7 +118,7 @@ public class Clipboard {
 
         // Copy this file into the destination directory
         try {
-            dst = new File(dst, src.getName());
+            dst = Utils.checkForExistence(new File(dst, src.getName()), 0);
             InputStream in = new FileInputStream(src);
             OutputStream out = new FileOutputStream(dst);
             byte[] buf = new byte[1024];

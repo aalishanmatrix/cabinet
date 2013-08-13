@@ -74,22 +74,6 @@ public class DirectoryCAB {
         return true;
     }
 
-    private static File attemptRename(File file, String newName, int index) {
-        File newFile = new File(file.getParentFile(), newName);
-        String extension = newFile.getExtension();
-        if (extension != null && !extension.trim().isEmpty())
-            newName = newFile.getName();
-        else extension = file.getExtension();
-        if (index > 0) newName += "_" + index;
-        newFile = new File(file.getParentFile(), newName + "." + extension);
-        if (newFile.exists()) {
-            return attemptRename(file, newName, index++);
-        } else {
-            file.renameTo(newFile);
-            return newFile;
-        }
-    }
-
     private static void performRename(final DirectoryFragment fragment, final List<File> selectedFiles) {
         Utils.showInputDialog(fragment.getActivity(), R.string.rename, R.string.new_names, null, new Utils.InputCallback() {
             @Override
@@ -99,14 +83,16 @@ public class DirectoryCAB {
                 if (selectedFiles.size() == 1) {
                     File fi = selectedFiles.get(0);
                     fragment.getAdapter().remove(fi);
-                    fi = attemptRename(fi, input, 0);
+                    File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
+                    fi.renameTo(newFile);
                     fragment.getAdapter().update(fi);
                     return;
                 }
                 for (int i = 0; i < selectedFiles.size(); i++) {
                     File fi = selectedFiles.get(i);
                     fragment.getAdapter().remove(fi);
-                    fi = attemptRename(fi, input, i);
+                    File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
+                    fi.renameTo(newFile);
                     fragment.getAdapter().update(fi);
                 }
                 fragment.getAdapter().notifyDataSetChanged();
@@ -215,7 +201,7 @@ public class DirectoryCAB {
                     @Override
                     public void run() {
                         try {
-                            ZipUtils.zip(selectedFiles, zipFile, new ZipUtils.ProgressCallback() {
+                            final File result = ZipUtils.zip(selectedFiles, zipFile, new ZipUtils.ProgressCallback() {
                                 @Override
                                 public void onIncrement() {
                                     fragment.runOnUiThread(new Runnable() {
@@ -229,7 +215,7 @@ public class DirectoryCAB {
                             fragment.runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    fragment.getAdapter().update(zipFile);
+                                    fragment.getAdapter().update(result);
                                     DirectoryCAB.resortFragmentList(fragment);
                                 }
                             });

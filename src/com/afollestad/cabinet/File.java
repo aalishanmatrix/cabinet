@@ -68,8 +68,16 @@ public class File extends java.io.File implements SilkComparable<File> {
         return String.format("%.1f %sB", bytes / Math.pow(unit, exp), pre);
     }
 
+    public String getNameNoExtension() {
+        if (isDirectory()) return super.getName();
+        String name = super.getName();
+        if (name.startsWith(".") || !name.substring(1).contains(".")) return name;
+        return name.substring(0, name.lastIndexOf('.'));
+    }
+
     public String getExtension() {
-        String name = getName().toLowerCase();
+        if (isDirectory()) return "";
+        String name = super.getName().toLowerCase();
         if (name.startsWith(".") || !name.substring(1).contains(".")) return "";
         return name.substring(name.lastIndexOf('.') + 1);
     }

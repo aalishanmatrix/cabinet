@@ -238,8 +238,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.fragment_directory, menu);
         menu.findItem(R.id.add_shortcut).setVisible(!Shortcuts.contains(getActivity(), mPath));
-        menu.findItem(R.id.paste).setVisible(
-                App.get(getActivity()).getClipboard().canPaste(mPath));
+        menu.findItem(R.id.paste).setVisible(App.get(getActivity()).getClipboard().canPaste());
         super.onCreateOptionsMenu(menu, inflater);
     }
 
