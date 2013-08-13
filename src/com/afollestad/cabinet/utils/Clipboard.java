@@ -2,8 +2,8 @@ package com.afollestad.cabinet.utils;
 
 import android.app.ProgressDialog;
 import android.util.Log;
-import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.cab.DirectoryCAB;
+import com.afollestad.cabinet.file.File;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 
 import java.io.FileInputStream;

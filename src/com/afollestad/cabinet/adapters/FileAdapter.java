@@ -14,8 +14,8 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
+import com.afollestad.cabinet.file.File;
 import com.afollestad.silk.Silk;
 import com.afollestad.silk.adapters.SilkAdapter;
 

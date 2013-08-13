@@ -3,8 +3,8 @@ package com.afollestad.cabinet.adapters;
 import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
-import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
+import com.afollestad.cabinet.file.File;
 import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.cache.SilkComparable;
 

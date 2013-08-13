@@ -1,7 +1,7 @@
 package com.afollestad.cabinet.utils;
 
 import android.util.Log;
-import com.afollestad.cabinet.File;
+import com.afollestad.cabinet.file.File;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

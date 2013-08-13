@@ -3,7 +3,7 @@ package com.afollestad.cabinet.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import com.afollestad.cabinet.File;
+import com.afollestad.cabinet.file.File;
 
 import java.util.ArrayList;
 import java.util.List;

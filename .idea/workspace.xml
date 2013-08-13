@@ -33,22 +33,35 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="checkForExistence" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
+    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="Updates.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/AlphabeticalComparator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/ExtensionComparator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/FoldersFirstComparator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376371535883" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376407772946" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376342933483" ignored="false" />
-    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376363822343" ignored="false" />
-    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376345792329" ignored="false" />
+    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376407685561" ignored="false" />
+    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376372846733" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376343020669" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278465090" ignored="false" />
-    <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324080070" ignored="false" />
+    <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376372415762" ignored="false" />
     <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278664294" ignored="false" />
     <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669962351" ignored="false" />
-    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376344548775" ignored="false" />
+    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373427168" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338779354" ignored="false" />
     <file path="/SilkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325010738" ignored="false" />
     <file path="/SilkDrawerActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375640104054" ignored="false" />
@@ -239,30 +252,38 @@
     <file path="/styles_dark_lightab.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323730025" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/res/layout/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
     <file path="/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324144806" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325059896" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376372415762" ignored="false" />
     <file path="/DiscountItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325022654" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/adapters/DiscountItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376325040373" ignored="false" />
     <file path="/DiscountItem.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324236918" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/DiscountItem.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324236918" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/ItemFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338938904" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376372941521" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/DiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324508321" ignored="false" />
     <file path="/DiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324507664" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/NotDiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324514685" ignored="false" />
     <file path="/NotDiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324513690" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/APOS.iml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340433233" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/adapters/ScannedAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373427496" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/adapters/ScannedAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373435817" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/Item.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338780591" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340442726" ignored="false" />
     <file path="$PROJECT_DIR$/../Pocket-Vino/src/com/ricco/pocketvino/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340502279" ignored="false" />
     <file path="$PROJECT_DIR$/../Pocket-Vino/src/com/ricco/pocketvino/fragments/base/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340601154" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/Items.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376341303137" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/Items.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373738332" ignored="false" />
     <file path="$PROJECT_DIR$/../Pocket-Vino/src/com/ricco/pocketvino/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376341462137" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/afollestad/cabinet/Manifest.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376347603263" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/afollestad/cabinet/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376347663331" ignored="false" />
     <file path="/Temp.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376359281678" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/res/layout-large/checkout_interface.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376372655703" ignored="false" />
+    <file path="/checkout_interface.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373320205" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/res/layout/checkout_interface.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373320647" ignored="false" />
+    <file path="/ScannedAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373435501" ignored="false" />
+    <file path="/Items.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373694518" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/CheckoutTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373971150" ignored="false" />
+    <file path="/CheckoutTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373906914" ignored="false" />
+    <file path="$PROJECT_DIR$/../APOS/gen/com/recoup/apos/R.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376407022304" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,16 +344,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="56" selection-start="4074" selection-end="4074" vertical-scroll-proportion="0.7679181">
+            <state line="72" column="35" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#9064#11733#0" expanded="true" />
-                <element signature="e#9888#10449#0" expanded="true" />
-                <element signature="e#10418#10419#0" expanded="true" />
-                <element signature="e#11722#11723#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#9069#11738#0" expanded="true" />
+                <element signature="e#9893#10454#0" expanded="true" />
+                <element signature="e#10423#10424#0" expanded="true" />
+                <element signature="e#11727#11728#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="13" selection-start="5022" selection-end="5022" vertical-scroll-proportion="0.052901022">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -340,7 +371,7 @@
       <file leaf-file-name="ZipUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="64" selection-start="3737" selection-end="3737" vertical-scroll-proportion="0.0">
+            <state line="100" column="64" selection-start="3742" selection-end="3742" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -349,8 +380,10 @@
       <file leaf-file-name="Clipboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="28" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="57" column="28" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -358,8 +391,10 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="45" selection-start="8436" selection-end="8436" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="240" column="45" selection-start="8441" selection-end="8441" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -367,8 +402,10 @@
       <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="51" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="28" column="51" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -405,22 +442,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
-        <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/res/menu/contextual_ab_file.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/Temp.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/File.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/AlphabeticalComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/ExtensionComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/FoldersFirstComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
       </list>
     </option>
   </component>
@@ -515,6 +552,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="file" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -528,7 +587,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="ExportedApkPath" value="$PROJECT_DIR$/cabinet.apk" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="recentsLimit" value="5" />
     <property name="ExportedModule" value="cabinet" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../root-commands/RootCommands-Library" />
@@ -1645,7 +1704,11 @@
       <created>1376371541740</created>
       <updated>1376371541740</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="Fixes to handle duplicate or already existing files">
+      <created>1376371639022</created>
+      <updated>1376371639022</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1670,7 +1733,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1687,7 +1750,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22629482" sideWeight="0.544" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22629482" sideWeight="0.544" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.456" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1742,7 +1805,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes to handle duplicate or already existing files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1762,28 +1825,12 @@
     <MESSAGE value="Added BETA rename function" />
     <MESSAGE value="Renaming function appears to be fully functional" />
     <MESSAGE value="Fixes to handle duplicate or already existing files" />
+    <MESSAGE value="Updates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="186" selection-end="186" vertical-scroll-proportion="0.13066202" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="844" selection-end="844" vertical-scroll-proportion="0.44425088" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="38" selection-start="5384" selection-end="5384" vertical-scroll-proportion="0.18020305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="99" selection-start="775" selection-end="775" vertical-scroll-proportion="0.45075125">
@@ -1831,50 +1878,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="36" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.23037542">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="51" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="28" column="51" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="28" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="57" column="28" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="45" selection-start="8436" selection-end="8436" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="240" column="45" selection-start="8441" selection-end="8441" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="64" selection-start="3737" selection-end="3737" vertical-scroll-proportion="0.0">
+        <state line="100" column="64" selection-start="3742" selection-end="3742" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="56" selection-start="4074" selection-end="4074" vertical-scroll-proportion="0.7679181">
+        <state line="72" column="35" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#9064#11733#0" expanded="true" />
-            <element signature="e#9888#10449#0" expanded="true" />
-            <element signature="e#10418#10419#0" expanded="true" />
-            <element signature="e#11722#11723#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#9069#11738#0" expanded="true" />
+            <element signature="e#9893#10454#0" expanded="true" />
+            <element signature="e#10423#10424#0" expanded="true" />
+            <element signature="e#11727#11728#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/ExtensionComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="85" selection-end="85" vertical-scroll-proportion="0.10380623">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/AlphabeticalComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="166" selection-end="166" vertical-scroll-proportion="0.15570934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/FoldersFirstComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="162" selection-end="162" vertical-scroll-proportion="0.15570934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="13" selection-start="5022" selection-end="5022" vertical-scroll-proportion="0.052901022">
+          <folding />
         </state>
       </provider>
     </entry>

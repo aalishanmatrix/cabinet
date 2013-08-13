@@ -6,8 +6,8 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.util.Log;
 import android.view.View;
-import com.afollestad.cabinet.File;
 import com.afollestad.cabinet.R;
+import com.afollestad.cabinet.file.File;
 import com.afollestad.silk.views.text.SilkEditText;
 
 /**
