@@ -63,4 +63,6 @@
     <string name="zip_hint">Untitled.zip</string>
     <string name="new_names">New name(s)</string>
 
+    <string name="mounted_as_x">Mounted as {X}</string>
+
 </resources>

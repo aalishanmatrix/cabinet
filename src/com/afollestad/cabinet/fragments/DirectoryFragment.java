@@ -11,6 +11,7 @@ import android.text.Html;
 import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
+import android.widget.Button;
 import android.widget.ListView;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
@@ -57,7 +58,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             // If the device is a tablet, a GridView layout is used instead of a ListView
             return R.layout.fragment_grid;
         }
-        return super.getLayout();
+        return R.layout.fragment_list_root;
     }
 
     @Override
@@ -125,6 +126,12 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         t.start();
     }
 
+    private void invalidateMountedAs() {
+        if (getView() == null) return;
+        Button mount = (Button) getView().findViewById(R.id.mount);
+        mount.setText(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()));
+    }
+
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -132,6 +139,19 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         getListView().setFastScrollEnabled(true);
         setupCab(getListView());
         if (getAdapter().getCount() == 0) load();
+
+        Button mount = (Button) view.findViewById(R.id.mount);
+        if (getPath().requiresRootAccess()) {
+            mount.setVisibility(View.VISIBLE);
+            invalidateMountedAs();
+            mount.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getPath().mount();
+                    invalidateMountedAs();
+                }
+            });
+        } else mount.setVisibility(View.GONE);
     }
 
     private void setupCab(AbsListView listView) {

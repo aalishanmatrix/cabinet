@@ -4,12 +4,14 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.webkit.MimeTypeMap;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.cache.SilkComparable;
 import org.sufficientlysecure.rootcommands.RootCommands;
 import org.sufficientlysecure.rootcommands.Shell;
+import org.sufficientlysecure.rootcommands.Toolbox;
 import org.sufficientlysecure.rootcommands.command.SimpleCommand;
 
 import java.net.URI;
@@ -92,14 +94,42 @@ public class File extends java.io.File implements SilkComparable<File> {
         return type;
     }
 
+    public boolean mount() {
+        try {
+            Shell shell = Shell.startRootShell();
+            Toolbox tb = new Toolbox(shell);
+            boolean success = tb.remount(getAbsolutePath(), "rw");
+            shell.close();
+            if (!success) throw new RuntimeException("Unable to mount " + getAbsolutePath());
+            return success;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String getMountedAs() {
+        try {
+            Shell shell = Shell.startRootShell();
+            Toolbox tb = new Toolbox(shell);
+            String mountedAs = tb.getMountedAs(getAbsolutePath());
+            shell.close();
+            return mountedAs;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public boolean runAsRoot(String cmd) {
+        Log.d("runAsRoot", cmd);
         if (!RootCommands.rootAccessGiven()) return false;
         try {
             Shell shell = Shell.startRootShell();
             SimpleCommand lsApp = new SimpleCommand(cmd);
             shell.add(lsApp).waitForFinish();
             shell.close();
-            return lsApp.getExitCode() == 0;
+            if (lsApp.getExitCode() != 0)
+                throw new RuntimeException("Exit code " + lsApp.getExitCode() + ": " + lsApp.getOutput());
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
             return false;
@@ -148,6 +178,23 @@ public class File extends java.io.File implements SilkComparable<File> {
         for (java.io.File fi : files) cabinets.add(new File(fi));
         return cabinets.toArray(new File[cabinets.size()]);
     }
+
+//    @Override
+//    public boolean exists() {
+//        if (requiresRootAccess()) {
+//            try {
+//                Shell shell = Shell.startRootShell();
+//                Toolbox tb = new Toolbox(shell);
+//                boolean exists = tb.fileExists(getAbsolutePath());
+//                shell.close();
+//                return exists;
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//                return false;
+//            }
+//        }
+//        return super.exists();
+//    }
 
     @Override
     public boolean mkdir() {

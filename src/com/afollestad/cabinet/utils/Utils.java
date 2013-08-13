@@ -29,11 +29,11 @@ public class Utils {
         if (index > 0) newName += " (" + index + ")";
         Log.d("checkForExistence", "Name: " + newName);
         Log.d("checkForExistence", "Extension: " + extension);
-        file = new File(file.getParentFile(), newName + extension);
-        if (file.exists()) {
+        File newFile = new File(file.getParentFile(), newName + extension);
+        if (newFile.exists()) {
             return checkForExistence(file, ++index);
         } else {
-            return file;
+            return newFile;
         }
     }
 

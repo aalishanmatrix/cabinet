@@ -1,7 +1,9 @@
 package com.afollestad.cabinet.utils;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.util.Log;
+import android.widget.Toast;
 import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.file.File;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
@@ -71,7 +73,7 @@ public class Clipboard {
             public void run() {
                 for (int i = 0; i < mClipboard.size(); i++) {
                     final int index = i;
-                    final File newFile = copy(mClipboard.get(i), fragment.getPath(), mClipboardType == Clipboard.Type.CUT);
+                    final File newFile = copy(fragment.getActivity(), mClipboard.get(i), fragment.getPath(), mClipboardType == Clipboard.Type.CUT);
                     fragment.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -100,7 +102,9 @@ public class Clipboard {
         t.start();
     }
 
-    private File copy(File src, File dst, boolean cut) {
+    private Toast toast;
+
+    private File copy(Activity context, File src, File dst, boolean cut) {
         log("Copying '" + src.getAbsolutePath() + "' to '" + dst.getAbsolutePath() + "'...");
         if (src.isDirectory()) {
             File newDir = Utils.checkForExistence(new File(dst, src.getName()), 0);
@@ -108,7 +112,7 @@ public class Clipboard {
             newDir.mkdirs();
             // Recursively copy the source directory into the new directory
             for (File fi : src.listFiles())
-                copy(fi, newDir, cut);
+                copy(context, fi, newDir, cut);
             if (cut) {
                 log("Deleting: " + src.getAbsolutePath());
                 src.delete();
@@ -133,6 +137,9 @@ public class Clipboard {
             }
             return dst;
         } catch (Exception e) {
+            if (toast != null) toast.cancel();
+            toast = Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT);
+            toast.show();
             e.printStackTrace();
             return null;
         }
