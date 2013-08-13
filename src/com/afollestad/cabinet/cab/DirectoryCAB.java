@@ -85,7 +85,7 @@ public class DirectoryCAB {
                     fragment.getAdapter().remove(fi);
                     File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
                     fi.renameTo(newFile);
-                    fragment.getAdapter().update(fi);
+                    fragment.getAdapter().update(newFile);
                     return;
                 }
                 for (int i = 0; i < selectedFiles.size(); i++) {
@@ -93,7 +93,7 @@ public class DirectoryCAB {
                     fragment.getAdapter().remove(fi);
                     File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
                     fi.renameTo(newFile);
-                    fragment.getAdapter().update(fi);
+                    fragment.getAdapter().update(newFile);
                 }
                 fragment.getAdapter().notifyDataSetChanged();
             }
