@@ -150,6 +150,22 @@ public class File extends java.io.File implements SilkComparable<File> {
     }
 
     @Override
+    public boolean mkdir() {
+        if (requiresRootAccess()) {
+            return runAsRoot("mkdir " + getAbsolutePath());
+        }
+        return super.mkdir();
+    }
+
+    @Override
+    public boolean mkdirs() {
+        if (requiresRootAccess()) {
+            return runAsRoot("mkdir -p " + getAbsolutePath());
+        }
+        return super.mkdirs();
+    }
+
+    @Override
     public boolean renameTo(java.io.File newPath) {
         if (requiresRootAccess()) {
             return RootCommands.rootAccessGiven() && runAsRoot("mv \"" + getAbsolutePath() + "\" \"" + newPath.getAbsolutePath() + "\"");
