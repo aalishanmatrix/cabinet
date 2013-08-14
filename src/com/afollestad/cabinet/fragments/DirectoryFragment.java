@@ -151,7 +151,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     if (isMounted) {
                         if (getPath().unmount()) isMounted = false;
                     } else {
-                        if (getPath().mount()) isMounted = true;
+                        if(getPath().mount()) isMounted = true;
                     }
                     invalidateMountedAs();
                 }

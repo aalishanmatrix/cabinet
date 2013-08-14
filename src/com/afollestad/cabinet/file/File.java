@@ -100,7 +100,6 @@ public class File extends java.io.File implements SilkComparable<File> {
             Toolbox tb = new Toolbox(shell);
             boolean success = tb.remount(getAbsolutePath(), "rw");
             shell.close();
-            if (!success) throw new RuntimeException("Unable to mount " + getAbsolutePath());
             return success;
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -113,7 +112,6 @@ public class File extends java.io.File implements SilkComparable<File> {
             Toolbox tb = new Toolbox(shell);
             boolean success = tb.remount(getAbsolutePath(), "ro");
             shell.close();
-            if (!success) throw new RuntimeException("Unable to unmount " + getAbsolutePath());
             return success;
         } catch (Exception e) {
             throw new RuntimeException(e);
