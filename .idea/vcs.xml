@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Silk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../root-commands" vcs="" />
   </component>
 </project>
 

@@ -241,10 +241,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 getActivity().finish();
                 return;
             }
-            String type = item.getMimeType();
-            if (type == null || type.trim().isEmpty()) type = "*/*";
-            Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item), type);
-            startActivity(Intent.createChooser(intent, getString(R.string.open_with)));
+            Utils.openFile(getActivity(), item);
         }
     }
 

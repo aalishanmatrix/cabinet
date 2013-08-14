@@ -4,7 +4,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
-import android.util.Log;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.View;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.file.File;
@@ -19,6 +20,42 @@ public class Utils {
 
     public static interface InputCallback {
         public void onSubmit(String input);
+    }
+
+    public static void openFile(final Activity context, final File item) {
+        String type = item.getMimeType();
+        if (type == null || type.trim().isEmpty()) {
+            new AlertDialog.Builder(context)
+                    .setTitle(R.string.open_as)
+                    .setItems(R.array.open_as_options, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            String type;
+                            switch (which) {
+                                default:
+                                    type = "text/*";
+                                    break;
+                                case 1:
+                                    type = "audio/*";
+                                    break;
+                                case 2:
+                                    type = "image/*";
+                                    break;
+                                case 3:
+                                    type = "video/*";
+                                    break;
+                                case 4:
+                                    type = "*/*";
+                                    break;
+                            }
+                            Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item), type);
+                            context.startActivity(Intent.createChooser(intent, context.getString(R.string.open_with)));
+                        }
+                    }).show();
+        } else {
+            Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item), type);
+            context.startActivity(Intent.createChooser(intent, context.getString(R.string.open_with)));
+        }
     }
 
     public static File checkForExistence(File file, int index) {

@@ -65,4 +65,13 @@
 
     <string name="mounted_as_x">Mounted as {X}</string>
 
+    <string name="open_as">Open as…</string>
+    <string-array name="open_as_options">
+        <item>Text</item>
+        <item>Audio</item>
+        <item>Image</item>
+        <item>Video</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>
