@@ -47,6 +47,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
 
     private File mPath;
     private boolean mPickMode;
+    private boolean isMounted;
 
     public File getPath() {
         return mPath;
@@ -147,7 +148,11 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             mount.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    getPath().mount();
+                    if (isMounted) {
+                        if (getPath().unmount()) isMounted = false;
+                    } else {
+                        if (getPath().mount()) isMounted = true;
+                    }
                     invalidateMountedAs();
                 }
             });

@@ -107,6 +107,19 @@ public class File extends java.io.File implements SilkComparable<File> {
         }
     }
 
+    public boolean unmount() {
+        try {
+            Shell shell = Shell.startRootShell();
+            Toolbox tb = new Toolbox(shell);
+            boolean success = tb.remount(getAbsolutePath(), "ro");
+            shell.close();
+            if (!success) throw new RuntimeException("Unable to unmount " + getAbsolutePath());
+            return success;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public String getMountedAs() {
         try {
             Shell shell = Shell.startRootShell();
