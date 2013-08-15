@@ -78,8 +78,7 @@ public class ZipUtils {
     public static File zip(List<File> files, File destination, ProgressCallback callback) throws Exception {
         destination = Utils.checkForExistence(destination, 0);
         ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(destination));
-        for (int i = 0; i < files.size(); i++) {
-            File f = files.get(i);
+        for (File f : files) {
             if (f.isDirectory()) zipDir(f, zos, f.getParentFile(), callback);
             else zip(f, zos, f.getParentFile(), callback);
         }

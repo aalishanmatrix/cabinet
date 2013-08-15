@@ -130,7 +130,7 @@ public class File extends java.io.File implements SilkComparable<File> {
         }
     }
 
-    public boolean runAsRoot(String cmd) {
+    boolean runAsRoot(String cmd) {
         Log.d("runAsRoot", cmd);
         if (!RootCommands.rootAccessGiven()) return false;
         try {

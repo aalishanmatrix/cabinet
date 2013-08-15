@@ -16,7 +16,7 @@ import com.afollestad.cabinet.file.File;
  *
  * @author Aidan Follestad (afollestad)
  */
-public class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
+class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
 
     public static class ViewHolder {
         public ImageView thumbnail;

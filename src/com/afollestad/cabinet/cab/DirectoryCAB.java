@@ -88,8 +88,7 @@ public class DirectoryCAB {
                     fragment.getAdapter().update(newFile);
                     return;
                 }
-                for (int i = 0; i < selectedFiles.size(); i++) {
-                    File fi = selectedFiles.get(i);
+                for (File fi : selectedFiles) {
                     fragment.getAdapter().remove(fi);
                     File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
                     fi.renameTo(newFile);
@@ -114,7 +113,7 @@ public class DirectoryCAB {
         return Intent.createChooser(shareIntent, context.getString(R.string.send_using));
     }
 
-    public static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles, boolean inParent) {
+    private static void performDelete(final DirectoryFragment fragment, final List<File> selectedFiles, boolean inParent) {
         String paths = "";
         for (File fi : selectedFiles) paths += "<i>" + fi.getName() + "</i><br/>";
         Spanned message = Html.fromHtml(fragment.getString(R.string.confirm_delete).replace("{paths}", paths)
