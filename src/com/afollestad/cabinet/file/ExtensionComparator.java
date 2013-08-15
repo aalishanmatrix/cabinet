@@ -1,6 +1,8 @@
 package com.afollestad.cabinet.file;
 
 /**
+ * Sorts files by extension, alphabetically. Folders will be at the beginning.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class ExtensionComparator implements java.util.Comparator<File> {

@@ -1,6 +1,8 @@
 package com.afollestad.cabinet.file;
 
 /**
+ * Sorts folders and files by name, alphabetically. Folders will always be at the top.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class FoldersFirstComparator implements java.util.Comparator<File> {

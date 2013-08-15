@@ -1,6 +1,8 @@
 package com.afollestad.cabinet.file;
 
 /**
+ * Sorts files and folders by name, alphabetically.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class AlphabeticalComparator implements java.util.Comparator<File> {

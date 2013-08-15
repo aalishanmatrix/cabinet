@@ -12,6 +12,8 @@ import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.file.File;
 
 /**
+ * Used by the {@link FileAdapter} to load and display file thumbnails.
+ *
  * @author Aidan Follestad (afollestad)
  */
 public class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
