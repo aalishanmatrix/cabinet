@@ -18,10 +18,12 @@
                                                  android:paddingRight="@dimen/grid_padding"
                                                  android:layout_below="@+id/mount"/>
 
-    <com.afollestad.silk.views.text.SilkTextView android:id="@android:id/empty" android:layout_width="wrap_content"
+    <com.afollestad.silk.views.text.SilkTextView android:id="@android:id/empty"
+                                                 android:layout_width="wrap_content"
                                                  android:layout_height="wrap_content"
                                                  android:textSize="@dimen/empty_text_size"
-                                                 android:layout_centerInParent="true"/>
+                                                 android:layout_centerInParent="true"
+                                                 android:textColor="?primary_text"/>
 
     <ProgressBar android:id="@android:id/progress"
                  android:layout_width="wrap_content" android:layout_height="wrap_content"
