@@ -31,14 +31,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Silk/library/Silk.iml" afterPath="$PROJECT_DIR$/../Silk/library/Silk.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/adapters/SilkAdapter.java" afterPath="$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/adapters/SilkAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376676085711" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376676653767" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376587531386" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376498660041" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376448320414" ignored="false" />
@@ -373,7 +371,7 @@
       <file leaf-file-name="SilkAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/adapters/SilkAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="78" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.87030715">
+            <state line="84" column="78" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.63993174">
               <folding />
             </state>
           </provider>
@@ -1737,7 +1735,11 @@
       <created>1376592019711</created>
       <updated>1376592019711</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="Updates.">
+      <created>1376676657712</created>
+      <updated>1376676657712</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1834,7 +1836,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1854,10 +1856,10 @@
     <MESSAGE value="Added BETA rename function" />
     <MESSAGE value="Renaming function appears to be fully functional" />
     <MESSAGE value="Fixes to handle duplicate or already existing files" />
-    <MESSAGE value="Updates." />
     <MESSAGE value="Fixes" />
     <MESSAGE value="Updated version info." />
     <MESSAGE value="Updates" />
+    <MESSAGE value="Updates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1957,7 +1959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/adapters/SilkAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="78" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.87030715">
+        <state line="84" column="78" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.63993174">
           <folding />
         </state>
       </provider>
