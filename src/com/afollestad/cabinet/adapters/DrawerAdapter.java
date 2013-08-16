@@ -60,7 +60,7 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
     }
 
     @Override
-    public int getLayout(int type) {
+    public int getLayout(int index, int type) {
         return R.layout.list_item_drawer;
     }
 

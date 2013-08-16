@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../root-commands/RootCommands-Library/RootCmds.iml" filepath="$PROJECT_DIR$/../root-commands/RootCommands-Library/RootCmds.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Silk/library/Silk.iml" filepath="$PROJECT_DIR$/../Silk/library/Silk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Silk/Silk.iml" filepath="$PROJECT_DIR$/../Silk/Silk.iml" />
       <module fileurl="file://$PROJECT_DIR$/cabinet.iml" filepath="$PROJECT_DIR$/cabinet.iml" />
     </modules>
   </component>
