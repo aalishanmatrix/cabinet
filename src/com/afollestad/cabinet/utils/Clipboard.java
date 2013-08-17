@@ -58,6 +58,12 @@ public class Clipboard {
     }
 
     public boolean canPaste() {
+        if(mClipboard.size() == 0) return false;
+        // Remove no longer existing files from the clipboard
+        for(int i = 0; i < mClipboard.size(); i++) {
+            if(!mClipboard.get(i).exists())
+                mClipboard.remove(i);
+        }
         return mClipboard.size() > 0;
     }
 
