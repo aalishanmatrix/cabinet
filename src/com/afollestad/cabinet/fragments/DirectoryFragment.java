@@ -49,6 +49,19 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     private boolean mPickMode;
     private boolean isMounted;
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putString("path", mPath.getAbsolutePath());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null && savedInstanceState.containsKey("path"))
+            mPath = new File(savedInstanceState.getString("path"));
+    }
+
     public File getPath() {
         return mPath;
     }
@@ -151,7 +164,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     if (isMounted) {
                         if (getPath().unmount()) isMounted = false;
                     } else {
-                        if(getPath().mount()) isMounted = true;
+                        if (getPath().mount()) isMounted = true;
                     }
                     invalidateMountedAs();
                 }
