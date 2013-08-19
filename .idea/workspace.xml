@@ -34,21 +34,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/list_focused.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/list_focused.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_list_lastupdated_themed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/fragments/SilkLastUpdatedFragment.java" afterPath="$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/fragments/SilkLastUpdatedFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/attrs.xml" afterPath="$PROJECT_DIR$/res/values/attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_light.xml" afterPath="$PROJECT_DIR$/res/values/styles_light.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376887689699" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376950407565" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376866331189" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376790167316" ignored="false" />
-    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376448320414" ignored="false" />
+    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947205854" ignored="false" />
     <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376695768682" ignored="false" />
     <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278465090" ignored="false" />
     <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376412942181" ignored="false" />
-    <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278664294" ignored="false" />
-    <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669962351" ignored="false" />
-    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376885488799" ignored="false" />
+    <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946668007" ignored="false" />
+    <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376949450099" ignored="false" />
+    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947149375" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413831377" ignored="false" />
     <file path="/SilkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376676649814" ignored="false" />
     <file path="/SilkDrawerActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375640104054" ignored="false" />
@@ -233,9 +240,9 @@
     <file path="/SilkThemableActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376272683631" ignored="false" />
     <file path="/prefs_lookandfeel.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376273460910" ignored="false" />
     <file path="/LookFeelFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376885592064" ignored="false" />
-    <file path="/styles_dark.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278770381" ignored="false" />
-    <file path="/attrs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323631880" ignored="false" />
-    <file path="/styles_light.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323707515" ignored="false" />
+    <file path="/styles_dark.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951289634" ignored="false" />
+    <file path="/attrs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951258072" ignored="false" />
+    <file path="/styles_light.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951274995" ignored="false" />
     <file path="/styles_dark_lightab.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323730025" ignored="false" />
     <file path="$PROJECT_DIR$/../APOS/res/layout/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
     <file path="/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324144806" ignored="false" />
@@ -301,7 +308,7 @@
     <file path="$PROJECT_DIR$/../cards-ui/res/drawable/card_selector.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376505171509" ignored="false" />
     <file path="$PROJECT_DIR$/../cards-ui/res/drawable/pressed_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376505164989" ignored="false" />
     <file path="$PROJECT_DIR$/../Silk/gen/com/afollestad/silk/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376584630598" ignored="false" />
-    <file path="$PROJECT_DIR$/../root-commands/RootCommands-Library/gen/org/sufficientlysecure/rootcommands/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376591548645" ignored="false" />
+    <file path="$PROJECT_DIR$/../root-commands/RootCommands-Library/gen/org/sufficientlysecure/rootcommands/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376926135877" ignored="false" />
     <file path="$PROJECT_DIR$/../Pocket-Vino/res/values/styles_savvy.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376861050718" ignored="false" />
     <file path="/styles_savvy.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376860954946" ignored="false" />
     <file path="$PROJECT_DIR$/../Pocket-Vino/res/layout/fragment_list_cards.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376860983248" ignored="false" />
@@ -315,6 +322,21 @@
     <file path="/recoup_button.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376866493121" ignored="false" />
     <file path="$PROJECT_DIR$/../ReCoup-Android/res/drawable/recoup_button.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376866493121" ignored="false" />
     <file path="/.gitignore" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376887686596" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946777560" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/values/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946668007" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/layout/drawer_item.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946749058" ignored="false" />
+    <file path="/drawer_item.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946745180" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/src/com/teamboid/twitter/adapters/DrawerItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946846500" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/values/attrs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946822616" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/values/styles_dark.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946829651" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/values/styles_light.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376949543018" ignored="false" />
+    <file path="/DrawerItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946842378" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/src/com/teamboid/twitter/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947231416" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/layout/main_drawer.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947163353" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/layout/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376949450999" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947205854" ignored="false" />
+    <file path="$PROJECT_DIR$/../boid-v2/src/com/teamboid/twitter/fragments/base/BoidListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951338158" ignored="false" />
+    <file path="/fragment_list_lastupdated_themed.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951265104" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +351,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -366,6 +387,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -375,10 +397,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="attrs.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.10016695">
+            <state line="17" column="44" selection-start="669" selection-end="669" vertical-scroll-proportion="0.47309834">
               <folding />
             </state>
           </provider>
@@ -407,12 +429,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/FoldersFirstComparator.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
-        <option value="$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/adapters/SilkAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/fragment_list_root.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_grid.xml" />
@@ -423,14 +439,20 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/LookFeelFragment.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_list_lastupdated_themed.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
+        <option value="$PROJECT_DIR$/res/values/attrs.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="-4" />
-    <option name="width" value="1307" />
-    <option name="height" value="773" />
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1368" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -458,8 +480,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -488,11 +508,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,20 +522,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapters" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -543,8 +557,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1728,7 +1742,11 @@
       <created>1376887691413</created>
       <updated>1376887691413</updated>
     </task>
-    <option name="localTasksCounter" value="256" />
+    <task id="LOCAL-00256" summary="Updates">
+      <created>1376887727296</created>
+      <updated>1376887727296</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1752,7 +1770,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="-4" width="1307" height="773" extended-state="6" />
+    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1766,13 +1784,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22651514" sideWeight="0.4416" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22557585" sideWeight="0.5648" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4352" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.225" sideWeight="0.5661017" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4338983" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828686" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1856,116 +1874,116 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/fragments/SilkListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="44" selection-start="6510" selection-end="6510" vertical-scroll-proportion="0.5238908" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="517" selection-end="517" vertical-scroll-proportion="0.09348915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="36" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.5509182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="36" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.5993322" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/Silk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="82" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.94690263">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="629" selection-end="629" vertical-scroll-proportion="0.23497267">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="52" selection-start="5606" selection-end="5606" vertical-scroll-proportion="0.4095563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="55" selection-start="2870" selection-end="2870" vertical-scroll-proportion="0.025597269">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="33" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.025597269">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_root.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="1115" selection-end="1148" vertical-scroll-proportion="0.43715847" />
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="49" selection-start="1115" selection-end="1148" vertical-scroll-proportion="0.43715847">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/LookFeelFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="87" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.7245409">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.23037542">
-          <folding />
-        </state>
+        <state line="55" column="87" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.7245409" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="17" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.6911263">
-          <folding />
-        </state>
+        <state line="58" column="17" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.6911263" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.17529215">
-          <folding />
-        </state>
+        <state line="13" column="13" selection-start="305" selection-end="305" vertical-scroll-proportion="0.17529215" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="248" selection-end="248" vertical-scroll-proportion="0.5759599">
+        <state line="23" column="5" selection-start="248" selection-end="248" vertical-scroll-proportion="0.5759599" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="48" selection-start="229" selection-end="229" vertical-scroll-proportion="0.11673152">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="16" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.026595745">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.10016695">
+        <state line="26" column="79" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.49468085">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="49" selection-start="199" selection-end="205" vertical-scroll-proportion="0.13914657">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_item_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="78" selection-start="786" selection-end="786" vertical-scroll-proportion="0.35019454">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="427" selection-end="533" vertical-scroll-proportion="0.3617811">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_lastupdated_themed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="43" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.4377432">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_dark_lightab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="57" selection-start="765" selection-end="765" vertical-scroll-proportion="0.38961038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="57" selection-start="730" selection-end="730" vertical-scroll-proportion="0.38961038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="56" selection-start="732" selection-end="732" vertical-scroll-proportion="0.38961038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="44" selection-start="669" selection-end="669" vertical-scroll-proportion="0.47309834">
           <folding />
         </state>
       </provider>
