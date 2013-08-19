@@ -36,7 +36,7 @@ public class LookFeelFragment extends PreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.prefs_lookandfeel);
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
 
         Preference baseTheme = findPreference("base_theme");
         baseTheme.setSummary(getBaseThemeSummary(prefs.getString(baseTheme.getKey(), "0")));
