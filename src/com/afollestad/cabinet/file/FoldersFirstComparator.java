@@ -19,6 +19,6 @@ class FoldersFirstComparator implements java.util.Comparator<File> {
         } else if (!lhs.isDirectory() && rhs.isDirectory()) {
             // Files below folders
             return 1;
-        } else return 0;
+        } else return 0; // stay where it is now
     }
 }
