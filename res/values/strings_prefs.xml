@@ -44,11 +44,15 @@
         <item>By name, folders at the top</item>
         <item>By name</item>
         <item>By extension</item>
+        <item>By size, low to high</item>
+        <item>By size, high to low</item>
     </string-array>
     <string-array name="sorting_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 
     <string-array name="basetheme_entries">

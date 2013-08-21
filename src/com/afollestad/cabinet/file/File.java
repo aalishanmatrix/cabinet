@@ -157,6 +157,10 @@ public class File extends java.io.File implements SilkComparable<File> {
                 return new AlphabeticalComparator();
             case 2:
                 return new ExtensionComparator();
+            case 3:
+                return new LowHighSizeComparator();
+            case 4:
+                return new HighLowSizeComparator();
         }
     }
 
