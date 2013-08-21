@@ -4,6 +4,6 @@
     <color name="pressed_cabinet">#CC33B5E5</color>
     <color name="secondary_text_dark">#6000</color>
     <color name="drawer_background_light">#FFFFFF</color>
-    <color name="drawer_background_dark">#FF303030</color>
+    <color name="drawer_background_dark">#3A3A3C</color>
 
 </resources>

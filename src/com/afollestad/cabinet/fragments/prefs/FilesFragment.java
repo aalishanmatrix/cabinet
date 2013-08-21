@@ -20,6 +20,10 @@ public class FilesFragment extends PreferenceFragment {
                 return R.string.sorting_alphabetical;
             case 2:
                 return R.string.sorting_extension;
+            case 3:
+                return R.string.sorting_size_lowhigh;
+            case 4:
+                return R.string.sorting_size_highlow;
         }
     }
 

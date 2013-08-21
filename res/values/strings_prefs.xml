@@ -39,6 +39,10 @@
     </string>
     <string name="sorting_alphabetical">Files are currently sorted alphabetically by name.</string>
     <string name="sorting_extension">Files are currently sorted by extension, folders come first.</string>
+    <string name="sorting_size_lowhigh">Files are currently sorted by size, low to high. Folders are considered large.
+    </string>
+    <string name="sorting_size_highlow">Files are currently sorted by size, high to low. Folders are considered large.
+    </string>
 
     <string-array name="sorting_entries">
         <item>By name, folders at the top</item>

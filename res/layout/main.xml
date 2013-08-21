@@ -22,7 +22,9 @@
         <ListView android:id="@+id/left_drawer"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:listSelector="@drawable/selectable_background_cabinet"/>
+                  android:listSelector="@drawable/selectable_background_cabinet"
+                  android:divider="@null"
+                  android:dividerHeight="0dp"/>
 
         <com.afollestad.silk.views.text.SilkTextView android:id="@+id/drawer_empty"
                                                      android:layout_width="wrap_content"
