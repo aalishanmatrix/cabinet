@@ -78,6 +78,8 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState != null && savedInstanceState.containsKey("path"))
+            mPath = new File(savedInstanceState.getString("path"));
         setHasOptionsMenu(true);
         setRetainInstance(true);
     }
