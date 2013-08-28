@@ -245,9 +245,9 @@ public class File extends java.io.File implements SilkComparable<File> {
         if (requiresRootAccess()) {
             if (!RootCommands.rootAccessGiven()) return false;
             String cmd = "rm";
-            if (isDirectory()) cmd += " -rf";
+            if (isDirectory()) cmd += " -Rf";
             else cmd += " -f";
-            return runAsRoot(cmd);
+            return runAsRoot(cmd + " \"" + getAbsolutePath() + "\"");
         }
         return Utils.deleteRecursively(this);
     }

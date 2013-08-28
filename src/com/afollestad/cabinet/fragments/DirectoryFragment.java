@@ -47,7 +47,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
 
     private File mPath;
     private boolean mPickMode;
-    private boolean isMounted;
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
@@ -148,6 +147,10 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         mount.setText(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()));
     }
 
+    private boolean isMounted() {
+        return !getPath().getMountedAs().equalsIgnoreCase("ro");
+    }
+
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -163,11 +166,9 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             mount.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (isMounted) {
-                        if (getPath().unmount()) isMounted = false;
-                    } else {
-                        if (getPath().mount()) isMounted = true;
-                    }
+                    if (isMounted()) {
+                        getPath().unmount();
+                    } else getPath().mount();
                     invalidateMountedAs();
                 }
             });
