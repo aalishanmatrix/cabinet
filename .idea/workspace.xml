@@ -34,15 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cabinet.iml" afterPath="$PROJECT_DIR$/cabinet.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377710097406" ignored="false" />
+    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377711090763" ignored="false" />
     <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377710716287" ignored="false" />
     <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377710884863" ignored="false" />
     <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947205854" ignored="false" />
@@ -409,19 +406,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="0" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.027272727">
+            <state line="97" column="47" selection-start="2814" selection-end="2814" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="77" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+            <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.106571935">
               <folding />
             </state>
           </provider>
@@ -463,9 +460,9 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/HighLowSizeComparator.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/LowHighSizeComparator.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1821,7 +1818,11 @@
       <created>1377121728540</created>
       <updated>1377121728540</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="Fixes for root mounting and deleting root files/folders.">
+      <created>1377711095736</created>
+      <updated>1377711095736</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1918,7 +1919,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes for root mounting and deleting root files/folders." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1946,6 +1947,7 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="Updates, new sorting options in Cabinet." />
     <MESSAGE value="Fixes." />
+    <MESSAGE value="Fixes for root mounting and deleting root files/folders." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2019,13 +2021,6 @@
         <state line="26" column="44" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.58365756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="77" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="170" column="45" selection-start="5691" selection-end="5691" vertical-scroll-proportion="0.0">
@@ -2035,7 +2030,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.027272727">
+        <state line="97" column="47" selection-start="2814" selection-end="2814" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.106571935">
           <folding />
         </state>
       </provider>
