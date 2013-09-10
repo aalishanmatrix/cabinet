@@ -8,7 +8,7 @@ import android.util.Log;
 import android.webkit.MimeTypeMap;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.utils.Utils;
-import com.afollestad.silk.cache.SilkComparable;
+import com.afollestad.silk.caching.SilkComparable;
 import org.sufficientlysecure.rootcommands.RootCommands;
 import org.sufficientlysecure.rootcommands.Shell;
 import org.sufficientlysecure.rootcommands.Toolbox;
@@ -45,18 +45,6 @@ public class File extends java.io.File implements SilkComparable<File> {
     public File(java.io.File file) {
         super(file.getAbsolutePath());
     }
-
-
-    @Override
-    public boolean isSameAs(File another) {
-        return getAbsolutePath().equals(another.getAbsolutePath());
-    }
-
-    @Override
-    public boolean shouldIgnore() {
-        return isHidden();
-    }
-
 
     public boolean isStorageDirectory() {
         return getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath());
@@ -278,5 +266,15 @@ public class File extends java.io.File implements SilkComparable<File> {
 
         shell.close();
         return files.toArray(new File[files.size()]);
+    }
+
+    @Override
+    public Object getSilkId() {
+        return getAbsolutePath();
+    }
+
+    @Override
+    public boolean equalTo(File other) {
+        return getAbsolutePath().equals(other.getAbsolutePath());
     }
 }

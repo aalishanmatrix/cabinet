@@ -46,7 +46,11 @@ public class MainActivity extends SilkDrawerActivity {
             case 1:
                 return R.style.Cabinet_Light;
             case 2:
+                return R.style.Cabinet_Gray;
+            case 3:
                 return R.style.Cabinet;
+            case 4:
+                return R.style.Cabinet_Black;
         }
     }
 
@@ -63,8 +67,10 @@ public class MainActivity extends SilkDrawerActivity {
 
     @Override
     public int getDrawerIndicatorRes() {
-        if (mBaseTheme == R.style.Cabinet || mBaseTheme == R.style.Cabinet_Light_DarkActionBar)
+        if (mBaseTheme == R.style.Cabinet || mBaseTheme == R.style.Cabinet_Light_DarkActionBar ||
+                mBaseTheme == R.style.Cabinet_Black || mBaseTheme == R.style.Cabinet_Gray) {
             return R.drawable.ic_navigation_drawer_light;
+        }
         return R.drawable.ic_navigation_drawer_dark;
     }
 

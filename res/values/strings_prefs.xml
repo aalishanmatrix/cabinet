@@ -51,7 +51,7 @@
         <item>By size, low to high</item>
         <item>By size, high to low</item>
     </string-array>
-    <string-array name="sorting_values">
+    <string-array name="sorting_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -62,12 +62,16 @@
     <string-array name="basetheme_entries">
         <item>Light, Dark Action Bar</item>
         <item>Light</item>
+        <item>Gray</item>
         <item>Dark</item>
+        <item>Pure Black</item>
     </string-array>
-    <string-array name="basetheme_values">
+    <string-array name="basetheme_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
     <string-array name="color_entries">
         <item>Theme Default</item>
@@ -78,7 +82,7 @@
         <item>Orange</item>
         <item>Red</item>
     </string-array>
-    <string-array name="color_values">
+    <string-array name="color_values" translatable="false">
         <item>0</item>
         <item>#000000</item>
         <item>#0099CC</item>

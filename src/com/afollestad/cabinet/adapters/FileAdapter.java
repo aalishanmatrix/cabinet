@@ -55,6 +55,11 @@ public class FileAdapter extends SilkAdapter<File> {
     }
 
     @Override
+    public long getItemId(File item) {
+        return -1;
+    }
+
+    @Override
     public int getLayout(int index, int type) {
         return R.layout.list_item_file;
     }

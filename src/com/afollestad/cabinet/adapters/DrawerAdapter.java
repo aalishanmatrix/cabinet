@@ -6,7 +6,7 @@ import android.widget.TextView;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.file.File;
 import com.afollestad.silk.adapters.SilkAdapter;
-import com.afollestad.silk.cache.SilkComparable;
+import com.afollestad.silk.caching.SilkComparable;
 
 /**
  * Used for the navigation drawer items.
@@ -44,13 +44,13 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
         }
 
         @Override
-        public boolean isSameAs(DrawerItem another) {
-            return getTitle().equals(another.getTitle());
+        public Object getSilkId() {
+            return getFile().getAbsolutePath();
         }
 
         @Override
-        public boolean shouldIgnore() {
-            return false;
+        public boolean equalTo(DrawerItem other) {
+            return getFile().getAbsolutePath().equals(other.getFile().getAbsolutePath());
         }
     }
 
@@ -68,5 +68,10 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
     public View onViewCreated(int index, View recycled, DrawerItem item) {
         ((TextView) recycled.findViewById(R.id.title)).setText(item.getTitle());
         return recycled;
+    }
+
+    @Override
+    public long getItemId(DrawerItem item) {
+        return -1;
     }
 }

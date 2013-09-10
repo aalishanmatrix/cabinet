@@ -84,10 +84,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     }
 
     @Override
-    public void onVisibilityChange(boolean visible) {
-    }
-
-    @Override
     public void onResume() {
         super.onResume();
 
