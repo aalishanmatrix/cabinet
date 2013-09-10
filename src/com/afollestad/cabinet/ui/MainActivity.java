@@ -57,7 +57,11 @@ public class MainActivity extends SilkDrawerActivity {
     public static int getCabinetThemeColor(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String color = prefs.getString("theme_color", "0");
-        if (color.equals("0")) return 0;
+        if (color.equals("0")) {
+            if (prefs.getString("base_theme", "0").equals("2"))
+                color = "#2d2d2d";
+            else return 0;
+        }
         return Color.parseColor(color);
     }
 

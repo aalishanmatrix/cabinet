@@ -76,6 +76,7 @@
     <string-array name="color_entries">
         <item>Theme Default</item>
         <item>Black</item>
+        <item>Gray</item>
         <item>Blue</item>
         <item>Purple</item>
         <item>Green</item>
@@ -85,6 +86,7 @@
     <string-array name="color_values" translatable="false">
         <item>0</item>
         <item>#000000</item>
+        <item>#2D2D2D</item>
         <item>#0099CC</item>
         <item>#9933CC</item>
         <item>#669900</item>
