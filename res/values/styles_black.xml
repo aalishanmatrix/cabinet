@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Cabinet.Black" parent="@android:style/Theme.Holo">
+    <style name="Cabinet.Black" parent="@style/Cabinet">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_cabinetblack</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Cabinetblack</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Cabinetblack</item>
