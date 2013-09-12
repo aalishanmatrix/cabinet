@@ -58,10 +58,10 @@ public class Clipboard {
     }
 
     public boolean canPaste() {
-        if(mClipboard.size() == 0) return false;
+        if (mClipboard.size() == 0) return false;
         // Remove no longer existing files from the clipboard
-        for(int i = 0; i < mClipboard.size(); i++) {
-            if(!mClipboard.get(i).exists())
+        for (int i = 0; i < mClipboard.size(); i++) {
+            if (!mClipboard.get(i).exists())
                 mClipboard.remove(i);
         }
         return mClipboard.size() > 0;
@@ -110,7 +110,7 @@ public class Clipboard {
 
     private Toast toast;
 
-    private File copy(Activity context, File src, File dst, boolean cut) {
+    private File copy(final Activity context, File src, File dst, boolean cut) {
         log("Copying '" + src.getAbsolutePath() + "' to '" + dst.getAbsolutePath() + "'...");
         if (src.isDirectory()) {
             File newDir = Utils.checkForExistence(new File(dst, src.getName()), 0);
@@ -142,10 +142,15 @@ public class Clipboard {
                 src.delete();
             }
             return dst;
-        } catch (Exception e) {
-            if (toast != null) toast.cancel();
-            toast = Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT);
-            toast.show();
+        } catch (final Exception e) {
+            context.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if (toast != null) toast.cancel();
+                    toast = Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+            });
             e.printStackTrace();
             return null;
         }
