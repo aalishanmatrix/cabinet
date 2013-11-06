@@ -150,7 +150,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getListView().setSelector(R.drawable.selectable_background_cabinet);
         getListView().setFastScrollEnabled(true);
         setupCab(getListView());
         if (getAdapter().getCount() == 0) load();

@@ -40,7 +40,7 @@ public class MainActivity extends SilkDrawerActivity {
 
     public static int getCabinetBaseTheme(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        switch (Integer.parseInt(prefs.getString("base_theme", "0"))) {
+        switch (Integer.parseInt(prefs.getString("base_theme", "1"))) {
             default:
                 return R.style.Cabinet_Light_DarkActionBar;
             case 1:
