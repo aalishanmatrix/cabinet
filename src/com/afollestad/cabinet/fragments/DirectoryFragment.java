@@ -37,6 +37,9 @@ import java.util.List;
  */
 public class DirectoryFragment extends SilkListFragment<File> implements FileAdapter.ThumbnailClickListener {
 
+    private File mPath;
+    private boolean mPickMode;
+
     public DirectoryFragment() {
     }
 
@@ -44,9 +47,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         mPath = dir;
         mPickMode = pickMode;
     }
-
-    private File mPath;
-    private boolean mPickMode;
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
@@ -94,10 +94,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             getActivity().setTitle(R.string.root);
         else getActivity().setTitle(mPath.getName());
 
-        if (((FileAdapter) getAdapter()).invalidate()) {
-            // Reload the list if the user has changed settings
-            load();
-        }
+        load();
     }
 
     private void load() {

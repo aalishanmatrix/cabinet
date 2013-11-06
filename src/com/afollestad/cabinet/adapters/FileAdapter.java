@@ -20,32 +20,17 @@ import com.afollestad.silk.adapters.SilkAdapter;
  */
 public class FileAdapter extends SilkAdapter<File> {
 
+    private final ThumbnailClickListener mThumbnailListener;
+    private final boolean isTablet;
+    private boolean showHidden;
+    private int sortSetting;
+
     public FileAdapter(Context context, ThumbnailClickListener thumbnailListener) {
         super(context);
         mThumbnailListener = thumbnailListener;
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         showHidden = prefs.getBoolean("show_hidden_files", false);
         isTablet = Silk.isTablet(context);
-    }
-
-    public static interface ThumbnailClickListener {
-        public void onThumbnailClicked(int index);
-    }
-
-    private final ThumbnailClickListener mThumbnailListener;
-
-    private boolean showHidden;
-    private int sortSetting;
-    private final boolean isTablet;
-
-    public boolean invalidate() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-        boolean show = prefs.getBoolean("show_hidden_files", false);
-        int sort = Integer.parseInt(prefs.getString("file_sorting", "0"));
-        boolean different = sort != sortSetting || show != showHidden;
-        showHidden = show;
-        sortSetting = sort;
-        return different;
     }
 
     @Override
@@ -129,5 +114,9 @@ public class FileAdapter extends SilkAdapter<File> {
         }
 
         return recycled;
+    }
+
+    public static interface ThumbnailClickListener {
+        public void onThumbnailClicked(int index);
     }
 }
