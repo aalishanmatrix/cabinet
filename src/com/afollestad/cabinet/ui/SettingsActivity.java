@@ -17,6 +17,11 @@ public class SettingsActivity extends PreferenceActivity {
     private int mThemeColor;
 
     @Override
+    protected boolean isValidFragment(String fragmentName) {
+        return true;
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         mBaseTheme = MainActivity.getCabinetBaseTheme(this);
         setTheme(mBaseTheme);
