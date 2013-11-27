@@ -139,20 +139,7 @@ public class MainActivity extends SilkDrawerActivity {
 
     private boolean checkFirstTime() {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean("first_time", true)) {
-            //TODO remove later
-            if (Shortcuts.contains(this, new File("/sdcard"))) {
-                List<File> shortcuts = Shortcuts.getAll(this);
-                if (shortcuts.get(0).getAbsolutePath().equals("/sdcard")) {
-                    shortcuts.set(0, new File(Environment.getExternalStorageDirectory()));
-                    Shortcuts.save(this, shortcuts);
-                } else if (shortcuts.get(1).getAbsolutePath().equals("/sdcard")) {
-                    shortcuts.set(1, new File(Environment.getExternalStorageDirectory()));
-                    Shortcuts.save(this, shortcuts);
-                }
-            }
-            return false;
-        }
+        if (!prefs.getBoolean("first_time", true)) return false;
 
         // Add default shortcuts
         File storage = new File(Environment.getExternalStorageDirectory());
