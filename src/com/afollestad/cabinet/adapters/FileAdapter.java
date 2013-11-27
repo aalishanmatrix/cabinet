@@ -23,7 +23,6 @@ public class FileAdapter extends SilkAdapter<File> {
     private final ThumbnailClickListener mThumbnailListener;
     private final boolean isTablet;
     private boolean showHidden;
-    private int sortSetting;
 
     public FileAdapter(Context context, ThumbnailClickListener thumbnailListener) {
         super(context);
@@ -40,8 +39,8 @@ public class FileAdapter extends SilkAdapter<File> {
     }
 
     @Override
-    public long getItemId(File item) {
-        return -1;
+    public Object getItemId(File item) {
+        return item.getSilkId();
     }
 
     @Override

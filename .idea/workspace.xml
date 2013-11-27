@@ -17,329 +17,28 @@
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
       <GlobalState>
-        <option name="device" value="2.7in QVGA" />
-        <option name="dockMode" value="" />
-        <option name="nightMode" value="notnight" />
-        <option name="targetHashString" value="android-19" />
-        <option name="theme" value="Theme" />
         <option name="visible" value="false" />
       </GlobalState>
     </option>
-    <device-configurations>
-      <entry key="file://$PROJECT_DIR$/res/layout-large/list_item_file.xml" value="Portrait" />
-    </device-configurations>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cabinet.iml" afterPath="$PROJECT_DIR$/cabinet.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1383699910950" ignored="false" />
-    <file path="/DirectoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1383699623215" ignored="false" />
-    <file path="/File.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378774250322" ignored="false" />
-    <file path="/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947205854" ignored="false" />
-    <file path="/FileAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376695768682" ignored="false" />
-    <file path="/list_item_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1383699646867" ignored="false" />
-    <file path="/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376412942181" ignored="false" />
-    <file path="/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378775264855" ignored="false" />
-    <file path="/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377104733394" ignored="false" />
-    <file path="/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378775726727" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378775777664" ignored="false" />
-    <file path="/SilkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376676649814" ignored="false" />
-    <file path="/SilkDrawerActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375640104054" ignored="false" />
-    <file path="/styles_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375394076535" ignored="false" />
-    <file path="/fragment_pager.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375224144377" ignored="false" />
-    <file path="/SilkListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669307736" ignored="false" />
-    <file path="/DrawableManager.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375229198553" ignored="false" />
-    <file path="/a.dummy" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375821933649" ignored="false" />
-    <file path="/App.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375751238911" ignored="false" />
-    <file path="/ImageManager.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375227988614" ignored="false" />
-    <file path="/SilkImageView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375228473676" ignored="false" />
-    <file path="/BitmapWorkerTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375230603719" ignored="false" />
-    <file path="/FileThumbnailLoader.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375231874681" ignored="false" />
-    <file path="/fragment_async_list.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375231975151" ignored="false" />
-    <file path="/DrawerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378774336560" ignored="false" />
-    <file path="/list_item_drawer.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376278553385" ignored="false" />
-    <file path="/strings_arrays.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375237227644" ignored="false" />
-    <file path="/selectable_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375494991481" ignored="false" />
-    <file path="/contextual_ab_file.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376448864832" ignored="false" />
-    <file path="/activatable_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375243646501" ignored="false" />
-    <file path="/Bookmarks.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375247373834" ignored="false" />
-    <file path="/Shortcuts.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375807037866" ignored="false" />
-    <file path="/fragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1383698711311" ignored="false" />
-    <file path="/dialog_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375248454873" ignored="false" />
-    <file path="/fragment_directory.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338082077" ignored="false" />
-    <file path="/Clipboard.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1379017978482" ignored="false" />
-    <file path="/DirectoryCAB.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376591979637" ignored="false" />
-    <file path="/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376448625848" ignored="false" />
-    <file path="/Root.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375398968679" ignored="false" />
-    <file path="/SilkListView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375657562479" ignored="false" />
-    <file path="/fragment_list.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375328847209" ignored="false" />
-    <file path="/input_edit_text.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375337408912" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout-large/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669963548" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout-large/activity_login.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="/activity_login.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382632261" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375381068694" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout/activity_login.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384823918" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/drawable/shadow_inverse.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375381545701" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/menu/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382410712" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/enginetester/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382423274" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/enginetester/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375382774213" ignored="false" />
-    <file path="/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376341458456" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375722901378" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/gen/com/recoup/apos/Manifest.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384348209" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/LoginTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/gen/com/recoup/apos/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375399318723" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/ApiLogin.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/scanner/IntentResult.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/views/SavvyButton.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/CheckoutTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384333760" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/App.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/adapters/ReceiptEntry.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/adapters/ReceiptAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669577613" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/ui/ReceiptActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/scanner/IntentIntegrator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/adapters/ScannedAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331893" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/Item.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375573288338" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/api/Items.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375573494758" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/AccountUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384331894" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/gen/com/recoup/apos/R.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375728765779" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/layout/list_item_item.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375384535323" ignored="false" />
-    <file path="/README.md" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375408115090" ignored="false" />
-    <file path="/SettingsActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1383698667157" ignored="false" />
-    <file path="/prefs_about.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375816190467" ignored="false" />
-    <file path="/AboutFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569695596" ignored="false" />
-    <file path="/pref_headers.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376274311033" ignored="false" />
-    <file path="/prefs_root.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375569526665" ignored="false" />
-    <file path="/strings_prefs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378775616561" ignored="false" />
-    <file path="/RootFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375570513364" ignored="false" />
-    <file path="/Item.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375573287625" ignored="false" />
-    <file path="/FilesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377104549778" ignored="false" />
-    <file path="/prefs_files.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375645185643" ignored="false" />
-    <file path="/Silk.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375658566189" ignored="false" />
-    <file path="/SilkGridView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375660905970" ignored="false" />
-    <file path="/fragment_grid.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376677215660" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/CouponItemList.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375668810753" ignored="false" />
-    <file path="/CouponItemList.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375668809020" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/NonCouponItemList.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375668834108" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/CouponFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375668932734" ignored="false" />
-    <file path="/CouponFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375668927814" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/ItemFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375807560006" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/CouponItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669273490" ignored="false" />
-    <file path="/CouponItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375668997250" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/src/com/recoup/apos/fragments/NonCouponItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669006441" ignored="false" />
-    <file path="/ItemFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324468907" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup Discount Engine Tester/res/values-large/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375669838909" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/savvygrape/fragments/base/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375726839982" ignored="false" />
-    <file path="/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340600701" ignored="false" />
-    <file path="/TextEditActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375738518550" ignored="false" />
-    <file path="/activity_text_editor.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375734773375" ignored="false" />
-    <file path="/ZipUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376591993152" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812044916" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/SavvyButton.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/BorderlessEditText.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092579" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/EventAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815811310" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/ExperienceAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815873060" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/TastingsFragmentAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/AboutCardsAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/AttendanceSpinnerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/EventUserAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815878099" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/MyWinesFragmentAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/WishlistItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815883072" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/DrinkAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815891971" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/dialogs/WishlistAddUpdateDialog.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/CellarItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815887587" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/WineryAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815899618" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/services/GcmBroadcastReceiver.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/MyWinesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375838358530" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/HomeFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375838368089" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/SecondaryTextView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/TastingsFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375838361367" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/base/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375838353653" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/base/SlidingStripPagerFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/local/WineryViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/local/LocalFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/cellar/CellarItemViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812785929" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/cellar/CellarFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815867882" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/DrinkSearchFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/ExperienceViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812817658" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815860018" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/drinks/DrinkViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/InviteNotification.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854873235" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/InviteNotification16.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventGuestsViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/CalendarFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854762480" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/EventFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815851404" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/wishlist/WishlistItemViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812805573" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/wishlist/WishListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815846000" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/favorites/FavoritesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815855566" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/BroadcastNotification.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/notifications/BroadcastNotification16.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092581" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/favorites/FavoriteViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/FavoriteViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/AccountUtils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/R.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854616086" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/Manifest.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854616086" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/gen/com/ricco/pocketvino/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854678580" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/DrinkPopupTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812094968" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/CellarAddUpdateActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812094968" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_review.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/activity_login.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/actionbar_search_view.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_cellar.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/adapters/BottleSizeSpinnerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_winery.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/viewer_events.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_card.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_eventuser.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_wine.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/layout/list_item_event.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/PopupMenuHelper.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/SavvyApp.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375841547148" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/Utils.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/BroadcastCreator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/ExperienceActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/SearchActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/AboutActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092582" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/fragments/tastings/InvitesFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375815799277" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/services/BackgroundService.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812094968" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/DrinkViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/BroadcastViewer.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/EventGuestsViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/EventViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/WishlistItemViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/WineryViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812094968" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/ExperienceViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/ui/viewers/CellarItemViewActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/src/com/ricco/pocketvino/views/HeaderTextView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812092583" ignored="false" />
-    <file path="$PROJECT_DIR$/../savvy-grape-android/res/values/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375812416498" ignored="false" />
-    <file path="/HomeFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375838366800" ignored="false" />
-    <file path="/HistoryFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854762479" ignored="false" />
-    <file path="/EventViewFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1375854872530" ignored="false" />
-    <file path="/SilkThemableActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376272683631" ignored="false" />
-    <file path="/prefs_lookandfeel.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376273460910" ignored="false" />
-    <file path="/LookFeelFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376885592064" ignored="false" />
-    <file path="/styles_dark.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951403604" ignored="false" />
-    <file path="/attrs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951258072" ignored="false" />
-    <file path="/styles_light.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951274995" ignored="false" />
-    <file path="/styles_dark_lightab.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376323730025" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/layout/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
-    <file path="/list_item_header.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324144806" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413072749" ignored="false" />
-    <file path="/DiscountItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376408981183" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/adapters/DiscountItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376408981940" ignored="false" />
-    <file path="/DiscountItem.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324236918" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/DiscountItem.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324236918" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/ItemFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376372941521" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/DiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324508321" ignored="false" />
-    <file path="/DiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324507664" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/fragments/NotDiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324514685" ignored="false" />
-    <file path="/NotDiscountedItemFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376324513690" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/APOS.iml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373427496" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/adapters/ScannedAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373435817" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/Item.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338622834" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376338780591" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340442726" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/src/com/ricco/pocketvino/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340502279" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/src/com/ricco/pocketvino/fragments/base/PtrFeedListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376340601154" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/Items.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373738332" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/src/com/ricco/pocketvino/ui/LoginActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376341462137" ignored="false" />
-    <file path="/Temp.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376359281678" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/layout-large/checkout_interface.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376372655703" ignored="false" />
-    <file path="/checkout_interface.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413172251" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/layout/checkout_interface.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413178617" ignored="false" />
-    <file path="/ScannedAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373435501" ignored="false" />
-    <file path="/Items.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373694518" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/api/CheckoutTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373971150" ignored="false" />
-    <file path="/CheckoutTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376373906914" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/gen/com/recoup/apos/R.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376407022304" ignored="false" />
-    <file path="/list_item_mount.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376409215623" ignored="false" />
-    <file path="/fragment_list_root.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376696341851" ignored="false" />
-    <file path="/Remounter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376410441689" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/adapters/ReceiptAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376412779332" ignored="false" />
-    <file path="/ReceiptAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376412779011" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/src/com/recoup/apos/ui/ReceiptActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376412884130" ignored="false" />
-    <file path="/ReceiptActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376412882245" ignored="false" />
-    <file path="$PROJECT_DIR$/../APOS/res/layout/list_item_receiptentry.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413148012" ignored="false" />
-    <file path="/list_item_receiptentry.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413081821" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/res/layout/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376445393122" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/build.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413563369" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376445655393" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/src/com/recoup/android/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376446347249" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/AndroidManifest.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376413835281" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/res/drawable/card_shadow.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376421044707" ignored="false" />
-    <file path="/card_shadow.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376420858635" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/res/layout/list_item_card.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376421041088" ignored="false" />
-    <file path="/list_item_card.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376420907949" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/src/com/ricco/pocketvino/views/HeaderTextView.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376421087188" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/src/com/recoup/android/adapters/MainPagerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376445757860" ignored="false" />
-    <file path="/MainPagerAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376445746799" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/src/com/recoup/android/fragments/DummyFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376446031979" ignored="false" />
-    <file path="/DummyFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376446031278" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/src/com/recoup/android/adapters/DummyAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376446020288" ignored="false" />
-    <file path="/DummyAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376446013389" ignored="false" />
-    <file path="/ThumbnailTask.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376499523271" ignored="false" />
-    <file path="/AlphabeticalComparator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376499545027" ignored="false" />
-    <file path="/ExtensionComparator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376499560607" ignored="false" />
-    <file path="/FoldersFirstComparator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377036873864" ignored="false" />
-    <file path="$PROJECT_DIR$/../cards-ui/res/drawable/card_selector.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376505171509" ignored="false" />
-    <file path="$PROJECT_DIR$/../cards-ui/res/drawable/pressed_background_cabinet.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376505164989" ignored="false" />
-    <file path="$PROJECT_DIR$/../Silk/gen/com/afollestad/silk/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376584630598" ignored="false" />
-    <file path="$PROJECT_DIR$/../root-commands/RootCommands-Library/gen/org/sufficientlysecure/rootcommands/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377135405399" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/res/values/styles_savvy.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376861050718" ignored="false" />
-    <file path="/styles_savvy.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376860954946" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/res/layout/fragment_list_cards.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376860983248" ignored="false" />
-    <file path="/fragment_list_cards.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376860978375" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/res/layout/fragment_list_lastupdated_cards.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376860988940" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/res/layout/fragment_home.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376861073513" ignored="false" />
-    <file path="/fragment_home.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376861070035" ignored="false" />
-    <file path="$PROJECT_DIR$/../Pocket-Vino/res/layout-land/fragment_home.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376861080733" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/src/com/recoup/android/fragments/CollectionViewerFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376866442736" ignored="false" />
-    <file path="/CollectionViewerFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376866438381" ignored="false" />
-    <file path="/recoup_button.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376866493121" ignored="false" />
-    <file path="$PROJECT_DIR$/../ReCoup-Android/res/drawable/recoup_button.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376866493121" ignored="false" />
-    <file path="/.gitignore" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376887686596" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/values/dimens.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946777560" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/values/colors.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946668007" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/layout/drawer_item.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946749058" ignored="false" />
-    <file path="/drawer_item.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946745180" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/src/com/teamboid/twitter/adapters/DrawerItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946846500" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/values/attrs.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951392967" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/values/styles_dark.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951408492" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/values/styles_light.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376949543018" ignored="false" />
-    <file path="/DrawerItemAdapter.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376946842378" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/src/com/teamboid/twitter/ui/MainActivity.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377037723648" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/layout/main_drawer.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947163353" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/layout/main.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376949450999" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/values/strings.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376947205854" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/src/com/teamboid/twitter/fragments/base/BoidListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951583156" ignored="false" />
-    <file path="/fragment_list_lastupdated_themed.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951520458" ignored="false" />
-    <file path="$PROJECT_DIR$/../boid-v2/res/layout/fragment_list_lastupdated_themed.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951522514" ignored="false" />
-    <file path="/BoidListFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1376951582234" ignored="false" />
-    <file path="/SilkCachedFeedFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377037126245" ignored="false" />
-    <file path="/SilkCacheManagerBase.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377037620430" ignored="false" />
-    <file path="/SizeComparator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377104423786" ignored="false" />
-    <file path="/HighLowSizeComparator.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377104002664" ignored="false" />
-    <file path="/SilkFragment.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1377104177640" ignored="false" />
-    <file path="/styles_black.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378775549359" ignored="false" />
-    <file path="/styles_gray.xml" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1378774911911" ignored="false" />
-    <file path="$PROJECT_DIR$/../root-commands/libraries/RootCommands/src/main/gen/org/sufficientlysecure/rootcommands/BuildConfig.java" changelist="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" time="1383698688533" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +53,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -391,6 +89,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -400,37 +99,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+      <file leaf-file-name="AboutFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="55" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
+            <state line="38" column="48" selection-start="1607" selection-end="1739" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FilesFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_grid.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="1363" selection-end="1363" vertical-scroll-proportion="-2.54" vertical-offset="213" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_list_root.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_root.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="493">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="51" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.08035714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+            <state line="290" column="52" selection-start="10231" selection-end="10231" vertical-scroll-proportion="0.49918166" vertical-offset="3758" max-vertical-offset="4930">
               <folding />
             </state>
           </provider>
@@ -459,9 +173,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/LowHighSizeComparator.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
         <option value="$PROJECT_DIR$/res/values/colors_cabinetblack.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_gray.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
@@ -472,9 +184,11 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
       </list>
     </option>
   </component>
@@ -511,7 +225,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -570,33 +283,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="ExportedApkPath" value="C:\Users\Aidan\My Projects\cabinet\cabinet.apk" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="appearance" />
-    <property name="recentsLimit" value="5" />
-    <property name="ExportedModule" value="cabinet" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/keystore" />
-    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="AndroidRunProguardForReleaseBuild" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="appearance" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Silk/library/libs/android-support-v13.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -614,6 +344,24 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.cabinet">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -622,6 +370,7 @@
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -630,6 +379,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -638,6 +388,41 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -694,7 +479,9 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -703,6 +490,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="cabinet" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -710,7 +498,9 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -719,8 +509,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <list size="1">
@@ -766,6 +555,7 @@
       <changelist id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="" />
       <created>1375203024387</created>
       <updated>1375203024387</updated>
+      <workItem from="1385580564641" duration="194000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1855,8 +1645,15 @@
       <created>1383699915756</created>
       <updated>1383699915757</updated>
     </task>
-    <option name="localTasksCounter" value="273" />
+    <task id="LOCAL-00273" summary="Versioning updates">
+      <created>1383700002933</created>
+      <updated>1383700002933</updated>
+    </task>
+    <option name="localTasksCounter" value="274" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="194000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1883,123 +1680,81 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22651514" sideWeight="0.4416" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597622" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22651514" sideWeight="0.4416" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3208191" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32025117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6569966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22045454" sideWeight="0.5699659" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2203514" sideWeight="0.5699659" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43003413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Updates" />
     <MESSAGE value="Updates for 4.4 KitKat" />
     <MESSAGE value="Fixes" />
+    <MESSAGE value="Versioning updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/styles_black.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="54" selection-start="106" selection-end="106" vertical-scroll-proportion="0.078397214" />
+        <state line="13" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="901">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_gray.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="299" selection-end="299" vertical-scroll-proportion="0.20905924" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/caching/SilkCacheBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="72" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" />
+        <state line="12" column="13" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="28" selection-start="735" selection-end="735" vertical-scroll-proportion="0.03107861" />
+        <state line="27" column="28" selection-start="735" selection-end="735" vertical-scroll-proportion="0.03107861" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="166" selection-end="166" vertical-scroll-proportion="0.18214285" />
+        <state line="6" column="45" selection-start="166" selection-end="166" vertical-scroll-proportion="0.18214285" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/list_item_drawer.xml">
@@ -2007,27 +1762,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="415" selection-end="415" vertical-scroll-proportion="0.23333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="706" selection-end="706" vertical-scroll-proportion="0.36666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_root.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="23" selection-start="415" selection-end="415" vertical-scroll-proportion="0.23333333" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
@@ -2037,14 +1772,14 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="979" selection-end="979" vertical-scroll-proportion="0.46666667">
+        <state line="23" column="54" selection-start="979" selection-end="979" vertical-scroll-proportion="0.46666667" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="603" selection-end="603" vertical-scroll-proportion="0.57678574">
+        <state line="25" column="22" selection-start="603" selection-end="603" vertical-scroll-proportion="0.57678574" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
@@ -2054,42 +1789,90 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="907" selection-end="907" vertical-scroll-proportion="0.53333336">
+        <state line="17" column="20" selection-start="907" selection-end="907" vertical-scroll-proportion="0.53333336" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="55" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.33214286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="51" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.0">
+        <state line="14" column="29" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.08035714">
+        <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.08035714" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="51" selection-start="2456" selection-end="2470" vertical-scroll-proportion="0.34766355" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="74" selection-start="6846" selection-end="6846" vertical-scroll-proportion="0.3625" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="48" selection-start="1607" selection-end="1739" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="1363" selection-end="1363" vertical-scroll-proportion="-2.54" vertical-offset="213" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_root.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="52" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.45700246" vertical-offset="443" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="290" column="52" selection-start="10231" selection-end="10231" vertical-scroll-proportion="0.49918166" vertical-offset="3758" max-vertical-offset="4930">
           <folding />
         </state>
       </provider>
@@ -2123,6 +1906,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Dart SDK</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2146,7 +1930,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Android|Silk</last-edited>
+          <last-edited>cabinet</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2158,7 +1942,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>Android 4.4 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

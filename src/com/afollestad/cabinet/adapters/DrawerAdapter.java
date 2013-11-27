@@ -71,7 +71,7 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
     }
 
     @Override
-    public long getItemId(DrawerItem item) {
-        return -1;
+    public Object getItemId(DrawerItem item) {
+        return item.getSilkId();
     }
 }
