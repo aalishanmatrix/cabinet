@@ -280,6 +280,8 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         menu.findItem(R.id.add_shortcut).setVisible(!Shortcuts.contains(getActivity(), mPath));
         menu.findItem(R.id.paste).setVisible(App.get(getActivity()).getClipboard().canPaste());
 
+        MenuItem sort = menu.findItem(R.id.sort);
+        sort.setVisible(!((MainActivity) getActivity()).isDrawerOpen());
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         switch (prefs.getInt("sort_mode", 0)) {
             default:

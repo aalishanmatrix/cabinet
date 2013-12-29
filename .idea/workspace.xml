@@ -31,7 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -126,11 +126,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.15097691" vertical-offset="0" max-vertical-offset="563">
+            <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="221">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="283" column="71" selection-start="10066" selection-end="10066" vertical-scroll-proportion="0.53571427" vertical-offset="4105" max-vertical-offset="6290">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,7 +191,6 @@
         <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java" />
         <option value="$PROJECT_DIR$/res/xml/prefs_files.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
@@ -192,6 +202,7 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       </list>
     </option>
   </component>
@@ -258,6 +269,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -269,25 +284,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cabinet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="fragments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,6 +321,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="ExportedModule" value="cabinet" />
+    <property name="ExportedApkPath" value="C:\Users\Aidan\My Projects\cabinet\cabinet.apk" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -552,7 +560,7 @@
       <workItem from="1388299393175" duration="1133000" />
       <workItem from="1388356386164" duration="37000" />
       <workItem from="1388356567518" duration="201000" />
-      <workItem from="1388357216799" duration="3835000" />
+      <workItem from="1388357216799" duration="4267000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1686,11 +1694,15 @@
       <created>1388361046034</created>
       <updated>1388361046034</updated>
     </task>
-    <option name="localTasksCounter" value="284" />
+    <task id="LOCAL-00284" summary="Updated README.">
+      <created>1388361087126</created>
+      <updated>1388361087126</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5941000" />
+    <option name="totallyTimeSpent" value="6373000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1774,35 +1786,13 @@
     <MESSAGE value="Updates, cleanup, and fixes." />
     <MESSAGE value="Pushed version up to 0.4 Beta" />
     <MESSAGE value="Changed font size of file details." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed font size of file details." />
+    <MESSAGE value="Updated README." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="290" column="51" selection-start="10231" selection-end="10231" vertical-scroll-proportion="0.0" vertical-offset="4930" max-vertical-offset="4964">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2887#2902#0" expanded="true" />
-            <element signature="e#2982#2995#0" expanded="true" />
-            <element signature="e#4562#4594#0" expanded="true" />
-            <element signature="e#6753#6789#0" expanded="true" />
-            <element signature="e#8612#8629#0" expanded="true" />
-            <element signature="e#12092#12111#0" expanded="true" />
-            <element signature="e#12263#12305#0" expanded="true" />
-            <element signature="e#12974#13020#0" expanded="true" />
-            <element signature="e#13043#13056#0" expanded="true" />
-            <element signature="e#13097#13142#0" expanded="true" />
-            <element signature="e#13165#13178#0" expanded="true" />
-            <element signature="e#13412#13426#0" expanded="true" />
-            <element signature="e#13794#13808#0" expanded="true" />
-            <element signature="e#13965#13980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="901" />
@@ -2028,29 +2018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="57" selection-start="6701" selection-end="6701" vertical-scroll-proportion="0.0" vertical-offset="2711" max-vertical-offset="6256">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2887#2902#0" expanded="true" />
-            <element signature="e#2982#2995#0" expanded="true" />
-            <element signature="e#4562#4594#0" expanded="true" />
-            <element signature="e#6753#6789#0" expanded="true" />
-            <element signature="e#8612#8629#0" expanded="true" />
-            <element signature="e#12092#12111#0" expanded="true" />
-            <element signature="e#12263#12305#0" expanded="true" />
-            <element signature="e#12974#13020#0" expanded="true" />
-            <element signature="e#13043#13056#0" expanded="true" />
-            <element signature="e#13097#13142#0" expanded="true" />
-            <element signature="e#13165#13178#0" expanded="true" />
-            <element signature="e#13412#13426#0" expanded="true" />
-            <element signature="e#13794#13808#0" expanded="true" />
-            <element signature="e#13965#13980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="57" selection-start="1537" selection-end="1537" vertical-scroll-proportion="-11.92" vertical-offset="348" max-vertical-offset="1513">
@@ -2203,8 +2170,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.15097691" vertical-offset="0" max-vertical-offset="563">
+        <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="221">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/activities/SilkDrawerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="25" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.34086958" vertical-offset="348" max-vertical-offset="2482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="283" column="71" selection-start="10066" selection-end="10066" vertical-scroll-proportion="0.53571427" vertical-offset="4105" max-vertical-offset="6290">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
