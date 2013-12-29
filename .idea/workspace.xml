@@ -31,7 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -96,10 +96,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="782">
+            <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_item_file.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/list_item_file.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="79" selection-start="1813" selection-end="1813" vertical-scroll-proportion="-7.7" vertical-offset="193" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dimens.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
               <folding />
             </state>
           </provider>
@@ -160,6 +181,7 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/dimens.xml" />
       </list>
     </option>
   </component>
@@ -255,7 +277,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,7 +542,7 @@
       <workItem from="1388299393175" duration="1133000" />
       <workItem from="1388356386164" duration="37000" />
       <workItem from="1388356567518" duration="201000" />
-      <workItem from="1388357216799" duration="3455000" />
+      <workItem from="1388357216799" duration="3789000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1646,11 +1668,15 @@
       <created>1388360684774</created>
       <updated>1388360684774</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="Pushed version up to 0.4 Beta">
+      <created>1388360711936</created>
+      <updated>1388360711936</updated>
+    </task>
+    <option name="localTasksCounter" value="283" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5561000" />
+    <option name="totallyTimeSpent" value="5895000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1732,7 +1758,8 @@
     <MESSAGE value="Moved sort options to the directory fragment options menu." />
     <MESSAGE value="Awesome updates for contextual action bar theming. Adding missing sort action bar icons." />
     <MESSAGE value="Updates, cleanup, and fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates, cleanup, and fixes." />
+    <MESSAGE value="Pushed version up to 0.4 Beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pushed version up to 0.4 Beta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1779,14 +1806,6 @@
     <entry file="file://$PROJECT_DIR$/res/layout/list_item_drawer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="23" selection-start="415" selection-end="415" vertical-scroll-proportion="0.23333333" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/list_item_file.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="907" selection-end="907" vertical-scroll-proportion="0.53333336" vertical-offset="0" max-vertical-offset="0" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -2143,14 +2162,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="32" selection-start="517" selection-end="517" vertical-scroll-proportion="0.52040815" vertical-offset="0" max-vertical-offset="833">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="782">
+        <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_item_file.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="79" selection-start="1813" selection-end="1813" vertical-scroll-proportion="-7.7" vertical-offset="193" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
           <folding />
         </state>
       </provider>
