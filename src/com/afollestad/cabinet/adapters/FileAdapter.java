@@ -22,7 +22,7 @@ public class FileAdapter extends SilkAdapter<File> {
 
     private final ThumbnailClickListener mThumbnailListener;
     private final boolean isTablet;
-    private boolean showHidden;
+    private final boolean showHidden;
 
     public FileAdapter(Context context, ThumbnailClickListener thumbnailListener) {
         super(context);

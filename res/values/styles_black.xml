@@ -4,9 +4,6 @@
     <style name="Cabinet.Black" parent="@style/Cabinet">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_cabinetblack</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Cabinetblack</item>
-        <item name="android:dropDownListViewStyle">@style/DropDownListView.Cabinetblack</item>
-        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Cabinetblack</item>
-        <item name="android:actionDropDownStyle">@style/DropDownNav.Cabinetblack</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Cabinetblack</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cabinetblack</item>
         <item name="android:windowBackground">@android:color/black</item>
@@ -16,29 +13,10 @@
 
     <style name="ActionBar.Solid.Cabinetblack" parent="@android:style/Widget.Holo.ActionBar.Solid">
         <item name="android:background">@drawable/ab_solid_cabinetblack</item>
-        <item name="android:progressBarStyle">@style/ProgressBar.Cabinetblack</item>
     </style>
 
     <style name="PopupMenu.Cabinetblack" parent="@android:style/Widget.Holo.ListPopupWindow">
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_cabinetblack</item>
-    </style>
-
-    <style name="DropDownListView.Cabinetblack" parent="@android:style/Widget.Holo.ListView.DropDown">
-        <item name="android:listSelector">@drawable/selectable_background_cabinetblack</item>
-    </style>
-
-    <style name="ActionBarTabStyle.Cabinetblack" parent="@android:style/Widget.Holo.ActionBar.TabView">
-        <item name="android:background">@drawable/tab_indicator_ab_cabinetblack</item>
-    </style>
-
-    <style name="DropDownNav.Cabinetblack" parent="@android:style/Widget.Holo.Spinner">
-        <item name="android:background">@drawable/spinner_background_ab_cabinetblack</item>
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_cabinetblack</item>
-        <item name="android:dropDownSelector">@drawable/selectable_background_cabinetblack</item>
-    </style>
-
-    <style name="ProgressBar.Cabinetblack" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
-        <item name="android:progressDrawable">@drawable/progress_horizontal_cabinetblack</item>
     </style>
 
     <style name="ActionButton.CloseMode.Cabinetblack" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
@@ -48,7 +26,6 @@
     <!-- this style is only referenced in a Light.DarkActionBar based theme -->
     <style name="Theme.Cabinetblack.Widget" parent="@android:style/Theme.Holo">
         <item name="android:popupMenuStyle">@style/PopupMenu.Cabinetblack</item>
-        <item name="android:dropDownListViewStyle">@style/DropDownListView.Cabinetblack</item>
     </style>
 
 </resources>
