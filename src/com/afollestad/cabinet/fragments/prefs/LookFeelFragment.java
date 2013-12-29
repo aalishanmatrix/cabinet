@@ -3,7 +3,6 @@ package com.afollestad.cabinet.fragments.prefs;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import com.afollestad.cabinet.R;
@@ -11,7 +10,7 @@ import com.afollestad.cabinet.R;
 /**
  * @author Aidan Follestad (afollestad)
  */
-public class LookFeelFragment extends PreferenceFragment {
+public class LookFeelFragment extends BasePreferenceFragment {
 
     private String getBaseThemeSummary(String value) {
         String[] names = getResources().getStringArray(R.array.basetheme_entries);

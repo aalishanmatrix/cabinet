@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Cabinet.Light.DarkActionBar" parent="@style/Theme.CabinetParentLight">
+    <style name="Cabinet.Light.DarkActionBar" parent="@style/Theme.CabinetParentLightDarkAb">
         <item name="ic_audio">@drawable/ic_audio_dark</item>
         <item name="ic_file">@drawable/ic_file_dark</item>
         <item name="ic_folder">@drawable/ic_folder_dark</item>
@@ -13,10 +13,13 @@
         <item name="ic_delete">@drawable/ic_delete_light</item>
         <item name="ic_paste">@drawable/ic_paste_light</item>
         <item name="ic_pin">@drawable/ic_pin_light</item>
+        <item name="ic_sort">@drawable/ic_sort_light</item>
 
         <item name="drawer_background">@color/drawer_background_light</item>
         <item name="primary_text">@android:color/black</item>
         <item name="secondary_text">@color/secondary_text_dark</item>
+
+        <item name="status_tint">@color/statusbar_lightdarkab</item>
     </style>
 
 </resources>

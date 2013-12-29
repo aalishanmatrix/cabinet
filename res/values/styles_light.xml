@@ -13,10 +13,13 @@
         <item name="ic_delete">@drawable/ic_delete_dark</item>
         <item name="ic_paste">@drawable/ic_paste_dark</item>
         <item name="ic_pin">@drawable/ic_pin_dark</item>
+        <item name="ic_sort">@drawable/ic_sort_dark</item>
 
         <item name="drawer_background">@color/drawer_background_light</item>
         <item name="primary_text">@android:color/black</item>
         <item name="secondary_text">@color/secondary_text_dark</item>
+
+        <item name="status_tint">@color/statusbar_light</item>
     </style>
 
 </resources>

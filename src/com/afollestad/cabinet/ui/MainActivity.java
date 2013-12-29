@@ -1,5 +1,6 @@
 package com.afollestad.cabinet.ui;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -7,8 +8,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
@@ -26,6 +29,7 @@ import com.afollestad.cabinet.file.File;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.silk.activities.SilkDrawerActivity;
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 import org.sufficientlysecure.rootcommands.RootCommands;
 
 import java.util.List;
@@ -37,6 +41,26 @@ public class MainActivity extends SilkDrawerActivity {
     private boolean mPickMode;
     private int mBaseTheme;
     private int mThemeColor;
+
+    public static void setInsets(Activity context, View view) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) return;
+        SystemBarTintManager tintManager = new SystemBarTintManager(context);
+        SystemBarTintManager.SystemBarConfig config = tintManager.getConfig();
+        view.setPadding(0, config.getPixelInsetTop(true), config.getPixelInsetRight(), config.getPixelInsetBottom());
+    }
+
+    public static void setupTransparentTints(Activity context) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) return;
+        SystemBarTintManager tintManager = new SystemBarTintManager(context);
+        tintManager.setStatusBarTintEnabled(true);
+        int tintColor = getCabinetThemeColor(context);
+        if (tintColor == 0) {
+            TypedArray a = context.obtainStyledAttributes(new int[]{R.attr.status_tint});
+            tintColor = a.getColor(0, android.R.color.black);
+            a.recycle();
+        }
+        tintManager.setStatusBarTintColor(tintColor);
+    }
 
     public static int getCabinetBaseTheme(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -113,6 +137,8 @@ public class MainActivity extends SilkDrawerActivity {
         }
         mPickMode = processIntent();
         navigate(new File(Environment.getExternalStorageDirectory()), false);
+
+        setupTransparentTints(this);
     }
 
     @Override
@@ -181,6 +207,7 @@ public class MainActivity extends SilkDrawerActivity {
     private void populateDrawer() {
         ListView drawerList = (ListView) findViewById(R.id.left_drawer);
         drawerList.setEmptyView(findViewById(R.id.drawer_empty));
+        setInsets(this, drawerList);
         mDrawerAdapter = new DrawerAdapter(this);
         drawerList.setAdapter(mDrawerAdapter);
         drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {

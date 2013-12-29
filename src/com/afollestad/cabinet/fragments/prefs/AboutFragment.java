@@ -11,7 +11,7 @@ import com.afollestad.cabinet.R;
 /**
  * @author Aidan Follestad (afollestad)
  */
-public class AboutFragment extends PreferenceFragment {
+public class AboutFragment extends BasePreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

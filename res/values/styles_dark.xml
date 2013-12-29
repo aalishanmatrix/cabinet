@@ -13,6 +13,7 @@
         <item name="ic_delete">@drawable/ic_delete_light</item>
         <item name="ic_paste">@drawable/ic_paste_light</item>
         <item name="ic_pin">@drawable/ic_pin_light</item>
+        <item name="ic_sort">@drawable/ic_sort_light</item>
 
         <item name="drawer_background">@color/drawer_background_dark</item>
         <item name="primary_text">@android:color/white</item>

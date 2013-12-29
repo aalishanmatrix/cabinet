@@ -137,7 +137,7 @@ public class File extends java.io.File implements SilkComparable<File> {
 
     public static Comparator<File> getComparator(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        int sortSetting = Integer.parseInt(prefs.getString("file_sorting", "0"));
+        int sortSetting = prefs.getInt("sort_mode", 0);
         switch (sortSetting) {
             default:
                 return new FoldersFirstComparator();

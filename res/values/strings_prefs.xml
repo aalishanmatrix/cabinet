@@ -34,31 +34,6 @@
     <string name="show_hidden_files_on">Disabling will hide files and folders marked as hidden from you.</string>
     <string name="show_hidden_files_off">Enabling will make files and folders marked as hidden visible to you.</string>
 
-    <string name="sorting">Sorting</string>
-    <string name="sorting_folderfile">Files are currently sorted alphabetically by name, with folders at the top.
-    </string>
-    <string name="sorting_alphabetical">Files are currently sorted alphabetically by name.</string>
-    <string name="sorting_extension">Files are currently sorted by extension, folders come first.</string>
-    <string name="sorting_size_lowhigh">Files are currently sorted by size, low to high. Folders are considered large.
-    </string>
-    <string name="sorting_size_highlow">Files are currently sorted by size, high to low. Folders are considered large.
-    </string>
-
-    <string-array name="sorting_entries">
-        <item>By name, folders at the top</item>
-        <item>By name</item>
-        <item>By extension</item>
-        <item>By size, low to high</item>
-        <item>By size, high to low</item>
-    </string-array>
-    <string-array name="sorting_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-
     <string-array name="basetheme_entries">
         <item>Light, Dark Action Bar</item>
         <item>Light</item>

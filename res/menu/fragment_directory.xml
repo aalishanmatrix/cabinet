@@ -4,6 +4,19 @@
     <item android:id="@+id/paste" android:title="@string/paste"
           android:icon="?ic_paste" android:showAsAction="ifRoom"
           android:visible="false"/>
+    <item android:id="@+id/sort" android:title="@string/sort"
+          android:icon="?ic_sort" android:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/sortNameFoldersTop" android:title="@string/sort_name_folderstop"/>
+                <item android:id="@+id/sortName" android:title="@string/sort_name"/>
+                <item android:id="@+id/sortExtension" android:title="@string/sort_extension"/>
+                <item android:id="@+id/sortSizeLowHigh" android:title="@string/sort_size_lowhigh"/>
+                <item android:id="@+id/sortSizeHighLow" android:title="@string/sort_size_highlow"/>
+            </group>
+        </menu>
+    </item>
+
     <item android:id="@+id/add_shortcut" android:title="@string/add_shortcut"
           android:icon="?ic_pin" android:showAsAction="ifRoom"/>
     <item android:id="@+id/new_folder" android:title="@string/new_folder"/>

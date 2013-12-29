@@ -22,14 +22,15 @@
         <ListView android:id="@+id/left_drawer"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:divider="@null"
-                  android:dividerHeight="0dp"/>
+                  android:dividerHeight="1px"
+                  android:clipToPadding="false"/>
 
         <com.afollestad.silk.views.text.SilkTextView android:id="@+id/drawer_empty"
                                                      android:layout_width="wrap_content"
                                                      android:layout_height="wrap_content"
                                                      android:text="@string/no_shortcuts"
-                                                     android:textSize="@dimen/drawer_empty"/>
+                                                     android:textSize="@dimen/drawer_empty"
+                                                     android:fitsSystemWindows="true"/>
 
     </LinearLayout>
 

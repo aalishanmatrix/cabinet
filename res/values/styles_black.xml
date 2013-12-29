@@ -13,6 +13,7 @@
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cabinetblack</item>
         <item name="android:windowBackground">@android:color/black</item>
         <item name="android:colorBackground">@android:color/black</item>
+        <item name="status_tint">@android:color/black</item>
     </style>
 
     <style name="ActionBar.Solid.Cabinetblack" parent="@android:style/Widget.Holo.ActionBar.Solid">

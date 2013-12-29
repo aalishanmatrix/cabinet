@@ -19,6 +19,7 @@
     <string name="add_shortcut">Add Shortcut</string>
     <string name="copy">Copy</string>
     <string name="cut">Cut</string>
+    <string name="sort">Sort</string>
     <string name="paste">Paste</string>
     <string name="move">Move</string>
     <string name="share">Share</string>
@@ -31,6 +32,12 @@
     <string name="new_folder">New Folder</string>
     <string name="ok">OK</string>
     <string name="untitled">Untitled</string>
+
+    <string name="sort_name_folderstop">By name, folders first</string>
+    <string name="sort_name">By name</string>
+    <string name="sort_extension">By extension</string>
+    <string name="sort_size_lowhigh">By size, low to high</string>
+    <string name="sort_size_highlow">By size, high to low</string>
 
     <string name="sdcard">SD Card</string>
     <string name="root">Root</string>

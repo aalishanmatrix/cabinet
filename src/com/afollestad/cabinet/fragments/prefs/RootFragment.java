@@ -2,7 +2,6 @@ package com.afollestad.cabinet.fragments.prefs;
 
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceFragment;
 import android.widget.Toast;
 import com.afollestad.cabinet.R;
 import org.sufficientlysecure.rootcommands.RootCommands;
@@ -10,7 +9,7 @@ import org.sufficientlysecure.rootcommands.RootCommands;
 /**
  * @author Aidan Follestad (afollestad)
  */
-public class RootFragment extends PreferenceFragment {
+public class RootFragment extends BasePreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

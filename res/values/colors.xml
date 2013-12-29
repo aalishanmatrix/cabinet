@@ -8,4 +8,8 @@
     <color name="drawer_background_dark">#3A3A3C</color>
     <color name="window_background_gray">#303030</color>
 
+    <color name="statusbar_gray">#2D2D2D</color>
+    <color name="statusbar_light">#DDDDDD</color>
+    <color name="statusbar_lightdarkab">#222222</color>
+
 </resources>

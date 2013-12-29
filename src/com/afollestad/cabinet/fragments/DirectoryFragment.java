@@ -5,8 +5,10 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.util.SparseBooleanArray;
 import android.view.*;
@@ -165,6 +167,9 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 }
             });
         } else mount.setVisibility(View.GONE);
+
+        getListView().setClipToPadding(false);
+        MainActivity.setInsets(getActivity(), getListView());
     }
 
     private void setupCab(AbsListView listView) {
@@ -264,11 +269,36 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         return true;
     }
 
+    private void setSortMode(int mode) {
+        PreferenceManager.getDefaultSharedPreferences(getActivity()).edit().putInt("sort_mode", mode).commit();
+        load();
+    }
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.fragment_directory, menu);
         menu.findItem(R.id.add_shortcut).setVisible(!Shortcuts.contains(getActivity(), mPath));
         menu.findItem(R.id.paste).setVisible(App.get(getActivity()).getClipboard().canPaste());
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        switch (prefs.getInt("sort_mode", 0)) {
+            default:
+                menu.findItem(R.id.sortNameFoldersTop).setChecked(true);
+                break;
+            case 1:
+                menu.findItem(R.id.sortName).setChecked(true);
+                break;
+            case 2:
+                menu.findItem(R.id.sortExtension).setChecked(true);
+                break;
+            case 3:
+                menu.findItem(R.id.sortSizeLowHigh).setChecked(true);
+                break;
+            case 4:
+                menu.findItem(R.id.sortSizeHighLow).setChecked(true);
+                break;
+        }
+
         super.onCreateOptionsMenu(menu, inflater);
     }
 
@@ -285,6 +315,26 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 return true;
             case R.id.new_folder:
                 newFolder();
+                return true;
+            case R.id.sortNameFoldersTop:
+                setSortMode(0);
+                item.setChecked(true);
+                return true;
+            case R.id.sortName:
+                setSortMode(1);
+                item.setChecked(true);
+                return true;
+            case R.id.sortExtension:
+                setSortMode(2);
+                item.setChecked(true);
+                return true;
+            case R.id.sortSizeLowHigh:
+                setSortMode(3);
+                item.setChecked(true);
+                return true;
+            case R.id.sortSizeHighLow:
+                setSortMode(4);
+                item.setChecked(true);
                 return true;
         }
         return super.onOptionsItemSelected(item);

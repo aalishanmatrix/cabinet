@@ -29,6 +29,8 @@ public class SettingsActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
         if (mThemeColor != 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
         getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        MainActivity.setupTransparentTints(this);
     }
 
     @Override

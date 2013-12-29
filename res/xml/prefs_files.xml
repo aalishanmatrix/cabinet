@@ -6,8 +6,4 @@
                         android:summaryOff="@string/show_hidden_files_off"
                         android:persistent="true"/>
 
-    <ListPreference android:key="file_sorting" android:title="@string/sorting"
-                    android:defaultValue="0" android:entries="@array/sorting_entries"
-                    android:entryValues="@array/sorting_values"/>
-
 </PreferenceScreen>

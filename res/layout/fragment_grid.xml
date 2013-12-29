@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
 
-    <Button android:id="@+id/mount" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <Button android:id="@+id/mount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:visibility="gone"/>
 
     <com.afollestad.silk.views.list.SilkGridView android:id="@android:id/list"
@@ -16,18 +18,23 @@
                                                  android:gravity="center"
                                                  android:paddingLeft="@dimen/grid_padding"
                                                  android:paddingRight="@dimen/grid_padding"
-                                                 android:layout_below="@+id/mount"/>
+                                                 android:layout_below="@+id/mount"
+                                                 android:clipToPadding="false"/>
 
     <com.afollestad.silk.views.text.SilkTextView android:id="@android:id/empty"
                                                  android:layout_width="wrap_content"
                                                  android:layout_height="wrap_content"
                                                  android:textSize="@dimen/empty_text_size"
                                                  android:layout_centerInParent="true"
-                                                 android:textColor="?primary_text"/>
+                                                 android:textColor="?primary_text"
+                                                 android:fitsSystemWindows="true"/>
 
     <ProgressBar android:id="@android:id/progress"
-                 android:layout_width="wrap_content" android:layout_height="wrap_content"
-                 android:indeterminateOnly="true" android:visibility="gone"
-                 android:layout_centerInParent="true"/>
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:indeterminateOnly="true"
+                 android:visibility="gone"
+                 android:layout_centerInParent="true"
+                 android:fitsSystemWindows="true"/>
 
 </RelativeLayout>
