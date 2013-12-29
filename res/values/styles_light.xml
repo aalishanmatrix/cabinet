@@ -2,6 +2,8 @@
 <resources>
 
     <style name="Cabinet.Light" parent="@style/Theme.CabinetParentLight">
+        <item name="android:actionModeBackground">@null</item>
+
         <item name="ic_audio">@drawable/ic_audio_dark</item>
         <item name="ic_file">@drawable/ic_file_dark</item>
         <item name="ic_folder">@drawable/ic_folder_dark</item>
