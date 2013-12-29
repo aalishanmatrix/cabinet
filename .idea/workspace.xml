@@ -31,64 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\ab_bottom_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\ab_stacked_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\ab_texture_tile_cabinetblack.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\ab_transparent_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\progress_bg_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\progress_primary_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\progress_secondary_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\spinner_ab_default_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\spinner_ab_disabled_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\spinner_ab_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\spinner_ab_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\tab_selected_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\tab_selected_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\tab_selected_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\tab_unselected_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\tab_unselected_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\tab_unselected_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\ab_bottom_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\ab_stacked_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\ab_texture_tile_cabinetblack.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\ab_transparent_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\progress_bg_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\progress_primary_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\progress_secondary_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\spinner_ab_default_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\spinner_ab_disabled_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\spinner_ab_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\spinner_ab_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\tab_selected_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\tab_selected_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\tab_selected_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\tab_unselected_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\tab_unselected_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\tab_unselected_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\ab_bottom_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\ab_stacked_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\ab_texture_tile_cabinetblack.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\ab_transparent_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\progress_bg_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\progress_primary_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\progress_secondary_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\spinner_ab_default_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\spinner_ab_disabled_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\spinner_ab_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\spinner_ab_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\tab_selected_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\tab_selected_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\tab_selected_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\tab_unselected_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\tab_unselected_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\tab_unselected_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable\ab_background_textured_cabinetblack.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable\progress_horizontal_cabinetblack.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable\spinner_background_ab_cabinetblack.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable\tab_indicator_ab_cabinetblack.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_black.xml" afterPath="$PROJECT_DIR$/res/values/styles_black.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -152,7 +95,17 @@
     <favorites_list name="Cabinet" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -180,7 +133,6 @@
         <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java" />
         <option value="$PROJECT_DIR$/res/xml/prefs_lookandfeel.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_parent.xml" />
         <option value="$PROJECT_DIR$/res/values-v19/styles_parent.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_gray.xml" />
@@ -207,6 +159,7 @@
         <option value="$PROJECT_DIR$/res/values/styles_black.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -567,7 +520,7 @@
       <workItem from="1388299393175" duration="1133000" />
       <workItem from="1388356386164" duration="37000" />
       <workItem from="1388356567518" duration="201000" />
-      <workItem from="1388357216799" duration="3432000" />
+      <workItem from="1388357216799" duration="3455000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1689,11 +1642,15 @@
       <created>1388360373632</created>
       <updated>1388360373632</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="Updates, cleanup, and fixes.">
+      <created>1388360684774</created>
+      <updated>1388360684774</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5538000" />
+    <option name="totallyTimeSpent" value="5561000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1717,7 +1674,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1740,7 +1697,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21978852" sideWeight="0.5699659" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21978852" sideWeight="0.5699659" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42833877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1774,7 +1731,8 @@
     <MESSAGE value="Updated for 4.4 KitKat!" />
     <MESSAGE value="Moved sort options to the directory fragment options menu." />
     <MESSAGE value="Awesome updates for contextual action bar theming. Adding missing sort action bar icons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Awesome updates for contextual action bar theming. Adding missing sort action bar icons." />
+    <MESSAGE value="Updates, cleanup, and fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates, cleanup, and fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2167,13 +2125,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/styles_black.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="612">
@@ -2194,6 +2145,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="782">
+          <folding />
         </state>
       </provider>
     </entry>
