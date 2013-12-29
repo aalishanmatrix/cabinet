@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Cabinet.Light" parent="@android:style/Theme.Holo.Light">
+    <style name="Cabinet.Light" parent="@style/Theme.CabinetParentLight">
         <item name="ic_audio">@drawable/ic_audio_dark</item>
         <item name="ic_file">@drawable/ic_file_dark</item>
         <item name="ic_folder">@drawable/ic_folder_dark</item>

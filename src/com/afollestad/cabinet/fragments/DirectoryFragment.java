@@ -24,7 +24,7 @@ import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.Silk;
 import com.afollestad.silk.adapters.SilkAdapter;
-import com.afollestad.silk.fragments.SilkListFragment;
+import com.afollestad.silk.fragments.list.SilkListFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
