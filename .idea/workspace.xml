@@ -31,7 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -117,10 +117,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dimens.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dimens.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
+            <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.15097691" vertical-offset="0" max-vertical-offset="563">
               <folding />
             </state>
           </provider>
@@ -182,6 +191,7 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -542,7 +552,7 @@
       <workItem from="1388299393175" duration="1133000" />
       <workItem from="1388356386164" duration="37000" />
       <workItem from="1388356567518" duration="201000" />
-      <workItem from="1388357216799" duration="3789000" />
+      <workItem from="1388357216799" duration="3835000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1672,11 +1682,15 @@
       <created>1388360711936</created>
       <updated>1388360711936</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="Changed font size of file details.">
+      <created>1388361046034</created>
+      <updated>1388361046034</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5895000" />
+    <option name="totallyTimeSpent" value="5941000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1759,7 +1773,8 @@
     <MESSAGE value="Awesome updates for contextual action bar theming. Adding missing sort action bar icons." />
     <MESSAGE value="Updates, cleanup, and fixes." />
     <MESSAGE value="Pushed version up to 0.4 Beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pushed version up to 0.4 Beta" />
+    <MESSAGE value="Changed font size of file details." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed font size of file details." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1819,11 +1834,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="52" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.45700246" vertical-offset="443" max-vertical-offset="1207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="166" selection-end="166" vertical-scroll-proportion="0.17406143" vertical-offset="0" max-vertical-offset="586" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/xml/prefs_lookandfeel.xml">
@@ -2186,7 +2196,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
+        <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.15097691" vertical-offset="0" max-vertical-offset="563">
           <folding />
         </state>
       </provider>
