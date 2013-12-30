@@ -177,6 +177,7 @@ public class File extends java.io.File implements SilkComparable<File> {
             }
         }
         java.io.File[] files = super.listFiles();
+        if (files == null || files.length == 0) return null;
         List<File> cabinets = new ArrayList<File>();
         for (java.io.File fi : files) cabinets.add(new File(fi));
         return cabinets.toArray(new File[cabinets.size()]);
