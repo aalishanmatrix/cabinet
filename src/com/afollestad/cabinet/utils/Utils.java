@@ -82,8 +82,10 @@ public class Utils {
 
     public static int getTotalFileCount(List<File> files) {
         int count = 0;
-        for (File fi : files)
-            count += getTotalFileCount(fi);
+        for (File fi : files) {
+            if (fi.requiresRootAccess()) count++;
+            else count += getTotalFileCount(fi);
+        }
         return count;
     }
 
