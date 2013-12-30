@@ -74,7 +74,7 @@ public class Utils {
     }
 
     public static int getTotalFileCount(File root) {
-        if(root.isDirectory()) return 1;
+        if (root.isDirectory()) return 1;
         int count = 1;
         File[] files = root.listFiles();
         if (files != null) {
@@ -131,8 +131,11 @@ public class Utils {
     public static boolean deleteRecursively(File file) {
         boolean retVal = true;
         if (file.isDirectory()) {
-            for (java.io.File f : file.listFiles())
-                retVal = retVal && deleteRecursively(new File(f));
+            File[] files = file.listFiles();
+            if (files != null) {
+                for (java.io.File f : files)
+                    retVal = retVal && deleteRecursively(new File(f));
+            }
             retVal = retVal && file.deleteNonRecursive();
         } else retVal = file.deleteNonRecursive();
         return retVal;

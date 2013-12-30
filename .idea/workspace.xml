@@ -28,7 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -114,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="47" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.5679442" vertical-offset="2591" max-vertical-offset="4573">
+            <state line="179" column="47" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.0" vertical-offset="2591" max-vertical-offset="4573">
               <folding>
                 <element signature="e#4947#4984#0" expanded="true" />
               </folding>
@@ -137,7 +137,7 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="381" column="0" selection-start="14022" selection-end="14022" vertical-scroll-proportion="0.0" vertical-offset="5434" max-vertical-offset="5848">
+            <state line="382" column="52" selection-start="14189" selection-end="14189" vertical-scroll-proportion="0.0" vertical-offset="5434" max-vertical-offset="5848">
               <folding>
                 <element signature="e#14121#14135#0" expanded="true" />
               </folding>
@@ -145,17 +145,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Utils.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="9" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2142">
+            <state line="135" column="43" selection-start="5404" selection-end="5404" vertical-scroll-proportion="0.44947734" vertical-offset="1860" max-vertical-offset="2210">
               <folding>
                 <element signature="e#852#868#0" expanded="true" />
                 <element signature="e#2073#2110#0" expanded="true" />
                 <element signature="e#2352#2389#0" expanded="true" />
-                <element signature="e#3900#3940#0" expanded="true" />
-                <element signature="e#4549#4560#0" expanded="true" />
-                <element signature="e#4881#4896#0" expanded="true" />
+                <element signature="e#3942#3982#0" expanded="true" />
+                <element signature="e#4591#4602#0" expanded="true" />
+                <element signature="e#4923#4938#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,9 +225,9 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       </list>
     </option>
   </component>
@@ -588,7 +588,7 @@
       <workItem from="1388357216799" duration="10530000" />
       <workItem from="1388371299955" duration="572000" />
       <workItem from="1388377568365" duration="2596000" />
-      <workItem from="1388388285047" duration="187000" />
+      <workItem from="1388388285047" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1766,11 +1766,19 @@
       <created>1388388383359</created>
       <updated>1388388383359</updated>
     </task>
-    <option name="localTasksCounter" value="295" />
+    <task id="LOCAL-00295" summary="Bug fix.&#10;">
+      <created>1388388483948</created>
+      <updated>1388388483948</updated>
+    </task>
+    <task id="LOCAL-00296" summary="Bug fix.&#10;">
+      <created>1388388512405</created>
+      <updated>1388388512405</updated>
+    </task>
+    <option name="localTasksCounter" value="297" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15991000" />
+    <option name="totallyTimeSpent" value="16105000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1865,7 +1873,8 @@
     <MESSAGE value="Fix." />
     <MESSAGE value="Version increment." />
     <MESSAGE value="Bug fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix." />
+    <MESSAGE value="Bug fix.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2185,29 +2194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="0" selection-start="14022" selection-end="14022" vertical-scroll-proportion="0.0" vertical-offset="5434" max-vertical-offset="5848">
-          <folding>
-            <element signature="e#14121#14135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="9" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2142">
-          <folding>
-            <element signature="e#852#868#0" expanded="true" />
-            <element signature="e#2073#2110#0" expanded="true" />
-            <element signature="e#2352#2389#0" expanded="true" />
-            <element signature="e#3900#3940#0" expanded="true" />
-            <element signature="e#4549#4560#0" expanded="true" />
-            <element signature="e#4881#4896#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="33" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="782">
@@ -2217,9 +2203,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="47" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.5679442" vertical-offset="2591" max-vertical-offset="4573">
+        <state line="179" column="47" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.0" vertical-offset="2591" max-vertical-offset="4573">
           <folding>
             <element signature="e#4947#4984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="382" column="52" selection-start="14189" selection-end="14189" vertical-scroll-proportion="0.0" vertical-offset="5434" max-vertical-offset="5848">
+          <folding>
+            <element signature="e#14121#14135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="43" selection-start="5404" selection-end="5404" vertical-scroll-proportion="0.44947734" vertical-offset="1860" max-vertical-offset="2210">
+          <folding>
+            <element signature="e#852#868#0" expanded="true" />
+            <element signature="e#2073#2110#0" expanded="true" />
+            <element signature="e#2352#2389#0" expanded="true" />
+            <element signature="e#3942#3982#0" expanded="true" />
+            <element signature="e#4591#4602#0" expanded="true" />
+            <element signature="e#4923#4938#0" expanded="true" />
           </folding>
         </state>
       </provider>
