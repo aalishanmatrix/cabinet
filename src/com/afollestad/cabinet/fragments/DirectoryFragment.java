@@ -128,6 +128,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         AbsListView list = getListView();
         list.setFastScrollEnabled(true);
         list.setClipToPadding(false);
+        list.setSelector(R.drawable.item_selector);
         MainActivity.setInsets(getActivity(), list);
         setupCab(list);
         load();

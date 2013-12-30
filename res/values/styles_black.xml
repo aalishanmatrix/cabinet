@@ -2,7 +2,7 @@
 <resources>
 
     <style name="Cabinet.Black" parent="@style/Cabinet">
-        <item name="android:actionBarItemBackground">@drawable/selectable_background_cabinetblack</item>
+        <item name="android:actionBarItemBackground">@drawable/item_selector</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Cabinetblack</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Cabinetblack</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cabinetblack</item>
