@@ -150,12 +150,6 @@ public class MainActivity extends SilkDrawerActivity {
     }
 
     public void navigate(File directory, boolean backStack) {
-        if (directory.isStorageDirectory())
-            setTitle(R.string.app_name);
-        else if (directory.isRootDirectory())
-            setTitle(R.string.root);
-        else setTitle(directory.getName());
-
         FragmentTransaction trans = getFragmentManager().beginTransaction();
         trans.replace(R.id.content_frame, new DirectoryFragment(directory, mPickMode));
         if (backStack) trans.addToBackStack(null);

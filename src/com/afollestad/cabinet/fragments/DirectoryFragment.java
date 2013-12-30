@@ -87,15 +87,13 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-
+    public String getTitle() {
         // Update the activity title with the directory name
         if (mPath.isStorageDirectory())
-            getActivity().setTitle(R.string.sdcard);
+            return getString(R.string.sdcard);
         else if (mPath.isRootDirectory())
-            getActivity().setTitle(R.string.root);
-        else getActivity().setTitle(mPath.getName());
+            return getString(R.string.root);
+        return mPath.getName();
     }
 
     private void load() {
@@ -142,10 +140,12 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getListView().setFastScrollEnabled(true);
-        setupCab(getListView());
-        getListView().setClipToPadding(false);
-        MainActivity.setInsets(getActivity(), getListView());
+        Toast.makeText(getActivity(), "onViewCreated", Toast.LENGTH_SHORT).show();
+        AbsListView list = getListView();
+        list.setFastScrollEnabled(true);
+        list.setClipToPadding(false);
+        MainActivity.setInsets(getActivity(), list);
+        setupCab(list);
         load();
     }
 
