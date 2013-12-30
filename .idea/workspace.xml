@@ -31,7 +31,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_lock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_lock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_lock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_lock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_lock_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_lock_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_lock_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_lock_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_unlock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_unlock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_unlock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_unlock_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_unlock_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_unlock_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_unlock_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_unlock_light.png" />
+      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\layout\fragment_list_root.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/attrs.xml" afterPath="$PROJECT_DIR$/res/values/attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/fragment_directory.xml" afterPath="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_grid.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_grid.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_light.xml" afterPath="$PROJECT_DIR$/res/values/styles_light.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -105,6 +129,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="24" selection-start="2258" selection-end="2422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="list_item_file.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/list_item_file.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,21 +159,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="283" column="71" selection-start="10066" selection-end="10066" vertical-scroll-proportion="0.53571427" vertical-offset="4105" max-vertical-offset="6290">
+            <state line="285" column="109" selection-start="10182" selection-end="10182" vertical-scroll-proportion="0.3469388" vertical-offset="4301" max-vertical-offset="6324">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2891#2906#0" expanded="true" />
+                <element signature="e#2986#2999#0" expanded="true" />
+                <element signature="e#5831#5868#0" expanded="true" />
+                <element signature="e#5906#5942#0" expanded="true" />
+                <element signature="e#7765#7782#0" expanded="true" />
+                <element signature="e#10210#10242#0" expanded="true" />
+                <element signature="e#12222#12241#0" expanded="true" />
+                <element signature="e#12393#12435#0" expanded="true" />
+                <element signature="e#13104#13150#0" expanded="true" />
+                <element signature="e#13173#13186#0" expanded="true" />
+                <element signature="e#13227#13272#0" expanded="true" />
+                <element signature="e#13295#13308#0" expanded="true" />
+                <element signature="e#13542#13556#0" expanded="true" />
+                <element signature="e#13924#13938#0" expanded="true" />
+                <element signature="e#14095#14110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,28 +219,28 @@
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_grid.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/LookFeelFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_list_root.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/BasePreferenceFragment.java" />
-        <option value="$PROJECT_DIR$/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/res/values/strings_prefs.xml" />
-        <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java" />
         <option value="$PROJECT_DIR$/res/xml/prefs_files.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_black.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/AboutFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_grid.xml" />
+        <option value="$PROJECT_DIR$/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_dark.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       </list>
     </option>
@@ -292,7 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fragments" />
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,7 +599,7 @@
       <workItem from="1388299393175" duration="1133000" />
       <workItem from="1388356386164" duration="37000" />
       <workItem from="1388356567518" duration="201000" />
-      <workItem from="1388357216799" duration="4267000" />
+      <workItem from="1388357216799" duration="6368000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1698,11 +1737,15 @@
       <created>1388361087126</created>
       <updated>1388361087126</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="Fixes.">
+      <created>1388361521000</created>
+      <updated>1388361521000</updated>
+    </task>
+    <option name="localTasksCounter" value="286" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6373000" />
+    <option name="totallyTimeSpent" value="8474000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1787,7 +1830,8 @@
     <MESSAGE value="Pushed version up to 0.4 Beta" />
     <MESSAGE value="Changed font size of file details." />
     <MESSAGE value="Updated README." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README." />
+    <MESSAGE value="Fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1879,43 +1923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="36" selection-start="8331" selection-end="8331" vertical-scroll-proportion="0.0" vertical-offset="2541" max-vertical-offset="4080">
-          <folding>
-            <element signature="e#4248#4266#0" expanded="true" />
-            <element signature="e#5648#5665#0" expanded="true" />
-            <element signature="e#5735#5748#0" expanded="true" />
-            <element signature="e#6789#6809#0" expanded="true" />
-            <element signature="e#6839#6866#0" expanded="true" />
-            <element signature="e#6941#6953#0" expanded="true" />
-            <element signature="e#7385#7407#0" expanded="true" />
-            <element signature="e#7649#7660#0" expanded="true" />
-            <element signature="e#9873#9898#0" expanded="true" />
-            <element signature="e#10305#10337#0" expanded="true" />
-            <element signature="e#10462#10486#0" expanded="true" />
-            <element signature="e#10516#10559#0" expanded="true" />
-            <element signature="e#10652#10664#0" expanded="true" />
-            <element signature="e#11063#11078#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="299" selection-end="299" vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="765">
-          <folding>
-            <element signature="e#694#720#0" expanded="false" />
-            <element signature="e#1187#1208#0" expanded="false" />
-            <element signature="e#1279#1300#0" expanded="false" />
-            <element signature="e#1783#1807#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/LookFeelFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="60" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
@@ -1942,25 +1949,6 @@
         <state line="16" column="37" selection-start="543" selection-end="543" vertical-scroll-proportion="0.37585035" vertical-offset="0" max-vertical-offset="588">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="693" selection-end="693" vertical-scroll-proportion="0.5435169" vertical-offset="0" max-vertical-offset="563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_list_root.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="418" selection-end="418" vertical-scroll-proportion="0.2527881" vertical-offset="0" max-vertical-offset="612">
-          <folding>
-            <element signature="e#1152#1176#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
@@ -1994,33 +1982,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/fragment_directory.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="484" selection-end="953" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="493">
-          <folding>
-            <element signature="e#154#169#0" expanded="false" />
-            <element signature="e#318#332#0" expanded="false" />
-            <element signature="e#541#571#0" expanded="false" />
-            <element signature="e#637#656#0" expanded="false" />
-            <element signature="e#727#751#0" expanded="false" />
-            <element signature="e#824#851#0" expanded="false" />
-            <element signature="e#924#951#0" expanded="false" />
-            <element signature="e#1059#1081#0" expanded="false" />
-            <element signature="e#1200#1220#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="43" selection-start="4149" selection-end="4149" vertical-scroll-proportion="0.0" vertical-offset="1945" max-vertical-offset="4556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="57" selection-start="1537" selection-end="1537" vertical-scroll-proportion="-11.92" vertical-offset="348" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
@@ -2056,27 +2020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_gray.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="299" selection-end="299" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_dark_lightab.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="62" selection-start="208" selection-end="208" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="62" selection-start="188" selection-end="188" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/pressed_background_cabinetblack.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
@@ -2087,13 +2030,6 @@
     <entry file="file://$PROJECT_DIR$/res/drawable/selectable_background_cabinet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="32" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.71823204" vertical-offset="165" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="123" selection-end="177" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
@@ -2119,13 +2055,6 @@
       </provider>
       <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_black.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
@@ -2161,20 +2090,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/activities/SilkDrawerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="25" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.34086958" vertical-offset="348" max-vertical-offset="2482">
@@ -2182,11 +2097,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="70" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.41078067" vertical-offset="0" max-vertical-offset="663">
+          <folding>
+            <element signature="e#520#546#0" expanded="false" />
+            <element signature="e#1105#1126#0" expanded="false" />
+            <element signature="e#1526#1550#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Silk/library/res/layout/fragment_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="89" selection-start="375" selection-end="375" vertical-scroll-proportion="0.18959108" vertical-offset="0" max-vertical-offset="538">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_gray.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="299" selection-end="299" vertical-scroll-proportion="0.18819188" vertical-offset="0" max-vertical-offset="542">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_black.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="0.36346865" vertical-offset="24" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="8" selection-start="865" selection-end="980" vertical-scroll-proportion="0.59594095" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_dark_lightab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="63" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.60390764" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_light.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="63" selection-start="796" selection-end="796" vertical-scroll-proportion="0.4831261" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5435169" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/fragment_directory.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="306" selection-end="306" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="18" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.5008881" vertical-offset="942" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="24" selection-start="2258" selection-end="2422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="71" selection-start="10066" selection-end="10066" vertical-scroll-proportion="0.53571427" vertical-offset="4105" max-vertical-offset="6290">
+        <state line="285" column="109" selection-start="10182" selection-end="10182" vertical-scroll-proportion="0.3469388" vertical-offset="4301" max-vertical-offset="6324">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2891#2906#0" expanded="true" />
+            <element signature="e#2986#2999#0" expanded="true" />
+            <element signature="e#5831#5868#0" expanded="true" />
+            <element signature="e#5906#5942#0" expanded="true" />
+            <element signature="e#7765#7782#0" expanded="true" />
+            <element signature="e#10210#10242#0" expanded="true" />
+            <element signature="e#12222#12241#0" expanded="true" />
+            <element signature="e#12393#12435#0" expanded="true" />
+            <element signature="e#13104#13150#0" expanded="true" />
+            <element signature="e#13173#13186#0" expanded="true" />
+            <element signature="e#13227#13272#0" expanded="true" />
+            <element signature="e#13295#13308#0" expanded="true" />
+            <element signature="e#13542#13556#0" expanded="true" />
+            <element signature="e#13924#13938#0" expanded="true" />
+            <element signature="e#14095#14110#0" expanded="true" />
           </folding>
         </state>
       </provider>

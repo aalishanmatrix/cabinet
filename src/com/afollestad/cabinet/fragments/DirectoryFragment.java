@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.TypedArray;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -13,7 +14,6 @@ import android.text.Html;
 import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
-import android.widget.Button;
 import android.widget.ListView;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
@@ -73,7 +73,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             // If the device is a tablet, a GridView layout is used instead of a ListView
             return R.layout.fragment_grid;
         }
-        return R.layout.fragment_list_root;
+        return R.layout.fragment_list;
     }
 
     @Override
@@ -136,12 +136,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         t.start();
     }
 
-    private void invalidateMountedAs() {
-        if (getView() == null) return;
-        Button mount = (Button) getView().findViewById(R.id.mount);
-        mount.setText(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()));
-    }
-
     private boolean isMounted() {
         return !getPath().getMountedAs().equalsIgnoreCase("ro");
     }
@@ -152,21 +146,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         getListView().setFastScrollEnabled(true);
         setupCab(getListView());
         if (getAdapter().getCount() == 0) load();
-
-        Button mount = (Button) view.findViewById(R.id.mount);
-        if (getPath().requiresRootAccess()) {
-            mount.setVisibility(View.VISIBLE);
-            invalidateMountedAs();
-            mount.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (isMounted()) {
-                        getPath().unmount();
-                    } else getPath().mount();
-                    invalidateMountedAs();
-                }
-            });
-        } else mount.setVisibility(View.GONE);
 
         getListView().setClipToPadding(false);
         MainActivity.setInsets(getActivity(), getListView());
@@ -301,12 +280,32 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 break;
         }
 
+        MenuItem mount = menu.findItem(R.id.mountDir);
+        if (getPath().requiresRootAccess()) {
+            mount.setVisible(true);
+            mount.setIcon(isMounted() ? resolveDrawable(R.attr.ic_lock) : resolveDrawable(R.attr.ic_unlock));
+            mount.setTitle(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()));
+        } else mount.setVisible(false);
+
         super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    private int resolveDrawable(int attr) {
+        TypedArray a = getActivity().obtainStyledAttributes(new int[]{attr});
+        int resId = a.getResourceId(0, 0);
+        a.recycle();
+        return resId;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.mountDir:
+                if (isMounted()) {
+                    getPath().unmount();
+                } else getPath().mount();
+                getActivity().invalidateOptionsMenu();
+                return true;
             case R.id.add_shortcut:
                 MainActivity activity = (MainActivity) getActivity();
                 activity.addShortcut(mPath);

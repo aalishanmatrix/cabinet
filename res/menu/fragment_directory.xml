@@ -4,6 +4,8 @@
     <item android:id="@+id/paste" android:title="@string/paste"
           android:icon="?ic_paste" android:showAsAction="ifRoom"
           android:visible="false"/>
+    <item android:id="@+id/mountDir" android:title="@string/mount"
+          android:icon="?ic_unlock" android:showAsAction="ifRoom"/>
     <item android:id="@+id/sort" android:title="@string/sort"
           android:icon="?ic_sort" android:showAsAction="ifRoom">
         <menu>
@@ -16,7 +18,6 @@
             </group>
         </menu>
     </item>
-
     <item android:id="@+id/add_shortcut" android:title="@string/add_shortcut"
           android:icon="?ic_pin" android:showAsAction="ifRoom"/>
     <item android:id="@+id/new_folder" android:title="@string/new_folder"/>

@@ -17,6 +17,7 @@
     <string name="no_shortcuts">No shortcuts</string>
 
     <string name="add_shortcut">Add Shortcut</string>
+    <string name="mount">Mount</string>
     <string name="copy">Copy</string>
     <string name="cut">Cut</string>
     <string name="sort">Sort</string>
