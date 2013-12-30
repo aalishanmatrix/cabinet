@@ -15,6 +15,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Silk" />
     <orderEntry type="module" module-name="root-commands" />
+    <orderEntry type="module" module-name="SystemBarTint" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -24,7 +25,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="SystemBarTint" />
   </component>
 </module>
 
