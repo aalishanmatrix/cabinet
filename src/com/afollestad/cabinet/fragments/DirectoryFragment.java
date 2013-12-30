@@ -96,8 +96,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         else if (mPath.isRootDirectory())
             getActivity().setTitle(R.string.root);
         else getActivity().setTitle(mPath.getName());
-
-        load();
     }
 
     private void load() {
@@ -146,10 +144,9 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         super.onViewCreated(view, savedInstanceState);
         getListView().setFastScrollEnabled(true);
         setupCab(getListView());
-        if (getAdapter().getCount() == 0) load();
-
         getListView().setClipToPadding(false);
         MainActivity.setInsets(getActivity(), getListView());
+        load();
     }
 
     private void setupCab(AbsListView listView) {
