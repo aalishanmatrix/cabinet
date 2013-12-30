@@ -75,8 +75,11 @@ public class Utils {
 
     public static int getTotalFileCount(File root) {
         int count = 1;
-        for (File fi : root.listFiles())
-            count += getTotalFileCount(fi);
+        File[] files = root.listFiles();
+        if (files != null) {
+            for (File fi : files)
+                count += getTotalFileCount(fi);
+        }
         return count;
     }
 
