@@ -57,12 +57,24 @@ public class Clipboard {
         return mClipboardType;
     }
 
-    public boolean canPaste() {
-        if (mClipboard.size() == 0) return false;
-        // Remove no longer existing files from the clipboard
+    private void remove(File fi) {
         for (int i = 0; i < mClipboard.size(); i++) {
-            if (!mClipboard.get(i).exists())
+            if (!mClipboard.get(i).getAbsolutePath().equals(fi.getAbsolutePath())) {
                 mClipboard.remove(i);
+                break;
+            }
+        }
+    }
+
+    public boolean canPaste(File dest) {
+        if (mClipboard.size() == 0) return false;
+        // Remove no longer existing files from the clipboard and check for paradoxes
+        for (File fi : mClipboard) {
+            if (!fi.exists()) remove(fi);
+            else if (dest.getAbsolutePath().equals(fi.getAbsolutePath())) {
+                // You cannot copy/cut a directory into itself
+                return false;
+            }
         }
         return mClipboard.size() > 0;
     }
@@ -114,8 +126,8 @@ public class Clipboard {
         log("Copying '" + src.getAbsolutePath() + "' to '" + dst.getAbsolutePath() + "'...");
         if (src.isDirectory()) {
             File newDir = Utils.checkForExistence(new File(dst, src.getName()), 0);
+            newDir.mkdir();
             log("Created: " + newDir.getAbsolutePath());
-            newDir.mkdirs();
             // Recursively copy the source directory into the new directory
             for (File fi : src.listFiles())
                 copy(context, fi, newDir, cut);
