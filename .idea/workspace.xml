@@ -28,7 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -93,10 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="782">
+            <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.05782313" vertical-offset="34" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
@@ -134,10 +134,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="247" column="32" selection-start="8560" selection-end="8560" vertical-scroll-proportion="0.59130436" vertical-offset="2992" max-vertical-offset="5882">
+            <state line="247" column="32" selection-start="8560" selection-end="8560" vertical-scroll-proportion="0.0" vertical-offset="2992" max-vertical-offset="5882">
               <folding>
                 <element signature="e#2920#2935#0" expanded="true" />
                 <element signature="e#3015#3028#0" expanded="true" />
@@ -242,10 +242,10 @@
         <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -606,7 +606,7 @@
       <workItem from="1388357216799" duration="10530000" />
       <workItem from="1388371299955" duration="572000" />
       <workItem from="1388377568365" duration="2596000" />
-      <workItem from="1388388285047" duration="605000" />
+      <workItem from="1388388285047" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1796,11 +1796,15 @@
       <created>1388388595967</created>
       <updated>1388388595967</updated>
     </task>
-    <option name="localTasksCounter" value="298" />
+    <task id="LOCAL-00298" summary="Bug fix.&#10;">
+      <created>1388388902622</created>
+      <updated>1388388902622</updated>
+    </task>
+    <option name="localTasksCounter" value="299" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16409000" />
+    <option name="totallyTimeSpent" value="16431000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2216,13 +2220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="179" column="47" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.0" vertical-offset="2591" max-vertical-offset="4573">
@@ -2249,7 +2246,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="32" selection-start="8560" selection-end="8560" vertical-scroll-proportion="0.59130436" vertical-offset="2992" max-vertical-offset="5882">
+        <state line="247" column="32" selection-start="8560" selection-end="8560" vertical-scroll-proportion="0.0" vertical-offset="2992" max-vertical-offset="5882">
           <folding>
             <element signature="e#2920#2935#0" expanded="true" />
             <element signature="e#3015#3028#0" expanded="true" />
@@ -2270,6 +2267,13 @@
             <element signature="e#14307#14535#0" expanded="true" />
             <element signature="e#14516#14517#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.05782313" vertical-offset="34" max-vertical-offset="782">
+          <folding />
         </state>
       </provider>
     </entry>
