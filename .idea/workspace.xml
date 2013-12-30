@@ -28,8 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cabinet.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -97,7 +99,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="782">
+            <state line="15" column="82" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -135,38 +137,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="18" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="5882">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5610">
               <folding>
-                <element signature="e#2879#2905#0" expanded="true" />
-                <element signature="e#2968#2992#0" expanded="true" />
-                <element signature="e#5838#5875#0" expanded="true" />
-                <element signature="e#5913#5949#0" expanded="true" />
-                <element signature="e#7772#7789#0" expanded="true" />
-                <element signature="e#10222#10254#0" expanded="true" />
-                <element signature="e#10930#10962#0" expanded="true" />
-                <element signature="e#12397#12416#0" expanded="true" />
-                <element signature="e#12568#12610#0" expanded="true" />
-                <element signature="e#13279#13325#0" expanded="true" />
-                <element signature="e#13348#13361#0" expanded="true" />
-                <element signature="e#13402#13447#0" expanded="true" />
-                <element signature="e#13470#13483#0" expanded="true" />
-                <element signature="e#13717#13731#0" expanded="true" />
-                <element signature="e#14099#14113#0" expanded="true" />
-                <element signature="e#14320#14335#0" expanded="true" />
-                <element signature="e#14337#14565#0" expanded="true" />
-                <element signature="e#14546#14547#0" expanded="true" />
+                <element signature="e#2260#2286#0" expanded="true" />
+                <element signature="e#2349#2373#0" expanded="true" />
+                <element signature="e#5136#5173#0" expanded="true" />
+                <element signature="e#5211#5247#0" expanded="true" />
+                <element signature="e#7070#7087#0" expanded="true" />
+                <element signature="e#9520#9552#0" expanded="true" />
+                <element signature="e#10228#10260#0" expanded="true" />
+                <element signature="e#11695#11714#0" expanded="true" />
+                <element signature="e#11866#11908#0" expanded="true" />
+                <element signature="e#12577#12623#0" expanded="true" />
+                <element signature="e#12646#12659#0" expanded="true" />
+                <element signature="e#12700#12745#0" expanded="true" />
+                <element signature="e#12768#12781#0" expanded="true" />
+                <element signature="e#13015#13029#0" expanded="true" />
+                <element signature="e#13397#13411#0" expanded="true" />
+                <element signature="e#13618#13633#0" expanded="true" />
+                <element signature="e#13635#13863#0" expanded="true" />
+                <element signature="e#13844#13845#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="61" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.1569343" vertical-offset="1878" max-vertical-offset="3978">
+            <state line="164" column="37" selection-start="6194" selection-end="6194" vertical-scroll-proportion="0.0" vertical-offset="1933" max-vertical-offset="3978">
               <folding />
             </state>
           </provider>
@@ -253,10 +255,11 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/../Silk/library/res/layout/fragment_list.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       </list>
     </option>
   </component>
@@ -617,7 +620,7 @@
       <workItem from="1388357216799" duration="10530000" />
       <workItem from="1388371299955" duration="572000" />
       <workItem from="1388377568365" duration="2596000" />
-      <workItem from="1388388285047" duration="952000" />
+      <workItem from="1388388285047" duration="1650000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1815,11 +1818,15 @@
       <created>1388388924552</created>
       <updated>1388388924552</updated>
     </task>
-    <option name="localTasksCounter" value="300" />
+    <task id="LOCAL-00300" summary="Fixes.">
+      <created>1388389253990</created>
+      <updated>1388389253990</updated>
+    </task>
+    <option name="localTasksCounter" value="301" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16756000" />
+    <option name="totallyTimeSpent" value="17454000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1860,7 +1867,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31921825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49022803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49022803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1905,7 +1912,6 @@
     <MESSAGE value="Pushed version up to 0.4 Beta" />
     <MESSAGE value="Changed font size of file details." />
     <MESSAGE value="Updated README." />
-    <MESSAGE value="Fixes." />
     <MESSAGE value="Updates for root mounting stuff." />
     <MESSAGE value="Updates for root mounting stuff.&#10;" />
     <MESSAGE value="Bug fixes." />
@@ -1916,17 +1922,13 @@
     <MESSAGE value="Bug fix." />
     <MESSAGE value="Bug fix.&#10;" />
     <MESSAGE value="Incremented version." />
-    <option name="LAST_COMMIT_MESSAGE" value="Incremented version." />
+    <MESSAGE value="Fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="52" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.45700246" vertical-offset="443" max-vertical-offset="1207" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/xml/prefs_lookandfeel.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="43" selection-start="241" selection-end="241" vertical-scroll-proportion="0.11604095" vertical-offset="0" max-vertical-offset="586" />
@@ -2224,13 +2226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="37" selection-start="742" selection-end="742" vertical-scroll-proportion="0.13011153" vertical-offset="100" max-vertical-offset="663">
@@ -2253,36 +2248,50 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="18" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="5882">
-          <folding>
-            <element signature="e#2879#2905#0" expanded="true" />
-            <element signature="e#2968#2992#0" expanded="true" />
-            <element signature="e#5838#5875#0" expanded="true" />
-            <element signature="e#5913#5949#0" expanded="true" />
-            <element signature="e#7772#7789#0" expanded="true" />
-            <element signature="e#10222#10254#0" expanded="true" />
-            <element signature="e#10930#10962#0" expanded="true" />
-            <element signature="e#12397#12416#0" expanded="true" />
-            <element signature="e#12568#12610#0" expanded="true" />
-            <element signature="e#13279#13325#0" expanded="true" />
-            <element signature="e#13348#13361#0" expanded="true" />
-            <element signature="e#13402#13447#0" expanded="true" />
-            <element signature="e#13470#13483#0" expanded="true" />
-            <element signature="e#13717#13731#0" expanded="true" />
-            <element signature="e#14099#14113#0" expanded="true" />
-            <element signature="e#14320#14335#0" expanded="true" />
-            <element signature="e#14337#14565#0" expanded="true" />
-            <element signature="e#14546#14547#0" expanded="true" />
-          </folding>
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="61" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.1569343" vertical-offset="1878" max-vertical-offset="3978">
+        <state line="164" column="37" selection-start="6194" selection-end="6194" vertical-scroll-proportion="0.0" vertical-offset="1933" max-vertical-offset="3978">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="82" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5610">
+          <folding>
+            <element signature="e#2260#2286#0" expanded="true" />
+            <element signature="e#2349#2373#0" expanded="true" />
+            <element signature="e#5136#5173#0" expanded="true" />
+            <element signature="e#5211#5247#0" expanded="true" />
+            <element signature="e#7070#7087#0" expanded="true" />
+            <element signature="e#9520#9552#0" expanded="true" />
+            <element signature="e#10228#10260#0" expanded="true" />
+            <element signature="e#11695#11714#0" expanded="true" />
+            <element signature="e#11866#11908#0" expanded="true" />
+            <element signature="e#12577#12623#0" expanded="true" />
+            <element signature="e#12646#12659#0" expanded="true" />
+            <element signature="e#12700#12745#0" expanded="true" />
+            <element signature="e#12768#12781#0" expanded="true" />
+            <element signature="e#13015#13029#0" expanded="true" />
+            <element signature="e#13397#13411#0" expanded="true" />
+            <element signature="e#13618#13633#0" expanded="true" />
+            <element signature="e#13635#13863#0" expanded="true" />
+            <element signature="e#13844#13845#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

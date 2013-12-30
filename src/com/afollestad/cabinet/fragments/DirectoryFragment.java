@@ -51,19 +51,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         mPickMode = pickMode;
     }
 
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        outState.putString("path", mPath.getAbsolutePath());
-        super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        if (savedInstanceState != null && savedInstanceState.containsKey("path"))
-            mPath = new File(savedInstanceState.getString("path"));
-    }
-
     public File getPath() {
         return mPath;
     }
@@ -80,8 +67,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (savedInstanceState != null && savedInstanceState.containsKey("path"))
-            mPath = new File(savedInstanceState.getString("path"));
         setHasOptionsMenu(true);
         setRetainInstance(true);
     }
@@ -140,7 +125,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Toast.makeText(getActivity(), "onViewCreated", Toast.LENGTH_SHORT).show();
         AbsListView list = getListView();
         list.setFastScrollEnabled(true);
         list.setClipToPadding(false);
