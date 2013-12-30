@@ -15,6 +15,7 @@ import android.util.SparseBooleanArray;
 import android.view.*;
 import android.widget.AbsListView;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
@@ -304,6 +305,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 if (isMounted()) {
                     getPath().unmount();
                 } else getPath().mount();
+                Toast.makeText(getActivity(), getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()), Toast.LENGTH_SHORT).show();
                 getActivity().invalidateOptionsMenu();
                 return true;
             case R.id.add_shortcut:

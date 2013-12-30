@@ -31,32 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_lock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_lock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_lock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_lock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_lock_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_lock_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_lock_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_lock_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_unlock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_unlock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_unlock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_unlock_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_unlock_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_unlock_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_unlock_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_unlock_light.png" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\layout\fragment_list_root.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/attrs.xml" afterPath="$PROJECT_DIR$/res/values/attrs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/fragment_directory.xml" afterPath="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_grid.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_grid.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_light.xml" afterPath="$PROJECT_DIR$/res/values/styles_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,24 +137,25 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="285" column="109" selection-start="10182" selection-end="10182" vertical-scroll-proportion="0.3469388" vertical-offset="4301" max-vertical-offset="6324">
+            <state line="307" column="0" selection-start="10901" selection-end="10901" vertical-scroll-proportion="0.786087" vertical-offset="4427" max-vertical-offset="6358">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2891#2906#0" expanded="true" />
-                <element signature="e#2986#2999#0" expanded="true" />
-                <element signature="e#5831#5868#0" expanded="true" />
-                <element signature="e#5906#5942#0" expanded="true" />
-                <element signature="e#7765#7782#0" expanded="true" />
-                <element signature="e#10210#10242#0" expanded="true" />
-                <element signature="e#12222#12241#0" expanded="true" />
-                <element signature="e#12393#12435#0" expanded="true" />
-                <element signature="e#13104#13150#0" expanded="true" />
-                <element signature="e#13173#13186#0" expanded="true" />
-                <element signature="e#13227#13272#0" expanded="true" />
-                <element signature="e#13295#13308#0" expanded="true" />
-                <element signature="e#13542#13556#0" expanded="true" />
-                <element signature="e#13924#13938#0" expanded="true" />
-                <element signature="e#14095#14110#0" expanded="true" />
+                <element signature="e#2920#2935#0" expanded="true" />
+                <element signature="e#3015#3028#0" expanded="true" />
+                <element signature="e#5860#5897#0" expanded="true" />
+                <element signature="e#5935#5971#0" expanded="true" />
+                <element signature="e#7794#7811#0" expanded="true" />
+                <element signature="e#10239#10271#0" expanded="true" />
+                <element signature="e#10947#10979#0" expanded="true" />
+                <element signature="e#12414#12433#0" expanded="true" />
+                <element signature="e#12585#12627#0" expanded="true" />
+                <element signature="e#13296#13342#0" expanded="true" />
+                <element signature="e#13365#13378#0" expanded="true" />
+                <element signature="e#13419#13464#0" expanded="true" />
+                <element signature="e#13487#13500#0" expanded="true" />
+                <element signature="e#13734#13748#0" expanded="true" />
+                <element signature="e#14116#14130#0" expanded="true" />
+                <element signature="e#14287#14302#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -599,7 +575,7 @@
       <workItem from="1388299393175" duration="1133000" />
       <workItem from="1388356386164" duration="37000" />
       <workItem from="1388356567518" duration="201000" />
-      <workItem from="1388357216799" duration="6368000" />
+      <workItem from="1388357216799" duration="6485000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1741,11 +1717,15 @@
       <created>1388361521000</created>
       <updated>1388361521000</updated>
     </task>
-    <option name="localTasksCounter" value="286" />
+    <task id="LOCAL-00286" summary="Updates for root mounting stuff.">
+      <created>1388363629665</created>
+      <updated>1388363629665</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8474000" />
+    <option name="totallyTimeSpent" value="8591000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1831,7 +1811,8 @@
     <MESSAGE value="Changed font size of file details." />
     <MESSAGE value="Updated README." />
     <MESSAGE value="Fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes." />
+    <MESSAGE value="Updates for root mounting stuff." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates for root mounting stuff." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2200,24 +2181,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="285" column="109" selection-start="10182" selection-end="10182" vertical-scroll-proportion="0.3469388" vertical-offset="4301" max-vertical-offset="6324">
+        <state line="307" column="0" selection-start="10901" selection-end="10901" vertical-scroll-proportion="0.786087" vertical-offset="4427" max-vertical-offset="6358">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2891#2906#0" expanded="true" />
-            <element signature="e#2986#2999#0" expanded="true" />
-            <element signature="e#5831#5868#0" expanded="true" />
-            <element signature="e#5906#5942#0" expanded="true" />
-            <element signature="e#7765#7782#0" expanded="true" />
-            <element signature="e#10210#10242#0" expanded="true" />
-            <element signature="e#12222#12241#0" expanded="true" />
-            <element signature="e#12393#12435#0" expanded="true" />
-            <element signature="e#13104#13150#0" expanded="true" />
-            <element signature="e#13173#13186#0" expanded="true" />
-            <element signature="e#13227#13272#0" expanded="true" />
-            <element signature="e#13295#13308#0" expanded="true" />
-            <element signature="e#13542#13556#0" expanded="true" />
-            <element signature="e#13924#13938#0" expanded="true" />
-            <element signature="e#14095#14110#0" expanded="true" />
+            <element signature="e#2920#2935#0" expanded="true" />
+            <element signature="e#3015#3028#0" expanded="true" />
+            <element signature="e#5860#5897#0" expanded="true" />
+            <element signature="e#5935#5971#0" expanded="true" />
+            <element signature="e#7794#7811#0" expanded="true" />
+            <element signature="e#10239#10271#0" expanded="true" />
+            <element signature="e#10947#10979#0" expanded="true" />
+            <element signature="e#12414#12433#0" expanded="true" />
+            <element signature="e#12585#12627#0" expanded="true" />
+            <element signature="e#13296#13342#0" expanded="true" />
+            <element signature="e#13365#13378#0" expanded="true" />
+            <element signature="e#13419#13464#0" expanded="true" />
+            <element signature="e#13487#13500#0" expanded="true" />
+            <element signature="e#13734#13748#0" expanded="true" />
+            <element signature="e#14116#14130#0" expanded="true" />
+            <element signature="e#14287#14302#0" expanded="true" />
           </folding>
         </state>
       </provider>
