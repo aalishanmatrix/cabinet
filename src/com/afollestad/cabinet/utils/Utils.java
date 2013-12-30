@@ -74,6 +74,7 @@ public class Utils {
     }
 
     public static int getTotalFileCount(File root) {
+        if(root.isDirectory()) return 1;
         int count = 1;
         File[] files = root.listFiles();
         if (files != null) {
