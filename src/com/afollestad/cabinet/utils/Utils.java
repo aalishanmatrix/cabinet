@@ -11,6 +11,8 @@ import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.file.File;
 import com.afollestad.silk.views.text.SilkEditText;
 
+import java.util.List;
+
 /**
  * Various convenience methods.
  *
@@ -69,6 +71,20 @@ public class Utils {
         } else {
             return newFile;
         }
+    }
+
+    public static int getTotalFileCount(File root) {
+        int count = 1;
+        for (File fi : root.listFiles())
+            count += getTotalFileCount(fi);
+        return count;
+    }
+
+    public static int getTotalFileCount(List<File> files) {
+        int count = 0;
+        for (File fi : files)
+            count += getTotalFileCount(fi);
+        return count;
     }
 
     public static ProgressDialog showProgressDialog(Activity activity, int title, int max) {

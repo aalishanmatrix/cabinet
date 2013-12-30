@@ -31,8 +31,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -139,7 +139,7 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="260" column="97" selection-start="9127" selection-end="9127" vertical-scroll-proportion="0.0" vertical-offset="3954" max-vertical-offset="6358">
+            <state line="381" column="65" selection-start="14087" selection-end="14087" vertical-scroll-proportion="0.0" vertical-offset="5843" max-vertical-offset="6460">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2920#2935#0" expanded="true" />
@@ -157,17 +157,32 @@
                 <element signature="e#13492#13505#0" expanded="true" />
                 <element signature="e#13739#13753#0" expanded="true" />
                 <element signature="e#14121#14135#0" expanded="true" />
-                <element signature="e#14292#14307#0" expanded="true" />
+                <element signature="e#14342#14357#0" expanded="true" />
+                <element signature="e#14359#14587#0" expanded="true" />
+                <element signature="e#14568#14569#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clipboard.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="92" selection-start="3390" selection-end="3390" vertical-scroll-proportion="0.39115646" vertical-offset="1045" max-vertical-offset="2057">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Clipboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="39" selection-start="2058" selection-end="2058" vertical-scroll-proportion="0.5860869" vertical-offset="666" max-vertical-offset="2533">
-              <folding />
+            <state line="92" column="69" selection-start="2609" selection-end="2609" vertical-scroll-proportion="0.0" vertical-offset="1236" max-vertical-offset="2805">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2436#3722#0" expanded="true" />
+                <element signature="e#3711#3712#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -227,8 +242,9 @@
         <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/menu/fragment_directory.xml" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       </list>
     </option>
   </component>
@@ -586,7 +602,7 @@
       <workItem from="1388299393175" duration="1133000" />
       <workItem from="1388356386164" duration="37000" />
       <workItem from="1388356567518" duration="201000" />
-      <workItem from="1388357216799" duration="9624000" />
+      <workItem from="1388357216799" duration="10130000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1736,11 +1752,15 @@
       <created>1388363740240</created>
       <updated>1388363740240</updated>
     </task>
-    <option name="localTasksCounter" value="288" />
+    <task id="LOCAL-00288" summary="Bug fixes.">
+      <created>1388368473261</created>
+      <updated>1388368473261</updated>
+    </task>
+    <option name="localTasksCounter" value="289" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11730000" />
+    <option name="totallyTimeSpent" value="12236000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1828,7 +1848,8 @@
     <MESSAGE value="Fixes." />
     <MESSAGE value="Updates for root mounting stuff." />
     <MESSAGE value="Updates for root mounting stuff.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates for root mounting stuff.&#10;" />
+    <MESSAGE value="Bug fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2185,9 +2206,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="69" selection-start="2609" selection-end="2609" vertical-scroll-proportion="0.0" vertical-offset="1236" max-vertical-offset="2805">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2436#3722#0" expanded="true" />
+            <element signature="e#3711#3712#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="260" column="97" selection-start="9127" selection-end="9127" vertical-scroll-proportion="0.0" vertical-offset="3954" max-vertical-offset="6358">
+        <state line="381" column="65" selection-start="14087" selection-end="14087" vertical-scroll-proportion="0.0" vertical-offset="5843" max-vertical-offset="6460">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2920#2935#0" expanded="true" />
@@ -2205,21 +2237,16 @@
             <element signature="e#13492#13505#0" expanded="true" />
             <element signature="e#13739#13753#0" expanded="true" />
             <element signature="e#14121#14135#0" expanded="true" />
-            <element signature="e#14292#14307#0" expanded="true" />
+            <element signature="e#14342#14357#0" expanded="true" />
+            <element signature="e#14359#14587#0" expanded="true" />
+            <element signature="e#14568#14569#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="23" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.33333334" vertical-offset="620" max-vertical-offset="1819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="39" selection-start="2058" selection-end="2058" vertical-scroll-proportion="0.5860869" vertical-offset="666" max-vertical-offset="2533">
+        <state line="89" column="92" selection-start="3390" selection-end="3390" vertical-scroll-proportion="0.39115646" vertical-offset="1045" max-vertical-offset="2057">
           <folding />
         </state>
       </provider>

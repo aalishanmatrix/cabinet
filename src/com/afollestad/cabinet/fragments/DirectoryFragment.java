@@ -379,7 +379,8 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.paste, cb.get().size());
+                        ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.paste,
+                                Utils.getTotalFileCount(cb.get()));
                         cb.performPaste(fragment, progress);
                     }
                 })
