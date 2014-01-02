@@ -47,7 +47,7 @@ public class File implements SilkComparable<File> {
     }
 
     public File(java.io.File file) {
-        mFile = new java.io.File(file.getAbsolutePath());
+        mFile = file;
     }
 
     private java.io.File mFile;
