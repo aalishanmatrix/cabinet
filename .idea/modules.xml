@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Silk/library/Silk.iml" filepath="$PROJECT_DIR$/../Silk/library/Silk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../SystemBarTint/library/SystemBarTint.iml" filepath="$PROJECT_DIR$/../SystemBarTint/library/SystemBarTint.iml" />
       <module fileurl="file://$PROJECT_DIR$/cabinet.iml" filepath="$PROJECT_DIR$/cabinet.iml" />
       <module fileurl="file://$PROJECT_DIR$/../root-commands/libraries/RootCommands/src/main/root-commands.iml" filepath="$PROJECT_DIR$/../root-commands/libraries/RootCommands/src/main/root-commands.iml" />
     </modules>
