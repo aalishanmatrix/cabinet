@@ -84,30 +84,26 @@ public class DirectoryCAB {
                     File fi = selectedFiles.get(0);
                     fragment.getAdapter().remove(fi);
                     File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
-                    if (fi.requiresRootAccess()) {
-                        try {
-                            fi.renameToAsRoot(newFile);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Utils.showErrorDialog(fragment.getActivity(), e);
-                            return;
-                        }
-                    } else fi.renameTo(newFile);
+                    try {
+                        fi.renameTo(newFile);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        Utils.showErrorDialog(fragment.getActivity(), e);
+                        return;
+                    }
                     fragment.getAdapter().update(newFile);
                     return;
                 }
                 for (File fi : selectedFiles) {
                     fragment.getAdapter().remove(fi);
                     File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
-                    if (fi.requiresRootAccess()) {
-                        try {
-                            fi.renameToAsRoot(newFile);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Utils.showErrorDialog(fragment.getActivity(), e);
-                            return;
-                        }
-                    } else fi.renameTo(newFile);
+                    try {
+                        fi.renameTo(newFile);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        Utils.showErrorDialog(fragment.getActivity(), e);
+                        return;
+                    }
                     fragment.getAdapter().update(newFile);
                 }
                 fragment.getAdapter().notifyDataSetChanged();
@@ -120,10 +116,10 @@ public class DirectoryCAB {
         shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
         shareIntent.setType("*/*");
         if (files.size() == 1) {
-            shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(files.get(0)));
+            shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(files.get(0).getFile()));
         } else {
             ArrayList<Uri> attachments = new ArrayList<Uri>();
-            for (File fi : files) attachments.add(Uri.fromFile(fi));
+            for (File fi : files) attachments.add(Uri.fromFile(fi.getFile()));
             shareIntent.putExtra(Intent.EXTRA_STREAM, attachments);
         }
         return Intent.createChooser(shareIntent, context.getString(R.string.send_using));
@@ -146,20 +142,18 @@ public class DirectoryCAB {
                             @Override
                             public void run() {
                                 for (int i = 0; i < selectedFiles.size(); i++) {
-                                    if (selectedFiles.get(i).requiresRootAccess()) {
-                                        try {
-                                            selectedFiles.get(i).deleteAsRoot();
-                                        } catch (final Exception e) {
-                                            e.printStackTrace();
-                                            fragment.runOnUiThread(new Runnable() {
-                                                @Override
-                                                public void run() {
-                                                    Utils.showErrorDialog(fragment.getActivity(), e);
-                                                }
-                                            });
-                                            break;
-                                        }
-                                    } else selectedFiles.get(i).delete();
+                                    try {
+                                        selectedFiles.get(i).delete();
+                                    } catch (final Exception e) {
+                                        e.printStackTrace();
+                                        fragment.runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Utils.showErrorDialog(fragment.getActivity(), e);
+                                            }
+                                        });
+                                        break;
+                                    }
                                     final int fi = i;
                                     fragment.runOnUiThread(new Runnable() {
                                         @Override
@@ -223,8 +217,15 @@ public class DirectoryCAB {
                 else if (!input.trim().endsWith(".zip"))
                     input = input.trim() + ".zip";
                 final File zipFile = new File(fragment.getPath(), input.trim());
-                final ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.zip,
-                        ZipUtils.getTotalFileCount(selectedFiles));
+                final ProgressDialog progress;
+                try {
+                    progress = Utils.showProgressDialog(fragment.getActivity(), R.string.zip,
+                            ZipUtils.getTotalFileCount(selectedFiles));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Utils.showErrorDialog(fragment.getActivity(), e);
+                    return;
+                }
                 new Thread(new Runnable() {
                     @Override
                     public void run() {

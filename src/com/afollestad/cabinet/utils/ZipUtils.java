@@ -34,7 +34,7 @@ public class ZipUtils {
         return findTopLevel(file.getParentFile(), location);
     }
 
-    private static int getTotalFileCount(File dir) {
+    private static int getTotalFileCount(File dir) throws Exception {
         if (dir.isDirectory()) {
             int count = 0;
             for (File fi : dir.listFiles())
@@ -44,7 +44,7 @@ public class ZipUtils {
         return 1;
     }
 
-    public static int getTotalFileCount(List<File> files) {
+    public static int getTotalFileCount(List<File> files) throws Exception {
         int count = 0;
         for (File fi : files)
             count += getTotalFileCount(fi);
@@ -55,7 +55,7 @@ public class ZipUtils {
         log("Zipping file: " + file.getAbsolutePath());
         byte[] readBuffer = new byte[BUFFER_SIZE];
         int bytesIn;
-        FileInputStream fis = new FileInputStream(file);
+        FileInputStream fis = new FileInputStream(file.getFile());
         ZipEntry anEntry = new ZipEntry(file.getAbsolutePath().substring(parent.getAbsolutePath().length()));
         zos.putNextEntry(anEntry);
         while ((bytesIn = fis.read(readBuffer)) != -1)
@@ -77,7 +77,7 @@ public class ZipUtils {
 
     public static File zip(List<File> files, File destination, ProgressCallback callback) throws Exception {
         destination = Utils.checkForExistence(destination, 0);
-        ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(destination));
+        ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(destination.getFile()));
         for (File f : files) {
             if (f.isDirectory()) zipDir(f, zos, f.getParentFile(), callback);
             else zip(f, zos, f.getParentFile(), callback);
@@ -90,7 +90,7 @@ public class ZipUtils {
         log("Unzipping '" + zipFile.getAbsolutePath() + "' to: " + destination.getAbsolutePath());
         List<File> added = new ArrayList<File>();
         if (!destination.isDirectory()) destination.mkdirs();
-        ZipInputStream zin = new ZipInputStream(new FileInputStream(zipFile));
+        ZipInputStream zin = new ZipInputStream(new FileInputStream(zipFile.getFile()));
         try {
             ZipEntry ze;
             while ((ze = zin.getNextEntry()) != null) {
@@ -99,7 +99,7 @@ public class ZipUtils {
                 file.getParentFile().mkdirs();
                 File topLevel = findTopLevel(file, destination);
                 if (!added.contains(topLevel)) added.add(topLevel);
-                FileOutputStream fout = new FileOutputStream(file, false);
+                FileOutputStream fout = new FileOutputStream(file.getFile(), false);
                 try {
                     byte data[] = new byte[BUFFER_SIZE];
                     int count;

@@ -66,7 +66,7 @@ public class Clipboard {
         }
     }
 
-    public boolean canPaste(File dest) {
+    public boolean canPaste(File dest) throws Exception {
         if (mClipboard.size() == 0) return false;
         // Remove no longer existing files from the clipboard and check for paradoxes
         for (File fi : mClipboard) {
@@ -91,14 +91,24 @@ public class Clipboard {
             public void run() {
                 for (int i = 0; i < mClipboard.size(); i++) {
                     final int index = i;
-                    final File newFile = copy(fragment.getActivity(), mClipboard.get(i), fragment.getPath(), mClipboardType == Clipboard.Type.CUT);
-                    fragment.runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            if (newFile != null) fragment.getAdapter().update(newFile);
-                            dialog.setProgress(index);
-                        }
-                    });
+                    try {
+                        final File newFile = copy(fragment.getActivity(), mClipboard.get(i), fragment.getPath(), mClipboardType == Clipboard.Type.CUT);
+                        fragment.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                if (newFile != null) fragment.getAdapter().update(newFile);
+                                dialog.setProgress(index);
+                            }
+                        });
+                    } catch (final Exception e) {
+                        e.printStackTrace();
+                        fragment.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Utils.showErrorDialog(fragment.getActivity(), e);
+                            }
+                        });
+                    }
                 }
 
                 fragment.runOnUiThread(new Runnable() {
@@ -122,11 +132,17 @@ public class Clipboard {
 
     private Toast toast;
 
-    private File copy(final Activity context, File src, File dst, boolean cut) {
+    private File copy(final Activity context, File src, File dst, boolean cut) throws Exception {
         log("Copying '" + src.getAbsolutePath() + "' to '" + dst.getAbsolutePath() + "'...");
         if (src.isDirectory()) {
             File newDir = Utils.checkForExistence(new File(dst, src.getName()), 0);
-            newDir.mkdir();
+            try {
+                newDir.mkdir();
+            } catch (Exception e) {
+                e.printStackTrace();
+                Utils.showErrorDialog(context, e);
+                return null;
+            }
             log("Created: " + newDir.getAbsolutePath());
             // Recursively copy the source directory into the new directory
             for (File fi : src.listFiles())
@@ -141,8 +157,8 @@ public class Clipboard {
         // Copy this file into the destination directory
         try {
             dst = Utils.checkForExistence(new File(dst, src.getName()), 0);
-            InputStream in = new FileInputStream(src);
-            OutputStream out = new FileOutputStream(dst);
+            InputStream in = new FileInputStream(src.getFile());
+            OutputStream out = new FileOutputStream(dst.getFile());
             byte[] buf = new byte[1024];
             int len;
             while ((len = in.read(buf)) > 0)

@@ -28,6 +28,7 @@ import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.file.File;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.utils.Shortcuts;
+import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.activities.SilkDrawerActivity;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 import org.sufficientlysecure.rootcommands.RootCommands;
@@ -230,12 +231,17 @@ public class MainActivity extends SilkDrawerActivity {
     private void selectItem(int position) {
         DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
         getDrawerLayout().closeDrawers();
-        if (item.getFile().exists()) {
-            boolean backStack = true;
-            if (item.getFile().isStorageDirectory())
-                backStack = false;
-            navigate(item.getFile(), backStack);
-        } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
+        try {
+            if (item.getFile().exists()) {
+                boolean backStack = true;
+                if (item.getFile().isStorageDirectory())
+                    backStack = false;
+                navigate(item.getFile(), backStack);
+            } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Utils.showErrorDialog(this, e);
+        }
     }
 
     public void addShortcut(File path) {

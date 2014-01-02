@@ -88,14 +88,13 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             @Override
             public void run() {
                 try {
-                    final File[] contents = mPath.requiresRootAccess() ? mPath.listFilesAsRoot() : mPath.listFiles();
+                    final File[] contents = mPath.listFiles();
                     Arrays.sort(contents, File.getComparator(getActivity()));
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
                             getAdapter().clear();
-                            for (java.io.File fi : contents)
-                                getAdapter().add(new File(fi));
+                            for (File fi : contents) getAdapter().add(fi);
                         }
                     });
                 } catch (final Exception e) {
@@ -222,7 +221,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             ((MainActivity) getActivity()).navigate(item, true);
         } else {
             if (mPickMode) {
-                getActivity().setResult(Activity.RESULT_OK, new Intent().setData(Uri.fromFile(item)));
+                getActivity().setResult(Activity.RESULT_OK, new Intent().setData(Uri.fromFile(item.getFile())));
                 getActivity().finish();
                 return;
             }
@@ -245,7 +244,12 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.fragment_directory, menu);
         menu.findItem(R.id.add_shortcut).setVisible(!Shortcuts.contains(getActivity(), mPath));
-        menu.findItem(R.id.paste).setVisible(App.get(getActivity()).getClipboard().canPaste(mPath));
+        try {
+            menu.findItem(R.id.paste).setVisible(App.get(getActivity()).getClipboard().canPaste(mPath));
+        } catch (Exception e) {
+            e.printStackTrace();
+            Utils.showErrorDialog(getActivity(), e);
+        }
 
         MenuItem sort = menu.findItem(R.id.sort);
         sort.setVisible(!((MainActivity) getActivity()).isDrawerOpen());
@@ -347,15 +351,11 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 if (name.isEmpty()) name = getActivity().getString(R.string.untitled);
                 File newFile = new File(mPath, name);
                 try {
-                    boolean result = true;
-                    if (newFile.requiresRootAccess()) {
-                        newFile.mkdirAsRoot();
-                    } else result = newFile.mkdir();
-                    if (result) {
-                        getAdapter().add(newFile);
-                        DirectoryCAB.resortFragmentList(DirectoryFragment.this);
-                    }
+                    newFile.mkdir();
+                    getAdapter().add(newFile);
+                    DirectoryCAB.resortFragmentList(DirectoryFragment.this);
                 } catch (Exception e) {
+                    e.printStackTrace();
                     Utils.showErrorDialog(getActivity(), e);
                 }
             }
@@ -384,8 +384,15 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        ProgressDialog progress = Utils.showProgressDialog(fragment.getActivity(), R.string.paste,
-                                Utils.getTotalFileCount(cb.get()));
+                        ProgressDialog progress = null;
+                        try {
+                            progress = Utils.showProgressDialog(fragment.getActivity(), R.string.paste,
+                                    Utils.getTotalFileCount(cb.get()));
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            Utils.showErrorDialog(getActivity(), e);
+                            return;
+                        }
                         cb.performPaste(fragment, progress);
                     }
                 })

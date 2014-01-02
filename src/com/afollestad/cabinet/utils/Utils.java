@@ -50,12 +50,12 @@ public class Utils {
                                     type = "*/*";
                                     break;
                             }
-                            Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item), type);
+                            Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item.getFile()), type);
                             context.startActivity(Intent.createChooser(intent, context.getString(R.string.open_with)));
                         }
                     }).show();
         } else {
-            Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item), type);
+            Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item.getFile()), type);
             context.startActivity(Intent.createChooser(intent, context.getString(R.string.open_with)));
         }
     }
@@ -66,14 +66,17 @@ public class Utils {
         if (!extension.trim().isEmpty()) extension = "." + extension;
         if (index > 0) newName += " (" + index + ")";
         File newFile = new File(file.getParentFile(), newName + extension);
-        if (newFile.exists()) {
-            return checkForExistence(file, ++index);
-        } else {
-            return newFile;
+        try {
+            if (newFile.exists()) {
+                return checkForExistence(file, ++index);
+            } else return newFile;
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        return null;
     }
 
-    public static int getTotalFileCount(File root) {
+    public static int getTotalFileCount(File root) throws Exception {
         if (root.isDirectory()) return 1;
         int count = 1;
         File[] files = root.listFiles();
@@ -84,7 +87,7 @@ public class Utils {
         return count;
     }
 
-    public static int getTotalFileCount(List<File> files) {
+    public static int getTotalFileCount(List<File> files) throws Exception {
         int count = 0;
         for (File fi : files) {
             if (fi.requiresRootAccess()) count++;
@@ -139,13 +142,13 @@ public class Utils {
                 }).show();
     }
 
-    public static boolean deleteRecursively(File file) {
+    public static boolean deleteRecursively(File file) throws Exception {
         boolean retVal = true;
         if (file.isDirectory()) {
             File[] files = file.listFiles();
             if (files != null) {
-                for (java.io.File f : files)
-                    retVal = retVal && deleteRecursively(new File(f));
+                for (File f : files)
+                    retVal = retVal && deleteRecursively(f);
             }
             retVal = retVal && file.deleteNonRecursive();
         } else retVal = file.deleteNonRecursive();
