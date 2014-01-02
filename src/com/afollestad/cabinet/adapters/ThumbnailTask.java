@@ -3,9 +3,9 @@ package com.afollestad.cabinet.adapters;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.widget.ImageView;
 import com.afollestad.cabinet.R;
@@ -16,7 +16,7 @@ import com.afollestad.cabinet.file.File;
  *
  * @author Aidan Follestad (afollestad)
  */
-class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
+class ThumbnailTask extends AsyncTask<File, Void, Drawable> {
 
     public static class ViewHolder {
         public ImageView thumbnail;
@@ -36,22 +36,22 @@ class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
     }
 
     @Override
-    protected Bitmap doInBackground(File... params) {
+    protected Drawable doInBackground(File... params) {
         if (params.length == 0 || params[0] == null) return null;
         if (params[0].getMimeType().equals("application/vnd.android.package-archive")) {
             PackageManager pm = mContext.getPackageManager();
             PackageInfo pi = pm.getPackageArchiveInfo(params[0].getAbsolutePath(), 0);
             pi.applicationInfo.sourceDir = params[0].getAbsolutePath();
             pi.applicationInfo.publicSourceDir = params[0].getAbsolutePath();
-            return ((BitmapDrawable) pi.applicationInfo.loadIcon(pm)).getBitmap();
+            return pi.applicationInfo.loadIcon(pm);
         }
         return decodeFile(params[0], mDimen, mDimen);
     }
 
     @Override
-    protected void onPostExecute(Bitmap bitmap) {
+    protected void onPostExecute(Drawable drawable) {
         if (mHolder.position == mPosition)
-            mHolder.thumbnail.setImageBitmap(bitmap);
+            mHolder.thumbnail.setImageDrawable(drawable);
     }
 
     private int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
@@ -71,7 +71,7 @@ class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
         return inSampleSize;
     }
 
-    private Bitmap decodeFile(File file, int reqWidth, int reqHeight) {
+    private Drawable decodeFile(File file, int reqWidth, int reqHeight) {
         // First decode with inJustDecodeBounds=true to check dimensions
         final BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
@@ -81,6 +81,6 @@ class ThumbnailTask extends AsyncTask<File, Void, Bitmap> {
         // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
         options.inPurgeable = true;
-        return BitmapFactory.decodeFile(file.getAbsolutePath(), options);
+        return new BitmapDrawable(mContext.getResources(), BitmapFactory.decodeFile(file.getAbsolutePath(), options));
     }
 }
