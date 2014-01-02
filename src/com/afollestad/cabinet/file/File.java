@@ -182,13 +182,6 @@ public class File implements SilkComparable<File> {
     }
 
     public boolean exists() throws Exception {
-        if (requiresRootAccess()) {
-            Shell shell = Shell.startRootShell();
-            Toolbox tb = new Toolbox(shell);
-            boolean exists = tb.fileExists(mFile.getAbsolutePath());
-            shell.close();
-            return exists;
-        }
         return mFile.exists();
     }
 

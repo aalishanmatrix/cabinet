@@ -28,13 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -98,7 +92,29 @@
     <favorites_list name="Cabinet" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="234" column="33" selection-start="9500" selection-end="9500" vertical-scroll-proportion="0.0" vertical-offset="2800" max-vertical-offset="4148">
+              <folding>
+                <element signature="e#8301#8519#0" expanded="true" />
+                <element signature="e#8508#8509#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="183" column="46" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.3622449" vertical-offset="2575" max-vertical-offset="4148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -164,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
       </list>
     </option>
   </component>
@@ -258,6 +274,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -578,7 +616,7 @@
       <workItem from="1388426650113" duration="568000" />
       <workItem from="1388427255926" duration="1780000" />
       <workItem from="1388436703130" duration="30000" />
-      <workItem from="1388620554080" duration="3145000" />
+      <workItem from="1388620554080" duration="3291000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1796,7 +1834,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23583000" />
+    <option name="totallyTimeSpent" value="23729000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1820,7 +1858,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1842,7 +1880,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21978852" sideWeight="0.5699659" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21978852" sideWeight="0.5699659" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42833877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2222,13 +2260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="16" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.83843535" vertical-offset="510" max-vertical-offset="4267">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/HighLowSizeComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="6" selection-start="182" selection-end="182" vertical-scroll-proportion="0.20238096" vertical-offset="0" max-vertical-offset="588">
@@ -2245,10 +2276,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="41" selection-start="9902" selection-end="9902" vertical-scroll-proportion="0.45565218" vertical-offset="2951" max-vertical-offset="4063">
+        <state line="234" column="33" selection-start="9500" selection-end="9500" vertical-scroll-proportion="0.0" vertical-offset="2902" max-vertical-offset="4148">
           <folding>
-            <element signature="e#9741#9766#0" expanded="true" />
+            <element signature="e#8301#8519#0" expanded="true" />
+            <element signature="e#8508#8509#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="46" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.3622449" vertical-offset="2575" max-vertical-offset="4148">
+          <folding />
         </state>
       </provider>
     </entry>
