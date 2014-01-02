@@ -28,6 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -92,11 +93,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="234" column="33" selection-start="9500" selection-end="9500" vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="5066">
-              <folding />
+            <state line="153" column="12" selection-start="5846" selection-end="5846" vertical-scroll-proportion="0.40338984" vertical-offset="1700" max-vertical-offset="4148">
+              <folding>
+                <element signature="e#4329#4347#0" expanded="true" />
+                <element signature="e#6930#6950#0" expanded="true" />
+                <element signature="e#6980#7007#0" expanded="true" />
+                <element signature="e#7082#7094#0" expanded="true" />
+                <element signature="e#7526#7548#0" expanded="true" />
+                <element signature="e#7790#7801#0" expanded="true" />
+                <element signature="e#10052#10077#0" expanded="true" />
+                <element signature="e#10603#10635#0" expanded="true" />
+                <element signature="e#10760#10784#0" expanded="true" />
+                <element signature="e#10814#10857#0" expanded="true" />
+                <element signature="e#10950#10962#0" expanded="true" />
+                <element signature="e#11361#11376#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,27 +118,29 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="47" selection-start="4525" selection-end="4525" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="6579">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="56" selection-start="461" selection-end="461" vertical-scroll-proportion="0.23129252" vertical-offset="34" max-vertical-offset="765">
+            <state line="190" column="58" selection-start="6682" selection-end="6682" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="6052">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
+      <file leaf-file-name="prefs_files.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/xml/prefs_files.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="46" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.0" vertical-offset="3111" max-vertical-offset="4471">
+            <state line="6" column="51" selection-start="415" selection-end="415" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="238">
+              <folding>
+                <element signature="e#188#215#0" expanded="false" />
+                <element signature="e#258#288#0" expanded="false" />
+                <element signature="e#332#363#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="56" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -133,7 +149,25 @@
       <file leaf-file-name="FileAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="25" selection-start="3923" selection-end="3923" vertical-scroll-proportion="0.0" vertical-offset="1819" max-vertical-offset="2159">
+            <state line="30" column="56" selection-start="1109" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="183" column="46" selection-start="5773" selection-end="5773" vertical-scroll-proportion="0.0" vertical-offset="3111" max-vertical-offset="4148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawerAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
@@ -202,11 +236,11 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
         <option value="$PROJECT_DIR$/res/drawable/item_selector.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -242,6 +276,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,7 +306,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,36 +324,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cabinet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cabinet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
+              <option name="myItemId" value="adapters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,14 +383,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.cabinet">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -375,6 +391,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -408,8 +432,17 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -440,17 +473,8 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -588,7 +612,8 @@
       <workItem from="1388436703130" duration="30000" />
       <workItem from="1388620554080" duration="3442000" />
       <workItem from="1388629232520" duration="1527000" />
-      <workItem from="1388635595730" duration="327000" />
+      <workItem from="1388635595730" duration="1013000" />
+      <workItem from="1388639750930" duration="141000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1806,7 +1831,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25734000" />
+    <option name="totallyTimeSpent" value="26561000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1837,6 +1862,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262987" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22651514" sideWeight="0.4416" order="2" side_tool="true" content_ui="tabs" />
@@ -1847,7 +1873,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31655845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48701298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1861,7 +1887,6 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1913,11 +1938,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/ic_copy_dark.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/BasePreferenceFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="37" selection-start="543" selection-end="543" vertical-scroll-proportion="0.37585035" vertical-offset="0" max-vertical-offset="588" />
@@ -1936,11 +1956,6 @@
         <state line="34" column="119" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.45470694" vertical-offset="322" max-vertical-offset="1309">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/prefs_files.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="415" selection-end="415" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/FilesFragment.java">
@@ -2079,9 +2094,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="124" selection-start="211" selection-end="211" vertical-scroll-proportion="0.13152805" vertical-offset="0" max-vertical-offset="517">
-          <folding />
-        </state>
+        <state line="4" column="124" selection-start="211" selection-end="211" vertical-scroll-proportion="0.13152805" vertical-offset="0" max-vertical-offset="517" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/fragments/list/SilkListFragment.java">
@@ -2106,9 +2119,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="663">
-          <folding />
-        </state>
+        <state line="10" column="57" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/pressed_background.xml">
@@ -2118,9 +2129,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/item_selector.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="85" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="6" column="85" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
@@ -2199,9 +2208,34 @@
         <state line="7" column="6" selection-start="182" selection-end="182" vertical-scroll-proportion="0.20238096" vertical-offset="0" max-vertical-offset="588" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="33" selection-start="9500" selection-end="9500" vertical-scroll-proportion="0.0" vertical-offset="2902" max-vertical-offset="4148">
+        <state line="17" column="0" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5115044" vertical-offset="0" max-vertical-offset="565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="56" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/prefs_files.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="415" selection-end="415" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="238">
+          <folding>
+            <element signature="e#188#215#0" expanded="false" />
+            <element signature="e#258#288#0" expanded="false" />
+            <element signature="e#332#363#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="58" selection-start="6682" selection-end="6682" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="6052">
           <folding />
         </state>
       </provider>
@@ -2213,33 +2247,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="25" selection-start="3923" selection-end="3923" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1972">
+        <state line="30" column="56" selection-start="1109" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="603" selection-end="603" vertical-scroll-proportion="0.5115044" vertical-offset="0" max-vertical-offset="565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="47" selection-start="4525" selection-end="4525" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="6579">
+        <state line="153" column="12" selection-start="5846" selection-end="5846" vertical-scroll-proportion="0.40338984" vertical-offset="1700" max-vertical-offset="4148">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4329#4347#0" expanded="true" />
+            <element signature="e#6930#6950#0" expanded="true" />
+            <element signature="e#6980#7007#0" expanded="true" />
+            <element signature="e#7082#7094#0" expanded="true" />
+            <element signature="e#7526#7548#0" expanded="true" />
+            <element signature="e#7790#7801#0" expanded="true" />
+            <element signature="e#10052#10077#0" expanded="true" />
+            <element signature="e#10603#10635#0" expanded="true" />
+            <element signature="e#10760#10784#0" expanded="true" />
+            <element signature="e#10814#10857#0" expanded="true" />
+            <element signature="e#10950#10962#0" expanded="true" />
+            <element signature="e#11361#11376#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="56" selection-start="461" selection-end="461" vertical-scroll-proportion="0.23129252" vertical-offset="34" max-vertical-offset="765">
-          <folding />
         </state>
       </provider>
     </entry>

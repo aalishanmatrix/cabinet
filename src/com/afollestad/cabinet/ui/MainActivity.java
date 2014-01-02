@@ -42,6 +42,7 @@ public class MainActivity extends SilkDrawerActivity {
     private boolean mPickMode;
     private int mBaseTheme;
     private int mThemeColor;
+    private boolean mShowHiddenFiles;
 
     public static void setInsets(Activity context, View view) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) return;
@@ -129,6 +130,7 @@ public class MainActivity extends SilkDrawerActivity {
         mBaseTheme = getCabinetBaseTheme(this);
         setTheme(mBaseTheme);
         mThemeColor = getCabinetThemeColor(this);
+        mShowHiddenFiles = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("show_hidden_files", false);
         super.onCreate(savedInstanceState);
         if (mThemeColor != 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
 
@@ -147,7 +149,10 @@ public class MainActivity extends SilkDrawerActivity {
         super.onResume();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (rootEnabled != prefs.getBoolean("root_enabled", false)) recreate();
-        else if (mBaseTheme != getCabinetBaseTheme(this) || mThemeColor != getCabinetThemeColor(this)) recreate();
+        else if (mBaseTheme != getCabinetBaseTheme(this) || mThemeColor != getCabinetThemeColor(this) ||
+                mShowHiddenFiles != PreferenceManager.getDefaultSharedPreferences(this).getBoolean("show_hidden_files", false)) {
+            recreate();
+        }
     }
 
     public void navigate(File directory, boolean backStack) {
