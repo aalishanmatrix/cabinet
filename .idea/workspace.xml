@@ -28,9 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/item_selector.xml" afterPath="$PROJECT_DIR$/res/drawable/item_selector.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -118,7 +115,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="184" selection-end="184" vertical-scroll-proportion="0.028911564" vertical-offset="34" max-vertical-offset="765">
+            <state line="10" column="56" selection-start="461" selection-end="461" vertical-scroll-proportion="0.23129252" vertical-offset="34" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -591,7 +588,7 @@
       <workItem from="1388436703130" duration="30000" />
       <workItem from="1388620554080" duration="3442000" />
       <workItem from="1388629232520" duration="1527000" />
-      <workItem from="1388635595730" duration="292000" />
+      <workItem from="1388635595730" duration="327000" />
     </task>
     <task id="LOCAL-00001" summary="Updates.">
       <created>1375206467347</created>
@@ -1809,7 +1806,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25699000" />
+    <option name="totallyTimeSpent" value="25734000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2241,7 +2238,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="184" selection-end="184" vertical-scroll-proportion="0.028911564" vertical-offset="34" max-vertical-offset="765">
+        <state line="10" column="56" selection-start="461" selection-end="461" vertical-scroll-proportion="0.23129252" vertical-offset="34" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
