@@ -71,6 +71,7 @@
     <string name="new_names">New name(s)</string>
 
     <string name="mounted_as_x">Mounted as {X}</string>
+    <string name="error">Error</string>
 
     <string name="open_as">Open as…</string>
     <string-array name="open_as_options">

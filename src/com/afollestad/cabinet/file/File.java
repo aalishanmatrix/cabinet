@@ -82,57 +82,41 @@ public class File extends java.io.File implements SilkComparable<File> {
         return type;
     }
 
-    public boolean mount() {
-        try {
-            Shell shell = Shell.startRootShell();
-            Toolbox tb = new Toolbox(shell);
-            boolean success = tb.remount(getAbsolutePath(), "rw");
-            shell.close();
-            return success;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    public boolean mount() throws Exception {
+        Shell shell = Shell.startRootShell();
+        Toolbox tb = new Toolbox(shell);
+        boolean success = tb.remount(getAbsolutePath(), "rw");
+        shell.close();
+        return success;
     }
 
-    public boolean unmount() {
-        try {
-            Shell shell = Shell.startRootShell();
-            Toolbox tb = new Toolbox(shell);
-            boolean success = tb.remount(getAbsolutePath(), "ro");
-            shell.close();
-            return success;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    public boolean unmount() throws Exception {
+        Shell shell = Shell.startRootShell();
+        Toolbox tb = new Toolbox(shell);
+        boolean success = tb.remount(getAbsolutePath(), "ro");
+        shell.close();
+        return success;
     }
 
-    public String getMountedAs() {
-        try {
-            Shell shell = Shell.startRootShell();
-            Toolbox tb = new Toolbox(shell);
-            String mountedAs = tb.getMountedAs(getAbsolutePath());
-            shell.close();
-            return mountedAs;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    public String getMountedAs() throws Exception {
+        Shell shell = Shell.startRootShell();
+        Toolbox tb = new Toolbox(shell);
+        String mountedAs = tb.getMountedAs(getAbsolutePath());
+        shell.close();
+        return mountedAs;
     }
 
-    boolean runAsRoot(String cmd) {
+    void runAsRoot(String cmd) throws Exception {
         Log.d("runAsRoot", cmd);
-        if (!RootCommands.rootAccessGiven()) return false;
-        try {
-            Shell shell = Shell.startRootShell();
-            SimpleCommand lsApp = new SimpleCommand(cmd);
-            shell.add(lsApp).waitForFinish();
-            shell.close();
-            if (lsApp.getExitCode() != 0)
-                throw new RuntimeException("Exit code " + lsApp.getExitCode() + ": " + lsApp.getOutput());
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
+        if (!RootCommands.rootAccessGiven()) {
+            throw new Exception("Root access denied.");
         }
+        Shell shell = Shell.startRootShell();
+        SimpleCommand lsApp = new SimpleCommand(cmd);
+        shell.add(lsApp).waitForFinish();
+        shell.close();
+        if (lsApp.getExitCode() != 0)
+            throw new Exception("Exit code " + lsApp.getExitCode() + ": " + lsApp.getOutput());
     }
 
     public static Comparator<File> getComparator(Context context) {
@@ -169,13 +153,6 @@ public class File extends java.io.File implements SilkComparable<File> {
 
     @Override
     public File[] listFiles() {
-        if (requiresRootAccess()) {
-            try {
-                return listFilesAsRoot();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }
         java.io.File[] files = super.listFiles();
         if (files == null || files.length == 0) return null;
         List<File> cabinets = new ArrayList<File>();
@@ -200,28 +177,12 @@ public class File extends java.io.File implements SilkComparable<File> {
 //        return super.exists();
 //    }
 
-    @Override
-    public boolean mkdir() {
-        if (requiresRootAccess()) {
-            return runAsRoot("mkdir " + getAbsolutePath());
-        }
-        return super.mkdir();
+    public void mkdirAsRoot() throws Exception {
+        runAsRoot("mkdir " + getAbsolutePath());
     }
 
-    @Override
-    public boolean mkdirs() {
-        if (requiresRootAccess()) {
-            return runAsRoot("mkdir -p " + getAbsolutePath());
-        }
-        return super.mkdirs();
-    }
-
-    @Override
-    public boolean renameTo(java.io.File newPath) {
-        if (requiresRootAccess()) {
-            return RootCommands.rootAccessGiven() && runAsRoot("mv \"" + getAbsolutePath() + "\" \"" + newPath.getAbsolutePath() + "\"");
-        }
-        return super.renameTo(newPath);
+    public void renameToAsRoot(java.io.File newPath) throws Exception {
+        runAsRoot("mv \"" + getAbsolutePath() + "\" \"" + newPath.getAbsolutePath() + "\"");
     }
 
     @Override
@@ -231,24 +192,21 @@ public class File extends java.io.File implements SilkComparable<File> {
 
     @Override
     public boolean delete() {
-        if (requiresRootAccess()) {
-            if (!RootCommands.rootAccessGiven()) return false;
-            String cmd = "rm";
-            if (isDirectory()) cmd += " -Rf";
-            else cmd += " -f";
-            return runAsRoot(cmd + " \"" + getAbsolutePath() + "\"");
-        }
         return Utils.deleteRecursively(this);
     }
 
+    public void deleteAsRoot() throws Exception {
+        String cmd = "rm";
+        if (isDirectory()) cmd += " -Rf";
+        else cmd += " -f";
+        runAsRoot(cmd + " \"" + getAbsolutePath() + "\"");
+    }
+
     public boolean deleteNonRecursive() {
-        if (requiresRootAccess()) {
-            return RootCommands.rootAccessGiven() && runAsRoot("rm -f \"" + getAbsolutePath() + "\"");
-        }
         return super.delete();
     }
 
-    private File[] listFilesAsRoot() throws Exception {
+    public File[] listFilesAsRoot() throws Exception {
         if (!RootCommands.rootAccessGiven()) throw new Exception("Root access denied");
         List<File> files = new ArrayList<File>();
         Shell shell = Shell.startRootShell();

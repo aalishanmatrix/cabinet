@@ -84,14 +84,30 @@ public class DirectoryCAB {
                     File fi = selectedFiles.get(0);
                     fragment.getAdapter().remove(fi);
                     File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
-                    fi.renameTo(newFile);
+                    if (fi.requiresRootAccess()) {
+                        try {
+                            fi.renameToAsRoot(newFile);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            Utils.showErrorDialog(fragment.getActivity(), e);
+                            return;
+                        }
+                    } else fi.renameTo(newFile);
                     fragment.getAdapter().update(newFile);
                     return;
                 }
                 for (File fi : selectedFiles) {
                     fragment.getAdapter().remove(fi);
                     File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
-                    fi.renameTo(newFile);
+                    if (fi.requiresRootAccess()) {
+                        try {
+                            fi.renameToAsRoot(newFile);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            Utils.showErrorDialog(fragment.getActivity(), e);
+                            return;
+                        }
+                    } else fi.renameTo(newFile);
                     fragment.getAdapter().update(newFile);
                 }
                 fragment.getAdapter().notifyDataSetChanged();
@@ -130,7 +146,20 @@ public class DirectoryCAB {
                             @Override
                             public void run() {
                                 for (int i = 0; i < selectedFiles.size(); i++) {
-                                    selectedFiles.get(i).delete();
+                                    if (selectedFiles.get(i).requiresRootAccess()) {
+                                        try {
+                                            selectedFiles.get(i).deleteAsRoot();
+                                        } catch (final Exception e) {
+                                            e.printStackTrace();
+                                            fragment.runOnUiThread(new Runnable() {
+                                                @Override
+                                                public void run() {
+                                                    Utils.showErrorDialog(fragment.getActivity(), e);
+                                                }
+                                            });
+                                            break;
+                                        }
+                                    } else selectedFiles.get(i).delete();
                                     final int fi = i;
                                     fragment.runOnUiThread(new Runnable() {
                                         @Override

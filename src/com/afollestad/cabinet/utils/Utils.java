@@ -107,6 +107,17 @@ public class Utils {
         return progress;
     }
 
+    public static void showErrorDialog(Activity context, Exception error) {
+        new AlertDialog.Builder(context).setTitle(R.string.error)
+                .setMessage(error.getMessage())
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                }).show();
+    }
+
     public static void showInputDialog(Activity activity, int title, int hint, String prefillInput, final InputCallback callback) {
         View view = activity.getLayoutInflater().inflate(R.layout.input_edit_text, null);
         final SilkEditText input = (SilkEditText) view.findViewById(R.id.input);

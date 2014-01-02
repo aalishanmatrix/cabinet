@@ -88,7 +88,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             @Override
             public void run() {
                 try {
-                    final File[] contents = mPath.listFiles();
+                    final File[] contents = mPath.requiresRootAccess() ? mPath.listFilesAsRoot() : mPath.listFiles();
                     Arrays.sort(contents, File.getComparator(getActivity()));
                     runOnUiThread(new Runnable() {
                         @Override
@@ -98,7 +98,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                                 getAdapter().add(new File(fi));
                         }
                     });
-                } catch (final RuntimeException e) {
+                } catch (final Exception e) {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -119,7 +119,13 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     }
 
     private boolean isMounted() {
-        return !getPath().getMountedAs().equalsIgnoreCase("ro");
+        try {
+            return !getPath().getMountedAs().equalsIgnoreCase("ro");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Utils.showErrorDialog(getActivity(), e);
+        }
+        return false;
     }
 
     @Override
@@ -137,7 +143,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     private void setupCab(AbsListView listView) {
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
         listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
-
             private List<File> getSelectedFiles() {
                 List<File> files = new ArrayList<File>();
                 int len = getListView().getCount();
@@ -267,7 +272,12 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         if (getPath().requiresRootAccess()) {
             mount.setVisible(true);
             mount.setIcon(isMounted() ? resolveDrawable(R.attr.ic_lock) : resolveDrawable(R.attr.ic_unlock));
-            mount.setTitle(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()));
+            try {
+                mount.setTitle(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()));
+            } catch (Exception e) {
+                e.printStackTrace();
+                Utils.showErrorDialog(getActivity(), e);
+            }
         } else mount.setVisible(false);
 
         super.onCreateOptionsMenu(menu, inflater);
@@ -284,11 +294,16 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.mountDir:
-                if (isMounted()) {
-                    getPath().unmount();
-                } else getPath().mount();
-                Toast.makeText(getActivity(), getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()), Toast.LENGTH_SHORT).show();
-                getActivity().invalidateOptionsMenu();
+                try {
+                    if (isMounted()) {
+                        getPath().unmount();
+                    } else getPath().mount();
+                    Toast.makeText(getActivity(), getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()), Toast.LENGTH_SHORT).show();
+                    getActivity().invalidateOptionsMenu();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Utils.showErrorDialog(getActivity(), e);
+                }
                 return true;
             case R.id.add_shortcut:
                 MainActivity activity = (MainActivity) getActivity();
@@ -331,9 +346,17 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             public void onSubmit(String name) {
                 if (name.isEmpty()) name = getActivity().getString(R.string.untitled);
                 File newFile = new File(mPath, name);
-                if (newFile.mkdir()) {
-                    getAdapter().add(newFile);
-                    DirectoryCAB.resortFragmentList(DirectoryFragment.this);
+                try {
+                    boolean result = true;
+                    if (newFile.requiresRootAccess()) {
+                        newFile.mkdirAsRoot();
+                    } else result = newFile.mkdir();
+                    if (result) {
+                        getAdapter().add(newFile);
+                        DirectoryCAB.resortFragmentList(DirectoryFragment.this);
+                    }
+                } catch (Exception e) {
+                    Utils.showErrorDialog(getActivity(), e);
                 }
             }
         });
