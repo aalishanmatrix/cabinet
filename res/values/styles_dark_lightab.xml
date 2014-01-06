@@ -3,6 +3,7 @@
 
     <style name="Cabinet.Light.DarkActionBar" parent="@style/Theme.CabinetParentLightDarkAb">
         <item name="android:actionModeBackground">@null</item>
+        <item name="item_selector">@drawable/item_selector</item>
 
         <item name="ic_audio">@drawable/ic_audio_dark</item>
         <item name="ic_file">@drawable/ic_file_dark</item>

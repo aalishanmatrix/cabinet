@@ -2,30 +2,9 @@
 <resources>
 
     <style name="Cabinet.Black" parent="@style/Cabinet">
-        <item name="android:actionBarItemBackground">@drawable/item_selector</item>
-        <item name="android:popupMenuStyle">@style/PopupMenu.Cabinetblack</item>
-        <item name="android:actionBarStyle">@style/ActionBar.Solid.Cabinetblack</item>
-        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Cabinetblack</item>
         <item name="android:windowBackground">@android:color/black</item>
         <item name="android:colorBackground">@android:color/black</item>
         <item name="status_tint">@android:color/black</item>
-    </style>
-
-    <style name="ActionBar.Solid.Cabinetblack" parent="@android:style/Widget.Holo.ActionBar.Solid">
-        <item name="android:background">@drawable/ab_solid_cabinetblack</item>
-    </style>
-
-    <style name="PopupMenu.Cabinetblack" parent="@android:style/Widget.Holo.ListPopupWindow">
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_cabinetblack</item>
-    </style>
-
-    <style name="ActionButton.CloseMode.Cabinetblack" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
-        <item name="android:background">@drawable/btn_cab_done_cabinetblack</item>
-    </style>
-
-    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
-    <style name="Theme.Cabinetblack.Widget" parent="@android:style/Theme.Holo">
-        <item name="android:popupMenuStyle">@style/PopupMenu.Cabinetblack</item>
     </style>
 
 </resources>

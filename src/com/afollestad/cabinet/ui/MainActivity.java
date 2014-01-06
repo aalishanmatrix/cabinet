@@ -84,8 +84,11 @@ public class MainActivity extends SilkDrawerActivity {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String color = prefs.getString("theme_color", "0");
         if (color.equals("0")) {
-            if (prefs.getString("base_theme", "0").equals("2"))
+            String baseTheme = prefs.getString("base_theme", "0");
+            if (baseTheme.equals("2"))
                 color = "#2d2d2d";
+            else if (baseTheme.equals("3"))
+                color = "#000000";
             else return 0;
         }
         return Color.parseColor(color);

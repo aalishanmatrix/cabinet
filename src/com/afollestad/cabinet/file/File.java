@@ -253,6 +253,6 @@ public class File implements SilkComparable<File> {
 
     @Override
     public boolean equalTo(File other) {
-        return mFile.getAbsolutePath().equals(mFile.getAbsolutePath());
+        return mFile.getAbsolutePath().equals(other.getAbsolutePath());
     }
 }

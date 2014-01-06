@@ -22,4 +22,6 @@
 
     <attr name="status_tint" format="color"/>
 
+    <attr name="item_selector" format="reference"/>
+
 </resources>

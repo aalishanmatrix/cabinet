@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="pressed_cabinet">#CC33B5E5</color>
-    <color name="pressed_cabinetblack">#CC33B5E5</color>
     <color name="secondary_text_dark">#6000</color>
     <color name="drawer_background_light">#FFFFFF</color>
-    <color name="drawer_background_dark">#3A3A3C</color>
+    <color name="drawer_background_dark">#303030</color>
     <color name="window_background_gray">#303030</color>
 
     <color name="statusbar_gray">#2D2D2D</color>
@@ -13,5 +11,6 @@
     <color name="statusbar_lightdarkab">#222222</color>
 
     <color name="item_pressed">#CFCFCF</color>
+    <color name="item_pressed_dark">#3A3B3C</color>
 
 </resources>

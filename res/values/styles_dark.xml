@@ -3,6 +3,7 @@
 
     <style name="Cabinet" parent="@style/Theme.CabinetParent">
         <item name="android:actionModeBackground">@null</item>
+        <item name="item_selector">@drawable/item_selector_dark</item>
 
         <item name="ic_audio">@drawable/ic_audio_light</item>
         <item name="ic_file">@drawable/ic_file_light</item>
