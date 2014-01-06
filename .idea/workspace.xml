@@ -28,32 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/item_selector_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/pressed_background_dark.xml" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\ab_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\btn_cab_done_default_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\btn_cab_done_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi\btn_cab_done_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\ab_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\btn_cab_done_default_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\btn_cab_done_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-mdpi\btn_cab_done_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\ab_solid_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\btn_cab_done_default_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\btn_cab_done_focused_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable-xhdpi\btn_cab_done_pressed_cabinetblack.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aidan\My Projects\cabinet\res\drawable\btn_cab_done_cabinetblack.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/attrs.xml" afterPath="$PROJECT_DIR$/res/values/attrs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cabinet.iml" afterPath="$PROJECT_DIR$/cabinet.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_item_file.xml" afterPath="$PROJECT_DIR$/res/layout/list_item_file.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_black.xml" afterPath="$PROJECT_DIR$/res/values/styles_black.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" afterPath="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles_light.xml" afterPath="$PROJECT_DIR$/res/values/styles_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -127,10 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="51" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.79761904" vertical-offset="3543" max-vertical-offset="4148">
+            <state line="255" column="51" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.0" vertical-offset="3543" max-vertical-offset="4148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -211,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/res/drawable/item_selector.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/drawable/pressed_background_dark.xml" />
@@ -224,6 +207,7 @@
         <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1822,7 +1806,11 @@
       <created>1388427910864</created>
       <updated>1388427910864</updated>
     </task>
-    <option name="localTasksCounter" value="304" />
+    <task id="LOCAL-00304" summary="Theming improvements and bug fix.">
+      <created>1389034384701</created>
+      <updated>1389034384701</updated>
+    </task>
+    <option name="localTasksCounter" value="305" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1899,7 +1887,6 @@
       <TodoPanelSettings />
     </option>
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
-    <MESSAGE value="Updates" />
     <MESSAGE value="Version update." />
     <MESSAGE value="Fixes" />
     <MESSAGE value="Begun updating for 4.4." />
@@ -1924,7 +1911,8 @@
     <MESSAGE value="Fixes.&#10;" />
     <MESSAGE value="Version increment." />
     <MESSAGE value="Updated list selectors to de-blue for KitKat." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated list selectors to de-blue for KitKat." />
+    <MESSAGE value="Theming improvements and bug fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="Theming improvements and bug fix." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2065,13 +2053,6 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="83" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.4962963" vertical-offset="123" max-vertical-offset="663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png">
@@ -2251,7 +2232,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="51" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.79761904" vertical-offset="3543" max-vertical-offset="4148">
+        <state line="255" column="51" selection-start="8345" selection-end="8345" vertical-scroll-proportion="0.0" vertical-offset="3543" max-vertical-offset="4148">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
