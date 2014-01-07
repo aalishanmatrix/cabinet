@@ -246,10 +246,7 @@ public class MainActivity extends SilkDrawerActivity {
         getDrawerLayout().closeDrawers();
         try {
             if (item.getFile().exists()) {
-                boolean backStack = true;
-                if (item.getFile().isStorageDirectory())
-                    backStack = false;
-                navigate(item.getFile(), backStack);
+                navigate(item.getFile(), !item.getFile().isStorageDirectory());
             } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();

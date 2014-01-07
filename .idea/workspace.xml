@@ -27,9 +27,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="Bug fix to adapters not getting updated theme context when the activity recreates after the previous pull requests.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cabinet.apk" afterPath="$PROJECT_DIR$/cabinet.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -125,7 +123,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="291" column="31" selection-start="12032" selection-end="12032" vertical-scroll-proportion="0.84074074" vertical-offset="3700" max-vertical-offset="4267">
+            <state line="247" column="42" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.059964728" vertical-offset="3247" max-vertical-offset="4216">
               <folding>
                 <element signature="e#4510#4528#0" expanded="true" />
                 <element signature="e#7294#7314#0" expanded="true" />
@@ -133,12 +131,12 @@
                 <element signature="e#7446#7458#0" expanded="true" />
                 <element signature="e#7890#7912#0" expanded="true" />
                 <element signature="e#8154#8165#0" expanded="true" />
-                <element signature="e#10416#10441#0" expanded="true" />
-                <element signature="e#10967#10999#0" expanded="true" />
-                <element signature="e#11124#11148#0" expanded="true" />
-                <element signature="e#11178#11221#0" expanded="true" />
-                <element signature="e#11314#11326#0" expanded="true" />
-                <element signature="e#11725#11740#0" expanded="true" />
+                <element signature="e#10305#10330#0" expanded="true" />
+                <element signature="e#10856#10888#0" expanded="true" />
+                <element signature="e#11013#11037#0" expanded="true" />
+                <element signature="e#11067#11110#0" expanded="true" />
+                <element signature="e#11203#11215#0" expanded="true" />
+                <element signature="e#11614#11629#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1835,7 +1833,11 @@
       <created>1389132601997</created>
       <updated>1389132601997</updated>
     </task>
-    <option name="localTasksCounter" value="308" />
+    <task id="LOCAL-00308" summary="Bug fix to adapters not getting updated theme context when the activity recreates after the previous pull requests.">
+      <created>1389134596877</created>
+      <updated>1389134596877</updated>
+    </task>
+    <option name="localTasksCounter" value="309" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1877,7 +1879,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31433225" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48371336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48371336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2250,7 +2252,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="31" selection-start="12032" selection-end="12032" vertical-scroll-proportion="0.84074074" vertical-offset="3700" max-vertical-offset="4267">
+        <state line="247" column="42" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.059964728" vertical-offset="3247" max-vertical-offset="4216">
           <folding>
             <element signature="e#4510#4528#0" expanded="true" />
             <element signature="e#7294#7314#0" expanded="true" />
@@ -2258,12 +2260,12 @@
             <element signature="e#7446#7458#0" expanded="true" />
             <element signature="e#7890#7912#0" expanded="true" />
             <element signature="e#8154#8165#0" expanded="true" />
-            <element signature="e#10416#10441#0" expanded="true" />
-            <element signature="e#10967#10999#0" expanded="true" />
-            <element signature="e#11124#11148#0" expanded="true" />
-            <element signature="e#11178#11221#0" expanded="true" />
-            <element signature="e#11314#11326#0" expanded="true" />
-            <element signature="e#11725#11740#0" expanded="true" />
+            <element signature="e#10305#10330#0" expanded="true" />
+            <element signature="e#10856#10888#0" expanded="true" />
+            <element signature="e#11013#11037#0" expanded="true" />
+            <element signature="e#11067#11110#0" expanded="true" />
+            <element signature="e#11203#11215#0" expanded="true" />
+            <element signature="e#11614#11629#0" expanded="true" />
           </folding>
         </state>
       </provider>
