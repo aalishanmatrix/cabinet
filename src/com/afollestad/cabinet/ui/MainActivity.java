@@ -142,7 +142,10 @@ public class MainActivity extends SilkDrawerActivity {
             populateDrawer();
         }
         mPickMode = processIntent();
-        navigate(new File(Environment.getExternalStorageDirectory()), false);
+
+        if (savedInstanceState == null) {
+            navigate(new File(Environment.getExternalStorageDirectory()), false);
+        }
 
         setupTransparentTints(this);
     }
