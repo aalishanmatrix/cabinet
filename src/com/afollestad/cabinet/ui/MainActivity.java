@@ -30,6 +30,7 @@ import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.activities.SilkDrawerActivity;
+import com.afollestad.silk.fragments.list.SilkListFragment;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 import org.sufficientlysecure.rootcommands.RootCommands;
 
@@ -145,8 +146,9 @@ public class MainActivity extends SilkDrawerActivity {
 
         if (savedInstanceState == null) {
             navigate(new File(Environment.getExternalStorageDirectory()), false);
+        } else {
+            ((SilkListFragment) getFragmentManager().findFragmentById(R.id.content_frame)).recreateAdapter();
         }
-
         setupTransparentTints(this);
     }
 
