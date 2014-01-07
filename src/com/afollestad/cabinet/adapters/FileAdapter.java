@@ -78,9 +78,11 @@ public class FileAdapter extends SilkAdapter<File> {
         String detailsStr = item.getSizeString(getContext());
         if (!item.isDirectory()) {
             if (mime != null) {
-                detailsStr += " — " + mime;
+                detailsStr += " \u2014 " + mime;
             } else if (item.getExtension() != null && !item.getExtension().trim().isEmpty()) {
-                detailsStr += " — " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
+                detailsStr += " \u2014 "
+                        + getContext().getString(R.string.manual_mime).replace("{extension}",
+                                item.getExtension());
             }
         }
         details.setText(detailsStr);
