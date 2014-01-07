@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.text.Html;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.view.ActionMode;
 import android.view.Gravity;
 import android.widget.Toast;
@@ -74,41 +75,59 @@ public class DirectoryCAB {
         return true;
     }
 
-    private static void performRename(final DirectoryFragment fragment, final List<File> selectedFiles) {
-        Utils.showInputDialog(fragment.getActivity(), R.string.rename, R.string.new_names, null, new Utils.InputCallback() {
-            @Override
-            public void onSubmit(String input) {
-                if (input == null || input.trim().isEmpty()) return;
-                input = input.trim();
-                if (selectedFiles.size() == 1) {
-                    File fi = selectedFiles.get(0);
-                    fragment.getAdapter().remove(fi);
-                    File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
-                    try {
-                        fi.renameTo(newFile);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        Utils.showErrorDialog(fragment.getActivity(), e);
-                        return;
+    private static void performRename(final DirectoryFragment fragment,
+            final List<File> selectedFiles) {
+        Utils.showInputDialog(fragment.getActivity(), R.string.rename, R.string.new_names, null,
+                new Utils.InputCallback() {
+                    @Override
+                    public void onSubmit(String input) {
+                        if (input == null || input.trim().isEmpty()) {
+                            return;
+                        }
+                        input = input.trim();
+                        if (selectedFiles.size() == 1) {
+                            final File fi = selectedFiles.get(0);
+                            fragment.getAdapter().remove(fi);
+
+                            final String ext = fi.getExtension();
+                            if (!TextUtils.isEmpty(ext)) {
+                                input += "." + ext;
+                            }
+
+                            final File newFile = Utils.checkForExistence(
+                                    new File(fi.getParentFile(), input), 0);
+                            try {
+                                fi.renameTo(newFile);
+                            } catch (final Exception e) {
+                                e.printStackTrace();
+                                Utils.showErrorDialog(fragment.getActivity(), e);
+                                return;
+                            }
+                            fragment.getAdapter().update(newFile);
+                            return;
+                        }
+                        for (final File fi : selectedFiles) {
+                            fragment.getAdapter().remove(fi);
+
+                            final String ext = fi.getExtension();
+                            if (!TextUtils.isEmpty(ext)) {
+                                input += "." + ext;
+                            }
+
+                            final File newFile = Utils.checkForExistence(
+                                    new File(fi.getParentFile(), input), 0);
+                            try {
+                                fi.renameTo(newFile);
+                            } catch (final Exception e) {
+                                e.printStackTrace();
+                                Utils.showErrorDialog(fragment.getActivity(), e);
+                                return;
+                            }
+                            fragment.getAdapter().update(newFile);
+                        }
+                        fragment.getAdapter().notifyDataSetChanged();
                     }
-                    fragment.getAdapter().update(newFile);
-                    return;
-                }
-                for (File fi : selectedFiles) {
-                    fragment.getAdapter().remove(fi);
-                    File newFile = Utils.checkForExistence(new File(fi.getParentFile(), input), 0);
-                    try {
-                        fi.renameTo(newFile);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        Utils.showErrorDialog(fragment.getActivity(), e);
-                        return;
-                    }
-                    fragment.getAdapter().update(newFile);
-                }
-                fragment.getAdapter().notifyDataSetChanged();
-            }
-        });
+                });
     }
 
     private static Intent getShareIntent(Activity context, List<File> files) {
