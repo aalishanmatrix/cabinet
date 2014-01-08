@@ -164,10 +164,13 @@ public class MainActivity extends SilkDrawerActivity {
     }
 
     public void navigate(File directory, boolean backStack) {
-        FragmentTransaction trans = getFragmentManager().beginTransaction();
-        trans.replace(R.id.content_frame, new DirectoryFragment(directory, mPickMode));
-        if (backStack) trans.addToBackStack(null);
-        else getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        final FragmentTransaction trans = getFragmentManager().beginTransaction();
+        trans.replace(R.id.content_frame, DirectoryFragment.newInstance(directory, mPickMode));
+        if (backStack) {
+            trans.addToBackStack(null);
+        } else {
+            getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        }
         trans.commit();
     }
 
