@@ -46,9 +46,19 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public DirectoryFragment() {
     }
 
-    public DirectoryFragment(File dir, boolean pickMode) {
-        mPath = dir;
-        mPickMode = pickMode;
+    /**
+     * @param dir The directory to display
+     * @param pickMode True if a file is being shared, false otherwise
+     * @return A new instance of <code>DirectoryFragment</code> with the given
+     *         arguments
+     */
+    public static DirectoryFragment newInstance(File dir, boolean pickMode) {
+        final Bundle args = new Bundle();
+        args.putSerializable("dir", dir);
+        args.putBoolean("pickmode", pickMode);
+        final DirectoryFragment fragment = new DirectoryFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
     public File getPath() {
@@ -69,6 +79,9 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
         setRetainInstance(true);
+        final Bundle args = getArguments();
+        mPath = (File) args.get("dir");
+        mPickMode = args.getBoolean("pickmode");
     }
 
     @Override
