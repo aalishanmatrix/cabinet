@@ -27,8 +27,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+    <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="Updates.&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cabinet.apk" afterPath="$PROJECT_DIR$/cabinet.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -96,7 +97,7 @@
       <file leaf-file-name="styles_dark.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="70" selection-start="248" selection-end="248" vertical-scroll-proportion="-0.0" vertical-offset="85" max-vertical-offset="578">
+            <state line="5" column="70" selection-start="248" selection-end="248" vertical-scroll-proportion="-2.04" vertical-offset="34" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -105,7 +106,7 @@
       <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="33" selection-start="7971" selection-end="7971" vertical-scroll-proportion="0.0" vertical-offset="3035" max-vertical-offset="4148">
+            <state line="242" column="33" selection-start="7971" selection-end="7971" vertical-scroll-proportion="0.0" vertical-offset="4114" max-vertical-offset="4471">
               <folding />
             </state>
           </provider>
@@ -114,30 +115,26 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6052">
+            <state line="59" column="36" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="6273">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.29982364" vertical-offset="0" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="247" column="42" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.059964728" vertical-offset="3247" max-vertical-offset="4216">
-              <folding>
-                <element signature="e#4510#4528#0" expanded="true" />
-                <element signature="e#7294#7314#0" expanded="true" />
-                <element signature="e#7344#7371#0" expanded="true" />
-                <element signature="e#7446#7458#0" expanded="true" />
-                <element signature="e#7890#7912#0" expanded="true" />
-                <element signature="e#8154#8165#0" expanded="true" />
-                <element signature="e#10305#10330#0" expanded="true" />
-                <element signature="e#10856#10888#0" expanded="true" />
-                <element signature="e#11013#11037#0" expanded="true" />
-                <element signature="e#11067#11110#0" expanded="true" />
-                <element signature="e#11203#11215#0" expanded="true" />
-                <element signature="e#11614#11629#0" expanded="true" />
-              </folding>
+            <state line="278" column="12" selection-start="11472" selection-end="11472" vertical-scroll-proportion="0.0" vertical-offset="3690" max-vertical-offset="4267">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,13 +150,13 @@
       </file>
       <file leaf-file-name="list_item_drawer.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/list_item_drawer.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="50" selection-start="272" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -244,7 +241,6 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/ThumbnailTask.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/res/drawable/item_selector.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
@@ -258,8 +254,9 @@
         <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -295,7 +292,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -357,6 +353,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,6 +393,121 @@
       <recent name="C:\Users\Aidan\My Projects\cabinet\res\drawable-hdpi" />
     </key>
   </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/afollestad/cabinet/file/AlphabeticalComparator.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/afollestad/cabinet/file/FoldersFirstComparator.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
   <component name="RunManager" selected="Android Application.cabinet">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -425,6 +537,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -451,19 +576,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1837,7 +1949,11 @@
       <created>1389134596877</created>
       <updated>1389134596877</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="Updates.">
+      <created>1389136176153</created>
+      <updated>1389136176153</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1926,7 +2042,6 @@
     <MESSAGE value="Updates for root mounting stuff.&#10;" />
     <MESSAGE value="Bug fixes." />
     <MESSAGE value="Slight version increment for Google Play." />
-    <MESSAGE value="Updates." />
     <MESSAGE value="Fix." />
     <MESSAGE value="Bug fix." />
     <MESSAGE value="Bug fix.&#10;" />
@@ -1939,7 +2054,8 @@
     <MESSAGE value="Updated APK." />
     <MESSAGE value="Incremented version for GPlay and updated the APK." />
     <MESSAGE value="Bug fix to adapters not getting updated theme context when the activity recreates after the previous pull requests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix to adapters not getting updated theme context when the activity recreates after the previous pull requests." />
+    <MESSAGE value="Updates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1996,11 +2112,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/library/res/layout/fragment_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="124" selection-start="211" selection-end="211" vertical-scroll-proportion="0.13152805" vertical-offset="0" max-vertical-offset="517" />
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="124" selection-start="211" selection-end="211" vertical-scroll-proportion="0.13152805" vertical-offset="0" max-vertical-offset="517" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Silk/library/src/com/afollestad/silk/fragments/list/SilkListFragment.java">
@@ -2014,11 +2130,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout-large/list_item_file.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="663" />
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="57" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/android-sdk/sources/android-19/java/io/File.java">
@@ -2072,11 +2188,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/fragment_grid.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="83" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.4962963" vertical-offset="123" max-vertical-offset="663" />
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="83" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.4962963" vertical-offset="123" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png">
@@ -2151,11 +2267,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/list_item_file.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="654" selection-end="654" vertical-scroll-proportion="0.34758365" vertical-offset="0" max-vertical-offset="799" />
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="654" selection-end="654" vertical-scroll-proportion="0.34758365" vertical-offset="0" max-vertical-offset="799" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/styles_gray.xml">
@@ -2186,13 +2302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="70" selection-start="248" selection-end="248" vertical-scroll-proportion="-0.0" vertical-offset="85" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="28" selection-start="227" selection-end="227" vertical-scroll-proportion="0.21136767" vertical-offset="0" max-vertical-offset="563" />
@@ -2206,13 +2315,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/list_item_drawer.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="50" selection-start="272" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
@@ -2229,13 +2338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="184" selection-end="184" vertical-scroll-proportion="0.08963093" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="242" column="33" selection-start="7971" selection-end="7971" vertical-scroll-proportion="0.0" vertical-offset="3035" max-vertical-offset="4148">
@@ -2243,30 +2345,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6052">
+        <state line="278" column="12" selection-start="11472" selection-end="11472" vertical-scroll-proportion="0.0" vertical-offset="3690" max-vertical-offset="4267">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/values/styles_dark.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="42" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.059964728" vertical-offset="3247" max-vertical-offset="4216">
-          <folding>
-            <element signature="e#4510#4528#0" expanded="true" />
-            <element signature="e#7294#7314#0" expanded="true" />
-            <element signature="e#7344#7371#0" expanded="true" />
-            <element signature="e#7446#7458#0" expanded="true" />
-            <element signature="e#7890#7912#0" expanded="true" />
-            <element signature="e#8154#8165#0" expanded="true" />
-            <element signature="e#10305#10330#0" expanded="true" />
-            <element signature="e#10856#10888#0" expanded="true" />
-            <element signature="e#11013#11037#0" expanded="true" />
-            <element signature="e#11067#11110#0" expanded="true" />
-            <element signature="e#11203#11215#0" expanded="true" />
-            <element signature="e#11614#11629#0" expanded="true" />
-          </folding>
+        <state line="5" column="70" selection-start="248" selection-end="248" vertical-scroll-proportion="-2.04" vertical-offset="34" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="36" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="6273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.29982364" vertical-offset="0" max-vertical-offset="765">
+          <folding />
         </state>
       </provider>
     </entry>
