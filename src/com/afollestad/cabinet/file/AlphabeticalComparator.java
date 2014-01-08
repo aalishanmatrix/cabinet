@@ -9,6 +9,6 @@ class AlphabeticalComparator implements java.util.Comparator<File> {
 
     @Override
     public int compare(File lhs, File rhs) {
-        return lhs.getName().compareTo(rhs.getName());
+        return lhs.getName().compareToIgnoreCase(rhs.getName());
     }
 }

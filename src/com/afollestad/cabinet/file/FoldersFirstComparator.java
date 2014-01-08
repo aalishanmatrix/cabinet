@@ -15,7 +15,7 @@ class FoldersFirstComparator implements java.util.Comparator<File> {
         } else if (lhs.isDirectory() && rhs.isDirectory() ||
                 !lhs.isDirectory() && !rhs.isDirectory()) {
             // Once folders and files are separate, sort alphabetically
-            return lhs.getName().compareTo(rhs.getName());
+            return lhs.getName().compareToIgnoreCase(rhs.getName());
         } else if (!lhs.isDirectory() && rhs.isDirectory()) {
             // Files below folders
             return 1;
