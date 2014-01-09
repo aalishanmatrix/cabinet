@@ -1,9 +1,12 @@
+
 package com.afollestad.cabinet.ui;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
+
 import com.afollestad.cabinet.R;
 
 import java.util.List;
@@ -31,6 +34,10 @@ public class SettingsActivity extends PreferenceActivity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
         MainActivity.setupTransparentTints(this);
+
+        final FrameLayout content = (FrameLayout) findViewById(android.R.id.content);
+        content.setClipToPadding(false);
+        MainActivity.setInsets(this, content);
     }
 
     @Override
