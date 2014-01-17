@@ -46,12 +46,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public DirectoryFragment() {
     }
 
-    /**
-     * @param dir The directory to display
-     * @param pickMode True if a file is being shared, false otherwise
-     * @return A new instance of <code>DirectoryFragment</code> with the given
-     *         arguments
-     */
     public static DirectoryFragment newInstance(File dir, boolean pickMode) {
         final Bundle args = new Bundle();
         args.putSerializable("dir", dir);
@@ -80,7 +74,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         setHasOptionsMenu(true);
         setRetainInstance(true);
         final Bundle args = getArguments();
-        mPath = (File) args.get("dir");
+        mPath = (File) args.getSerializable("dir");
         mPickMode = args.getBoolean("pickmode");
     }
 
@@ -91,7 +85,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             return getString(R.string.sdcard);
         else if (mPath.isRootDirectory())
             return getString(R.string.root);
-        return mPath.getName();
+        return mPath.getDisplayName();
     }
 
     private void load() {
@@ -111,6 +105,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                         }
                     });
                 } catch (final Exception e) {
+                    e.printStackTrace();
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

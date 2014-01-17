@@ -27,6 +27,7 @@ import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.file.File;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
+import com.afollestad.cabinet.fragments.dialogs.AddRemoteDialog;
 import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.activities.SilkDrawerActivity;
@@ -137,18 +138,14 @@ public class MainActivity extends SilkDrawerActivity {
         mShowHiddenFiles = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("show_hidden_files", false);
         super.onCreate(savedInstanceState);
         if (mThemeColor != 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
-
         if (!checkFirstTime()) {
             // If it's not the first time, populate the drawer now, otherwise wait for root prompt
             populateDrawer();
         }
         mPickMode = processIntent();
-
         if (savedInstanceState == null) {
             navigate(new File(Environment.getExternalStorageDirectory()), false);
-        } else {
-            ((SilkListFragment) getFragmentManager().findFragmentById(R.id.content_frame)).recreateAdapter();
-        }
+        } else ((SilkListFragment) getFragmentManager().findFragmentById(R.id.content_frame)).recreateAdapter();
         setupTransparentTints(this);
     }
 
@@ -291,12 +288,21 @@ public class MainActivity extends SilkDrawerActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+        menu.findItem(R.id.addRemote).setVisible(isDrawerOpen());
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.addRemote:
+                new AddRemoteDialog(new AddRemoteDialog.OnaAddedListener() {
+                    @Override
+                    public void onAdded(File file) {
+                        addShortcut(file);
+                    }
+                }).show(getFragmentManager(), "add_remote_dialog");
+                return true;
             case R.id.settings:
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;

@@ -74,6 +74,11 @@
     <string name="error">Error</string>
 
     <string name="open_as">Open as…</string>
+    <string name="add_remote">Add Remote Server</string>
+    <string name="host">Host</string>
+    <string name="password">Password</string>
+    <string name="port">Port</string>
+    <string name="username">Username</string>
     <string-array name="open_as_options">
         <item>Text</item>
         <item>Audio</item>

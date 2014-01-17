@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="15dp"
+              android:paddingBottom="15dp"
+              android:paddingLeft="7dp"
+              android:paddingRight="7dp">
+
+    <com.afollestad.silk.views.text.SilkEditText android:id="@+id/host"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:hint="@string/host"
+                                                 android:inputType="textUri"/>
+
+    <com.afollestad.silk.views.text.SilkEditText android:id="@+id/port"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:hint="@string/port"
+                                                 android:inputType="number"
+                                                 android:layout_marginTop="6dp"
+                                                 android:text="22"/>
+
+    <com.afollestad.silk.views.text.SilkEditText android:id="@+id/user"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:hint="@string/username"
+                                                 android:layout_marginTop="6dp"/>
+
+    <com.afollestad.silk.views.text.SilkEditText android:id="@+id/pass"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:hint="@string/password"
+                                                 android:inputType="textPassword"
+                                                 android:layout_marginTop="6dp"/>
+
+</LinearLayout>

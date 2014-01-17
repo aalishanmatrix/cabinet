@@ -23,7 +23,7 @@ public class DrawerAdapter extends SilkAdapter<DrawerAdapter.DrawerItem> {
                 mTitle = context.getString(R.string.sdcard);
             else if (dir.isRootDirectory())
                 mTitle = context.getString(R.string.root);
-            else mTitle = mPath.getName();
+            else mTitle = mPath.getDisplayName();
             mRemoveable = removeable;
         }
 

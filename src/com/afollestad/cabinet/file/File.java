@@ -26,6 +26,9 @@ import java.util.List;
  */
 public class File implements SilkComparable<File> {
 
+    protected File() {
+    }
+
     public File(File dir, String name) {
         mFile = new java.io.File(dir.getFile(), name);
     }
@@ -50,7 +53,11 @@ public class File implements SilkComparable<File> {
         mFile = file;
     }
 
-    private java.io.File mFile;
+    protected java.io.File mFile;
+
+    public boolean isRemote() {
+        return false;
+    }
 
     public boolean isStorageDirectory() {
         return mFile.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath());
@@ -64,7 +71,7 @@ public class File implements SilkComparable<File> {
         return !mFile.getAbsolutePath().startsWith(Environment.getExternalStorageDirectory().getAbsolutePath());
     }
 
-    public java.io.File getFile() {
+    public final java.io.File getFile() {
         return mFile;
     }
 
@@ -80,29 +87,33 @@ public class File implements SilkComparable<File> {
         return mFile.length();
     }
 
-    public String getAbsolutePath() {
+    public final String getAbsolutePath() {
         return mFile.getAbsolutePath();
     }
 
-    public String getName() {
+    public final String getName() {
         return mFile.getName();
     }
 
-    public String getNameNoExtension() {
-        if (mFile.isDirectory()) return mFile.getName();
-        String name = mFile.getName();
+    public String getDisplayName() {
+        return getName();
+    }
+
+    public final String getNameNoExtension() {
+        if (isDirectory()) return getName();
+        String name = getName();
         if (name.startsWith(".") || !name.substring(1).contains(".")) return name;
         return name.substring(0, name.lastIndexOf('.'));
     }
 
-    public String getExtension() {
-        if (mFile.isDirectory()) return "";
-        String name = mFile.getName().toLowerCase();
+    public final String getExtension() {
+        if (isDirectory()) return "";
+        String name = getName().toLowerCase();
         if (name.startsWith(".") || !name.substring(1).contains(".")) return "";
         return name.substring(name.lastIndexOf('.') + 1);
     }
 
-    public String getMimeType() {
+    public final String getMimeType() {
         String type = null;
         String extension = getExtension();
         if (extension != null) {
@@ -112,7 +123,7 @@ public class File implements SilkComparable<File> {
         return type;
     }
 
-    public boolean mount() throws Exception {
+    public final boolean mount() throws Exception {
         Shell shell = Shell.startRootShell();
         Toolbox tb = new Toolbox(shell);
         boolean success = tb.remount(mFile.getAbsolutePath(), "rw");
@@ -120,7 +131,7 @@ public class File implements SilkComparable<File> {
         return success;
     }
 
-    public boolean unmount() throws Exception {
+    public final boolean unmount() throws Exception {
         Shell shell = Shell.startRootShell();
         Toolbox tb = new Toolbox(shell);
         boolean success = tb.remount(mFile.getAbsolutePath(), "ro");
@@ -128,7 +139,7 @@ public class File implements SilkComparable<File> {
         return success;
     }
 
-    public String getMountedAs() throws Exception {
+    public final String getMountedAs() throws Exception {
         Shell shell = Shell.startRootShell();
         Toolbox tb = new Toolbox(shell);
         String mountedAs = tb.getMountedAs(mFile.getAbsolutePath());
@@ -136,7 +147,7 @@ public class File implements SilkComparable<File> {
         return mountedAs;
     }
 
-    void runAsRoot(String cmd) throws Exception {
+    final void runAsRoot(String cmd) throws Exception {
         Log.d("runAsRoot", cmd);
         if (!RootCommands.rootAccessGiven()) {
             throw new Exception("Root access denied.");
@@ -149,7 +160,7 @@ public class File implements SilkComparable<File> {
             throw new Exception("Exit code " + lsApp.getExitCode() + ": " + lsApp.getOutput());
     }
 
-    public static Comparator<File> getComparator(Context context) {
+    public final static Comparator<File> getComparator(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         int sortSetting = prefs.getInt("sort_mode", 0);
         switch (sortSetting) {
@@ -167,10 +178,10 @@ public class File implements SilkComparable<File> {
     }
 
 
-    public String getSizeString(Context context) {
-        if (mFile.isDirectory())
+    public final String getSizeString(Context context) {
+        if (isDirectory())
             return context.getString(R.string.directory);
-        return humanReadableByteCount(mFile.length(), true);
+        return humanReadableByteCount(length(), true);
     }
 
     private String humanReadableByteCount(long bytes, boolean si) {
@@ -198,6 +209,7 @@ public class File implements SilkComparable<File> {
     }
 
     public void renameTo(File newPath) throws Exception {
+        //TODO remote
         if (requiresRootAccess())
             runAsRoot("mv \"" + mFile.getAbsolutePath() + "\" \"" + newPath.getAbsolutePath() + "\"");
         else mFile.renameTo(newPath.getFile());
@@ -252,7 +264,12 @@ public class File implements SilkComparable<File> {
     }
 
     @Override
-    public boolean equalTo(File other) {
-        return mFile.getAbsolutePath().equals(other.getAbsolutePath());
+    public final boolean equalTo(File other) {
+        return getSilkId().equals(other.getSilkId());
+    }
+
+    @Override
+    public String toString() {
+        return getAbsolutePath();
     }
 }
