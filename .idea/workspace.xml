@@ -28,7 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="Fix.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -115,7 +114,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="37" selection-start="9327" selection-end="9327" vertical-scroll-proportion="0.0" vertical-offset="3386" max-vertical-offset="4896">
+            <state line="258" column="21" selection-start="10717" selection-end="10717" vertical-scroll-proportion="0.0" vertical-offset="3607" max-vertical-offset="4896">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,7 +125,7 @@
       <file leaf-file-name="DirectoryFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="40" selection-start="3536" selection-end="3536" vertical-scroll-proportion="0.0" vertical-offset="1372" max-vertical-offset="6800">
+            <state line="61" column="13" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.0" vertical-offset="998" max-vertical-offset="6800">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2634#2660#0" expanded="true" />
@@ -138,24 +137,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoteFile.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RemoteFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="0" selection-start="4839" selection-end="4839" vertical-scroll-proportion="0.6530612" vertical-offset="2557" max-vertical-offset="3213">
+            <state line="18" column="19" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3213">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2997#2998#0" expanded="true" />
-                <element signature="e#3031#3032#0" expanded="true" />
-                <element signature="e#4427#4433#0" expanded="true" />
+                <element signature="e#3007#3008#0" expanded="true" />
+                <element signature="e#3041#3042#0" expanded="true" />
+                <element signature="e#4437#4443#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shortcuts.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DirectoryCAB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="58" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="4267">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shortcuts.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="22" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+            <state line="66" column="1" selection-start="2254" selection-end="2254" vertical-scroll-proportion="2.130137" vertical-offset="381" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -396,6 +404,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dialogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cabinet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1950,7 +1980,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280303" sideWeight="0.6704" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1966,7 +1996,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31270358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4820847" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4820847" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2322,22 +2352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="59" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.4226087" vertical-offset="12" max-vertical-offset="4267">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="37" selection-start="9327" selection-end="9327" vertical-scroll-proportion="0.0" vertical-offset="3386" max-vertical-offset="4896">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/DrawerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="49" selection-start="906" selection-end="906" vertical-scroll-proportion="0.54931974" vertical-offset="0" max-vertical-offset="1207">
@@ -2354,16 +2368,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="22" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+        <state line="43" column="49" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="40" selection-start="3536" selection-end="3536" vertical-scroll-proportion="0.0" vertical-offset="1372" max-vertical-offset="6800">
+        <state line="61" column="13" selection-start="1876" selection-end="1876" vertical-scroll-proportion="0.0" vertical-offset="998" max-vertical-offset="6800">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2634#2660#0" expanded="true" />
@@ -2374,22 +2388,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/App.java">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="49" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="901">
+        <state line="18" column="19" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3213">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3007#3008#0" expanded="true" />
+            <element signature="e#3041#3042#0" expanded="true" />
+            <element signature="e#4437#4443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="58" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="4267">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java">
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="0" selection-start="4839" selection-end="4839" vertical-scroll-proportion="0.6530612" vertical-offset="2557" max-vertical-offset="3213">
+        <state line="258" column="21" selection-start="10717" selection-end="10717" vertical-scroll-proportion="0.0" vertical-offset="3607" max-vertical-offset="4896">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2997#2998#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-            <element signature="e#4427#4433#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="1" selection-start="2254" selection-end="2254" vertical-scroll-proportion="2.130137" vertical-offset="381" max-vertical-offset="1105">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -16,7 +16,7 @@ public final class RemoteFile extends File {
 
     private final static String COLON_ENTITY = "&#58;";
 
-    private Context mContext;
+    private transient Context mContext;
     private String mHost;
     private int mPort;
     private String mUser;
