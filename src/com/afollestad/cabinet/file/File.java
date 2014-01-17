@@ -91,7 +91,7 @@ public class File implements SilkComparable<File> {
         return mFile.getAbsolutePath();
     }
 
-    public final String getName() {
+    public String getName() {
         return mFile.getName();
     }
 
