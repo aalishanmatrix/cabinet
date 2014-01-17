@@ -90,7 +90,7 @@ public class MainActivity extends SilkDrawerActivity {
             String baseTheme = prefs.getString("base_theme", "0");
             if (baseTheme.equals("2"))
                 color = "#2d2d2d";
-            else if (baseTheme.equals("3"))
+            else if (baseTheme.equals("3") || baseTheme.equals("4"))
                 color = "#000000";
             else return 0;
         }
