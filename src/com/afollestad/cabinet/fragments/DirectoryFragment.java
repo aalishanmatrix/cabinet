@@ -21,6 +21,7 @@ import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.RemoteFile;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.cabinet.utils.Shortcuts;
@@ -357,7 +358,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             @Override
             public void onSubmit(String name) {
                 if (name.isEmpty()) name = getActivity().getString(R.string.untitled);
-                File newFile = new File(mPath, name);
+                File newFile = mPath.isRemote() ? new RemoteFile(getActivity(), (RemoteFile) mPath, name) : new File(mPath, name);
                 try {
                     newFile.mkdir();
                     getAdapter().add(newFile);

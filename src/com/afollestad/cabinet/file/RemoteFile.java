@@ -45,6 +45,15 @@ public final class RemoteFile extends File {
         mFile = file;
     }
 
+    public RemoteFile(Context context, RemoteFile parent, String name) {
+        mContext = context;
+        mHost = parent.getHost();
+        mPort = parent.getPort();
+        mUser = parent.getUser();
+        mPass = parent.getPass();
+        mFile = new java.io.File(parent.mFile, name);
+    }
+
     public RemoteFile(Context context, RemoteFile parent, ChannelSftp.LsEntry lsEntry) {
         mContext = context;
         mHost = parent.getHost();

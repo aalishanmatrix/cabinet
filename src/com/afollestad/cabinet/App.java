@@ -51,4 +51,15 @@ public class App extends Application {
         }
         return mSftpChannel;
     }
+
+    public void disconnectSftp() {
+        if (mSftpChannel != null) {
+            mSftpChannel.disconnect();
+            mSftpChannel = null;
+        }
+        if (mSftpSession != null) {
+            mSftpSession.disconnect();
+            mSftpSession = null;
+        }
+    }
 }

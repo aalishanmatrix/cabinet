@@ -23,6 +23,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.file.File;
@@ -252,6 +253,12 @@ public class MainActivity extends SilkDrawerActivity {
             e.printStackTrace();
             Utils.showErrorDialog(this, e);
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        App.get(this).disconnectSftp();
     }
 
     public void addShortcut(File path) {
