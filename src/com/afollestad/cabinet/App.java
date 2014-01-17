@@ -41,7 +41,7 @@ public class App extends Application {
             mLastSftpTo = to;
             JSch ssh = new JSch();
             mSftpSession = ssh.getSession(to.getUser(), to.getHost(), to.getPort());
-            mSftpSession.setPassword("password");
+            mSftpSession.setPassword(to.getPass());
             java.util.Properties config = new java.util.Properties();
             config.put("StrictHostKeyChecking", "no");
             mSftpSession.setConfig(config);
