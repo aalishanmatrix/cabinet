@@ -3,14 +3,20 @@ package com.afollestad.cabinet.utils;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
+import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.RemoteFile;
 import com.afollestad.silk.views.text.SilkEditText;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.SftpProgressMonitor;
 
+import java.io.FileOutputStream;
 import java.util.List;
 
 /**
@@ -20,11 +26,17 @@ import java.util.List;
  */
 public class Utils {
 
+    private static ProgressDialog mDialog;
+
     public static interface InputCallback {
         public void onSubmit(String input);
     }
 
-    public static void openFile(final Activity context, final File item) {
+    public static java.io.File getDownloadCacheFile(Context context, File forFile) {
+        return new java.io.File(context.getExternalCacheDir(), forFile.getAbsolutePath().replace("/", "_"));
+    }
+
+    private static void finishOpen(final Activity context, final File item) {
         String type = item.getMimeType();
         if (type == null || type.trim().isEmpty()) {
             new AlertDialog.Builder(context)
@@ -60,15 +72,87 @@ public class Utils {
         }
     }
 
-    public static File checkForExistence(File file, int index) {
+    public static void openFile(final Activity context, final File item) throws Exception {
+        if (item.isRemote()) {
+            RemoteFile remote = (RemoteFile) item;
+            ChannelSftp channel = App.get(context).getSftpChannel(remote);
+            final java.io.File cacheFile = getDownloadCacheFile(context, item);
+            context.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mDialog = new ProgressDialog(context);
+                    mDialog.setMessage(context.getString(R.string.downloading));
+                }
+            });
+            try {
+                channel.get(remote.getAbsolutePath(), new FileOutputStream(cacheFile), new SftpProgressMonitor() {
+                    @Override
+                    public void init(int i, String s, String s2, long l) {
+                        mDialog.setMax((int) l);
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mDialog.show();
+                            }
+                        });
+                    }
+
+                    @Override
+                    public boolean count(final long l) {
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mDialog.setProgress((int) l);
+                            }
+                        });
+                        if (!mDialog.isShowing()) {
+                            cacheFile.delete();
+                            return false;
+                        }
+                        return true;
+                    }
+
+                    @Override
+                    public void end() {
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mDialog.dismiss();
+                                finishOpen(context, new File(cacheFile));
+                            }
+                        });
+                    }
+                });
+            } catch (Exception e) {
+                if (!mDialog.isShowing()) return;
+                context.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mDialog.dismiss();
+                    }
+                });
+                throw e;
+            }
+        } else {
+            context.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    finishOpen(context, item);
+                }
+            });
+        }
+    }
+
+    public static File checkForExistence(Context context, File file, int index) {
         String newName = file.getNameNoExtension();
         String extension = file.getExtension();
         if (!extension.trim().isEmpty()) extension = "." + extension;
         if (index > 0) newName += " (" + index + ")";
-        File newFile = new File(file.getParentFile(), newName + extension);
+        File newFile = file.isRemote() ? new RemoteFile(context, (RemoteFile) file.getParentFile(), newName + extension) :
+                new File(file.getParentFile(), newName + extension);
         try {
             if (newFile.exists()) {
-                return checkForExistence(file, ++index);
+                return checkForExistence(context, file, ++index);
             } else return newFile;
         } catch (Exception e) {
             e.printStackTrace();
@@ -90,7 +174,7 @@ public class Utils {
     public static int getTotalFileCount(List<File> files) throws Exception {
         int count = 0;
         for (File fi : files) {
-            if (fi.requiresRootAccess()) count++;
+            if (fi.requiresRootAccess() || fi.isRemote()) count++;
             else count += getTotalFileCount(fi);
         }
         return count;

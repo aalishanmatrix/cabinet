@@ -82,7 +82,7 @@ public class FileAdapter extends SilkAdapter<File> {
             } else if (item.getExtension() != null && !item.getExtension().trim().isEmpty()) {
                 detailsStr += " \u2014 "
                         + getContext().getString(R.string.manual_mime).replace("{extension}",
-                                item.getExtension());
+                        item.getExtension());
             }
         }
         details.setText(detailsStr);
@@ -99,7 +99,7 @@ public class FileAdapter extends SilkAdapter<File> {
         holder.position = index;
         int mimeIcon = getMimeIcon(item, mime);
         if (mime != null && (mime.startsWith("image/") || mime.equals("application/vnd.android.package-archive")) &&
-                getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
+                getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING && !item.isRemote()) {
             new ThumbnailTask(getContext(), index, holder).execute(item);
         } else {
             image.setImageResource(mimeIcon);

@@ -21,6 +21,7 @@ import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.RemoteFile;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.cabinet.utils.Shortcuts;
@@ -46,12 +47,6 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public DirectoryFragment() {
     }
 
-    /**
-     * @param dir The directory to display
-     * @param pickMode True if a file is being shared, false otherwise
-     * @return A new instance of <code>DirectoryFragment</code> with the given
-     *         arguments
-     */
     public static DirectoryFragment newInstance(File dir, boolean pickMode) {
         final Bundle args = new Bundle();
         args.putSerializable("dir", dir);
@@ -80,7 +75,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         setHasOptionsMenu(true);
         setRetainInstance(true);
         final Bundle args = getArguments();
-        mPath = (File) args.get("dir");
+        mPath = (File) args.getSerializable("dir");
         mPickMode = args.getBoolean("pickmode");
     }
 
@@ -94,7 +89,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         return mPath.getName();
     }
 
-    private void load() {
+    public void load() {
         if (mPath == null) return;
         setLoading(true);
         Thread t = new Thread(new Runnable() {
@@ -111,6 +106,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                         }
                     });
                 } catch (final Exception e) {
+                    e.printStackTrace();
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -194,14 +190,17 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 List<File> selectedFiles = getSelectedFiles();
                 boolean hasFolders = false;
                 boolean hasFiles = false;
+                boolean hasRemote = false;
                 for (File fi : selectedFiles) {
                     if (fi.isDirectory()) hasFolders = true;
                     else hasFiles = true;
-                    if (hasFiles && hasFolders) break;
+                    if (fi.isRemote()) hasRemote = true;
+                    if (hasFiles && hasFolders && hasRemote) break;
                 }
                 menu.findItem(R.id.add_shortcut).setVisible(!hasFiles);
                 menu.findItem(R.id.share).setVisible(!hasFolders);
-                menu.findItem(R.id.unzip).setVisible(shouldShowUnzip(selectedFiles));
+                menu.findItem(R.id.zip).setVisible(!hasRemote);
+                menu.findItem(R.id.unzip).setVisible(!hasRemote && shouldShowUnzip(selectedFiles));
                 return true;
             }
 
@@ -229,7 +228,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     }
 
     @Override
-    public void onItemTapped(int index, File item, View view) {
+    public void onItemTapped(int index, final File item, View view) {
         if (item.isDirectory()) {
             ((MainActivity) getActivity()).navigate(item, true);
         } else {
@@ -238,7 +237,22 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 getActivity().finish();
                 return;
             }
-            Utils.openFile(getActivity(), item);
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Utils.openFile(getActivity(), item);
+                    } catch (final Exception e) {
+                        e.printStackTrace();
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+                            }
+                        });
+                    }
+                }
+            }).start();
         }
     }
 
@@ -362,7 +376,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             @Override
             public void onSubmit(String name) {
                 if (name.isEmpty()) name = getActivity().getString(R.string.untitled);
-                File newFile = new File(mPath, name);
+                File newFile = mPath.isRemote() ? new RemoteFile(getActivity(), (RemoteFile) mPath, name) : new File(mPath, name);
                 try {
                     newFile.mkdir();
                     getAdapter().add(newFile);
@@ -397,7 +411,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        ProgressDialog progress = null;
+                        ProgressDialog progress;
                         try {
                             progress = Utils.showProgressDialog(fragment.getActivity(), R.string.paste,
                                     Utils.getTotalFileCount(cb.get()));

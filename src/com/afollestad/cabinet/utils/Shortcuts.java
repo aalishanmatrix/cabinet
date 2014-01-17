@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.RemoteFile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ public class Shortcuts {
         String toSet = "";
         for (int i = 0; i < files.size(); i++) {
             if (i > 0) toSet += ",";
-            toSet += files.get(i).getAbsolutePath().replace(",", COMMA_ENTITY);
+            toSet += files.get(i).toString().replace(",", COMMA_ENTITY);
         }
         prefs.edit().putString("shortcuts", toSet).commit();
     }
@@ -43,7 +44,7 @@ public class Shortcuts {
         for (String item : splitShortcuts) {
             if (item.trim().isEmpty()) continue;
             item = item.replace(COMMA_ENTITY, ",");
-            files.add(new File(item));
+            files.add(item.startsWith("REMOTE:") ? new RemoteFile(context, item) : new File(item));
         }
         return files;
     }
@@ -53,7 +54,7 @@ public class Shortcuts {
             return true;
         List<File> shortcuts = getAll(context);
         for (File fi : shortcuts) {
-            if (fi.getAbsolutePath().equals(dir.getAbsolutePath())) return true;
+            if (fi.toString().equals(dir.toString())) return true;
         }
         return false;
     }

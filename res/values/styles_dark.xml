@@ -20,6 +20,7 @@
 
         <item name="ic_lock">@drawable/ic_lock_light</item>
         <item name="ic_unlock">@drawable/ic_unlock_light</item>
+        <item name="ic_add">@drawable/ic_add_light</item>
 
         <item name="drawer_background">@color/drawer_background_dark</item>
         <item name="primary_text">@android:color/white</item>

@@ -23,10 +23,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
 import com.afollestad.cabinet.file.File;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
+import com.afollestad.cabinet.fragments.dialogs.AddRemoteDialog;
 import com.afollestad.cabinet.utils.Shortcuts;
 import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.activities.SilkDrawerActivity;
@@ -88,7 +90,7 @@ public class MainActivity extends SilkDrawerActivity {
             String baseTheme = prefs.getString("base_theme", "0");
             if (baseTheme.equals("2"))
                 color = "#2d2d2d";
-            else if (baseTheme.equals("3"))
+            else if (baseTheme.equals("3") || baseTheme.equals("4"))
                 color = "#000000";
             else return 0;
         }
@@ -137,18 +139,14 @@ public class MainActivity extends SilkDrawerActivity {
         mShowHiddenFiles = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("show_hidden_files", false);
         super.onCreate(savedInstanceState);
         if (mThemeColor != 0) getActionBar().setBackgroundDrawable(new ColorDrawable(mThemeColor));
-
         if (!checkFirstTime()) {
             // If it's not the first time, populate the drawer now, otherwise wait for root prompt
             populateDrawer();
         }
         mPickMode = processIntent();
-
         if (savedInstanceState == null) {
             navigate(new File(Environment.getExternalStorageDirectory()), false);
-        } else {
-            ((SilkListFragment) getFragmentManager().findFragmentById(R.id.content_frame)).recreateAdapter();
-        }
+        } else ((SilkListFragment) getFragmentManager().findFragmentById(R.id.content_frame)).recreateAdapter();
         setupTransparentTints(this);
     }
 
@@ -248,13 +246,17 @@ public class MainActivity extends SilkDrawerActivity {
         DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
         getDrawerLayout().closeDrawers();
         try {
-            if (item.getFile().exists()) {
-                navigate(item.getFile(), !item.getFile().isStorageDirectory());
-            } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
+            navigate(item.getFile(), !item.getFile().isStorageDirectory());
         } catch (Exception e) {
             e.printStackTrace();
             Utils.showErrorDialog(this, e);
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        App.get(this).disconnectSftp();
     }
 
     public void addShortcut(File path) {
@@ -291,12 +293,21 @@ public class MainActivity extends SilkDrawerActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+        menu.findItem(R.id.addRemote).setVisible(isDrawerOpen());
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.addRemote:
+                new AddRemoteDialog(new AddRemoteDialog.OnaAddedListener() {
+                    @Override
+                    public void onAdded(File file) {
+                        addShortcut(file);
+                    }
+                }).show(getFragmentManager(), "add_remote_dialog");
+                return true;
             case R.id.settings:
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;

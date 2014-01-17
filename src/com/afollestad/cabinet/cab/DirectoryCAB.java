@@ -75,27 +75,19 @@ public class DirectoryCAB {
         return true;
     }
 
-    private static void performRename(final DirectoryFragment fragment,
-            final List<File> selectedFiles) {
+    private static void performRename(final DirectoryFragment fragment, final List<File> selectedFiles) {
         Utils.showInputDialog(fragment.getActivity(), R.string.rename, R.string.new_names, null,
                 new Utils.InputCallback() {
                     @Override
                     public void onSubmit(String input) {
-                        if (input == null || input.trim().isEmpty()) {
-                            return;
-                        }
+                        if (input == null || input.trim().isEmpty()) return;
                         input = input.trim();
                         if (selectedFiles.size() == 1) {
                             final File fi = selectedFiles.get(0);
                             fragment.getAdapter().remove(fi);
-
                             final String ext = fi.getExtension();
-                            if (!TextUtils.isEmpty(ext)) {
-                                input += "." + ext;
-                            }
-
-                            final File newFile = Utils.checkForExistence(
-                                    new File(fi.getParentFile(), input), 0);
+                            if (!TextUtils.isEmpty(ext)) input += "." + ext;
+                            final File newFile = Utils.checkForExistence(fragment.getActivity(), new File(fi.getParentFile(), input), 0);
                             try {
                                 fi.renameTo(newFile);
                             } catch (final Exception e) {
@@ -108,14 +100,9 @@ public class DirectoryCAB {
                         }
                         for (final File fi : selectedFiles) {
                             fragment.getAdapter().remove(fi);
-
                             final String ext = fi.getExtension();
-                            if (!TextUtils.isEmpty(ext)) {
-                                input += "." + ext;
-                            }
-
-                            final File newFile = Utils.checkForExistence(
-                                    new File(fi.getParentFile(), input), 0);
+                            if (!TextUtils.isEmpty(ext)) input += "." + ext;
+                            final File newFile = Utils.checkForExistence(fragment.getActivity(), new File(fi.getParentFile(), input), 0);
                             try {
                                 fi.renameTo(newFile);
                             } catch (final Exception e) {
@@ -189,10 +176,7 @@ public class DirectoryCAB {
                                         if (selectedFiles.size() == 1 && selectedFiles.get(0).getAbsolutePath().equals(fragment.getPath().getAbsolutePath())) {
                                             // From the Fragment's menu, pop the fragment back stack
                                             fragment.getActivity().getFragmentManager().popBackStack();
-                                        } else {
-                                            // From the CAB, remove the deleted files from the adapter
-                                            fragment.getAdapter().remove(selectedFiles.toArray(new File[selectedFiles.size()]));
-                                        }
+                                        } else fragment.load();
                                     }
                                 });
                             }
