@@ -124,6 +124,7 @@ public class Utils {
                     }
                 });
             } catch (Exception e) {
+                if (!mDialog.isShowing()) return;
                 context.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

@@ -28,7 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="Fix.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -104,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clipboard.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Clipboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="29" selection-start="5157" selection-end="5157" vertical-scroll-proportion="6.0" vertical-offset="349" max-vertical-offset="3366">
+            <state line="149" column="29" selection-start="5157" selection-end="5157" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="3366">
               <folding>
                 <element signature="e#5247#5248#0" expanded="true" />
               </folding>
@@ -162,16 +162,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Utils.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="77" selection-start="6010" selection-end="6010" vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="2516">
+            <state line="126" column="49" selection-start="5199" selection-end="5199" vertical-scroll-proportion="0.56632656" vertical-offset="534" max-vertical-offset="2703">
               <folding>
                 <element signature="docComment;class#Utils#0" expanded="false" />
                 <element signature="class#InputCallback#0;class#Utils#0" expanded="false" />
                 <element signature="method#getDownloadCacheFile#0;class#Utils#0" expanded="false" />
                 <element signature="method#finishOpen#0;class#Utils#0" expanded="false" />
-                <element signature="method#end#0;class#3630:5111" expanded="false" />
+                <element signature="e#5238#5407#0" expanded="true" />
+                <element signature="e#5388#5389#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,13 +245,13 @@
         <option value="$PROJECT_DIR$/res/layout/dialog_add_remote.xml" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
+        <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
       </list>
     </option>
   </component>
@@ -1912,7 +1913,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31270358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4820847" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4820847" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2294,19 +2295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="77" selection-start="6010" selection-end="6010" vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="2516">
-          <folding>
-            <element signature="docComment;class#Utils#0" expanded="false" />
-            <element signature="class#InputCallback#0;class#Utils#0" expanded="false" />
-            <element signature="method#getDownloadCacheFile#0;class#Utils#0" expanded="false" />
-            <element signature="method#finishOpen#0;class#Utils#0" expanded="false" />
-            <element signature="method#end#0;class#3630:5111" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/ThumbnailTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1411">
@@ -2367,9 +2355,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="29" selection-start="5157" selection-end="5157" vertical-scroll-proportion="6.0" vertical-offset="349" max-vertical-offset="3366">
+        <state line="149" column="29" selection-start="5157" selection-end="5157" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="3366">
           <folding>
             <element signature="e#5247#5248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="49" selection-start="5199" selection-end="5199" vertical-scroll-proportion="0.56632656" vertical-offset="534" max-vertical-offset="2703">
+          <folding>
+            <element signature="docComment;class#Utils#0" expanded="false" />
+            <element signature="class#InputCallback#0;class#Utils#0" expanded="false" />
+            <element signature="method#getDownloadCacheFile#0;class#Utils#0" expanded="false" />
+            <element signature="method#finishOpen#0;class#Utils#0" expanded="false" />
+            <element signature="e#5238#5407#0" expanded="true" />
+            <element signature="e#5388#5389#0" expanded="true" />
           </folding>
         </state>
       </provider>
