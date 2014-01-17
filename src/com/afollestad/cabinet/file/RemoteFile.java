@@ -95,7 +95,7 @@ public final class RemoteFile extends File {
     public String getDisplayName() {
         String path = getAbsolutePath();
         if (!path.startsWith("/")) path = "/" + path;
-        return getHost() + path;
+        return getUser() + "@" + getHost() + path;
     }
 
     @Override

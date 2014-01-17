@@ -86,7 +86,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             return getString(R.string.sdcard);
         else if (mPath.isRootDirectory())
             return getString(R.string.root);
-        return mPath.getDisplayName();
+        return mPath.getName();
     }
 
     private void load() {
