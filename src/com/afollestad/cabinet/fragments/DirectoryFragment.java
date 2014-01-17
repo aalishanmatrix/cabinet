@@ -190,14 +190,17 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 List<File> selectedFiles = getSelectedFiles();
                 boolean hasFolders = false;
                 boolean hasFiles = false;
+                boolean hasRemote = false;
                 for (File fi : selectedFiles) {
                     if (fi.isDirectory()) hasFolders = true;
                     else hasFiles = true;
-                    if (hasFiles && hasFolders) break;
+                    if (fi.isRemote()) hasRemote = true;
+                    if (hasFiles && hasFolders && hasRemote) break;
                 }
                 menu.findItem(R.id.add_shortcut).setVisible(!hasFiles);
                 menu.findItem(R.id.share).setVisible(!hasFolders);
-                menu.findItem(R.id.unzip).setVisible(shouldShowUnzip(selectedFiles));
+                menu.findItem(R.id.zip).setVisible(!hasRemote);
+                menu.findItem(R.id.unzip).setVisible(!hasRemote && shouldShowUnzip(selectedFiles));
                 return true;
             }
 

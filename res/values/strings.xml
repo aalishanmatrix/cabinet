@@ -80,6 +80,7 @@
     <string name="port">Port</string>
     <string name="username">Username</string>
     <string name="downloading">Downloading…</string>
+    <string name="howto_shortcut_hint">Add shortcuts to local directories using the pin button.</string>
     <string-array name="open_as_options">
         <item>Text</item>
         <item>Audio</item>
