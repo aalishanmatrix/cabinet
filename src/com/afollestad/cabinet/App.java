@@ -52,6 +52,11 @@ public class App extends Application {
         return mSftpChannel;
     }
 
+    public Session getSftpSession(RemoteFile to) throws Exception {
+        getSftpChannel(to);
+        return mSftpSession;
+    }
+
     public void disconnectSftp() {
         if (mSftpChannel != null) {
             mSftpChannel.disconnect();

@@ -2,6 +2,7 @@ package com.afollestad.cabinet.file;
 
 import android.content.Context;
 import com.afollestad.cabinet.App;
+import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.SftpATTRS;
 import com.jcraft.jsch.SftpException;
@@ -187,10 +188,16 @@ public final class RemoteFile extends File {
     public boolean delete() throws Exception {
         ChannelSftp channel = App.get(mContext).getSftpChannel(this);
         if (isDirectory()) {
-            String path = getAbsolutePath();
-            if (!path.endsWith("/")) path += "/";
-            channel.rm(path + "*"); // remove all files first
-            channel.rmdir(getAbsolutePath()); // remove directory itself
+//            String path = getAbsolutePath();
+//            if (!path.endsWith("/")) path += "/";
+//            channel.rm(path + "*"); // remove all files first
+//            channel.rmdir(getAbsolutePath()); // remove directory itself
+            ChannelExec exec = (ChannelExec) App.get(mContext).getSftpSession(this).openChannel("exec");
+            exec.setCommand("rm -rf \"" + getAbsolutePath() + "\"");
+            exec.setErrStream(System.err);
+            exec.connect();
+            exec.disconnect();
+
         } else channel.rm(getAbsolutePath());
         return true;
     }
