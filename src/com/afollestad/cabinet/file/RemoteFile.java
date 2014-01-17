@@ -126,22 +126,24 @@ public final class RemoteFile extends File {
 
     @Override
     public boolean exists() throws Exception {
-        return super.exists();
+        return true; // assume it exists since it was just retrieved and doesn't get cached
     }
 
     @Override
     public void mkdir() throws Exception {
-        super.mkdir();
+        ChannelSftp channel = App.get(mContext).getSftpChannel(this);
+        channel.mkdir(getAbsolutePath());
     }
 
     @Override
     public void mkdirs() throws Exception {
-        super.mkdirs();
+        mkdir();
     }
 
     @Override
     public void renameTo(File newPath) throws Exception {
-        super.renameTo(newPath);
+        ChannelSftp channel = App.get(mContext).getSftpChannel(this);
+        channel.rename(getAbsolutePath(), newPath.getAbsolutePath());
     }
 
     @Override
@@ -151,12 +153,15 @@ public final class RemoteFile extends File {
 
     @Override
     public boolean delete() throws Exception {
-        return super.delete();
+        ChannelSftp channel = App.get(mContext).getSftpChannel(this);
+        if (isDirectory()) channel.rmdir(getAbsolutePath());
+        else channel.rm(getAbsolutePath());
+        return true;
     }
 
     @Override
-    public boolean deleteNonRecursive() {
-        return super.deleteNonRecursive();
+    public boolean deleteNonRecursive() throws Exception {
+        return delete();
     }
 
 

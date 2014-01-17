@@ -229,7 +229,7 @@ public class File implements SilkComparable<File> {
         } else return Utils.deleteRecursively(this);
     }
 
-    public boolean deleteNonRecursive() {
+    public boolean deleteNonRecursive() throws Exception {
         return mFile.delete();
     }
 
