@@ -28,11 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="Fix.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
     </list>
     <ignored path="Cabinet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,10 +92,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="File.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="200" column="0" selection-start="6046" selection-end="6046" vertical-scroll-proportion="0.15306123" vertical-offset="2987" max-vertical-offset="4437">
+            <state line="200" column="0" selection-start="6046" selection-end="6046" vertical-scroll-proportion="0.0" vertical-offset="2987" max-vertical-offset="4437">
               <folding />
             </state>
           </provider>
@@ -128,6 +124,15 @@
                 <element signature="e#3795#3796#0" expanded="true" />
                 <element signature="e#13021#13063#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="782">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -228,7 +233,6 @@
         <option value="$PROJECT_DIR$/res/values/styles_black.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_item_file.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_light.xml" />
         <option value="$PROJECT_DIR$/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/res/values/styles_dark_lightab.xml" />
@@ -246,6 +250,7 @@
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2217,13 +2222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="65" selection-start="372" selection-end="372" vertical-scroll-proportion="0.11564626" vertical-offset="68" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/fragment_directory.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="35" selection-start="306" selection-end="306" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="510">
@@ -2426,7 +2424,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="0" selection-start="6046" selection-end="6046" vertical-scroll-proportion="0.15306123" vertical-offset="2987" max-vertical-offset="4437">
+        <state line="200" column="0" selection-start="6046" selection-end="6046" vertical-scroll-proportion="0.0" vertical-offset="2987" max-vertical-offset="4437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="36" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11564626" vertical-offset="0" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
