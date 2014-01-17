@@ -32,7 +32,7 @@ public class App extends Application {
 
     public ChannelSftp getSftpChannel(RemoteFile to) throws Exception {
         if ((mLastSftpTo != null && !mLastSftpTo.getHost().equals(to.getHost())) ||
-                mLastSftpTo == null || !mSftpSession.isConnected() || !mSftpChannel.isConnected()) {
+                mLastSftpTo == null || (mSftpSession == null || !mSftpSession.isConnected()) || (mSftpChannel == null || !mSftpChannel.isConnected())) {
             mLastSftpTo = null;
             if (mSftpChannel != null)
                 mSftpChannel.disconnect();
