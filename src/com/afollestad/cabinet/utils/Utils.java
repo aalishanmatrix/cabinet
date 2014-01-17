@@ -3,14 +3,20 @@ package com.afollestad.cabinet.utils;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
+import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.RemoteFile;
 import com.afollestad.silk.views.text.SilkEditText;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.SftpProgressMonitor;
 
+import java.io.FileOutputStream;
 import java.util.List;
 
 /**
@@ -20,11 +26,17 @@ import java.util.List;
  */
 public class Utils {
 
+    private static ProgressDialog mDialog;
+
     public static interface InputCallback {
         public void onSubmit(String input);
     }
 
-    public static void openFile(final Activity context, final File item) {
+    private static java.io.File getDownloadCacheFile(Context context, File forFile) {
+        return new java.io.File(context.getExternalCacheDir(), forFile.getAbsolutePath().replace("/", "_"));
+    }
+
+    private static void finishOpen(final Activity context, final File item) {
         String type = item.getMimeType();
         if (type == null || type.trim().isEmpty()) {
             new AlertDialog.Builder(context)
@@ -57,6 +69,76 @@ public class Utils {
         } else {
             Intent intent = new Intent(Intent.ACTION_VIEW).setDataAndType(Uri.fromFile(item.getFile()), type);
             context.startActivity(Intent.createChooser(intent, context.getString(R.string.open_with)));
+        }
+    }
+
+    public static void openFile(final Activity context, final File item) throws Exception {
+        if (item.isRemote()) {
+            RemoteFile remote = (RemoteFile) item;
+            ChannelSftp channel = App.get(context).getSftpChannel(remote);
+            final java.io.File cacheFile = getDownloadCacheFile(context, item);
+            context.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mDialog = new ProgressDialog(context);
+                    mDialog.setMessage(context.getString(R.string.downloading));
+                }
+            });
+            try {
+                channel.get(remote.getAbsolutePath(), new FileOutputStream(cacheFile), new SftpProgressMonitor() {
+                    @Override
+                    public void init(int i, String s, String s2, long l) {
+                        mDialog.setMax((int) l);
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mDialog.show();
+                            }
+                        });
+                    }
+
+                    @Override
+                    public boolean count(final long l) {
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mDialog.setProgress((int) l);
+                            }
+                        });
+                        if (!mDialog.isShowing()) {
+                            cacheFile.delete();
+                            return false;
+                        }
+                        return true;
+                    }
+
+                    @Override
+                    public void end() {
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mDialog.dismiss();
+                                finishOpen(context, new File(cacheFile));
+                            }
+                        });
+                    }
+                });
+            } catch (Exception e) {
+                context.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mDialog.dismiss();
+                    }
+                });
+                throw e;
+            }
+        } else {
+            context.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    finishOpen(context, item);
+                }
+            });
         }
     }
 

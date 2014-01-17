@@ -225,7 +225,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     }
 
     @Override
-    public void onItemTapped(int index, File item, View view) {
+    public void onItemTapped(int index, final File item, View view) {
         if (item.isDirectory()) {
             ((MainActivity) getActivity()).navigate(item, true);
         } else {
@@ -234,7 +234,22 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 getActivity().finish();
                 return;
             }
-            Utils.openFile(getActivity(), item);
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Utils.openFile(getActivity(), item);
+                    } catch (final Exception e) {
+                        e.printStackTrace();
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+                            }
+                        });
+                    }
+                }
+            }).start();
         }
     }
 

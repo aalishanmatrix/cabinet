@@ -79,6 +79,7 @@
     <string name="password">Password</string>
     <string name="port">Port</string>
     <string name="username">Username</string>
+    <string name="downloading">Downloading…</string>
     <string-array name="open_as_options">
         <item>Text</item>
         <item>Audio</item>
