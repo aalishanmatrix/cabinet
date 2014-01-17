@@ -73,7 +73,7 @@ public class Clipboard {
         if (mClipboard.size() == 0) return false;
         // Remove no longer existing files from the clipboard and check for paradoxes
         for (File fi : mClipboard) {
-            if (!fi.exists()) remove(fi);
+            if (!fi.isRemote() && !fi.exists()) remove(fi);
             else if (dest.getAbsolutePath().equals(fi.getAbsolutePath())) {
                 // You cannot copy/cut a directory into itself
                 return false;
