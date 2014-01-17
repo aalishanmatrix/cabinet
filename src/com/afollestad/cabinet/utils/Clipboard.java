@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.util.Log;
 import android.widget.Toast;
+import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.cab.DirectoryCAB;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.RemoteFile;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
+import com.jcraft.jsch.ChannelSftp;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -96,7 +99,8 @@ public class Clipboard {
                         fragment.runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                if (newFile != null) fragment.getAdapter().update(newFile);
+                                if (newFile != null)
+                                    fragment.getAdapter().update(newFile);
                                 dialog.setProgress(index);
                             }
                         });
@@ -133,41 +137,76 @@ public class Clipboard {
     private Toast toast;
 
     private File copy(final Activity context, File src, File dst, boolean cut) throws Exception {
-        log("Copying '" + src.getAbsolutePath() + "' to '" + dst.getAbsolutePath() + "'...");
+        log("Copying '" + src.toString() + "' (" + src.isRemote() + ") to '" + dst.toString() + "' (" + dst.isRemote() + ")...");
         if (src.isDirectory()) {
-            File newDir = Utils.checkForExistence(new File(dst, src.getName()), 0);
+            dst = Utils.checkForExistence(context,
+                    dst.isRemote() ? new RemoteFile(context, (RemoteFile) dst, src.getName()) : new File(dst, src.getName()), 0);
             try {
-                newDir.mkdir();
-            } catch (Exception e) {
+                dst.mkdir();
+            } catch (final Exception e) {
                 e.printStackTrace();
-                Utils.showErrorDialog(context, e);
+                context.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Utils.showErrorDialog(context, e);
+                    }
+                });
                 return null;
             }
-            log("Created: " + newDir.getAbsolutePath());
+            log("Created: " + dst.getAbsolutePath());
             // Recursively copy the source directory into the new directory
             for (File fi : src.listFiles())
-                copy(context, fi, newDir, cut);
+                copy(context, fi, dst, cut);
             if (cut) {
                 log("Deleting: " + src.getAbsolutePath());
                 src.delete();
             }
-            return newDir;
+            return dst;
         }
 
         // Copy this file into the destination directory
         try {
-            dst = Utils.checkForExistence(new File(dst, src.getName()), 0);
-            InputStream in = new FileInputStream(src.getFile());
-            OutputStream out = new FileOutputStream(dst.getFile());
+            dst = Utils.checkForExistence(context,
+                    dst.isRemote() ? new RemoteFile(context, (RemoteFile) dst, src.getName()) : new File(dst, src.getName()), 0);
+            InputStream in;
+            OutputStream out;
+            if (src.isRemote() || dst.isRemote()) {
+                ChannelSftp channel = App.get(context).getSftpChannel(src.isRemote() ? (RemoteFile) src : (RemoteFile) dst);
+                if (src.isRemote()) {
+                    log("Opening remote stream to source file: " + src.getAbsolutePath());
+                    in = channel.get(src.getAbsolutePath());
+                } else {
+                    log("Opening local stream to source file: " + src.getAbsolutePath());
+                    in = new FileInputStream(src.getFile());
+                }
+                if (dst.isRemote()) {
+                    log("Opening remote stream to destination file: " + dst.getAbsolutePath());
+                    out = channel.put(dst.getAbsolutePath());
+                } else {
+                    log("Opening local stream to destination file: " + dst.getAbsolutePath());
+                    out = new FileOutputStream(dst.getFile());
+                }
+            } else {
+                log("Opening local streams to source and destination file: " + src.getAbsolutePath() + ", " + dst.getAbsolutePath());
+                in = new FileInputStream(src.getFile());
+                out = new FileOutputStream(dst.getFile());
+            }
             byte[] buf = new byte[1024];
+            long totalLen = 0;
             int len;
-            while ((len = in.read(buf)) > 0)
+            while ((len = in.read(buf)) > 0) {
                 out.write(buf, 0, len);
+                totalLen += len;
+            }
             in.close();
             out.close();
             if (cut) {
                 log("Deleting: " + src.getAbsolutePath());
                 src.delete();
+            }
+            if (dst.isRemote()) {
+                ((RemoteFile) dst).setDirectory(false);
+                ((RemoteFile) dst).setSize(totalLen);
             }
             return dst;
         } catch (final Exception e) {

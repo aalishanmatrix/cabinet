@@ -76,7 +76,7 @@ public class ZipUtils {
     }
 
     public static File zip(List<File> files, File destination, ProgressCallback callback) throws Exception {
-        destination = Utils.checkForExistence(destination, 0);
+        destination = Utils.checkForExistence(null, destination, 0);
         ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(destination.getFile()));
         for (File f : files) {
             if (f.isDirectory()) zipDir(f, zos, f.getParentFile(), callback);
@@ -94,7 +94,7 @@ public class ZipUtils {
         try {
             ZipEntry ze;
             while ((ze = zin.getNextEntry()) != null) {
-                File file = Utils.checkForExistence(new File(destination.getAbsolutePath() + ze.getName()), 0);
+                File file = Utils.checkForExistence(null, new File(destination.getAbsolutePath() + ze.getName()), 0);
                 log("Writing: " + file.getAbsolutePath());
                 file.getParentFile().mkdirs();
                 File topLevel = findTopLevel(file, destination);

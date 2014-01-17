@@ -89,7 +89,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
         return mPath.getName();
     }
 
-    private void load() {
+    public void load() {
         if (mPath == null) return;
         setLoading(true);
         Thread t = new Thread(new Runnable() {
@@ -411,7 +411,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        ProgressDialog progress = null;
+                        ProgressDialog progress;
                         try {
                             progress = Utils.showProgressDialog(fragment.getActivity(), R.string.paste,
                                     Utils.getTotalFileCount(cb.get()));

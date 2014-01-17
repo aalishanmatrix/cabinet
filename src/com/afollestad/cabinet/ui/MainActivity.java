@@ -246,9 +246,7 @@ public class MainActivity extends SilkDrawerActivity {
         DrawerAdapter.DrawerItem item = mDrawerAdapter.getItem(position);
         getDrawerLayout().closeDrawers();
         try {
-            if (item.getFile().exists()) {
-                navigate(item.getFile(), !item.getFile().isStorageDirectory());
-            } else Toast.makeText(this, R.string.folder_not_found, Toast.LENGTH_SHORT).show();
+            navigate(item.getFile(), !item.getFile().isStorageDirectory());
         } catch (Exception e) {
             e.printStackTrace();
             Utils.showErrorDialog(this, e);

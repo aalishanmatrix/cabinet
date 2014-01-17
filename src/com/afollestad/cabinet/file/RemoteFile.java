@@ -4,6 +4,7 @@ import android.content.Context;
 import com.afollestad.cabinet.App;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.SftpATTRS;
+import com.jcraft.jsch.SftpException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,6 +92,14 @@ public final class RemoteFile extends File {
         return mPass;
     }
 
+    public void setDirectory(boolean directory) {
+        isDirectory = directory;
+    }
+
+    public void setSize(long size) {
+        mSize = size;
+    }
+
     @Override
     public String getName() {
         if (super.getName().trim().isEmpty() || super.getName().trim().equals("/"))
@@ -142,7 +151,14 @@ public final class RemoteFile extends File {
 
     @Override
     public boolean exists() throws Exception {
-        return true; // assume it exists since it was just retrieved and doesn't get cached
+        ChannelSftp channel = App.get(mContext).getSftpChannel(this);
+        try {
+            channel.lstat(getAbsolutePath());
+        } catch (SftpException e) {
+            if (e.id == 2) return false;
+            else throw e;
+        }
+        return true;
     }
 
     @Override
@@ -170,8 +186,12 @@ public final class RemoteFile extends File {
     @Override
     public boolean delete() throws Exception {
         ChannelSftp channel = App.get(mContext).getSftpChannel(this);
-        if (isDirectory()) channel.rmdir(getAbsolutePath());
-        else channel.rm(getAbsolutePath());
+        if (isDirectory()) {
+            String path = getAbsolutePath();
+            if (!path.endsWith("/")) path += "/";
+            channel.rm(path + "*"); // remove all files first
+            channel.rmdir(getAbsolutePath()); // remove directory itself
+        } else channel.rm(getAbsolutePath());
         return true;
     }
 

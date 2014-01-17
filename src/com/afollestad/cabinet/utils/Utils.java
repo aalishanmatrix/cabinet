@@ -32,7 +32,7 @@ public class Utils {
         public void onSubmit(String input);
     }
 
-    private static java.io.File getDownloadCacheFile(Context context, File forFile) {
+    public static java.io.File getDownloadCacheFile(Context context, File forFile) {
         return new java.io.File(context.getExternalCacheDir(), forFile.getAbsolutePath().replace("/", "_"));
     }
 
@@ -142,15 +142,16 @@ public class Utils {
         }
     }
 
-    public static File checkForExistence(File file, int index) {
+    public static File checkForExistence(Context context, File file, int index) {
         String newName = file.getNameNoExtension();
         String extension = file.getExtension();
         if (!extension.trim().isEmpty()) extension = "." + extension;
         if (index > 0) newName += " (" + index + ")";
-        File newFile = new File(file.getParentFile(), newName + extension);
+        File newFile = file.isRemote() ? new RemoteFile(context, (RemoteFile) file.getParentFile(), newName + extension) :
+                new File(file.getParentFile(), newName + extension);
         try {
             if (newFile.exists()) {
-                return checkForExistence(file, ++index);
+                return checkForExistence(context, file, ++index);
             } else return newFile;
         } catch (Exception e) {
             e.printStackTrace();
@@ -172,7 +173,7 @@ public class Utils {
     public static int getTotalFileCount(List<File> files) throws Exception {
         int count = 0;
         for (File fi : files) {
-            if (fi.requiresRootAccess()) count++;
+            if (fi.requiresRootAccess() || fi.isRemote()) count++;
             else count += getTotalFileCount(fi);
         }
         return count;
