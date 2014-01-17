@@ -180,7 +180,6 @@ public final class RemoteFile extends File {
         return delete();
     }
 
-
     @Override
     public File[] listFiles() throws Exception {
         List<File> results = new ArrayList<File>();
