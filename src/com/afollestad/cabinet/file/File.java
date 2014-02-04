@@ -1,102 +1,104 @@
 package com.afollestad.cabinet.file;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.webkit.MimeTypeMap;
 import com.afollestad.cabinet.R;
-import com.afollestad.cabinet.utils.Utils;
+import com.afollestad.cabinet.file.callbacks.FileListingCallback;
+import com.afollestad.cabinet.file.comparators.*;
 import com.afollestad.silk.caching.SilkComparable;
-import org.sufficientlysecure.rootcommands.RootCommands;
-import org.sufficientlysecure.rootcommands.Shell;
-import org.sufficientlysecure.rootcommands.Toolbox;
-import org.sufficientlysecure.rootcommands.command.SimpleCommand;
+import eu.chainfire.libsuperuser.Shell;
 
-import java.net.URI;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
 /**
- * A wrapper around Java's File class, with convenience methods and root access methods.
- *
- * @author Aidan Follestad (afollestad)
+ * @author Aidan Follestad
  */
-public class File implements SilkComparable<File> {
+public abstract class File implements SilkComparable<File> {
 
-    protected File() {
+    public abstract String getName();
+
+    public abstract String getDisplayName();
+
+    public abstract String getAbsolutePath();
+
+    public abstract File getParentFile();
+
+    public abstract java.io.File getFile();
+
+    public abstract boolean exists() throws Exception;
+
+    public abstract boolean mkdir() throws Exception;
+
+    public abstract boolean mkdirs() throws Exception;
+
+    public abstract boolean renameTo(File to) throws Exception;
+
+    public abstract boolean deleteNonRecursive() throws Exception;
+
+    public abstract boolean delete() throws Exception;
+
+    public final void listFiles(final Activity context, final FileListingCallback callback) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    File[] files = listFilesUnthreaded();
+                    if (files != null)
+                        Arrays.sort(files, File.getComparator(context));
+                    if (callback != null) {
+                        final File[] fFiles = files;
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                callback.onResults(fFiles);
+                            }
+                        });
+                    }
+                } catch (final Exception e) {
+                    e.printStackTrace();
+                    if (callback != null) {
+                        context.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                callback.onError(e);
+                            }
+                        });
+                    }
+                }
+            }
+        }).start();
     }
 
-    public File(File dir, String name) {
-        mFile = new java.io.File(dir.getFile(), name);
+    public abstract File[] listFilesUnthreaded() throws Exception;
+
+    public abstract boolean isHidden();
+
+    public abstract boolean isDirectory();
+
+    public abstract long length();
+
+    public abstract boolean isRemoteFile();
+
+    public abstract boolean isStorageDirectory();
+
+    public abstract boolean isRootDirectory();
+
+    public abstract boolean requiresRootAccess();
+
+    public abstract String getMountedAs();
+
+    public final void mount() throws Exception {
+
     }
 
-    public File(java.io.File dir, String name) {
-        mFile = new java.io.File(dir, name);
-    }
+    public final void unmount() throws Exception {
 
-    public File(String path) {
-        mFile = new java.io.File(path);
-    }
-
-    public File(String dirPath, String name) {
-        mFile = new java.io.File(dirPath, name);
-    }
-
-    public File(URI uri) {
-        mFile = new java.io.File(uri);
-    }
-
-    public File(java.io.File file) {
-        mFile = file;
-    }
-
-    protected java.io.File mFile;
-
-    public boolean isRemote() {
-        return false;
-    }
-
-    public boolean isStorageDirectory() {
-        return mFile.getAbsolutePath().equals(Environment.getExternalStorageDirectory().getAbsolutePath());
-    }
-
-    public boolean isRootDirectory() {
-        return mFile.getAbsolutePath().isEmpty() || mFile.getAbsolutePath().equals("/");
-    }
-
-    public boolean requiresRootAccess() {
-        return !mFile.getAbsolutePath().startsWith(Environment.getExternalStorageDirectory().getAbsolutePath());
-    }
-
-    public final java.io.File getFile() {
-        return mFile;
-    }
-
-    public boolean isDirectory() {
-        return mFile.isDirectory();
-    }
-
-    public boolean isHidden() {
-        return mFile.isHidden();
-    }
-
-    public long length() {
-        return mFile.length();
-    }
-
-    public final String getAbsolutePath() {
-        return mFile.getAbsolutePath();
-    }
-
-    public String getName() {
-        return mFile.getName();
-    }
-
-    public String getDisplayName() {
-        return getName();
     }
 
     public final String getNameNoExtension() {
@@ -123,44 +125,7 @@ public class File implements SilkComparable<File> {
         return type;
     }
 
-    public final boolean mount() throws Exception {
-        Shell shell = Shell.startRootShell();
-        Toolbox tb = new Toolbox(shell);
-        boolean success = tb.remount(mFile.getAbsolutePath(), "rw");
-        shell.close();
-        return success;
-    }
-
-    public final boolean unmount() throws Exception {
-        Shell shell = Shell.startRootShell();
-        Toolbox tb = new Toolbox(shell);
-        boolean success = tb.remount(mFile.getAbsolutePath(), "ro");
-        shell.close();
-        return success;
-    }
-
-    public final String getMountedAs() throws Exception {
-        Shell shell = Shell.startRootShell();
-        Toolbox tb = new Toolbox(shell);
-        String mountedAs = tb.getMountedAs(mFile.getAbsolutePath());
-        shell.close();
-        return mountedAs;
-    }
-
-    final void runAsRoot(String cmd) throws Exception {
-        Log.d("runAsRoot", cmd);
-        if (!RootCommands.rootAccessGiven()) {
-            throw new Exception("Root access denied.");
-        }
-        Shell shell = Shell.startRootShell();
-        SimpleCommand lsApp = new SimpleCommand(cmd);
-        shell.add(lsApp).waitForFinish();
-        shell.close();
-        if (lsApp.getExitCode() != 0)
-            throw new Exception("Exit code " + lsApp.getExitCode() + ": " + lsApp.getOutput());
-    }
-
-    public final static Comparator<File> getComparator(Context context) {
+    public static Comparator<File> getComparator(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         int sortSetting = prefs.getInt("sort_mode", 0);
         switch (sortSetting) {
@@ -177,6 +142,12 @@ public class File implements SilkComparable<File> {
         }
     }
 
+    protected final List<String> runAsRoot(String cmd) throws Exception {
+        Log.d("RootFile", cmd);
+        if (!Shell.SU.available())
+            throw new Exception("Root access denied.");
+        return Shell.SU.run(cmd);
+    }
 
     public final String getSizeString(Context context) {
         if (isDirectory())
@@ -192,80 +163,15 @@ public class File implements SilkComparable<File> {
         return String.format("%.1f %sB", bytes / Math.pow(unit, exp), pre);
     }
 
-    public boolean exists() throws Exception {
-        return mFile.exists();
-    }
-
-    public void mkdir() throws Exception {
-        if (requiresRootAccess())
-            runAsRoot("mkdir " + mFile.getAbsolutePath());
-        else mFile.mkdir();
-    }
-
-    public void mkdirs() throws Exception {
-        if (requiresRootAccess())
-            runAsRoot("mkdir -p " + mFile.getAbsolutePath());
-        else mFile.mkdirs();
-    }
-
-    public void renameTo(File newPath) throws Exception {
-        //TODO remote
-        if (requiresRootAccess())
-            runAsRoot("mv \"" + mFile.getAbsolutePath() + "\" \"" + newPath.getAbsolutePath() + "\"");
-        else mFile.renameTo(newPath.getFile());
-    }
-
-    public File getParentFile() {
-        return new File(mFile.getParentFile());
-    }
-
-    public boolean delete() throws Exception {
-        if (requiresRootAccess()) {
-            String cmd = "rm";
-            if (mFile.isDirectory()) cmd += " -Rf";
-            else cmd += " -f";
-            runAsRoot(cmd + " \"" + mFile.getAbsolutePath() + "\"");
-            return true;
-        } else return Utils.deleteRecursively(this);
-    }
-
-    public boolean deleteNonRecursive() throws Exception {
-        return mFile.delete();
-    }
-
-    public File[] listFiles() throws Exception {
-        if (requiresRootAccess()) {
-            if (!RootCommands.rootAccessGiven()) throw new Exception("Root access denied");
-            List<File> files = new ArrayList<File>();
-            Shell shell = Shell.startRootShell();
-            SimpleCommand lsApp = new SimpleCommand("ls \"" + mFile.getAbsolutePath() + "\"");
-            shell.add(lsApp).waitForFinish();
-            if (lsApp.getExitCode() == 0) {
-                String[] splitLines = lsApp.getOutput().split("\n");
-                for (String line : splitLines) {
-                    if (line == null || line.trim().isEmpty()) continue;
-                    files.add(new File(mFile, line));
-                }
-            } else throw new Exception("Root access command returned " + lsApp.getExitCode());
-            shell.close();
-            return files.toArray(new File[files.size()]);
-        } else {
-            java.io.File[] files = mFile.listFiles();
-            if (files == null || files.length == 0) return null;
-            List<File> cabinets = new ArrayList<File>();
-            for (java.io.File fi : files) cabinets.add(new File(fi));
-            return cabinets.toArray(new File[cabinets.size()]);
-        }
-    }
-
     @Override
     public Object getSilkId() {
-        return mFile.getAbsolutePath();
+        return getAbsolutePath();
     }
 
     @Override
-    public final boolean equalTo(File other) {
-        return getSilkId().equals(other.getSilkId());
+    public boolean equalTo(File other) {
+        return getAbsolutePath().equals(other.getAbsolutePath()) &&
+                isRemoteFile() == other.isRemoteFile();
     }
 
     @Override

@@ -20,8 +20,10 @@ import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.FileAdapter;
 import com.afollestad.cabinet.cab.DirectoryCAB;
+import com.afollestad.cabinet.file.CloudFile;
 import com.afollestad.cabinet.file.File;
-import com.afollestad.cabinet.file.RemoteFile;
+import com.afollestad.cabinet.file.LocalFile;
+import com.afollestad.cabinet.file.callbacks.FileListingCallback;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
 import com.afollestad.cabinet.utils.Shortcuts;
@@ -31,7 +33,6 @@ import com.afollestad.silk.adapters.SilkAdapter;
 import com.afollestad.silk.fragments.list.SilkListFragment;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -92,43 +93,24 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
     public void load() {
         if (mPath == null) return;
         setLoading(true);
-        Thread t = new Thread(new Runnable() {
+        mPath.listFiles(getActivity(), new FileListingCallback() {
             @Override
-            public void run() {
-                try {
-                    final File[] contents = mPath.listFiles();
-                    Arrays.sort(contents, File.getComparator(getActivity()));
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            getAdapter().clear();
-                            for (File fi : contents) getAdapter().add(fi);
-                        }
-                    });
-                } catch (final Exception e) {
-                    e.printStackTrace();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            setEmptyText(e.getMessage());
-                        }
-                    });
-                }
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        setLoadComplete(false);
-                    }
-                });
+            public void onResults(File[] files) {
+                setLoadComplete(false);
+                getAdapter().set(files);
+            }
+
+            @Override
+            public void onError(Exception ex) {
+                setLoadComplete(true);
+                setEmptyText(ex.getMessage());
             }
         });
-        t.setPriority(Thread.MAX_PRIORITY);
-        t.start();
     }
 
     private boolean isMounted() {
         try {
-            return !getPath().getMountedAs().equalsIgnoreCase("ro");
+            return getPath().getMountedAs() != null && !getPath().getMountedAs().equalsIgnoreCase("ro");
         } catch (Exception e) {
             e.printStackTrace();
             Utils.showErrorDialog(getActivity(), e);
@@ -194,7 +176,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
                 for (File fi : selectedFiles) {
                     if (fi.isDirectory()) hasFolders = true;
                     else hasFiles = true;
-                    if (fi.isRemote()) hasRemote = true;
+                    if (fi.isRemoteFile()) hasRemote = true;
                     if (hasFiles && hasFolders && hasRemote) break;
                 }
                 menu.findItem(R.id.add_shortcut).setVisible(!hasFiles);
@@ -304,7 +286,8 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             mount.setVisible(true);
             mount.setIcon(isMounted() ? resolveDrawable(R.attr.ic_lock) : resolveDrawable(R.attr.ic_unlock));
             try {
-                mount.setTitle(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs().toUpperCase()));
+                mount.setTitle(getString(R.string.mounted_as_x).replace("{X}", getPath().getMountedAs() != null ?
+                        getPath().getMountedAs().toUpperCase() : "ro"));
             } catch (Exception e) {
                 e.printStackTrace();
                 Utils.showErrorDialog(getActivity(), e);
@@ -376,7 +359,7 @@ public class DirectoryFragment extends SilkListFragment<File> implements FileAda
             @Override
             public void onSubmit(String name) {
                 if (name.isEmpty()) name = getActivity().getString(R.string.untitled);
-                File newFile = mPath.isRemote() ? new RemoteFile(getActivity(), (RemoteFile) mPath, name) : new File(mPath, name);
+                File newFile = mPath.isRemoteFile() ? new CloudFile(getActivity(), (CloudFile) mPath, name) : new LocalFile((LocalFile) mPath, name);
                 try {
                     newFile.mkdir();
                     getAdapter().add(newFile);

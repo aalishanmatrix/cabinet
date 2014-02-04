@@ -10,8 +10,9 @@ import android.net.Uri;
 import android.view.View;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
+import com.afollestad.cabinet.file.CloudFile;
 import com.afollestad.cabinet.file.File;
-import com.afollestad.cabinet.file.RemoteFile;
+import com.afollestad.cabinet.file.LocalFile;
 import com.afollestad.silk.views.text.SilkEditText;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.SftpProgressMonitor;
@@ -73,8 +74,8 @@ public class Utils {
     }
 
     public static void openFile(final Activity context, final File item) throws Exception {
-        if (item.isRemote()) {
-            RemoteFile remote = (RemoteFile) item;
+        if (item.isRemoteFile()) {
+            CloudFile remote = (CloudFile) item;
             ChannelSftp channel = App.get(context).getSftpChannel(remote);
             final java.io.File cacheFile = getDownloadCacheFile(context, item);
             context.runOnUiThread(new Runnable() {
@@ -118,7 +119,7 @@ public class Utils {
                             @Override
                             public void run() {
                                 mDialog.dismiss();
-                                finishOpen(context, new File(cacheFile));
+                                finishOpen(context, new LocalFile(cacheFile));
                             }
                         });
                     }
@@ -148,8 +149,8 @@ public class Utils {
         String extension = file.getExtension();
         if (!extension.trim().isEmpty()) extension = "." + extension;
         if (index > 0) newName += " (" + index + ")";
-        File newFile = file.isRemote() ? new RemoteFile(context, (RemoteFile) file.getParentFile(), newName + extension) :
-                new File(file.getParentFile(), newName + extension);
+        File newFile = file.isRemoteFile() ? new CloudFile(context, (CloudFile) file.getParentFile(), newName + extension) :
+                new LocalFile((LocalFile) file.getParentFile(), newName + extension);
         try {
             if (newFile.exists()) {
                 return checkForExistence(context, file, ++index);
@@ -163,7 +164,7 @@ public class Utils {
     public static int getTotalFileCount(File root) throws Exception {
         if (root.isDirectory()) return 1;
         int count = 1;
-        File[] files = root.listFiles();
+        File[] files = root.listFilesUnthreaded();
         if (files != null) {
             for (File fi : files)
                 count += getTotalFileCount(fi);
@@ -174,7 +175,7 @@ public class Utils {
     public static int getTotalFileCount(List<File> files) throws Exception {
         int count = 0;
         for (File fi : files) {
-            if (fi.requiresRootAccess() || fi.isRemote()) count++;
+            if (fi.requiresRootAccess() || fi.isRemoteFile()) count++;
             else count += getTotalFileCount(fi);
         }
         return count;
@@ -229,7 +230,7 @@ public class Utils {
     public static boolean deleteRecursively(File file) throws Exception {
         boolean retVal = true;
         if (file.isDirectory()) {
-            File[] files = file.listFiles();
+            File[] files = file.listFilesUnthreaded();
             if (files != null) {
                 for (File f : files)
                     retVal = retVal && deleteRecursively(f);

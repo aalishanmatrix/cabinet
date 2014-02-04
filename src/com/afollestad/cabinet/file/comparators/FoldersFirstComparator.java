@@ -1,11 +1,13 @@
-package com.afollestad.cabinet.file;
+package com.afollestad.cabinet.file.comparators;
+
+import com.afollestad.cabinet.file.File;
 
 /**
  * Sorts folders and files by name, alphabetically. Folders will always be at the top.
  *
  * @author Aidan Follestad (afollestad)
  */
-class FoldersFirstComparator implements java.util.Comparator<File> {
+public class FoldersFirstComparator implements java.util.Comparator<File> {
 
     @Override
     public int compare(File lhs, File rhs) {

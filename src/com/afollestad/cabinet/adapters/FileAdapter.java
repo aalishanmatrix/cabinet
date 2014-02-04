@@ -14,7 +14,7 @@ import com.afollestad.silk.Silk;
 import com.afollestad.silk.adapters.SilkAdapter;
 
 /**
- * The adapter for {@link File} objects, used by the {@link com.afollestad.cabinet.fragments.DirectoryFragment}.
+ * The adapter for {@link com.afollestad.cabinet.file.File} objects, used by the {@link com.afollestad.cabinet.fragments.DirectoryFragment}.
  *
  * @author Aidan Follestad
  */
@@ -80,9 +80,7 @@ public class FileAdapter extends SilkAdapter<File> {
             if (mime != null) {
                 detailsStr += " \u2014 " + mime;
             } else if (item.getExtension() != null && !item.getExtension().trim().isEmpty()) {
-                detailsStr += " \u2014 "
-                        + getContext().getString(R.string.manual_mime).replace("{extension}",
-                        item.getExtension());
+                detailsStr += " \u2014 " + getContext().getString(R.string.manual_mime).replace("{extension}", item.getExtension());
             }
         }
         details.setText(detailsStr);
@@ -99,7 +97,7 @@ public class FileAdapter extends SilkAdapter<File> {
         holder.position = index;
         int mimeIcon = getMimeIcon(item, mime);
         if (mime != null && (mime.startsWith("image/") || mime.equals("application/vnd.android.package-archive")) &&
-                getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING && !item.isRemote()) {
+                getScrollState() != AbsListView.OnScrollListener.SCROLL_STATE_FLING && !item.isRemoteFile()) {
             new ThumbnailTask(getContext(), index, holder).execute(item);
         } else {
             image.setImageResource(mimeIcon);

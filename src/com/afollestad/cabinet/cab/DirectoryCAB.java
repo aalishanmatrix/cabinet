@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.LocalFile;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.ui.MainActivity;
 import com.afollestad.cabinet.utils.Clipboard;
@@ -87,7 +88,7 @@ public class DirectoryCAB {
                             fragment.getAdapter().remove(fi);
                             final String ext = fi.getExtension();
                             if (!TextUtils.isEmpty(ext)) input += "." + ext;
-                            final File newFile = Utils.checkForExistence(fragment.getActivity(), new File(fi.getParentFile(), input), 0);
+                            final File newFile = Utils.checkForExistence(fragment.getActivity(), new LocalFile((LocalFile) fi.getParentFile(), input), 0);
                             try {
                                 fi.renameTo(newFile);
                             } catch (final Exception e) {
@@ -102,7 +103,7 @@ public class DirectoryCAB {
                             fragment.getAdapter().remove(fi);
                             final String ext = fi.getExtension();
                             if (!TextUtils.isEmpty(ext)) input += "." + ext;
-                            final File newFile = Utils.checkForExistence(fragment.getActivity(), new File(fi.getParentFile(), input), 0);
+                            final File newFile = Utils.checkForExistence(fragment.getActivity(), new LocalFile((LocalFile) fi.getParentFile(), input), 0);
                             try {
                                 fi.renameTo(newFile);
                             } catch (final Exception e) {
@@ -219,7 +220,7 @@ public class DirectoryCAB {
                     input = fragment.getString(R.string.zip_hint);
                 else if (!input.trim().endsWith(".zip"))
                     input = input.trim() + ".zip";
-                final File zipFile = new File(fragment.getPath(), input.trim());
+                final File zipFile = new LocalFile((LocalFile) fragment.getPath(), input.trim());
                 final ProgressDialog progress;
                 try {
                     progress = Utils.showProgressDialog(fragment.getActivity(), R.string.zip,

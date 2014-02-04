@@ -6,8 +6,9 @@ import android.util.Log;
 import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.cab.DirectoryCAB;
+import com.afollestad.cabinet.file.CloudFile;
 import com.afollestad.cabinet.file.File;
-import com.afollestad.cabinet.file.RemoteFile;
+import com.afollestad.cabinet.file.LocalFile;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.jcraft.jsch.ChannelSftp;
 
@@ -73,7 +74,7 @@ public class Clipboard {
         if (mClipboard.size() == 0) return false;
         // Remove no longer existing files from the clipboard and check for paradoxes
         for (File fi : mClipboard) {
-            if (!fi.isRemote() && !fi.exists()) remove(fi);
+            if (!fi.isRemoteFile() && !fi.exists()) remove(fi);
             else if (dest.getAbsolutePath().equals(fi.getAbsolutePath())) {
                 // You cannot copy/cut a directory into itself
                 return false;
@@ -137,10 +138,10 @@ public class Clipboard {
     private Toast toast;
 
     private File copy(final Activity context, File src, File dst, boolean cut) throws Exception {
-        log("Copying '" + src.toString() + "' (" + src.isRemote() + ") to '" + dst.toString() + "' (" + dst.isRemote() + ")...");
+        log("Copying '" + src.toString() + "' (" + src.isRemoteFile() + ") to '" + dst.toString() + "' (" + dst.isRemoteFile() + ")...");
         if (src.isDirectory()) {
             dst = Utils.checkForExistence(context,
-                    dst.isRemote() ? new RemoteFile(context, (RemoteFile) dst, src.getName()) : new File(dst, src.getName()), 0);
+                    dst.isRemoteFile() ? new CloudFile(context, (CloudFile) dst, src.getName()) : new LocalFile((LocalFile) dst, src.getName()), 0);
             try {
                 dst.mkdir();
             } catch (final Exception e) {
@@ -155,7 +156,7 @@ public class Clipboard {
             }
             log("Created: " + dst.getAbsolutePath());
             // Recursively copy the source directory into the new directory
-            for (File fi : src.listFiles())
+            for (File fi : src.listFilesUnthreaded())
                 copy(context, fi, dst, cut);
             if (cut) {
                 log("Deleting: " + src.getAbsolutePath());
@@ -167,19 +168,19 @@ public class Clipboard {
         // Copy this file into the destination directory
         try {
             dst = Utils.checkForExistence(context,
-                    dst.isRemote() ? new RemoteFile(context, (RemoteFile) dst, src.getName()) : new File(dst, src.getName()), 0);
+                    dst.isRemoteFile() ? new CloudFile(context, (CloudFile) dst, src.getName()) : new LocalFile((LocalFile) dst, src.getName()), 0);
             InputStream in;
             OutputStream out;
-            if (src.isRemote() || dst.isRemote()) {
-                ChannelSftp channel = App.get(context).getSftpChannel(src.isRemote() ? (RemoteFile) src : (RemoteFile) dst);
-                if (src.isRemote()) {
+            if (src.isRemoteFile() || dst.isRemoteFile()) {
+                ChannelSftp channel = App.get(context).getSftpChannel(src.isRemoteFile() ? (CloudFile) src : (CloudFile) dst);
+                if (src.isRemoteFile()) {
                     log("Opening remote stream to source file: " + src.getAbsolutePath());
                     in = channel.get(src.getAbsolutePath());
                 } else {
                     log("Opening local stream to source file: " + src.getAbsolutePath());
                     in = new FileInputStream(src.getFile());
                 }
-                if (dst.isRemote()) {
+                if (dst.isRemoteFile()) {
                     log("Opening remote stream to destination file: " + dst.getAbsolutePath());
                     out = channel.put(dst.getAbsolutePath());
                 } else {
@@ -204,9 +205,9 @@ public class Clipboard {
                 log("Deleting: " + src.getAbsolutePath());
                 src.delete();
             }
-            if (dst.isRemote()) {
-                ((RemoteFile) dst).setDirectory(false);
-                ((RemoteFile) dst).setSize(totalLen);
+            if (dst.isRemoteFile()) {
+                ((CloudFile) dst).setDirectory(false);
+                ((CloudFile) dst).setSize(totalLen);
             }
             return dst;
         } catch (final Exception e) {

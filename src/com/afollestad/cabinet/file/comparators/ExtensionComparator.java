@@ -1,11 +1,13 @@
-package com.afollestad.cabinet.file;
+package com.afollestad.cabinet.file.comparators;
+
+import com.afollestad.cabinet.file.File;
 
 /**
  * Sorts files by extension, alphabetically. Folders will be at the beginning.
  *
  * @author Aidan Follestad (afollestad)
  */
-class ExtensionComparator implements java.util.Comparator<File> {
+public class ExtensionComparator implements java.util.Comparator<File> {
 
     @Override
     public int compare(File lhs, File rhs) {

@@ -3,8 +3,9 @@ package com.afollestad.cabinet.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import com.afollestad.cabinet.file.CloudFile;
 import com.afollestad.cabinet.file.File;
-import com.afollestad.cabinet.file.RemoteFile;
+import com.afollestad.cabinet.file.LocalFile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +45,7 @@ public class Shortcuts {
         for (String item : splitShortcuts) {
             if (item.trim().isEmpty()) continue;
             item = item.replace(COMMA_ENTITY, ",");
-            files.add(item.startsWith("REMOTE:") ? new RemoteFile(context, item) : new File(item));
+            files.add(item.startsWith("REMOTE:") ? new CloudFile(context, item) : new LocalFile(item));
         }
         return files;
     }

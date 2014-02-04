@@ -2,7 +2,7 @@ package com.afollestad.cabinet;
 
 import android.app.Application;
 import android.content.Context;
-import com.afollestad.cabinet.file.RemoteFile;
+import com.afollestad.cabinet.file.CloudFile;
 import com.afollestad.cabinet.utils.Clipboard;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSch;
@@ -18,7 +18,7 @@ public class App extends Application {
     private Clipboard mClipboard;
     private Session mSftpSession;
     private ChannelSftp mSftpChannel;
-    private RemoteFile mLastSftpTo;
+    private CloudFile mLastSftpTo;
 
     public static App get(Context context) {
         return (App) context.getApplicationContext();
@@ -30,7 +30,7 @@ public class App extends Application {
         return mClipboard;
     }
 
-    public ChannelSftp getSftpChannel(RemoteFile to) throws Exception {
+    public ChannelSftp getSftpChannel(CloudFile to) throws Exception {
         if ((mLastSftpTo != null && !mLastSftpTo.getHost().equals(to.getHost())) ||
                 mLastSftpTo == null || (mSftpSession == null || !mSftpSession.isConnected()) || (mSftpChannel == null || !mSftpChannel.isConnected())) {
             mLastSftpTo = null;
@@ -52,7 +52,7 @@ public class App extends Application {
         return mSftpChannel;
     }
 
-    public Session getSftpSession(RemoteFile to) throws Exception {
+    public Session getSftpSession(CloudFile to) throws Exception {
         getSftpChannel(to);
         return mSftpSession;
     }

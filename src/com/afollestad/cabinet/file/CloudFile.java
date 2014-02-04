@@ -14,7 +14,7 @@ import java.util.Vector;
 /**
  * @author Aidan Follestad (afollestad)
  */
-public final class RemoteFile extends File {
+public final class CloudFile extends File {
 
     private final static String COLON_ENTITY = "&#58;";
 
@@ -25,8 +25,9 @@ public final class RemoteFile extends File {
     private String mPass;
     private boolean isDirectory = true;
     private long mSize;
+    private java.io.File mFile;
 
-    public RemoteFile(Context context, String path) {
+    public CloudFile(Context context, String path) {
         mContext = context;
         if (path.startsWith("REMOTE:")) {
             String[] splitColons = path.split(":");
@@ -38,7 +39,7 @@ public final class RemoteFile extends File {
         } else throw new IllegalArgumentException("Path doesn't represent a remote file.");
     }
 
-    public RemoteFile(Context context, RemoteFile parent, java.io.File file) {
+    public CloudFile(Context context, CloudFile parent, java.io.File file) {
         mContext = context;
         mHost = parent.getHost();
         mPort = parent.getPort();
@@ -47,7 +48,7 @@ public final class RemoteFile extends File {
         mFile = file;
     }
 
-    public RemoteFile(Context context, RemoteFile parent, String name) {
+    public CloudFile(Context context, CloudFile parent, String name) {
         mContext = context;
         mHost = parent.getHost();
         mPort = parent.getPort();
@@ -56,7 +57,7 @@ public final class RemoteFile extends File {
         mFile = new java.io.File(parent.mFile, name);
     }
 
-    public RemoteFile(Context context, RemoteFile parent, ChannelSftp.LsEntry lsEntry) {
+    public CloudFile(Context context, CloudFile parent, ChannelSftp.LsEntry lsEntry) {
         mContext = context;
         mHost = parent.getHost();
         mPort = parent.getPort();
@@ -68,7 +69,7 @@ public final class RemoteFile extends File {
         mSize = attrs.getSize();
     }
 
-    public RemoteFile(Context context, String host, String port, String user, String pass, String path) {
+    public CloudFile(Context context, String host, String port, String user, String pass, String path) {
         mContext = context;
         mHost = host;
         mPort = Integer.parseInt(port);
@@ -103,9 +104,9 @@ public final class RemoteFile extends File {
 
     @Override
     public String getName() {
-        if (super.getName().trim().isEmpty() || super.getName().trim().equals("/"))
+        if (mFile.getName() == null || mFile.getName().trim().isEmpty() || isStorageDirectory() || isRootDirectory())
             return getHost();
-        return super.getName();
+        return mFile.getName();
     }
 
     @Override
@@ -116,18 +117,19 @@ public final class RemoteFile extends File {
     }
 
     @Override
-    public boolean isRemote() {
-        return true;
+    public String getAbsolutePath() {
+        return mFile.getAbsolutePath();
     }
+
 
     @Override
     public boolean isStorageDirectory() {
-        return false;
+        return mFile.getAbsolutePath() == null || mFile.getAbsolutePath().trim().isEmpty() || mFile.getAbsolutePath().equals("/");
     }
 
     @Override
     public boolean isRootDirectory() {
-        return false;
+        return mFile.getAbsolutePath() == null || mFile.getAbsolutePath().trim().isEmpty() || mFile.getAbsolutePath().equals("/");
     }
 
     @Override
@@ -142,12 +144,17 @@ public final class RemoteFile extends File {
 
     @Override
     public boolean isHidden() {
-        return super.isHidden();
+        return false; //TODO
     }
 
     @Override
     public long length() {
         return mSize;
+    }
+
+    @Override
+    public boolean isRemoteFile() {
+        return true;
     }
 
     @Override
@@ -163,25 +170,32 @@ public final class RemoteFile extends File {
     }
 
     @Override
-    public void mkdir() throws Exception {
+    public boolean mkdir() throws Exception {
         ChannelSftp channel = App.get(mContext).getSftpChannel(this);
         channel.mkdir(getAbsolutePath());
+        return true;
     }
 
     @Override
-    public void mkdirs() throws Exception {
-        mkdir();
+    public boolean mkdirs() throws Exception {
+        return mkdir();
     }
 
     @Override
-    public void renameTo(File newPath) throws Exception {
+    public boolean renameTo(File newPath) throws Exception {
         ChannelSftp channel = App.get(mContext).getSftpChannel(this);
         channel.rename(getAbsolutePath(), newPath.getAbsolutePath());
+        return true;
     }
 
     @Override
     public File getParentFile() {
-        return new RemoteFile(mContext, this, mFile.getParentFile());
+        return new CloudFile(mContext, this, mFile.getParentFile());
+    }
+
+    @Override
+    public java.io.File getFile() {
+        return mFile;
     }
 
     @Override
@@ -208,18 +222,18 @@ public final class RemoteFile extends File {
     }
 
     @Override
-    public File[] listFiles() throws Exception {
-        List<File> results = new ArrayList<File>();
-        ChannelSftp channel = App.get(mContext).getSftpChannel(this);
+    public File[] listFilesUnthreaded() throws Exception {
+        List<CloudFile> results = new ArrayList<CloudFile>();
+        ChannelSftp channel = App.get(mContext).getSftpChannel(CloudFile.this);
         Vector<ChannelSftp.LsEntry> ls = channel.ls(getAbsolutePath());
         for (ChannelSftp.LsEntry entry : ls)
-            results.add(new RemoteFile(mContext, this, entry));
+            results.add(new CloudFile(mContext, CloudFile.this, entry));
         return results.toArray(new File[results.size()]);
     }
 
     @Override
     public Object getSilkId() {
-        return super.getSilkId();
+        return "REMOTE:" + getHost() + ":" + getAbsolutePath();
     }
 
     @Override
@@ -229,5 +243,10 @@ public final class RemoteFile extends File {
                 getUser().replace(":", COLON_ENTITY) + ":" +
                 getPass().replace(":", COLON_ENTITY) + ":" +
                 getAbsolutePath().replace(":", COLON_ENTITY);
+    }
+
+    @Override
+    public String getMountedAs() {
+        return null; //TODO
     }
 }

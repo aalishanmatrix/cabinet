@@ -26,7 +26,9 @@ import android.widget.Toast;
 import com.afollestad.cabinet.App;
 import com.afollestad.cabinet.R;
 import com.afollestad.cabinet.adapters.DrawerAdapter;
+import com.afollestad.cabinet.file.CloudFile;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.LocalFile;
 import com.afollestad.cabinet.fragments.DirectoryFragment;
 import com.afollestad.cabinet.fragments.dialogs.AddRemoteDialog;
 import com.afollestad.cabinet.utils.Shortcuts;
@@ -34,7 +36,7 @@ import com.afollestad.cabinet.utils.Utils;
 import com.afollestad.silk.activities.SilkDrawerActivity;
 import com.afollestad.silk.fragments.list.SilkListFragment;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
-import org.sufficientlysecure.rootcommands.RootCommands;
+import eu.chainfire.libsuperuser.Shell;
 
 import java.util.List;
 
@@ -145,7 +147,7 @@ public class MainActivity extends SilkDrawerActivity {
         }
         mPickMode = processIntent();
         if (savedInstanceState == null) {
-            navigate(new File(Environment.getExternalStorageDirectory()), false);
+            navigate(new LocalFile(Environment.getExternalStorageDirectory()), false);
         } else ((SilkListFragment) getFragmentManager().findFragmentById(R.id.content_frame)).recreateAdapter();
         setupTransparentTints(this);
     }
@@ -177,11 +179,11 @@ public class MainActivity extends SilkDrawerActivity {
         if (!prefs.getBoolean("first_time", true)) return false;
 
         // Add default shortcuts
-        File storage = new File(Environment.getExternalStorageDirectory());
+        LocalFile storage = new LocalFile(Environment.getExternalStorageDirectory());
         Shortcuts.add(this, storage);
-        Shortcuts.add(this, new File(storage, "Download"));
-        Shortcuts.add(this, new File(storage, "Music"));
-        Shortcuts.add(this, new File(storage, "Pictures"));
+        Shortcuts.add(this, new LocalFile(storage, "Download"));
+        Shortcuts.add(this, new LocalFile(storage, "Music"));
+        Shortcuts.add(this, new LocalFile(storage, "Pictures"));
         prefs.edit().putBoolean("first_time", false).commit();
 
         new AlertDialog.Builder(this)
@@ -192,13 +194,24 @@ public class MainActivity extends SilkDrawerActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        if (RootCommands.rootAccessGiven()) {
-                            prefs.edit().putBoolean("root_enabled", true).commit();
-                        } else {
-                            Toast.makeText(MainActivity.this, R.string.root_disabled, Toast.LENGTH_LONG).show();
-                        }
-                        populateDrawer();
-                        getDrawerLayout().openDrawer(Gravity.START);
+                        new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                final boolean available = Shell.SU.available();
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        if (available) {
+                                            prefs.edit().putBoolean("root_enabled", true).commit();
+                                        } else {
+                                            Toast.makeText(MainActivity.this, R.string.root_disabled, Toast.LENGTH_LONG).show();
+                                        }
+                                        populateDrawer();
+                                        getDrawerLayout().openDrawer(Gravity.START);
+                                    }
+                                });
+                            }
+                        }).start();
                     }
                 })
                 .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
@@ -235,7 +248,7 @@ public class MainActivity extends SilkDrawerActivity {
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         rootEnabled = prefs.getBoolean("root_enabled", false);
-        if (rootEnabled) mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new File("/"), false));
+        if (rootEnabled) mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, new LocalFile("/"), false));
         List<File> shortcuts = Shortcuts.getAll(this);
         for (File fi : shortcuts) {
             mDrawerAdapter.add(new DrawerAdapter.DrawerItem(this, fi, !fi.isStorageDirectory()));
@@ -303,7 +316,7 @@ public class MainActivity extends SilkDrawerActivity {
             case R.id.addRemote:
                 new AddRemoteDialog(new AddRemoteDialog.OnaAddedListener() {
                     @Override
-                    public void onAdded(File file) {
+                    public void onAdded(CloudFile file) {
                         addShortcut(file);
                     }
                 }).show(getFragmentManager(), "add_remote_dialog");

@@ -2,6 +2,7 @@ package com.afollestad.cabinet.utils;
 
 import android.util.Log;
 import com.afollestad.cabinet.file.File;
+import com.afollestad.cabinet.file.LocalFile;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -37,7 +38,7 @@ public class ZipUtils {
     private static int getTotalFileCount(File dir) throws Exception {
         if (dir.isDirectory()) {
             int count = 0;
-            for (File fi : dir.listFiles())
+            for (File fi : dir.listFilesUnthreaded())
                 count += getTotalFileCount(fi);
             return count;
         }
@@ -66,7 +67,7 @@ public class ZipUtils {
 
     private static void zipDir(File directory, ZipOutputStream zos, File parent, ProgressCallback callback) throws Exception {
         log("Zipping directory: " + directory.getAbsolutePath());
-        for (File f : directory.listFiles()) {
+        for (File f : directory.listFilesUnthreaded()) {
             if (f.isDirectory()) {
                 zipDir(f, zos, parent, callback);
                 continue;
@@ -94,7 +95,7 @@ public class ZipUtils {
         try {
             ZipEntry ze;
             while ((ze = zin.getNextEntry()) != null) {
-                File file = Utils.checkForExistence(null, new File(destination.getAbsolutePath() + ze.getName()), 0);
+                File file = Utils.checkForExistence(null, new LocalFile(destination.getAbsolutePath() + ze.getName()), 0);
                 log("Writing: " + file.getAbsolutePath());
                 file.getParentFile().mkdirs();
                 File topLevel = findTopLevel(file, destination);

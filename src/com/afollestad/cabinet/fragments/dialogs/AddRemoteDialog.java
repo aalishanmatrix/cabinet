@@ -9,8 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import com.afollestad.cabinet.R;
-import com.afollestad.cabinet.file.File;
-import com.afollestad.cabinet.file.RemoteFile;
+import com.afollestad.cabinet.file.CloudFile;
 
 /**
  * @author Aidan Follestad (afollestad)
@@ -46,7 +45,7 @@ public class AddRemoteDialog extends DialogFragment {
                         dialog.dismiss();
                         if (mAddedListener != null) {
                             mAddedListener.onAdded(
-                                    new RemoteFile(getActivity(), host.getText().toString().trim(), port.getText().toString().trim(),
+                                    new CloudFile(getActivity(), host.getText().toString().trim(), port.getText().toString().trim(),
                                             user.getText().toString().trim(), pass.getText().toString().trim(), "/"));
                         }
                     }
@@ -60,6 +59,6 @@ public class AddRemoteDialog extends DialogFragment {
     }
 
     public interface OnaAddedListener {
-        public abstract void onAdded(File file);
+        public abstract void onAdded(CloudFile file);
     }
 }
