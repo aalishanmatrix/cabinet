@@ -28,30 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9372b3c8-2b05-4ee1-b77f-ffd82ae657a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/comparators/AlphabeticalComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/callbacks/FileListingCallback.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/AlphabeticalComparator.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/ExtensionComparator.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/comparators/ExtensionComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/LocalFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/FoldersFirstComparator.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/comparators/FoldersFirstComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/HighLowSizeComparator.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/comparators/HighLowSizeComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/LowHighSizeComparator.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/comparators/LowHighSizeComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/RemoteFile.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/CloudFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/dialogs/AddRemoteDialog.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/dialogs/AddRemoteDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Clipboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/cab/DirectoryCAB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/DirectoryFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/adapters/FileAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/fragments/prefs/RootFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Shortcuts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/utils/ZipUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cabinet.iml" afterPath="$PROJECT_DIR$/cabinet.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/LocalFile.java" afterPath="$PROJECT_DIR$/src/com/afollestad/cabinet/file/LocalFile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cabinet.iws" />
@@ -239,11 +216,11 @@
       <file leaf-file-name="LocalFile.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/LocalFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="57" selection-start="3436" selection-end="3436" vertical-scroll-proportion="0.38034865" vertical-offset="1650" max-vertical-offset="2670">
+            <state line="118" column="35" selection-start="2920" selection-end="2920" vertical-scroll-proportion="0.8557845" vertical-offset="1200" max-vertical-offset="2625">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3190#3196#0" expanded="true" />
-                <element signature="e#3581#3587#0" expanded="true" />
+                <element signature="e#3046#3052#0" expanded="true" />
+                <element signature="e#3437#3443#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2611,11 +2588,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/afollestad/cabinet/file/LocalFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="57" selection-start="3436" selection-end="3436" vertical-scroll-proportion="0.38034865" vertical-offset="1650" max-vertical-offset="2670">
+        <state line="118" column="35" selection-start="2920" selection-end="2920" vertical-scroll-proportion="0.8557845" vertical-offset="1200" max-vertical-offset="2625">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3190#3196#0" expanded="true" />
-            <element signature="e#3581#3587#0" expanded="true" />
+            <element signature="e#3046#3052#0" expanded="true" />
+            <element signature="e#3437#3443#0" expanded="true" />
           </folding>
         </state>
       </provider>

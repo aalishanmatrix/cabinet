@@ -2,7 +2,6 @@ package com.afollestad.cabinet.file;
 
 import android.os.Environment;
 import com.afollestad.cabinet.utils.Utils;
-import eu.chainfire.libsuperuser.Shell;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -118,8 +117,6 @@ public class LocalFile extends File {
     @Override
     public File[] listFilesUnthreaded() throws Exception {
         if (requiresRootAccess()) {
-            if (!Shell.SU.available())
-                throw new Exception("Root access unavailable.");
             List<String> output = runAsRoot("ls \"" + getAbsolutePath() + "\"");
             List<File> files = new ArrayList<File>();
             for (String line : output) {
