@@ -124,12 +124,12 @@ public final class CloudFile extends File {
 
     @Override
     public boolean isStorageDirectory() {
-        return mFile.getAbsolutePath() == null || mFile.getAbsolutePath().trim().isEmpty() || mFile.getAbsolutePath().equals("/");
+        return false;
     }
 
     @Override
     public boolean isRootDirectory() {
-        return mFile.getAbsolutePath() == null || mFile.getAbsolutePath().trim().isEmpty() || mFile.getAbsolutePath().equals("/");
+        return false;
     }
 
     @Override
